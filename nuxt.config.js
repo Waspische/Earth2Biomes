@@ -5,6 +5,12 @@ export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
+  router: {
+    base: process.env.NODE_ENV === 'production'
+      ? '/earth2biomes/'
+      : '/'
+  },
+
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     titleTemplate: '%s - front',
