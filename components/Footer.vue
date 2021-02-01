@@ -14,7 +14,7 @@
         class="primary darken-1 py-4 text-center white--text"
         cols="12"
       >
-        The data comes from openstreetmap.org. If you like this project, support me using the code <strong>19DBDIXSCW</strong>
+        The data comes from openstreetmap.org. If you like this project, support me using the code <strong>19DBDIXSCW</strong> or <a href="https://ko-fi.com/earth2biomes">buy me a coffee ☕️</a>
         <br>
         To submit an idea, you can
         <v-btn plain text x-small color="accent" href="https://forms.gle/8Ak6HTaVh5hFyf4Q9">
@@ -32,5 +32,6 @@ export default {
 </script>
 
 <style scoped>
+a { color: inherit; }
 
 </style>

@@ -6,9 +6,7 @@ export default {
   target: 'static',
 
   router: {
-    base: process.env.NODE_ENV === 'production'
-      ? '/Earth2Biomes/'
-      : '/'
+    base: '/Earth2Biomes/'
   },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
@@ -80,6 +78,6 @@ export default {
   },
 
   googleAnalytics: {
-    id: 'G-EV6KHSJVV0'
+    id: 'UA-188571251-1'
   }
 }
