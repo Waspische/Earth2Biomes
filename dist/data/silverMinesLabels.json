@@ -1,0 +1,9 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"@id":"way/176358539","landuse":"quarry","resource":"silver","source":"bing"},"geometry":{"type":"Point","coordinates":[29.73067,39.45431]},"id":"way/176358539"}
+,
+{"type":"Feature","properties":{"@id":"way/176358547","landuse":"quarry","resource":"silver","source":"bing"},"geometry":{"type":"Point","coordinates":[29.73632,39.45872]},"id":"way/176358547"}
+,
+{"type":"Feature","properties":{"@id":"way/184346398","landuse":"quarry","name":"Minera Pierina","resource":"silver"},"geometry":{"type":"Point","coordinates":[-77.58866,-9.46468]},"id":"way/184346398"}
+,
+{"type":"Feature","properties":{"@id":"way/331307243","landuse":"quarry","resource":"silver"},"geometry":{"type":"Point","coordinates":[11.35092,46.05396]},"id":"way/331307243"}
+,
+{"type":"Feature","properties":{"@id":"way/729396529","landuse":"quarry","resource":"silver"},"geometry":{"type":"Point","coordinates":[-5.58315,30.23716]},"id":"way/729396529"}]}
