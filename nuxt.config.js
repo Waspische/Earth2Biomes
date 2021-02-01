@@ -7,7 +7,7 @@ export default {
 
   router: {
     base: process.env.NODE_ENV === 'production'
-      ? '/earth2biomes/'
+      ? '/Earth2Biomes/'
       : '/'
   },
 
