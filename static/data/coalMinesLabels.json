@@ -1,0 +1,1073 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"@id":"relation/1239498","landuse":"quarry","name":"Краснобродский угольный разрез","resource":"coal","type":"multipolygon","wikidata":"Q4238315","wikipedia":"ru:Краснобродский угольный разрез"},"geometry":{"type":"Point","coordinates":[86.48769,54.12712]},"id":"relation/1239498"}
+,
+{"type":"Feature","properties":{"@id":"relation/1239498","landuse":"quarry","name":"Краснобродский угольный разрез","resource":"coal","type":"multipolygon","wikidata":"Q4238315","wikipedia":"ru:Краснобродский угольный разрез"},"geometry":{"type":"Point","coordinates":[86.43128,54.19059]},"id":"relation/1239498"}
+,
+{"type":"Feature","properties":{"@id":"relation/1578179","landuse":"quarry","resource":"coal","source":"NRCan-CanVec-7.0","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[-66.00973,46.07764]},"id":"relation/1578179"}
+,
+{"type":"Feature","properties":{"@id":"relation/2248777","landuse":"quarry","name":"Braunkohle-Tagebau Garzweiler","operator":"RWE Power AG","resource":"coal","type":"multipolygon","wikidata":"Q205775","wikipedia":"de:Tagebau Garzweiler"},"geometry":{"type":"Point","coordinates":[6.45514,51.07142]},"id":"relation/2248777"}
+,
+{"type":"Feature","properties":{"@id":"relation/2606647","landuse":"quarry","name":"Braunkohle-Tagebau Hambach","operator":"RWE Power AG","resource":"coal","type":"multipolygon","wikidata":"Q315371","wikipedia":"de:Tagebau Hambach"},"geometry":{"type":"Point","coordinates":[6.52921,50.90539]},"id":"relation/2606647"}
+,
+{"type":"Feature","properties":{"@id":"relation/3225269","landuse":"quarry","name":"Tagebau Schöningen","resource":"coal","type":"multipolygon","wikidata":"Q21293233"},"geometry":{"type":"Point","coordinates":[11.00463,52.13411]},"id":"relation/3225269"}
+,
+{"type":"Feature","properties":{"@id":"relation/3548144","landuse":"quarry","name":"Tagebau Nochten","name:hsb":"Brunicowa jama Wochozy","resource":"coal","type":"multipolygon","wikidata":"Q1771820"},"geometry":{"type":"Point","coordinates":[14.58627,51.48257]},"id":"relation/3548144"}
+,
+{"type":"Feature","properties":{"@id":"relation/4041805","description:hu":"Külszíni lignitfejtés","landuse":"quarry","resource":"coal","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[20.06955,47.7426]},"id":"relation/4041805"}
+,
+{"type":"Feature","properties":{"@id":"relation/4668171","landuse":"quarry","name":"Рударско Енергетски Комбинат - Битола","name:en":"MEC Bitola","operator":"ЕлеМ","resource":"coal","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[21.51538,41.04561]},"id":"relation/4668171"}
+,
+{"type":"Feature","properties":{"@id":"relation/4668171","landuse":"quarry","name":"Рударско Енергетски Комбинат - Битола","name:en":"MEC Bitola","operator":"ЕлеМ","resource":"coal","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[21.47253,41.05702]},"id":"relation/4668171"}
+,
+{"type":"Feature","properties":{"@id":"relation/4668171","landuse":"quarry","name":"Рударско Енергетски Комбинат - Битола","name:en":"MEC Bitola","operator":"ЕлеМ","resource":"coal","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[21.53646,40.9674]},"id":"relation/4668171"}
+,
+{"type":"Feature","properties":{"@id":"relation/6219898","landuse":"quarry","name":"Anvil Hill Coal Mine","resource":"coal","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[150.69692,-32.27442]},"id":"relation/6219898"}
+,
+{"type":"Feature","properties":{"@id":"relation/6219898","landuse":"quarry","name":"Anvil Hill Coal Mine","resource":"coal","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[150.69715,-32.2942]},"id":"relation/6219898"}
+,
+{"type":"Feature","properties":{"@id":"relation/6762880","landuse":"quarry","name":"Sundance Coal","resource":"coal","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[-114.59327,53.49538]},"id":"relation/6762880"}
+,
+{"type":"Feature","properties":{"@id":"relation/7064930","landuse":"quarry","name":"Baal Bone Colliery","resource":"coal","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[150.05368,-33.26977]},"id":"relation/7064930"}
+,
+{"type":"Feature","properties":{"@id":"relation/7428963","landuse":"quarry","name":"Kosse Mine","operator":"Luminant","resource":"coal","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[-96.44173,31.34103]},"id":"relation/7428963"}
+,
+{"type":"Feature","properties":{"@id":"relation/8799796","fixme":"name?","is_in:country":"Abkhazia; Georgia","is_in:district":"Tkvarcheli","is_in:region":"Abkhazeti","landuse":"quarry","operator":"Tkuarchal-Ugol","resource":"coal","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[41.7959,42.89145]},"id":"relation/8799796"}
+,
+{"type":"Feature","properties":{"@id":"relation/9567761","landuse":"quarry","resource":"coal","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[21.24518,44.72326]},"id":"relation/9567761"}
+,
+{"type":"Feature","properties":{"@id":"relation/10408312","description":"Бурый уголь","landuse":"quarry","name":"угольный разрез Ангренский","name:ru":"угольный разрез Ангренский","resource":"coal","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[70.18129,41.03859]},"id":"relation/10408312"}
+,
+{"type":"Feature","properties":{"@id":"relation/11268963","disused":"yes","landuse":"quarry","resource":"coal","source:geometry":"Maxar","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[79.06938,20.0792]},"id":"relation/11268963"}
+,
+{"type":"Feature","properties":{"@id":"relation/11268964","landuse":"quarry","resource":"coal","source:geometry":"Maxar","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[79.03733,20.11169]},"id":"relation/11268964"}
+,
+{"type":"Feature","properties":{"@id":"relation/11268964","landuse":"quarry","resource":"coal","source:geometry":"Maxar","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[79.06438,20.09278]},"id":"relation/11268964"}
+,
+{"type":"Feature","properties":{"@id":"relation/11268964","landuse":"quarry","resource":"coal","source:geometry":"Maxar","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[79.06199,20.0817]},"id":"relation/11268964"}
+,
+{"type":"Feature","properties":{"@id":"relation/11268964","landuse":"quarry","resource":"coal","source:geometry":"Maxar","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[79.04958,20.0722]},"id":"relation/11268964"}
+,
+{"type":"Feature","properties":{"@id":"relation/11268965","landuse":"quarry","resource":"coal","source:geometry":"Maxar","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[79.08013,20.05396]},"id":"relation/11268965"}
+,
+{"type":"Feature","properties":{"@id":"relation/11268965","landuse":"quarry","resource":"coal","source:geometry":"Maxar","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[79.09039,20.05658]},"id":"relation/11268965"}
+,
+{"type":"Feature","properties":{"@id":"relation/11268965","landuse":"quarry","resource":"coal","source:geometry":"Maxar","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[79.08052,20.06695]},"id":"relation/11268965"}
+,
+{"type":"Feature","properties":{"@id":"relation/11269026","disused":"yes","landuse":"quarry","resource":"coal","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[79.04169,20.03991]},"id":"relation/11269026"}
+,
+{"type":"Feature","properties":{"@id":"relation/11269026","disused":"yes","landuse":"quarry","resource":"coal","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[79.04441,20.05998]},"id":"relation/11269026"}
+,
+{"type":"Feature","properties":{"@id":"relation/11269027","landuse":"quarry","resource":"coal","source:geometry":"Maxar","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[79.069,20.00401]},"id":"relation/11269027"}
+,
+{"type":"Feature","properties":{"@id":"relation/11269027","landuse":"quarry","resource":"coal","source:geometry":"Maxar","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[79.06053,20.06193]},"id":"relation/11269027"}
+,
+{"type":"Feature","properties":{"@id":"relation/11269027","landuse":"quarry","resource":"coal","source:geometry":"Maxar","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[79.03923,20.08856]},"id":"relation/11269027"}
+,
+{"type":"Feature","properties":{"@id":"relation/11269027","landuse":"quarry","resource":"coal","source:geometry":"Maxar","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[79.02909,20.08433]},"id":"relation/11269027"}
+,
+{"type":"Feature","properties":{"@id":"relation/11586047","landuse":"quarry","resource":"coal","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[-80.79541,39.83557]},"id":"relation/11586047"}
+,
+{"type":"Feature","properties":{"@id":"relation/12150933","landuse":"quarry","name":"Маячинский угольный разрез","resource":"coal","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[55.65257,52.68452]},"id":"relation/12150933"}
+,
+{"type":"Feature","properties":{"@id":"way/22957900","landuse":"quarry","name":"Ορυχείο Μεγαλοπόλεως","name:el":"Ορυχείο Μεγαλοπόλεως","name:en":"Megalopolis Lignite Mines","name:ru":"Мегалополис (бурый уголь)","resource":"coal"},"geometry":{"type":"Point","coordinates":[22.10533,37.38107]},"id":"way/22957900"}
+,
+{"type":"Feature","properties":{"@id":"way/23445079","landuse":"quarry","name":"Morwell Brown Coal Mine","resource":"coal","source":"Landsat Trace & Bing","wikipedia":"en:Yallourn Power Station"},"geometry":{"type":"Point","coordinates":[146.37659,-38.25502]},"id":"way/23445079"}
+,
+{"type":"Feature","properties":{"@id":"way/23445156","landuse":"quarry","name":"Yallourn Brown Coal Mine (mined-out)","resource":"coal"},"geometry":{"type":"Point","coordinates":[146.34676,-38.20329]},"id":"way/23445156"}
+,
+{"type":"Feature","properties":{"@id":"way/23445157","landuse":"quarry","name":"Loy Yang Brown Coal Mine","resource":"coal"},"geometry":{"type":"Point","coordinates":[146.58307,-38.22606]},"id":"way/23445157"}
+,
+{"type":"Feature","properties":{"@id":"way/24948774","landuse":"quarry","name":"Tagebau Reichwalde","name:hsb":"Rychwałdska brunicowa jama","resource":"coal","wikidata":"Q2387880","wikipedia":"de:Tagebau Reichwalde"},"geometry":{"type":"Point","coordinates":[14.7272,51.40103]},"id":"way/24948774"}
+,
+{"type":"Feature","properties":{"@id":"way/32424794","landuse":"quarry","name":"Braunkohle-Tagebau Inden","operator":"RWE Power AG","resource":"coal","wikipedia":"de:Tagebau Inden"},"geometry":{"type":"Point","coordinates":[6.35685,50.87301]},"id":"way/32424794"}
+,
+{"type":"Feature","properties":{"@id":"way/32707895","landuse":"quarry","name":"Prince Of Wales Coillery","resource":"coal"},"geometry":{"type":"Point","coordinates":[-1.32201,53.70585]},"id":"way/32707895"}
+,
+{"type":"Feature","properties":{"@id":"way/33743324","landuse":"quarry","name":"Jalai Nur Coal Mines","note":"pit","resource":"coal"},"geometry":{"type":"Point","coordinates":[117.73568,49.44434]},"id":"way/33743324"}
+,
+{"type":"Feature","properties":{"@id":"way/42028076","landuse":"quarry","name":"Moura Mine","operator":"Anglo American","resource":"coal"},"geometry":{"type":"Point","coordinates":[150.05076,-24.54354]},"id":"way/42028076"}
+,
+{"type":"Feature","properties":{"@id":"way/43324947","alt_name":"阜新海州露天煤矿","landuse":"quarry","name":"海州露天矿","name:zh":"海州露天矿","resource":"coal"},"geometry":{"type":"Point","coordinates":[121.6747,41.98574]},"id":"way/43324947"}
+,
+{"type":"Feature","properties":{"@id":"way/52050379","fixme":"only a small part of this area appears to be the actual colliery","landuse":"quarry","name":"Western Main Colliery","resource":"coal","source":"landsat;knowledge"},"geometry":{"type":"Point","coordinates":[150.05161,-33.36373]},"id":"way/52050379"}
+,
+{"type":"Feature","properties":{"@id":"way/59837236","landuse":"quarry","name":"Coalfields","resource":"coal"},"geometry":{"type":"Point","coordinates":[80.77517,17.94651]},"id":"way/59837236"}
+,
+{"type":"Feature","properties":{"@id":"way/62114558","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[79.47449,18.79966]},"id":"way/62114558"}
+,
+{"type":"Feature","properties":{"@id":"way/65424051","landuse":"quarry","resource":"coal","source":"Yahoo"},"geometry":{"type":"Point","coordinates":[151.96848,-32.13063]},"id":"way/65424051"}
+,
+{"type":"Feature","properties":{"@id":"way/84387421","fixme":"operator?","is_in:country":"Abkhazia; Georgia","is_in:district":"Tkvarcheli","is_in:region":"Abkhazeti","landuse":"quarry","name":"Шахта No. 5","name:en":"Mine No. 5","name:ru":"Шахта No. 5 (Mine No. 5)","resource":"coal"},"geometry":{"type":"Point","coordinates":[41.81126,42.8521]},"id":"way/84387421"}
+,
+{"type":"Feature","properties":{"@id":"way/84398004","is_in:country":"Abkhazia; Georgia","is_in:district":"Tkvarcheli","is_in:region":"Abkhazeti","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[41.77386,42.84124]},"id":"way/84398004"}
+,
+{"type":"Feature","properties":{"@id":"way/84398010","is_in:country":"Abkhazia; Georgia","is_in:district":"Tkvarcheli","is_in:region":"Abkhazeti","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[41.77142,42.84414]},"id":"way/84398010"}
+,
+{"type":"Feature","properties":{"@id":"way/84398019","is_in:country":"Abkhazia; Georgia","is_in:district":"Tkvarcheli","is_in:region":"Abkhazeti","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[41.77516,42.84309]},"id":"way/84398019"}
+,
+{"type":"Feature","properties":{"@id":"way/84398028","is_in:country":"Abkhazia; Georgia","is_in:district":"Tkvarcheli","is_in:region":"Abkhazeti","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[41.76542,42.84352]},"id":"way/84398028"}
+,
+{"type":"Feature","properties":{"@id":"way/84401335","disused":"yes","is_in:country":"Abkhazia; Georgia","is_in:district":"Tkvarcheli","is_in:region":"Abkhazeti","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[41.82446,42.85312]},"id":"way/84401335"}
+,
+{"type":"Feature","properties":{"@id":"way/97093854","landuse":"quarry","name":"Kopalnia Węgla Brunatnego Bełchatów","operator":"PGE","resource":"coal","website":"https://kwbbelchatow.pgegiek.pl/"},"geometry":{"type":"Point","coordinates":[19.28228,51.24337]},"id":"way/97093854"}
+,
+{"type":"Feature","properties":{"@id":"way/97458062","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[79.54995,18.66572]},"id":"way/97458062"}
+,
+{"type":"Feature","properties":{"@id":"way/97458070","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[79.5313,18.70949]},"id":"way/97458070"}
+,
+{"type":"Feature","properties":{"@id":"way/97460542","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[79.39248,18.73187]},"id":"way/97460542"}
+,
+{"type":"Feature","properties":{"@id":"way/97462435","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[79.50331,18.84268]},"id":"way/97462435"}
+,
+{"type":"Feature","properties":{"@id":"way/99283311","landuse":"quarry","resource":"coal","source":"NRCan-CanVec-7.0"},"geometry":{"type":"Point","coordinates":[-121.50064,55.12572]},"id":"way/99283311"}
+,
+{"type":"Feature","properties":{"@id":"way/99287322","landuse":"quarry","resource":"coal","source":"NRCan-CanVec-7.0"},"geometry":{"type":"Point","coordinates":[-121.50616,55.11631]},"id":"way/99287322"}
+,
+{"type":"Feature","properties":{"@id":"way/99427903","landuse":"quarry","resource":"coal","source":"NRCan-CanVec-7.0"},"geometry":{"type":"Point","coordinates":[-121.49232,55.11732]},"id":"way/99427903"}
+,
+{"type":"Feature","properties":{"@id":"way/99445652","landuse":"quarry","resource":"coal","source":"NRCan-CanVec-7.0"},"geometry":{"type":"Point","coordinates":[-121.49176,55.12694]},"id":"way/99445652"}
+,
+{"type":"Feature","properties":{"@id":"way/99505775","abandoned":"yes","landuse":"quarry","name":"Carrière de Denée","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[4.74046,50.31595]},"id":"way/99505775"}
+,
+{"type":"Feature","properties":{"@id":"way/104514382","landuse":"quarry","name":"Мугунский разрез","name:en":"Mugunsky Quarry","name:ru":"Мугунский разрез","resource":"coal"},"geometry":{"type":"Point","coordinates":[100.19872,54.43472]},"id":"way/104514382"}
+,
+{"type":"Feature","properties":{"@id":"way/106210511","end_date":"2000","landuse":"quarry","name":"Quintette Coal Mine: Wolverine and Mesa Pits","operator":"Teck Resources","quarry":"disused","resource":"coal","source":"NRCan-CanVec-7.0","start_date":"1982"},"geometry":{"type":"Point","coordinates":[-121.19477,55.02892]},"id":"way/106210511"}
+,
+{"type":"Feature","properties":{"@id":"way/106544961","landuse":"quarry","name":"Gran Corta de Fabero","resource":"coal"},"geometry":{"type":"Point","coordinates":[-6.58523,42.76908]},"id":"way/106544961"}
+,
+{"type":"Feature","properties":{"@id":"way/109004656","landuse":"quarry","name":"Nant Helen Mine","resource":"coal"},"geometry":{"type":"Point","coordinates":[-3.72367,51.7868]},"id":"way/109004656"}
+,
+{"type":"Feature","properties":{"@id":"way/109646462","end_date":"2000","landuse":"quarry","name":"Quintette coal mine: Windy Pit","operator":"Teck Resources","resource":"coal","source":"Bing Sat","start_date":"1997"},"geometry":{"type":"Point","coordinates":[-120.99794,54.93804]},"id":"way/109646462"}
+,
+{"type":"Feature","properties":{"@id":"way/109646522","end_date":"2000","landuse":"quarry","name":"Quintette Coal Mine: Shikano Pit","operator":"Teck Resources","quarry":"disused","resource":"coal","start_date":"1982"},"geometry":{"type":"Point","coordinates":[-121.02291,54.98835]},"id":"way/109646522"}
+,
+{"type":"Feature","properties":{"@id":"way/117807504","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[86.44998,23.71149]},"id":"way/117807504"}
+,
+{"type":"Feature","properties":{"@id":"way/118198721","description":"Горловский угольный разрез","landuse":"quarry","name":"Горловский участок Горловского разреза","operator":"АО «Сибирский Антрацит»","resource":"coal"},"geometry":{"type":"Point","coordinates":[83.58756,54.56902]},"id":"way/118198721"}
+,
+{"type":"Feature","properties":{"@id":"way/118198755","landuse":"quarry","name":"Ургунский участок Горловского разреза","operator":"АО «Сибирский Антрацит»","resource":"coal"},"geometry":{"type":"Point","coordinates":[83.46116,54.49868]},"id":"way/118198755"}
+,
+{"type":"Feature","properties":{"@id":"way/121782210","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[149.03387,-23.27966]},"id":"way/121782210"}
+,
+{"type":"Feature","properties":{"@id":"way/121782212","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[149.02048,-23.31276]},"id":"way/121782212"}
+,
+{"type":"Feature","properties":{"@id":"way/121782213","landuse":"quarry","name":"Jellinbah Mine","operator":"Jellinbah Resources","resource":"coal","website":"http://www.jellinbah.com.au"},"geometry":{"type":"Point","coordinates":[148.95732,-23.38704]},"id":"way/121782213"}
+,
+{"type":"Feature","properties":{"@id":"way/121782215","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[149.00889,-23.25684]},"id":"way/121782215"}
+,
+{"type":"Feature","properties":{"@id":"way/122003968","landuse":"quarry","name":"South Blackwater Mine","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[148.83068,-23.95214]},"id":"way/122003968"}
+,
+{"type":"Feature","properties":{"@id":"way/122003969","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[148.81634,-23.99899]},"id":"way/122003969"}
+,
+{"type":"Feature","properties":{"@id":"way/122003970","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[148.8281,-23.90286]},"id":"way/122003970"}
+,
+{"type":"Feature","properties":{"@id":"way/122003971","landuse":"quarry","name":"BMA Blackwater","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[148.81372,-23.74152]},"id":"way/122003971"}
+,
+{"type":"Feature","properties":{"@id":"way/122004056","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[148.88897,-23.71714]},"id":"way/122004056"}
+,
+{"type":"Feature","properties":{"@id":"way/122005987","landuse":"quarry","name":"Curragh Mine","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[148.87769,-23.44731]},"id":"way/122005987"}
+,
+{"type":"Feature","properties":{"@id":"way/124105491","CLC:code":"131","CLC:year":"2006","landuse":"quarry","name":"мина „Ораново“","resource":"coal","source":"Union européenne - SOeS, CORINE Land Cover, 2006."},"geometry":{"type":"Point","coordinates":[23.13169,41.89924]},"id":"way/124105491"}
+,
+{"type":"Feature","properties":{"@id":"way/130286544","landuse":"quarry","mineral":"coal","name":"Bradley Surface Mine","note":"outline based on footpath information","operator":"Banks Group","resource":"coal","type":"surface"},"geometry":{"type":"Point","coordinates":[-1.78826,54.86821]},"id":"way/130286544"}
+,
+{"type":"Feature","properties":{"@id":"way/131486488","disused":"yes","landuse":"quarry","man_made":"mineshaft","name":"Копанка","resource":"coal"},"geometry":{"type":"Point","coordinates":[38.83997,48.3646]},"id":"way/131486488"}
+,
+{"type":"Feature","properties":{"@id":"way/131486489","disused":"yes","landuse":"quarry","man_made":"mineshaft","mineshaft_type":"winding","name":"Копанка","resource":"coal"},"geometry":{"type":"Point","coordinates":[38.82551,48.36278]},"id":"way/131486489"}
+,
+{"type":"Feature","properties":{"@id":"way/131486490","disused":"yes","landuse":"quarry","man_made":"mineshaft","mineshaft_type":"winding","name":"Копанка","resource":"coal"},"geometry":{"type":"Point","coordinates":[38.81941,48.36171]},"id":"way/131486490"}
+,
+{"type":"Feature","properties":{"@id":"way/140231657","landuse":"quarry","name":"Belle Ayr Mine","resource":"coal","wikidata":"Q4883607","wikipedia":"en:Belle Ayr Mine"},"geometry":{"type":"Point","coordinates":[-105.36872,44.01927]},"id":"way/140231657"}
+,
+{"type":"Feature","properties":{"@id":"way/140232583","landuse":"quarry","name":"Caballo Mine","resource":"coal"},"geometry":{"type":"Point","coordinates":[-105.39802,44.15186]},"id":"way/140232583"}
+,
+{"type":"Feature","properties":{"@id":"way/140233618","landuse":"quarry","name":"Dry Fork Mine","resource":"coal","website":"https://www.westernfuels.org/member-services/mining-operations","wikidata":"Q5309515","wikipedia":"en:Dry Fork Mine"},"geometry":{"type":"Point","coordinates":[-105.45183,44.36385]},"id":"way/140233618"}
+,
+{"type":"Feature","properties":{"@id":"way/140233620","landuse":"quarry","name":"Eagle Butte Mine","resource":"coal","wikidata":"Q5325038","wikimedia_commons":"Category:Eagle Butte Mine","wikipedia":"en:Eagle Butte Mine"},"geometry":{"type":"Point","coordinates":[-105.48957,44.37007]},"id":"way/140233620"}
+,
+{"type":"Feature","properties":{"@id":"way/140233625","ele":"1254","gnis:county_name":"Campbell","gnis:created":"03/10/1997","gnis:feature_id":"1726534","gnis:feature_type":"Mine","landuse":"quarry","name":"Buckskin Mine","resource":"coal"},"geometry":{"type":"Point","coordinates":[-105.53866,44.47021]},"id":"way/140233625"}
+,
+{"type":"Feature","properties":{"@id":"way/140233628","addr:state":"WY","ele":"1297","gnis:county_name":"Campbell","gnis:created":"03/10/1997","gnis:feature_id":"1726481","gnis:feature_type":"Mine","landuse":"quarry","name":"Rawhide Mine","resource":"coal","website":"https://www.peabodyenergy.com/Operations/U-S-Mining/Powder-River-Basin-Mining/Rawhide-Mine","wikidata":"Q7296988","wikipedia":"en:Rawhide Mine"},"geometry":{"type":"Point","coordinates":[-105.51695,44.42059]},"id":"way/140233628"}
+,
+{"type":"Feature","properties":{"@id":"way/148516752","headframe":"no","landuse":"quarry","man_made":"mineshaft","mineshaft_type":"winding","name":"Копанка","resource":"coal"},"geometry":{"type":"Point","coordinates":[38.21837,48.0983]},"id":"way/148516752"}
+,
+{"type":"Feature","properties":{"@id":"way/150155639","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-81.47912,37.50528]},"id":"way/150155639"}
+,
+{"type":"Feature","properties":{"@id":"way/150155640","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-81.57376,37.5694]},"id":"way/150155640"}
+,
+{"type":"Feature","properties":{"@id":"way/150155641","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-81.56509,37.57127]},"id":"way/150155641"}
+,
+{"type":"Feature","properties":{"@id":"way/150155642","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-81.50438,37.53413]},"id":"way/150155642"}
+,
+{"type":"Feature","properties":{"@id":"way/150155643","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-81.58106,37.45066]},"id":"way/150155643"}
+,
+{"type":"Feature","properties":{"@id":"way/150155645","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-81.59459,37.46865]},"id":"way/150155645"}
+,
+{"type":"Feature","properties":{"@id":"way/150155646","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-81.52637,37.51592]},"id":"way/150155646"}
+,
+{"type":"Feature","properties":{"@id":"way/150156417","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-81.45023,37.42316]},"id":"way/150156417"}
+,
+{"type":"Feature","properties":{"@id":"way/150785956","landuse":"quarry","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[28.8485,39.91011]},"id":"way/150785956"}
+,
+{"type":"Feature","properties":{"@id":"way/153510259","landuse":"quarry","name":"Бачатский разрез","name:en":"Bachatsky Quarry","name:ru":"Бачатский разрез","operator":"УК «Кузбассразрезуголь»","resource":"coal"},"geometry":{"type":"Point","coordinates":[86.14171,54.29773]},"id":"way/153510259"}
+,
+{"type":"Feature","properties":{"@id":"way/153734446","landuse":"quarry","name":"Stockton Mine","resource":"coal","wikidata":"Q7618239"},"geometry":{"type":"Point","coordinates":[171.86873,-41.66625]},"id":"way/153734446"}
+,
+{"type":"Feature","properties":{"@id":"way/154222156","landuse":"quarry","name":"Tagebau Jänschwalde","name:hsb":"Wuglowa jama Janšojce","resource":"coal","wikidata":"Q2387872","wikipedia":"de:Tagebau Jänschwalde"},"geometry":{"type":"Point","coordinates":[14.56697,51.86284]},"id":"way/154222156"}
+,
+{"type":"Feature","properties":{"@id":"way/155197798","landuse":"quarry","name":"Tagebau Welzow-Süd","name:dsb":"Brunicowa jama Wjelcej-pódpołdnjo","name:hsb":"Brunicowa jama Wjelcej-juh","resource":"coal","wikipedia":"de:Tagebau Welzow-Süd"},"geometry":{"type":"Point","coordinates":[14.21601,51.57922]},"id":"way/155197798"}
+,
+{"type":"Feature","properties":{"@id":"way/155432705","landuse":"quarry","resource":"coal","wikidata":"Q24945491"},"geometry":{"type":"Point","coordinates":[86.30097,24.15556]},"id":"way/155432705"}
+,
+{"type":"Feature","properties":{"@id":"way/167294491","landuse":"quarry","name:en":"Gaotouyao coal mine","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[109.64336,40.05374]},"id":"way/167294491"}
+,
+{"type":"Feature","properties":{"@id":"way/167294559","landuse":"quarry","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[109.86288,40.01507]},"id":"way/167294559"}
+,
+{"type":"Feature","properties":{"@id":"way/171647813","landuse":"quarry","name":"kömür ocağı","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[35.20013,39.79643]},"id":"way/171647813"}
+,
+{"type":"Feature","properties":{"@id":"way/171647822","landuse":"quarry","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[35.16648,39.79169]},"id":"way/171647822"}
+,
+{"type":"Feature","properties":{"@id":"way/171851386","int_name":"Tavan Tolgoi","landuse":"quarry","name":"Таван-Толгой Tevan Tolgoi","name:ru":"Таван-Толгой","resource":"coal"},"geometry":{"type":"Point","coordinates":[105.46044,43.6378]},"id":"way/171851386"}
+,
+{"type":"Feature","properties":{"@id":"way/174402875","landuse":"quarry","name":"Колубара","name:sr":"Колубара","name:sr-Latn":"Kolubara","resource":"coal"},"geometry":{"type":"Point","coordinates":[20.33571,44.42983]},"id":"way/174402875"}
+,
+{"type":"Feature","properties":{"@id":"way/174402881","landuse":"quarry","name":"Колубара копови западно поље","name:sr":"Колубара копови западно поље","name:sr-Latn":"Kolubara kopovi zapadno polje","resource":"coal"},"geometry":{"type":"Point","coordinates":[20.21239,44.4809]},"id":"way/174402881"}
+,
+{"type":"Feature","properties":{"@id":"way/178602446","contact:website":"www.carbosulcis.eu","landuse":"quarry","name":"Miniera di Carbone di Monte Sinni","operator":"Carbosulcis Spa","resource":"coal"},"geometry":{"type":"Point","coordinates":[8.43574,39.21058]},"id":"way/178602446"}
+,
+{"type":"Feature","properties":{"@id":"way/180565652","landuse":"quarry","name":"Çırpılar Maden Ocağı","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[27.35604,39.80627]},"id":"way/180565652"}
+,
+{"type":"Feature","properties":{"@id":"way/186721094","landuse":"quarry","name":"Commodore Coal Mine","resource":"coal"},"geometry":{"type":"Point","coordinates":[151.26393,-27.92818]},"id":"way/186721094"}
+,
+{"type":"Feature","properties":{"@id":"way/189435727","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.70539,5.3429]},"id":"way/189435727"}
+,
+{"type":"Feature","properties":{"@id":"way/189435730","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.7015,5.3317]},"id":"way/189435730"}
+,
+{"type":"Feature","properties":{"@id":"way/189435732","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.70364,5.3322]},"id":"way/189435732"}
+,
+{"type":"Feature","properties":{"@id":"way/189435737","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-73.70394,5.32059]},"id":"way/189435737"}
+,
+{"type":"Feature","properties":{"@id":"way/189435738","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.70092,5.33386]},"id":"way/189435738"}
+,
+{"type":"Feature","properties":{"@id":"way/189594003","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-73.72228,5.31993]},"id":"way/189594003"}
+,
+{"type":"Feature","properties":{"@id":"way/189594005","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-73.72517,5.32002]},"id":"way/189594005"}
+,
+{"type":"Feature","properties":{"@id":"way/189594007","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-73.72145,5.32267]},"id":"way/189594007"}
+,
+{"type":"Feature","properties":{"@id":"way/189594016","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-73.73662,5.31212]},"id":"way/189594016"}
+,
+{"type":"Feature","properties":{"@id":"way/189594018","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-73.73405,5.30936]},"id":"way/189594018"}
+,
+{"type":"Feature","properties":{"@id":"way/189594020","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-73.72344,5.32044]},"id":"way/189594020"}
+,
+{"type":"Feature","properties":{"@id":"way/189596047","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-73.72013,5.32591]},"id":"way/189596047"}
+,
+{"type":"Feature","properties":{"@id":"way/189596048","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-73.71753,5.3237]},"id":"way/189596048"}
+,
+{"type":"Feature","properties":{"@id":"way/189596050","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-73.71941,5.3255]},"id":"way/189596050"}
+,
+{"type":"Feature","properties":{"@id":"way/189596052","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-73.72156,5.32573]},"id":"way/189596052"}
+,
+{"type":"Feature","properties":{"@id":"way/189596704","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-73.74804,5.2985]},"id":"way/189596704"}
+,
+{"type":"Feature","properties":{"@id":"way/189596705","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-73.74531,5.29727]},"id":"way/189596705"}
+,
+{"type":"Feature","properties":{"@id":"way/189596706","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-73.75594,5.29431]},"id":"way/189596706"}
+,
+{"type":"Feature","properties":{"@id":"way/189596707","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-73.75018,5.29578]},"id":"way/189596707"}
+,
+{"type":"Feature","properties":{"@id":"way/189596708","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-73.75056,5.29504]},"id":"way/189596708"}
+,
+{"type":"Feature","properties":{"@id":"way/189596709","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-73.75052,5.29311]},"id":"way/189596709"}
+,
+{"type":"Feature","properties":{"@id":"way/189596710","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-73.75363,5.29323]},"id":"way/189596710"}
+,
+{"type":"Feature","properties":{"@id":"way/189596711","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-73.7469,5.2981]},"id":"way/189596711"}
+,
+{"type":"Feature","properties":{"@id":"way/189596712","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.75669,5.29194]},"id":"way/189596712"}
+,
+{"type":"Feature","properties":{"@id":"way/189596713","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-73.74939,5.294]},"id":"way/189596713"}
+,
+{"type":"Feature","properties":{"@id":"way/189596714","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-73.75501,5.29237]},"id":"way/189596714"}
+,
+{"type":"Feature","properties":{"@id":"way/189596715","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-73.74337,5.30309]},"id":"way/189596715"}
+,
+{"type":"Feature","properties":{"@id":"way/189596716","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-73.74093,5.30709]},"id":"way/189596716"}
+,
+{"type":"Feature","properties":{"@id":"way/189597595","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.77407,5.2739]},"id":"way/189597595"}
+,
+{"type":"Feature","properties":{"@id":"way/189597596","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.76614,5.2841]},"id":"way/189597596"}
+,
+{"type":"Feature","properties":{"@id":"way/189597597","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.76578,5.2836]},"id":"way/189597597"}
+,
+{"type":"Feature","properties":{"@id":"way/189597598","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.76814,5.28117]},"id":"way/189597598"}
+,
+{"type":"Feature","properties":{"@id":"way/189597599","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.76598,5.28482]},"id":"way/189597599"}
+,
+{"type":"Feature","properties":{"@id":"way/189597600","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.77092,5.27839]},"id":"way/189597600"}
+,
+{"type":"Feature","properties":{"@id":"way/189597601","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.76138,5.28682]},"id":"way/189597601"}
+,
+{"type":"Feature","properties":{"@id":"way/189597602","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.76655,5.28253]},"id":"way/189597602"}
+,
+{"type":"Feature","properties":{"@id":"way/189597603","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.76095,5.28818]},"id":"way/189597603"}
+,
+{"type":"Feature","properties":{"@id":"way/189597604","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.76894,5.28204]},"id":"way/189597604"}
+,
+{"type":"Feature","properties":{"@id":"way/189597605","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.76294,5.28839]},"id":"way/189597605"}
+,
+{"type":"Feature","properties":{"@id":"way/189597606","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.76866,5.28058]},"id":"way/189597606"}
+,
+{"type":"Feature","properties":{"@id":"way/189597607","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.76133,5.28756]},"id":"way/189597607"}
+,
+{"type":"Feature","properties":{"@id":"way/189609125","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.69801,5.35425]},"id":"way/189609125"}
+,
+{"type":"Feature","properties":{"@id":"way/189609126","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.68888,5.35723]},"id":"way/189609126"}
+,
+{"type":"Feature","properties":{"@id":"way/189609128","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.68728,5.36795]},"id":"way/189609128"}
+,
+{"type":"Feature","properties":{"@id":"way/189609129","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.69186,5.36521]},"id":"way/189609129"}
+,
+{"type":"Feature","properties":{"@id":"way/189609130","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.70171,5.34328]},"id":"way/189609130"}
+,
+{"type":"Feature","properties":{"@id":"way/189609133","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-73.68999,5.37549]},"id":"way/189609133"}
+,
+{"type":"Feature","properties":{"@id":"way/189609134","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.68952,5.36742]},"id":"way/189609134"}
+,
+{"type":"Feature","properties":{"@id":"way/189609136","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.69298,5.3631]},"id":"way/189609136"}
+,
+{"type":"Feature","properties":{"@id":"way/189609137","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.69047,5.36486]},"id":"way/189609137"}
+,
+{"type":"Feature","properties":{"@id":"way/189609140","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.68871,5.36849]},"id":"way/189609140"}
+,
+{"type":"Feature","properties":{"@id":"way/189609141","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.68831,5.36949]},"id":"way/189609141"}
+,
+{"type":"Feature","properties":{"@id":"way/189609144","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.69889,5.35084]},"id":"way/189609144"}
+,
+{"type":"Feature","properties":{"@id":"way/189609147","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.70379,5.318]},"id":"way/189609147"}
+,
+{"type":"Feature","properties":{"@id":"way/189609148","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.6861,5.369]},"id":"way/189609148"}
+,
+{"type":"Feature","properties":{"@id":"way/189609152","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.69568,5.35469]},"id":"way/189609152"}
+,
+{"type":"Feature","properties":{"@id":"way/189609154","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.70016,5.34246]},"id":"way/189609154"}
+,
+{"type":"Feature","properties":{"@id":"way/189609170","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.68993,5.35779]},"id":"way/189609170"}
+,
+{"type":"Feature","properties":{"@id":"way/189609172","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-73.68702,5.37521]},"id":"way/189609172"}
+,
+{"type":"Feature","properties":{"@id":"way/189609174","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.7022,5.32059]},"id":"way/189609174"}
+,
+{"type":"Feature","properties":{"@id":"way/189609176","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.70104,5.34369]},"id":"way/189609176"}
+,
+{"type":"Feature","properties":{"@id":"way/189609178","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-73.70348,5.36794]},"id":"way/189609178"}
+,
+{"type":"Feature","properties":{"@id":"way/189609180","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.69889,5.35448]},"id":"way/189609180"}
+,
+{"type":"Feature","properties":{"@id":"way/189609182","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.70318,5.31914]},"id":"way/189609182"}
+,
+{"type":"Feature","properties":{"@id":"way/189609191","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.69718,5.35522]},"id":"way/189609191"}
+,
+{"type":"Feature","properties":{"@id":"way/189609198","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.6961,5.35692]},"id":"way/189609198"}
+,
+{"type":"Feature","properties":{"@id":"way/189609200","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.69263,5.3567]},"id":"way/189609200"}
+,
+{"type":"Feature","properties":{"@id":"way/189609205","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.69463,5.35738]},"id":"way/189609205"}
+,
+{"type":"Feature","properties":{"@id":"way/189611571","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.80126,5.23585]},"id":"way/189611571"}
+,
+{"type":"Feature","properties":{"@id":"way/189611572","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.8083,5.22978]},"id":"way/189611572"}
+,
+{"type":"Feature","properties":{"@id":"way/189611573","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.80729,5.22961]},"id":"way/189611573"}
+,
+{"type":"Feature","properties":{"@id":"way/189611574","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.80584,5.23111]},"id":"way/189611574"}
+,
+{"type":"Feature","properties":{"@id":"way/189611575","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.80527,5.23157]},"id":"way/189611575"}
+,
+{"type":"Feature","properties":{"@id":"way/191795335","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.77722,5.23303]},"id":"way/191795335"}
+,
+{"type":"Feature","properties":{"@id":"way/191795337","landuse":"quarry","resource":"coal","source":"approximate"},"geometry":{"type":"Point","coordinates":[-73.77725,5.22896]},"id":"way/191795337"}
+,
+{"type":"Feature","properties":{"@id":"way/191795339","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.77638,5.23034]},"id":"way/191795339"}
+,
+{"type":"Feature","properties":{"@id":"way/191808737","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-110.61267,41.78838]},"id":"way/191808737"}
+,
+{"type":"Feature","properties":{"@id":"way/192528821","landuse":"quarry","name":"Moatize Coal Mine","operator":"Vale","resource":"coal"},"geometry":{"type":"Point","coordinates":[33.81724,-16.18539]},"id":"way/192528821"}
+,
+{"type":"Feature","properties":{"@id":"way/193102363","landuse":"quarry","name":"准噶尔煤田","name:en":"Junggar Coalfield","resource":"coal"},"geometry":{"type":"Point","coordinates":[111.23417,39.75344]},"id":"way/193102363"}
+,
+{"type":"Feature","properties":{"@id":"way/193516760","int_name":"Rudnik Oslomej-Istok","landuse":"quarry","name":"Рудник „Осломеј - Исток“","name:en":"Oslomej-East Coal Pit","resource":"coal"},"geometry":{"type":"Point","coordinates":[21.00626,41.55888]},"id":"way/193516760"}
+,
+{"type":"Feature","properties":{"@id":"way/194648663","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[25.88073,42.76293]},"id":"way/194648663"}
+,
+{"type":"Feature","properties":{"@id":"way/194697304","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[149.79922,-24.15296]},"id":"way/194697304"}
+,
+{"type":"Feature","properties":{"@id":"way/195201002","landuse":"quarry","owner":"KEK","resource":"coal"},"geometry":{"type":"Point","coordinates":[21.01346,42.65948]},"id":"way/195201002"}
+,
+{"type":"Feature","properties":{"@id":"way/196250634","landuse":"quarry","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[150.86688,-32.38604]},"id":"way/196250634"}
+,
+{"type":"Feature","properties":{"@id":"way/196251691","landuse":"quarry","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[151.07015,-32.6039]},"id":"way/196251691"}
+,
+{"type":"Feature","properties":{"@id":"way/196251692","landuse":"quarry","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[151.07492,-32.40044]},"id":"way/196251692"}
+,
+{"type":"Feature","properties":{"@id":"way/196251693","landuse":"quarry","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[150.96296,-32.44623]},"id":"way/196251693"}
+,
+{"type":"Feature","properties":{"@id":"way/196251694","landuse":"quarry","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[151.08743,-32.66544]},"id":"way/196251694"}
+,
+{"type":"Feature","properties":{"@id":"way/196251695","landuse":"quarry","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[151.10519,-32.39021]},"id":"way/196251695"}
+,
+{"type":"Feature","properties":{"@id":"way/196251696","landuse":"quarry","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[151.0409,-32.4518]},"id":"way/196251696"}
+,
+{"type":"Feature","properties":{"@id":"way/196251698","landuse":"quarry","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[150.98666,-32.50748]},"id":"way/196251698"}
+,
+{"type":"Feature","properties":{"@id":"way/196251699","landuse":"quarry","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[151.03182,-32.37531]},"id":"way/196251699"}
+,
+{"type":"Feature","properties":{"@id":"way/196251700","landuse":"quarry","name":"Liddell Coal Mine","operator":"Glencore","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[151.01778,-32.38695]},"id":"way/196251700"}
+,
+{"type":"Feature","properties":{"@id":"way/196251701","landuse":"quarry","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[150.98591,-32.5673]},"id":"way/196251701"}
+,
+{"type":"Feature","properties":{"@id":"way/196251702","landuse":"quarry","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[151.03215,-32.52226]},"id":"way/196251702"}
+,
+{"type":"Feature","properties":{"@id":"way/196527355","landuse":"quarry","name":"Khadia Mine","operator":"Northern Coalfields Limited","resource":"coal"},"geometry":{"type":"Point","coordinates":[82.71449,24.13373]},"id":"way/196527355"}
+,
+{"type":"Feature","properties":{"@id":"way/196935283","landuse":"quarry","name":"Mine","operator":"Northern Coalfields Limited","resource":"coal"},"geometry":{"type":"Point","coordinates":[82.76157,24.1876]},"id":"way/196935283"}
+,
+{"type":"Feature","properties":{"@id":"way/196935284","landuse":"quarry","name":"Bina Mine","operator":"Northern Coalfields Limited","resource":"coal"},"geometry":{"type":"Point","coordinates":[82.74884,24.15494]},"id":"way/196935284"}
+,
+{"type":"Feature","properties":{"@id":"way/196953748","fixme":"name?","is_in:country":"Abkhazia; Georgia","is_in:district":"Tkvarcheli","is_in:region":"Abkhazeti","landuse":"quarry","operator":"Tkuarchal-Ugol","resource":"coal"},"geometry":{"type":"Point","coordinates":[41.80658,42.92983]},"id":"way/196953748"}
+,
+{"type":"Feature","properties":{"@id":"way/197159959","landuse":"quarry","name":"Amlohri Mine","operator":"Northern Coalfields Limited","resource":"coal"},"geometry":{"type":"Point","coordinates":[82.60186,24.13094]},"id":"way/197159959"}
+,
+{"type":"Feature","properties":{"@id":"way/197159960","landuse":"quarry","name":"Dudhichua Mine","operator":"Northern Coalfields Limited","resource":"coal"},"geometry":{"type":"Point","coordinates":[82.69392,24.14991]},"id":"way/197159960"}
+,
+{"type":"Feature","properties":{"@id":"way/197159969","landuse":"quarry","name":"Jayant Mine","operator":"Northern Coalfields Limited","resource":"coal"},"geometry":{"type":"Point","coordinates":[82.66279,24.16697]},"id":"way/197159969"}
+,
+{"type":"Feature","properties":{"@id":"way/197159970","landuse":"quarry","name":"Jhingurdah Mine","operator":"Northern Coalfields Limited","resource":"coal"},"geometry":{"type":"Point","coordinates":[82.71986,24.20638]},"id":"way/197159970"}
+,
+{"type":"Feature","properties":{"@id":"way/197159971","landuse":"quarry","name":"Kakri Mine","operator":"Northern Coalfields Limited","resource":"coal"},"geometry":{"type":"Point","coordinates":[82.75114,24.1748]},"id":"way/197159971"}
+,
+{"type":"Feature","properties":{"@id":"way/197159973","landuse":"quarry","name":"Nigahi Mine","operator":"Northern Coalfields Limited","resource":"coal"},"geometry":{"type":"Point","coordinates":[82.61367,24.15152]},"id":"way/197159973"}
+,
+{"type":"Feature","properties":{"@id":"way/200979851","landuse":"quarry","name":"Угольное месторождение АПСАТ","resource":"coal"},"geometry":{"type":"Point","coordinates":[118.19602,57.12216]},"id":"way/200979851"}
+,
+{"type":"Feature","properties":{"@id":"way/208423367","landuse":"quarry","name:en":"Jalai Nur Coal Mines","resource":"coal"},"geometry":{"type":"Point","coordinates":[117.72911,49.39932]},"id":"way/208423367"}
+,
+{"type":"Feature","properties":{"@id":"way/209418940","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.69122,5.26985]},"id":"way/209418940"}
+,
+{"type":"Feature","properties":{"@id":"way/209418942","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.70707,5.24992]},"id":"way/209418942"}
+,
+{"type":"Feature","properties":{"@id":"way/209442709","landuse":"quarry","man_made":"adit","name":"Mina Fonfría","resource":"coal"},"geometry":{"type":"Point","coordinates":[-6.37053,42.97209]},"id":"way/209442709"}
+,
+{"type":"Feature","properties":{"@id":"way/209442713","landuse":"quarry","name":"Cielo Abierto Cerredo","operator":"Coto Minero Cantábrico","resource":"coal"},"geometry":{"type":"Point","coordinates":[-6.46196,42.96233]},"id":"way/209442713"}
+,
+{"type":"Feature","properties":{"@id":"way/212324446","landuse":"quarry","name":"ELİ Deniş Açık Kömür İşletmeleri","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[27.72622,39.24675]},"id":"way/212324446"}
+,
+{"type":"Feature","properties":{"@id":"way/215335054","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-74.02107,5.10896]},"id":"way/215335054"}
+,
+{"type":"Feature","properties":{"@id":"way/219527589","landuse":"quarry","name":"Maddingley Brown Coal","resource":"coal","website":"https://www.maddingleybrowncoal.com.au/"},"geometry":{"type":"Point","coordinates":[144.44208,-37.70259]},"id":"way/219527589"}
+,
+{"type":"Feature","properties":{"@id":"way/219814385","landuse":"quarry","mineshaft_type":"winding","name":"Копанки","resource":"coal"},"geometry":{"type":"Point","coordinates":[38.08598,47.98641]},"id":"way/219814385"}
+,
+{"type":"Feature","properties":{"@id":"way/219868203","landuse":"quarry","name":"Cереульский разрез","name:en":"Sereulsky Quarry","name:ru":"Cереульский разрез","resource":"coal"},"geometry":{"type":"Point","coordinates":[90.61104,55.80273]},"id":"way/219868203"}
+,
+{"type":"Feature","properties":{"@id":"way/220019540","landuse":"quarry","name":"煤矿","resource":"coal"},"geometry":{"type":"Point","coordinates":[119.60792,45.53549]},"id":"way/220019540"}
+,
+{"type":"Feature","properties":{"@id":"way/224959456","landuse":"quarry","name":"Крутихинский участок Колыванского разреза","operator":"АО «Сибирский Антрацит»","resource":"coal"},"geometry":{"type":"Point","coordinates":[83.59898,54.68294]},"id":"way/224959456"}
+,
+{"type":"Feature","properties":{"@id":"way/224959457","landuse":"quarry","name":"Северный участок Колыванского разреза","operator":"АО «Сибирский Антрацит»","resource":"coal"},"geometry":{"type":"Point","coordinates":[83.62977,54.684]},"id":"way/224959457"}
+,
+{"type":"Feature","properties":{"@id":"way/225917379","landuse":"quarry","name":"East Pit - East","resource":"coal"},"geometry":{"type":"Point","coordinates":[-3.83902,51.80035]},"id":"way/225917379"}
+,
+{"type":"Feature","properties":{"@id":"way/228403156","landuse":"quarry","name":"Нарийн Сухайтын чулуун нүүрсний уурхай","name:en":"Nariin Sukhait Coal Mine","resource":"coal","wikidata":"Q6965922","wikipedia":"en:Nariin Sukhait Coal Mine"},"geometry":{"type":"Point","coordinates":[101.183,43.00416]},"id":"way/228403156"}
+,
+{"type":"Feature","properties":{"@id":"way/229042002","landuse":"quarry","name":"Griffin Coal Mine","resource":"coal","wikidata":"Q17005880"},"geometry":{"type":"Point","coordinates":[116.31593,-33.42807]},"id":"way/229042002"}
+,
+{"type":"Feature","properties":{"@id":"way/229042003","landuse":"quarry","name":"Premier Coal Mine","phone":"+61 8 9780 2222","resource":"coal","website":"http://www.premiercoal.com.au/","wikidata":"Q56255219"},"geometry":{"type":"Point","coordinates":[116.29221,-33.3839]},"id":"way/229042003"}
+,
+{"type":"Feature","properties":{"@id":"way/230288478","landuse":"quarry","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[101.53817,45.69938]},"id":"way/230288478"}
+,
+{"type":"Feature","properties":{"@id":"way/234366651","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.75643,5.28903]},"id":"way/234366651"}
+,
+{"type":"Feature","properties":{"@id":"way/234366652","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.75929,5.28575]},"id":"way/234366652"}
+,
+{"type":"Feature","properties":{"@id":"way/234366653","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.76135,5.2846]},"id":"way/234366653"}
+,
+{"type":"Feature","properties":{"@id":"way/234366654","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.75789,5.28718]},"id":"way/234366654"}
+,
+{"type":"Feature","properties":{"@id":"way/235160388","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[103.19701,23.81936]},"id":"way/235160388"}
+,
+{"type":"Feature","properties":{"@id":"way/235337375","landuse":"quarry","name":"Kopalnia Węgla Brunatnego","resource":"coal"},"geometry":{"type":"Point","coordinates":[18.6512,52.09995]},"id":"way/235337375"}
+,
+{"type":"Feature","properties":{"@id":"way/235488892","landuse":"quarry","name":"Kopalnia Węgla Brunatnego","resource":"coal"},"geometry":{"type":"Point","coordinates":[18.63087,52.01579]},"id":"way/235488892"}
+,
+{"type":"Feature","properties":{"@id":"way/235493316","landuse":"quarry","name":"Kopalnia Węgla Brunatnego","resource":"coal"},"geometry":{"type":"Point","coordinates":[18.65785,52.0854]},"id":"way/235493316"}
+,
+{"type":"Feature","properties":{"@id":"way/235494250","landuse":"quarry","name":"Kopalnia Węgla Brunatnego","resource":"coal"},"geometry":{"type":"Point","coordinates":[18.67193,52.09558]},"id":"way/235494250"}
+,
+{"type":"Feature","properties":{"@id":"way/236502039","landuse":"quarry","name":"Bloomfield Colliery","resource":"coal"},"geometry":{"type":"Point","coordinates":[151.5729,-32.80145]},"id":"way/236502039"}
+,
+{"type":"Feature","properties":{"@id":"way/236503165","landuse":"quarry","name":"Abel Underground Colliery","resource":"coal","underground":"yes"},"geometry":{"type":"Point","coordinates":[151.59246,-32.84452]},"id":"way/236503165"}
+,
+{"type":"Feature","properties":{"@id":"way/237665747","landuse":"quarry","name":"Donaldson Open Cut Coal Mine","resource":"coal"},"geometry":{"type":"Point","coordinates":[151.61514,-32.80781]},"id":"way/237665747"}
+,
+{"type":"Feature","properties":{"@id":"way/238454732","alt_name:en":"Mae Moh Mine","contact:website":"http://maemohmine.egat.co.th/","fixme":"area boundary approximate","landuse":"quarry","name":"เหมืองแม่เมาะ","name:en":"Mae Mo Mine","name:th":"เหมืองแม่เมาะ","operator":"Electricity Generating Authority of Thailand","resource":"coal"},"geometry":{"type":"Point","coordinates":[99.72524,18.33421]},"id":"way/238454732"}
+,
+{"type":"Feature","properties":{"@id":"way/239509345","landuse":"quarry","resource":"coal","source":"NRCan-CanVec-10.0"},"geometry":{"type":"Point","coordinates":[-62.67385,45.56487]},"id":"way/239509345"}
+,
+{"type":"Feature","properties":{"@id":"way/241860219","ele":"2278","gnis:feature_id":"194615","landuse":"quarry","name":"New Elk Mine","old_name":"Allen Mine","operator":"Cline Mining Corp","resource":"coal","source":"http://www.coalage.com/index.php/features/594-cline-revives-new-elk-in-colorado.html"},"geometry":{"type":"Point","coordinates":[-104.96446,37.16331]},"id":"way/241860219"}
+,
+{"type":"Feature","properties":{"@id":"way/242579955","landuse":"quarry","name":"Anou Araren","name:ar":"أنو أرارن","operator":"SONICHAR","resource":"coal","start_date":"1980"},"geometry":{"type":"Point","coordinates":[7.8583,17.28437]},"id":"way/242579955"}
+,
+{"type":"Feature","properties":{"@id":"way/242742362","landuse":"quarry","man_made":"mineshaft","name":"kömür ocağı","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[26.70462,40.91075]},"id":"way/242742362"}
+,
+{"type":"Feature","properties":{"@id":"way/244814873","landuse":"quarry","man_made":"mineshaft","name":"Апартакский разрез","name:ru":"Апартакский разрез","resource":"coal"},"geometry":{"type":"Point","coordinates":[70.1313,41.06273]},"id":"way/244814873"}
+,
+{"type":"Feature","properties":{"@id":"way/246480104","addr:country":"RU","addr:district":"Абанский район","addr:region":"Красноярский край","landuse":"quarry","name":"Разрез угольный \"Абанский\"","resource":"coal"},"geometry":{"type":"Point","coordinates":[96.14591,56.69303]},"id":"way/246480104"}
+,
+{"type":"Feature","properties":{"@id":"way/248303220","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-6.52796,42.73747]},"id":"way/248303220"}
+,
+{"type":"Feature","properties":{"@id":"way/249784096","landuse":"quarry","name":"Maamba Collieries Limited (coal mining)","resource":"coal","source":"http://www.maambacoal.com"},"geometry":{"type":"Point","coordinates":[27.17726,-17.35935]},"id":"way/249784096"}
+,
+{"type":"Feature","properties":{"@id":"way/258018485","landuse":"quarry","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[151.11129,-32.69295]},"id":"way/258018485"}
+,
+{"type":"Feature","properties":{"@id":"way/258018486","landuse":"quarry","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[151.11269,-32.71289]},"id":"way/258018486"}
+,
+{"type":"Feature","properties":{"@id":"way/259475911","landuse":"quarry","name":"Collinsville Coal Mine","resource":"coal"},"geometry":{"type":"Point","coordinates":[147.80897,-20.55684]},"id":"way/259475911"}
+,
+{"type":"Feature","properties":{"@id":"way/262266868","landuse":"quarry","name":"Cielo abierto de Buseiro","operator":"Unión Minera del Norte","resource":"coal"},"geometry":{"type":"Point","coordinates":[-6.43294,43.26358]},"id":"way/262266868"}
+,
+{"type":"Feature","properties":{"@id":"way/266298296","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[147.99119,-41.632]},"id":"way/266298296"}
+,
+{"type":"Feature","properties":{"@id":"way/267304379","landuse":"quarry","name":"Mina Casilda","resource":"coal"},"geometry":{"type":"Point","coordinates":[-6.22383,42.74103]},"id":"way/267304379"}
+,
+{"type":"Feature","properties":{"@id":"way/267304392","landuse":"quarry","name":"Mina don José","resource":"coal"},"geometry":{"type":"Point","coordinates":[-6.24131,42.74329]},"id":"way/267304392"}
+,
+{"type":"Feature","properties":{"@id":"way/267304396","landuse":"quarry","name":"Mina Alto Bierzo","resource":"coal"},"geometry":{"type":"Point","coordinates":[-6.19906,42.74117]},"id":"way/267304396"}
+,
+{"type":"Feature","properties":{"@id":"way/275609847","landuse":"quarry","name":"Grosvenor Coal Mine","resource":"coal"},"geometry":{"type":"Point","coordinates":[147.99746,-21.94872]},"id":"way/275609847"}
+,
+{"type":"Feature","properties":{"@id":"way/279251743","landuse":"quarry","name":"Mina La Pequeña","resource":"coal"},"geometry":{"type":"Point","coordinates":[-6.38335,42.67443]},"id":"way/279251743"}
+,
+{"type":"Feature","properties":{"@id":"way/279251745","landuse":"quarry","name":"Mina La Pequeña","resource":"coal"},"geometry":{"type":"Point","coordinates":[-6.38034,42.67251]},"id":"way/279251745"}
+,
+{"type":"Feature","properties":{"@id":"way/279251746","landuse":"quarry","name":"Mina La Pequeña","resource":"coal"},"geometry":{"type":"Point","coordinates":[-6.38387,42.67858]},"id":"way/279251746"}
+,
+{"type":"Feature","properties":{"@id":"way/282881696","landuse":"quarry","name":"Nuurst Khotgor Coal Mine","resource":"coal","wikidata":"Q6402617","wikipedia":"en:Khotgor Coal Mine, Uvs"},"geometry":{"type":"Point","coordinates":[90.89628,49.85033]},"id":"way/282881696"}
+,
+{"type":"Feature","properties":{"@id":"way/284458437","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.9077,5.13112]},"id":"way/284458437"}
+,
+{"type":"Feature","properties":{"@id":"way/284458439","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.91484,5.16377]},"id":"way/284458439"}
+,
+{"type":"Feature","properties":{"@id":"way/284458441","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.92069,5.15536]},"id":"way/284458441"}
+,
+{"type":"Feature","properties":{"@id":"way/284458442","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.93194,5.13601]},"id":"way/284458442"}
+,
+{"type":"Feature","properties":{"@id":"way/284458443","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-73.92313,5.14459]},"id":"way/284458443"}
+,
+{"type":"Feature","properties":{"@id":"way/293257531","landuse":"quarry","name":"srm","resource":"coal"},"geometry":{"type":"Point","coordinates":[148.27456,-22.35273]},"id":"way/293257531"}
+,
+{"type":"Feature","properties":{"@id":"way/293258217","landuse":"quarry","name":"Isaac Plains Coal Mine","resource":"coal"},"geometry":{"type":"Point","coordinates":[148.124,-21.96395]},"id":"way/293258217"}
+,
+{"type":"Feature","properties":{"@id":"way/293258283","landuse":"quarry","name":"Moranbah North Coal Mine","resource":"coal"},"geometry":{"type":"Point","coordinates":[147.99445,-21.89918]},"id":"way/293258283"}
+,
+{"type":"Feature","properties":{"@id":"way/293334641","landuse":"quarry","name":"Former Hay Royds Colliery","resource":"coal"},"geometry":{"type":"Point","coordinates":[-1.62429,53.5803]},"id":"way/293334641"}
+,
+{"type":"Feature","properties":{"@id":"way/294309794","landuse":"quarry","operator":"Glencoal","resource":"coal"},"geometry":{"type":"Point","coordinates":[175.20262,-37.28014]},"id":"way/294309794"}
+,
+{"type":"Feature","properties":{"@id":"way/294309796","FIXME":"is this quarry still used?","landuse":"quarry","operator":"Glencoal","resource":"coal"},"geometry":{"type":"Point","coordinates":[175.17408,-37.26755]},"id":"way/294309796"}
+,
+{"type":"Feature","properties":{"@id":"way/297565073","landuse":"quarry","name":"Mina a Cielo Abierto Corta Pastora","operator":"Hullera Vasco Leonesa","resource":"coal"},"geometry":{"type":"Point","coordinates":[-5.59851,42.86486]},"id":"way/297565073"}
+,
+{"type":"Feature","properties":{"@id":"way/310872871","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-107.80846,40.30414]},"id":"way/310872871"}
+,
+{"type":"Feature","properties":{"@id":"way/311415152","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-81.76635,38.16643]},"id":"way/311415152"}
+,
+{"type":"Feature","properties":{"@id":"way/312002481","landuse":"quarry","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[115.22233,-2.94157]},"id":"way/312002481"}
+,
+{"type":"Feature","properties":{"@id":"way/312002482","landuse":"quarry","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[115.20037,-2.9985]},"id":"way/312002482"}
+,
+{"type":"Feature","properties":{"@id":"way/312002506","landuse":"quarry","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[115.26086,-2.89568]},"id":"way/312002506"}
+,
+{"type":"Feature","properties":{"@id":"way/312674654","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-81.7295,37.6496]},"id":"way/312674654"}
+,
+{"type":"Feature","properties":{"@id":"way/312674655","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-81.76731,37.63453]},"id":"way/312674655"}
+,
+{"type":"Feature","properties":{"@id":"way/312674666","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-82.15466,37.68447]},"id":"way/312674666"}
+,
+{"type":"Feature","properties":{"@id":"way/312679596","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-81.96513,37.60374]},"id":"way/312679596"}
+,
+{"type":"Feature","properties":{"@id":"way/312679605","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-81.91713,37.62271]},"id":"way/312679605"}
+,
+{"type":"Feature","properties":{"@id":"way/317343548","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[125.43717,39.48529]},"id":"way/317343548"}
+,
+{"type":"Feature","properties":{"@id":"way/317343549","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[125.42338,39.49278]},"id":"way/317343549"}
+,
+{"type":"Feature","properties":{"@id":"way/317343550","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[125.4429,39.48583]},"id":"way/317343550"}
+,
+{"type":"Feature","properties":{"@id":"way/330851579","contact:website":"www.carbosulcis.eu","historic":"industrial","landuse":"quarry","name":"Ex Miniera di Carbone di Seruci","operator":"Carbosulcis Spa","resource":"coal"},"geometry":{"type":"Point","coordinates":[8.41721,39.24127]},"id":"way/330851579"}
+,
+{"type":"Feature","properties":{"@id":"way/334997086","landuse":"quarry","name":"Тулунский разрез","name:en":"Tulunsky Quarry","name:ru":"Тулунский разрез","resource":"coal"},"geometry":{"type":"Point","coordinates":[100.8321,54.51262]},"id":"way/334997086"}
+,
+{"type":"Feature","properties":{"@id":"way/336191640","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[152.8288,-27.61481]},"id":"way/336191640"}
+,
+{"type":"Feature","properties":{"@id":"way/336191642","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[152.82812,-27.62542]},"id":"way/336191642"}
+,
+{"type":"Feature","properties":{"@id":"way/340671986","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[29.34666,-26.20487]},"id":"way/340671986"}
+,
+{"type":"Feature","properties":{"@id":"way/343903448","historic":"mine","landuse":"quarry","name":"Taaibos Mine","resource":"coal"},"geometry":{"type":"Point","coordinates":[30.34152,-26.85134]},"id":"way/343903448"}
+,
+{"type":"Feature","properties":{"@id":"way/347818354","landuse":"quarry","name":"kömür ocağı","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[38.29317,38.63398]},"id":"way/347818354"}
+,
+{"type":"Feature","properties":{"@id":"way/347818355","landuse":"quarry","name":"kömür ocağı","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[38.30134,38.63253]},"id":"way/347818355"}
+,
+{"type":"Feature","properties":{"@id":"way/368113225","landuse":"quarry","name":"Cielo abierto Feisolín","resource":"coal"},"geometry":{"type":"Point","coordinates":[-6.34139,42.98117]},"id":"way/368113225"}
+,
+{"type":"Feature","properties":{"@id":"way/370397222","landuse":"quarry","name":"Kopalnia Węgla Brunatnego \"Konin\" odkrywka Drzewce","resource":"coal"},"geometry":{"type":"Point","coordinates":[18.51795,52.27641]},"id":"way/370397222"}
+,
+{"type":"Feature","properties":{"@id":"way/373354955","landuse":"quarry","name":"Clermont Coal Mine","resource":"coal"},"geometry":{"type":"Point","coordinates":[147.63096,-22.71234]},"id":"way/373354955"}
+,
+{"type":"Feature","properties":{"@id":"way/374106777","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-107.46831,38.92874]},"id":"way/374106777"}
+,
+{"type":"Feature","properties":{"@id":"way/383955702","landuse":"quarry","name":"Takitimu Coal Mine","resource":"coal"},"geometry":{"type":"Point","coordinates":[168.03134,-45.96]},"id":"way/383955702"}
+,
+{"type":"Feature","properties":{"@id":"way/384847460","landuse":"quarry","name":"West Elk Mine","note":"this is not a quarry, but the surface part of a large mine. This tag seemed to be most appropriate.","operator":"Arch Coal, Inc.","resource":"coal"},"geometry":{"type":"Point","coordinates":[-107.44612,38.92581]},"id":"way/384847460"}
+,
+{"type":"Feature","properties":{"@id":"way/394142749","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[67.34751,29.82794]},"id":"way/394142749"}
+,
+{"type":"Feature","properties":{"@id":"way/394142750","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[67.33883,29.82662]},"id":"way/394142750"}
+,
+{"type":"Feature","properties":{"@id":"way/394142751","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[67.34589,29.82376]},"id":"way/394142751"}
+,
+{"type":"Feature","properties":{"@id":"way/396387214","landuse":"quarry","name":"Newstan Colliery","operator":"Centennial Coal","resource":"coal"},"geometry":{"type":"Point","coordinates":[151.56906,-32.97731]},"id":"way/396387214"}
+,
+{"type":"Feature","properties":{"@id":"way/396909493","landuse":"quarry","name":"PTBA TAL","resource":"coal"},"geometry":{"type":"Point","coordinates":[103.77783,-3.74097]},"id":"way/396909493"}
+,
+{"type":"Feature","properties":{"@id":"way/396909494","landuse":"quarry","name":"PTBA MTB","resource":"coal"},"geometry":{"type":"Point","coordinates":[103.76549,-3.714]},"id":"way/396909494"}
+,
+{"type":"Feature","properties":{"@id":"way/396910683","landuse":"quarry","name":"PTBA MTBU","resource":"coal"},"geometry":{"type":"Point","coordinates":[103.73647,-3.73036]},"id":"way/396910683"}
+,
+{"type":"Feature","properties":{"@id":"way/399051970","landuse":"quarry","name":"Medard - Libík","resource":"coal"},"geometry":{"type":"Point","coordinates":[12.61105,50.19158]},"id":"way/399051970"}
+,
+{"type":"Feature","properties":{"@id":"way/399367604","landuse":"quarry","name":"Bailey Mine","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-80.40407,39.96306]},"id":"way/399367604"}
+,
+{"type":"Feature","properties":{"@id":"way/400534290","landuse":"quarry","name":"开滦林西矿","name:zh":"开滦林西矿","resource":"coal"},"geometry":{"type":"Point","coordinates":[118.44241,39.72375]},"id":"way/400534290"}
+,
+{"type":"Feature","properties":{"@id":"way/402191714","landuse":"quarry","name":"Braña de Eiroa","operator":"Coto Minero Cantábrico","resource":"coal"},"geometry":{"type":"Point","coordinates":[-6.78064,42.92726]},"id":"way/402191714"}
+,
+{"type":"Feature","properties":{"@id":"way/402191715","landuse":"quarry","name":"C.A. Área Noreste de Tormaleo","operator":"Coto Minero Cantábrico","resource":"coal"},"geometry":{"type":"Point","coordinates":[-6.73081,42.93885]},"id":"way/402191715"}
+,
+{"type":"Feature","properties":{"@id":"way/402191716","landuse":"quarry","name":"Tormaleo (Abundancia y otras)","operator":"Coto Minero Cantábrico","resource":"coal"},"geometry":{"type":"Point","coordinates":[-6.75396,42.94484]},"id":"way/402191716"}
+,
+{"type":"Feature","properties":{"@id":"way/408936111","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[103.84817,35.94477]},"id":"way/408936111"}
+,
+{"type":"Feature","properties":{"@id":"way/415330319","historic":"yes","landuse":"quarry","name":"Sandpit","natural":"scrub","quarry":"abandoned","resource":"coal"},"geometry":{"type":"Point","coordinates":[1.53075,52.658]},"id":"way/415330319"}
+,
+{"type":"Feature","properties":{"@id":"way/425310042","landuse":"quarry","name":"Escarpment Mine Project","resource":"coal","wikidata":"Q5397132"},"geometry":{"type":"Point","coordinates":[171.80324,-41.77901]},"id":"way/425310042"}
+,
+{"type":"Feature","properties":{"@id":"way/431423591","historic":"yes","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[3.55603,47.9291]},"id":"way/431423591"}
+,
+{"type":"Feature","properties":{"@id":"way/432168180","historic":"yes","landuse":"quarry","name":"Dawna kopalnia Michałów","resource":"coal","wikidata":"Q15714849","wikipedia":"pl:Kopalnia Michałów w Sławkowie"},"geometry":{"type":"Point","coordinates":[19.33372,50.27096]},"id":"way/432168180"}
+,
+{"type":"Feature","properties":{"@id":"way/432474651","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-74.01144,5.12611]},"id":"way/432474651"}
+,
+{"type":"Feature","properties":{"@id":"way/432474652","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-74.0095,5.12587]},"id":"way/432474652"}
+,
+{"type":"Feature","properties":{"@id":"way/436073896","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-2.44663,31.54813]},"id":"way/436073896"}
+,
+{"type":"Feature","properties":{"@id":"way/436073897","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-2.419,31.5531]},"id":"way/436073897"}
+,
+{"type":"Feature","properties":{"@id":"way/436073898","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-2.42021,31.54993]},"id":"way/436073898"}
+,
+{"type":"Feature","properties":{"@id":"way/436073899","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-2.41828,31.55408]},"id":"way/436073899"}
+,
+{"type":"Feature","properties":{"@id":"way/436073900","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-2.42187,31.55276]},"id":"way/436073900"}
+,
+{"type":"Feature","properties":{"@id":"way/436073901","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-2.42862,31.54403]},"id":"way/436073901"}
+,
+{"type":"Feature","properties":{"@id":"way/436073902","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-2.3734,31.55396]},"id":"way/436073902"}
+,
+{"type":"Feature","properties":{"@id":"way/436073903","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-2.40317,31.54688]},"id":"way/436073903"}
+,
+{"type":"Feature","properties":{"@id":"way/436073904","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-2.44502,31.5437]},"id":"way/436073904"}
+,
+{"type":"Feature","properties":{"@id":"way/436073905","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-2.46464,31.54787]},"id":"way/436073905"}
+,
+{"type":"Feature","properties":{"@id":"way/436073906","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-2.41542,31.54535]},"id":"way/436073906"}
+,
+{"type":"Feature","properties":{"@id":"way/436073907","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-2.39759,31.55605]},"id":"way/436073907"}
+,
+{"type":"Feature","properties":{"@id":"way/436073908","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-2.41789,31.55689]},"id":"way/436073908"}
+,
+{"type":"Feature","properties":{"@id":"way/446383120","landuse":"quarry","name":"Бошняковский разрез","operator":"ООО Бошняковский угольный разрез","resource":"coal"},"geometry":{"type":"Point","coordinates":[142.21725,49.58971]},"id":"way/446383120"}
+,
+{"type":"Feature","properties":{"@id":"way/446571486","historic":"yes","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-101.66853,35.61069]},"id":"way/446571486"}
+,
+{"type":"Feature","properties":{"@id":"way/446571487","historic":"yes","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-101.66582,35.61057]},"id":"way/446571487"}
+,
+{"type":"Feature","properties":{"@id":"way/449193384","historic":"yes","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[16.40871,50.67323]},"id":"way/449193384"}
+,
+{"type":"Feature","properties":{"@id":"way/452922064","landuse":"quarry","name":"San Miguel Lignite Mine","resource":"coal"},"geometry":{"type":"Point","coordinates":[-98.3975,28.73387]},"id":"way/452922064"}
+,
+{"type":"Feature","properties":{"@id":"way/455844561","addr:state":"AZ","ele":"508","gnis:county_name":"Pima","gnis:created":"02/08/1980","gnis:feature_id":"35778","gnis:feature_type":"Mine","historic":"yes","landuse":"quarry","name":"Victoria Mine","resource":"coal"},"geometry":{"type":"Point","coordinates":[-112.83754,31.92986]},"id":"way/455844561"}
+,
+{"type":"Feature","properties":{"@id":"way/456069064","historic":"yes","landuse":"quarry","name":"Golden Bell Mine","resource":"coal"},"geometry":{"type":"Point","coordinates":[-112.9557,32.01668]},"id":"way/456069064"}
+,
+{"type":"Feature","properties":{"@id":"way/463200340","landuse":"quarry","name":"Elkview Operations","operator":"Teck Resources Limited","resource":"coal","website":"https://www.teck.com/operations/canada/operations/elk-view/elkview"},"geometry":{"type":"Point","coordinates":[-114.81361,49.74684]},"id":"way/463200340"}
+,
+{"type":"Feature","properties":{"@id":"way/463484898","landuse":"quarry","name":"Coal Mountain Operations","operator":"Teck Resources Limited","resource":"coal","website":"https://www.teck.com/operations/canada/operations/coal-mountain/"},"geometry":{"type":"Point","coordinates":[-114.65998,49.49821]},"id":"way/463484898"}
+,
+{"type":"Feature","properties":{"@id":"way/466574085","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[103.23181,53.20288]},"id":"way/466574085"}
+,
+{"type":"Feature","properties":{"@id":"way/467935325","landuse":"quarry","name":"普阳煤矿","resource":"coal"},"geometry":{"type":"Point","coordinates":[105.28196,23.47139]},"id":"way/467935325"}
+,
+{"type":"Feature","properties":{"@id":"way/474579343","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[87.12368,54.14957]},"id":"way/474579343"}
+,
+{"type":"Feature","properties":{"@id":"way/479977764","landuse":"quarry","name":"Cullen Valley Mine","resource":"coal"},"geometry":{"type":"Point","coordinates":[150.01684,-33.28456]},"id":"way/479977764"}
+,
+{"type":"Feature","properties":{"@id":"way/484785900","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[106.54802,27.04791]},"id":"way/484785900"}
+,
+{"type":"Feature","properties":{"@id":"way/484785922","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[106.56969,27.41592]},"id":"way/484785922"}
+,
+{"type":"Feature","properties":{"@id":"way/484785923","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[106.56865,27.40107]},"id":"way/484785923"}
+,
+{"type":"Feature","properties":{"@id":"way/484785942","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[106.38487,27.28461]},"id":"way/484785942"}
+,
+{"type":"Feature","properties":{"@id":"way/484785943","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[106.37271,27.28621]},"id":"way/484785943"}
+,
+{"type":"Feature","properties":{"@id":"way/495015456","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[26.43403,-18.40427]},"id":"way/495015456"}
+,
+{"type":"Feature","properties":{"@id":"way/495015475","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[26.49911,-18.30032]},"id":"way/495015475"}
+,
+{"type":"Feature","properties":{"@id":"way/495015723","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[26.42159,-18.35702]},"id":"way/495015723"}
+,
+{"type":"Feature","properties":{"@id":"way/498355364","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[103.17928,23.79889]},"id":"way/498355364"}
+,
+{"type":"Feature","properties":{"@id":"way/498432753","abandoned":"yes","landuse":"quarry","resource":"coal","source":"USGS Topo;Bing"},"geometry":{"type":"Point","coordinates":[-162.45094,65.89168]},"id":"way/498432753"}
+,
+{"type":"Feature","properties":{"@id":"way/498432755","abandoned":"yes","landuse":"quarry","resource":"coal","source":"USGS Topo;Bing"},"geometry":{"type":"Point","coordinates":[-162.42636,65.90885]},"id":"way/498432755"}
+,
+{"type":"Feature","properties":{"@id":"way/498432780","abandoned":"yes","addr:state":"AK","ele":"46","gnis:county_name":"Northwest Arctic","gnis:created":"03/31/1981","gnis:feature_id":"1414241","gnis:feature_type":"Mine","landuse":"quarry","name":"Wallin Coal Mine","note":"2017-06-05 Moved to new position based on USGS Topo. Added polygon to approximate area of mine","resource":"coal"},"geometry":{"type":"Point","coordinates":[-162.43058,65.8447]},"id":"way/498432780"}
+,
+{"type":"Feature","properties":{"@id":"way/498432781","abandoned":"yes","landuse":"quarry","note":"boundary is approximate","resource":"coal","source":"USGS Topo;Bing"},"geometry":{"type":"Point","coordinates":[-162.45309,65.8724]},"id":"way/498432781"}
+,
+{"type":"Feature","properties":{"@id":"way/505100123","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-101.36172,47.24443]},"id":"way/505100123"}
+,
+{"type":"Feature","properties":{"@id":"way/505707538","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[113.01565,39.75495]},"id":"way/505707538"}
+,
+{"type":"Feature","properties":{"@id":"way/505707539","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[113.02472,39.74411]},"id":"way/505707539"}
+,
+{"type":"Feature","properties":{"@id":"way/505707540","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[113.00298,39.74122]},"id":"way/505707540"}
+,
+{"type":"Feature","properties":{"@id":"way/505707541","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[112.97916,39.65664]},"id":"way/505707541"}
+,
+{"type":"Feature","properties":{"@id":"way/507021966","landuse":"quarry","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[31.67635,-28.22619]},"id":"way/507021966"}
+,
+{"type":"Feature","properties":{"@id":"way/507029355","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[113.76508,39.8535]},"id":"way/507029355"}
+,
+{"type":"Feature","properties":{"@id":"way/511461926","landuse":"quarry","name":"Calvert Mine","operator":"Phillips","resource":"coal"},"geometry":{"type":"Point","coordinates":[-96.60944,31.09195]},"id":"way/511461926"}
+,
+{"type":"Feature","properties":{"@id":"way/522406909","landuse":"quarry","resource":"coal","source":"bing"},"geometry":{"type":"Point","coordinates":[31.68075,-28.21643]},"id":"way/522406909"}
+,
+{"type":"Feature","properties":{"@id":"way/530434588","landuse":"quarry","name":"Pozu Polio","operator":"HUNOSA","resource":"coal"},"geometry":{"type":"Point","coordinates":[-5.71525,43.25846]},"id":"way/530434588"}
+,
+{"type":"Feature","properties":{"@id":"way/542592217","landuse":"quarry","name":"Cameby Downs Coal Mine","resource":"coal"},"geometry":{"type":"Point","coordinates":[150.36286,-26.61779]},"id":"way/542592217"}
+,
+{"type":"Feature","properties":{"@id":"way/543151743","landuse":"quarry","name":"معدن پروده","name:en":"Parvadeh Coal Mine","resource":"coal"},"geometry":{"type":"Point","coordinates":[56.83897,33.00867]},"id":"way/543151743"}
+,
+{"type":"Feature","properties":{"@id":"way/547949375","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[118.04562,50.16667]},"id":"way/547949375"}
+,
+{"type":"Feature","properties":{"@id":"way/549283693","access":"no","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[13.60264,50.49162]},"id":"way/549283693"}
+,
+{"type":"Feature","properties":{"@id":"way/551755707","landuse":"quarry","name":"mineria de carbon","operator":"roberto santos","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-72.65511,6.06226]},"id":"way/551755707"}
+,
+{"type":"Feature","properties":{"@id":"way/554354019","landuse":"quarry","name":"Yallourn Brown Coal Mine","resource":"coal"},"geometry":{"type":"Point","coordinates":[146.3814,-38.18652]},"id":"way/554354019"}
+,
+{"type":"Feature","properties":{"@id":"way/557097685","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-78.52868,40.46636]},"id":"way/557097685"}
+,
+{"type":"Feature","properties":{"@id":"way/560254783","landuse":"quarry","name":"MIna El Xaral","resource":"coal"},"geometry":{"type":"Point","coordinates":[-6.38553,42.98182]},"id":"way/560254783"}
+,
+{"type":"Feature","properties":{"@id":"way/560297051","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[114.82864,46.95985]},"id":"way/560297051"}
+,
+{"type":"Feature","properties":{"@id":"way/560710717","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[113.03475,46.91617]},"id":"way/560710717"}
+,
+{"type":"Feature","properties":{"@id":"way/561613414","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[97.82963,49.3581]},"id":"way/561613414"}
+,
+{"type":"Feature","properties":{"@id":"way/578648823","landuse":"quarry","name":"Азейский разрез","name:en":"Azeysky Quarry","name:ru":"Азейский разрез","resource":"coal"},"geometry":{"type":"Point","coordinates":[100.71429,54.45215]},"id":"way/578648823"}
+,
+{"type":"Feature","properties":{"@id":"way/578662907","fixme":"check - may be emeralds?","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-74.14848,5.54416]},"id":"way/578662907"}
+,
+{"type":"Feature","properties":{"@id":"way/581959479","landuse":"quarry","name":"Восточный участок Колыванского разреза","operator":"АО «Сибирский Антрацит»","resource":"coal"},"geometry":{"type":"Point","coordinates":[83.63185,54.64942]},"id":"way/581959479"}
+,
+{"type":"Feature","properties":{"@id":"way/584316902","landuse":"quarry","name":"Kogan Creek Coal Mine","resource":"coal"},"geometry":{"type":"Point","coordinates":[150.78567,-26.93379]},"id":"way/584316902"}
+,
+{"type":"Feature","properties":{"@id":"way/585263588","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-72.67613,6.09914]},"id":"way/585263588"}
+,
+{"type":"Feature","properties":{"@id":"way/585263589","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-72.68309,6.0844]},"id":"way/585263589"}
+,
+{"type":"Feature","properties":{"@id":"way/585263590","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-72.68374,6.08391]},"id":"way/585263590"}
+,
+{"type":"Feature","properties":{"@id":"way/585263591","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-72.68429,6.08456]},"id":"way/585263591"}
+,
+{"type":"Feature","properties":{"@id":"way/585263598","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-72.73941,6.00052]},"id":"way/585263598"}
+,
+{"type":"Feature","properties":{"@id":"way/585263599","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-72.74403,5.99518]},"id":"way/585263599"}
+,
+{"type":"Feature","properties":{"@id":"way/585263600","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-72.7348,6.0119]},"id":"way/585263600"}
+,
+{"type":"Feature","properties":{"@id":"way/585263601","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-72.71931,6.0306]},"id":"way/585263601"}
+,
+{"type":"Feature","properties":{"@id":"way/585263602","landuse":"quarry","resource":"coal","source":"Bing"},"geometry":{"type":"Point","coordinates":[-72.72537,6.02011]},"id":"way/585263602"}
+,
+{"type":"Feature","properties":{"@id":"way/585505085","historic":"yes","landuse":"quarry","name":"Dawna kopalnia Józef","resource":"coal","wikidata":"Q11743325","wikipedia":"pl:Kopalnia_Józef_w_Sławkowie"},"geometry":{"type":"Point","coordinates":[19.32994,50.27221]},"id":"way/585505085"}
+,
+{"type":"Feature","properties":{"@id":"way/617809804","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-106.72088,45.83851]},"id":"way/617809804"}
+,
+{"type":"Feature","properties":{"@id":"way/617809805","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-106.65861,45.88394]},"id":"way/617809805"}
+,
+{"type":"Feature","properties":{"@id":"way/617809806","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-106.68656,45.8718]},"id":"way/617809806"}
+,
+{"type":"Feature","properties":{"@id":"way/617809807","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-106.75615,45.8582]},"id":"way/617809807"}
+,
+{"type":"Feature","properties":{"@id":"way/617809808","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-106.85964,45.88001]},"id":"way/617809808"}
+,
+{"type":"Feature","properties":{"@id":"way/628893566","description":"Külszíni lignitfejtés.","landuse":"quarry","name":"Bükkábrányi lignitbánya","resource":"coal","wikidata":"Q16255799"},"geometry":{"type":"Point","coordinates":[20.717,47.88259]},"id":"way/628893566"}
+,
+{"type":"Feature","properties":{"@id":"way/642028323","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[150.50361,-24.20298]},"id":"way/642028323"}
+,
+{"type":"Feature","properties":{"@id":"way/656740901","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[94.77225,26.71164]},"id":"way/656740901"}
+,
+{"type":"Feature","properties":{"@id":"way/656740902","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[94.78611,26.71229]},"id":"way/656740902"}
+,
+{"type":"Feature","properties":{"@id":"way/656740903","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[94.80652,26.7339]},"id":"way/656740903"}
+,
+{"type":"Feature","properties":{"@id":"way/656740909","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[94.82049,26.74899]},"id":"way/656740909"}
+,
+{"type":"Feature","properties":{"@id":"way/656740910","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[94.82269,26.75908]},"id":"way/656740910"}
+,
+{"type":"Feature","properties":{"@id":"way/656740911","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[94.82893,26.77065]},"id":"way/656740911"}
+,
+{"type":"Feature","properties":{"@id":"way/656740912","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[94.74788,26.74341]},"id":"way/656740912"}
+,
+{"type":"Feature","properties":{"@id":"way/660217414","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[85.04245,23.72256]},"id":"way/660217414"}
+,
+{"type":"Feature","properties":{"@id":"way/661343607","landuse":"quarry","name":"Карьер угольный","operator":"Колмар","resource":"coal"},"geometry":{"type":"Point","coordinates":[124.78378,57.02768]},"id":"way/661343607"}
+,
+{"type":"Feature","properties":{"@id":"way/661607505","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[86.86495,24.11488]},"id":"way/661607505"}
+,
+{"type":"Feature","properties":{"@id":"way/662748252","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[84.98744,23.70952]},"id":"way/662748252"}
+,
+{"type":"Feature","properties":{"@id":"way/662748253","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[85.00312,23.67062]},"id":"way/662748253"}
+,
+{"type":"Feature","properties":{"@id":"way/666149612","landuse":"quarry","name":"Mine","operator":"Northern Coalfields Limited","resource":"coal"},"geometry":{"type":"Point","coordinates":[82.57214,24.18772]},"id":"way/666149612"}
+,
+{"type":"Feature","properties":{"@id":"way/671012678","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[150.63592,-24.31444]},"id":"way/671012678"}
+,
+{"type":"Feature","properties":{"@id":"way/705768067","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[115.10868,-3.87688]},"id":"way/705768067"}
+,
+{"type":"Feature","properties":{"@id":"way/705768075","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[115.02727,-3.90025]},"id":"way/705768075"}
+,
+{"type":"Feature","properties":{"@id":"way/713650211","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-79.90801,38.92556]},"id":"way/713650211"}
+,
+{"type":"Feature","properties":{"@id":"way/717203888","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-111.77795,51.44321]},"id":"way/717203888"}
+,
+{"type":"Feature","properties":{"@id":"way/717203889","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-111.76516,51.4433]},"id":"way/717203889"}
+,
+{"type":"Feature","properties":{"@id":"way/717203890","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-111.74539,51.48666]},"id":"way/717203890"}
+,
+{"type":"Feature","properties":{"@id":"way/719532749","landuse":"quarry","name":"PTBA BANKO BARAT","resource":"coal"},"geometry":{"type":"Point","coordinates":[103.81591,-3.74128]},"id":"way/719532749"}
+,
+{"type":"Feature","properties":{"@id":"way/719647962","landuse":"quarry","name":"PT. MME","resource":"coal"},"geometry":{"type":"Point","coordinates":[103.81074,-3.81027]},"id":"way/719647962"}
+,
+{"type":"Feature","properties":{"@id":"way/724606332","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[114.9652,-0.78587]},"id":"way/724606332"}
+,
+{"type":"Feature","properties":{"@id":"way/724606333","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[114.97078,-0.84067]},"id":"way/724606333"}
+,
+{"type":"Feature","properties":{"@id":"way/727369644","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[73.52036,51.6714]},"id":"way/727369644"}
+,
+{"type":"Feature","properties":{"@id":"way/740757447","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[115.00455,-3.23556]},"id":"way/740757447"}
+,
+{"type":"Feature","properties":{"@id":"way/740757448","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[114.98931,-3.2317]},"id":"way/740757448"}
+,
+{"type":"Feature","properties":{"@id":"way/740757449","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[114.97338,-3.24922]},"id":"way/740757449"}
+,
+{"type":"Feature","properties":{"@id":"way/742447254","landuse":"quarry","name":"Consol Loveridge Mine","operator":"Consol Energy","resource":"coal"},"geometry":{"type":"Point","coordinates":[-80.28804,39.60948]},"id":"way/742447254"}
+,
+{"type":"Feature","properties":{"@id":"way/742447283","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-80.17593,39.51082]},"id":"way/742447283"}
+,
+{"type":"Feature","properties":{"@id":"way/742447286","addr:state":"WV","ele":"303","gnis:county_name":"Monongalia","gnis:created":"03/11/1997","gnis:feature_id":"1728216","gnis:feature_type":"Mine","landuse":"quarry","name":"Monongalia County Mine","resource":"coal"},"geometry":{"type":"Point","coordinates":[-80.29545,39.71568]},"id":"way/742447286"}
+,
+{"type":"Feature","properties":{"@id":"way/743228734","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-80.64166,40.15112]},"id":"way/743228734"}
+,
+{"type":"Feature","properties":{"@id":"way/744457163","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-82.04201,37.45057]},"id":"way/744457163"}
+,
+{"type":"Feature","properties":{"@id":"way/744457164","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-82.19181,37.66211]},"id":"way/744457164"}
+,
+{"type":"Feature","properties":{"@id":"way/744457165","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-82.08866,37.728]},"id":"way/744457165"}
+,
+{"type":"Feature","properties":{"@id":"way/744465422","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-82.72075,37.52701]},"id":"way/744465422"}
+,
+{"type":"Feature","properties":{"@id":"way/744465423","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-83.10759,37.40365]},"id":"way/744465423"}
+,
+{"type":"Feature","properties":{"@id":"way/745490712","landuse":"quarry","operator":"ROA Mining Company","resource":"coal"},"geometry":{"type":"Point","coordinates":[171.25095,-42.37729]},"id":"way/745490712"}
+,
+{"type":"Feature","properties":{"@id":"way/753800450","landuse":"quarry","name":"разрез \"Экибастузский\"","operator":"ТОО \"Ангернсор Энерго\"","resource":"coal"},"geometry":{"type":"Point","coordinates":[75.40208,51.73197]},"id":"way/753800450"}
+,
+{"type":"Feature","properties":{"@id":"way/759405158","landuse":"quarry","name":"Profen-Nord","resource":"coal","source":"Esri"},"geometry":{"type":"Point","coordinates":[12.16996,51.16407]},"id":"way/759405158"}
+,
+{"type":"Feature","properties":{"@id":"way/760013440","landuse":"quarry","name":"Цахиурт /Цахир урд/","note":"closed, non operated mine","resource":"coal"},"geometry":{"type":"Point","coordinates":[95.6761,46.96807]},"id":"way/760013440"}
+,
+{"type":"Feature","properties":{"@id":"way/761515888","disused":"yes","landuse":"quarry","name":"Tent Mountain Mine","resource":"coal"},"geometry":{"type":"Point","coordinates":[-114.7048,49.56796]},"id":"way/761515888"}
+,
+{"type":"Feature","properties":{"@id":"way/762061484","landuse":"quarry","name":"Fording River Operations","operator":"Teck","resource":"coal","website":"https://www.teck.com/operations/canada/operations/fording-river-5668/"},"geometry":{"type":"Point","coordinates":[-114.88309,50.19278]},"id":"way/762061484"}
+,
+{"type":"Feature","properties":{"@id":"way/762333037","landuse":"quarry","name":"Greenhills Operations","operator":"Teck","resource":"coal","website":"https://www.teck.com/operations/canada/operations/greenhills-5669/"},"geometry":{"type":"Point","coordinates":[-114.85512,50.0783]},"id":"way/762333037"}
+,
+{"type":"Feature","properties":{"@id":"way/762386174","industrial":"mine","landuse":"quarry","name":"Brule Mine","operator":"Conuma Coal Resources LTD","resource":"coal"},"geometry":{"type":"Point","coordinates":[-121.83157,55.39447]},"id":"way/762386174"}
+,
+{"type":"Feature","properties":{"@id":"way/764632531","landuse":"quarry","name":"Line Creek Operations","operator":"Teck","resource":"coal","website":"https://www.teck.com/operations/canada/operations/line-creek-5671/"},"geometry":{"type":"Point","coordinates":[-114.7716,49.94392]},"id":"way/764632531"}
+,
+{"type":"Feature","properties":{"@id":"way/765524574","landuse":"quarry","name":"Wolverine-Perry Creek Mine","operator":"Conuma","resource":"coal"},"geometry":{"type":"Point","coordinates":[-121.24985,55.08503]},"id":"way/765524574"}
+,
+{"type":"Feature","properties":{"@id":"way/771251702","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[71.35722,25.89905]},"id":"way/771251702"}
+,
+{"type":"Feature","properties":{"@id":"way/771251703","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[71.3484,25.91466]},"id":"way/771251703"}
+,
+{"type":"Feature","properties":{"@id":"way/771251704","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[71.35096,25.9495]},"id":"way/771251704"}
+,
+{"type":"Feature","properties":{"@id":"way/771251813","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[71.27148,25.95938]},"id":"way/771251813"}
+,
+{"type":"Feature","properties":{"@id":"way/772682318","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[26.52674,-18.44472]},"id":"way/772682318"}
+,
+{"type":"Feature","properties":{"@id":"way/772682319","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[26.49174,-18.43211]},"id":"way/772682319"}
+,
+{"type":"Feature","properties":{"@id":"way/773070535","landuse":"quarry","name":"Коркинский угольный разрез","resource":"coal","wikipedia":"ru:Коркинский угольный разрез"},"geometry":{"type":"Point","coordinates":[61.41262,54.91096]},"id":"way/773070535"}
+,
+{"type":"Feature","properties":{"@id":"way/779525283","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[26.21375,-25.00568]},"id":"way/779525283"}
+,
+{"type":"Feature","properties":{"@id":"way/787547364","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[113.63442,34.07545]},"id":"way/787547364"}
+,
+{"type":"Feature","properties":{"@id":"way/787639636","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[115.19714,-3.71863]},"id":"way/787639636"}
+,
+{"type":"Feature","properties":{"@id":"way/790023021","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-81.27528,37.61904]},"id":"way/790023021"}
+,
+{"type":"Feature","properties":{"@id":"way/790023022","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-81.29243,37.66637]},"id":"way/790023022"}
+,
+{"type":"Feature","properties":{"@id":"way/790023023","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-81.22792,37.707]},"id":"way/790023023"}
+,
+{"type":"Feature","properties":{"@id":"way/790023024","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-81.44373,37.49639]},"id":"way/790023024"}
+,
+{"type":"Feature","properties":{"@id":"way/790023032","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-81.6284,37.90465]},"id":"way/790023032"}
+,
+{"type":"Feature","properties":{"@id":"way/790023033","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-81.61612,37.84032]},"id":"way/790023033"}
+,
+{"type":"Feature","properties":{"@id":"way/790023034","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-81.97348,38.06791]},"id":"way/790023034"}
+,
+{"type":"Feature","properties":{"@id":"way/790024180","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-82.52432,37.72871]},"id":"way/790024180"}
+,
+{"type":"Feature","properties":{"@id":"way/790024181","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-82.53798,37.74656]},"id":"way/790024181"}
+,
+{"type":"Feature","properties":{"@id":"way/790024182","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-82.6263,37.74015]},"id":"way/790024182"}
+,
+{"type":"Feature","properties":{"@id":"way/790434894","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-80.98217,38.34932]},"id":"way/790434894"}
+,
+{"type":"Feature","properties":{"@id":"way/790953313","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[115.30721,-3.72953]},"id":"way/790953313"}
+,
+{"type":"Feature","properties":{"@id":"way/790953316","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[115.21364,-3.75063]},"id":"way/790953316"}
+,
+{"type":"Feature","properties":{"@id":"way/790953318","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[115.33637,-3.69445]},"id":"way/790953318"}
+,
+{"type":"Feature","properties":{"@id":"way/798528696","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-81.47217,38.30389]},"id":"way/798528696"}
+,
+{"type":"Feature","properties":{"@id":"way/798528697","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-81.64268,38.20572]},"id":"way/798528697"}
+,
+{"type":"Feature","properties":{"@id":"way/802779680","landuse":"quarry","name":"Canterbury Coal Mine","operator":"Bathurst Coal","resource":"coal"},"geometry":{"type":"Point","coordinates":[171.93286,-43.45485]},"id":"way/802779680"}
+,
+{"type":"Feature","properties":{"@id":"way/810483124","landuse":"quarry","man_made":"mineshaft","name":"Uminsa","resource":"coal"},"geometry":{"type":"Point","coordinates":[-6.51878,42.72831]},"id":"way/810483124"}
+,
+{"type":"Feature","properties":{"@id":"way/816697683","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-2.2438,31.56969]},"id":"way/816697683"}
+,
+{"type":"Feature","properties":{"@id":"way/819115770","landuse":"quarry","name":"tambang Batubara","resource":"coal"},"geometry":{"type":"Point","coordinates":[115.29842,-3.81702]},"id":"way/819115770"}
+,
+{"type":"Feature","properties":{"@id":"way/821755317","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-80.64619,38.03684]},"id":"way/821755317"}
+,
+{"type":"Feature","properties":{"@id":"way/822359107","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[20.26665,44.46864]},"id":"way/822359107"}
+,
+{"type":"Feature","properties":{"@id":"way/822679986","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[79.02292,20.12954]},"id":"way/822679986"}
+,
+{"type":"Feature","properties":{"@id":"way/825940047","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[86.1677,23.77802]},"id":"way/825940047"}
+,
+{"type":"Feature","properties":{"@id":"way/825940048","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[86.36129,23.78789]},"id":"way/825940048"}
+,
+{"type":"Feature","properties":{"@id":"way/825940049","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[86.35278,23.77644]},"id":"way/825940049"}
+,
+{"type":"Feature","properties":{"@id":"way/825940050","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[86.36441,23.77512]},"id":"way/825940050"}
+,
+{"type":"Feature","properties":{"@id":"way/825940052","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[86.31581,23.78466]},"id":"way/825940052"}
+,
+{"type":"Feature","properties":{"@id":"way/825940053","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[86.30372,23.78486]},"id":"way/825940053"}
+,
+{"type":"Feature","properties":{"@id":"way/825940055","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[86.2823,23.79703]},"id":"way/825940055"}
+,
+{"type":"Feature","properties":{"@id":"way/825940056","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[86.28486,23.78478]},"id":"way/825940056"}
+,
+{"type":"Feature","properties":{"@id":"way/825940057","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[86.29089,23.7885]},"id":"way/825940057"}
+,
+{"type":"Feature","properties":{"@id":"way/826346673","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-88.58056,37.81921]},"id":"way/826346673"}
+,
+{"type":"Feature","properties":{"@id":"way/832894524","landuse":"quarry","name":"Мунайский угольный разрез","resource":"coal"},"geometry":{"type":"Point","coordinates":[86.83942,52.81024]},"id":"way/832894524"}
+,
+{"type":"Feature","properties":{"@id":"way/833133151","landuse":"quarry","man_made":"mineshaft","name":"Ampliación a Pola de Laviana y Nalona (antracita)","resource":"coal"},"geometry":{"type":"Point","coordinates":[-6.29253,42.57643]},"id":"way/833133151"}
+,
+{"type":"Feature","properties":{"@id":"way/837282919","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-88.63976,37.83043]},"id":"way/837282919"}
+,
+{"type":"Feature","properties":{"@id":"way/837282920","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-88.70261,37.8759]},"id":"way/837282920"}
+,
+{"type":"Feature","properties":{"@id":"way/837548798","fixme":"outdated","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-87.95264,37.75396]},"id":"way/837548798"}
+,
+{"type":"Feature","properties":{"@id":"way/840398285","landuse":"quarry","name":"Инаглинский","operator":"Колмар","resource":"coal"},"geometry":{"type":"Point","coordinates":[124.7852,56.92896]},"id":"way/840398285"}
+,
+{"type":"Feature","properties":{"@id":"way/844621017","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-80.77516,39.82807]},"id":"way/844621017"}
+,
+{"type":"Feature","properties":{"@id":"way/850750005","landuse":"quarry","name":"Garvey Creek Coal Mine","resource":"coal","website":"https://www.nzcoal.co.nz/pages/7/welcome-to-francis-mining-company-ltd.html"},"geometry":{"type":"Point","coordinates":[171.96409,-42.15417]},"id":"way/850750005"}
+,
+{"type":"Feature","properties":{"@id":"way/853513738","landuse":"quarry","operator":"Hargreaves Surface Mining","resource":"coal"},"geometry":{"type":"Point","coordinates":[-1.49655,54.80488]},"id":"way/853513738"}
+,
+{"type":"Feature","properties":{"@id":"way/853513741","landuse":"quarry","operator":"Hargreaves Surface Mining","resource":"coal"},"geometry":{"type":"Point","coordinates":[-1.49706,54.8098]},"id":"way/853513741"}
+,
+{"type":"Feature","properties":{"@id":"way/859924174","landuse":"quarry","name":"SSRL Thar Coal Block-I","operator":"Shanghai Electric Power Company Limited","resource":"coal"},"geometry":{"type":"Point","coordinates":[70.32931,24.66587]},"id":"way/859924174"}
+,
+{"type":"Feature","properties":{"@id":"way/862745713","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-79.07093,40.40761]},"id":"way/862745713"}
+,
+{"type":"Feature","properties":{"@id":"way/863020261","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-87.88736,37.74306]},"id":"way/863020261"}
+,
+{"type":"Feature","properties":{"@id":"way/863471883","fixme":"the quary is larger than it","landuse":"quarry","name":"Mỏ than Mạo Khê","resource":"coal"},"geometry":{"type":"Point","coordinates":[106.63357,21.06802]},"id":"way/863471883"}
+,
+{"type":"Feature","properties":{"@id":"way/866157198","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[79.48992,18.91292]},"id":"way/866157198"}
+,
+{"type":"Feature","properties":{"@id":"way/866728787","landuse":"quarry","name":"Kiyzassky Open Coal Pit Mine","name:ru":"Угольный разрез Кийзасский","operator":"Vostok Coal","resource":"coal"},"geometry":{"type":"Point","coordinates":[87.67271,53.56488]},"id":"way/866728787"}
+,
+{"type":"Feature","properties":{"@id":"way/866927607","landuse":"quarry","name":"Угольный разрез \"Юнь-Ягинский\"","resource":"coal"},"geometry":{"type":"Point","coordinates":[64.34889,67.51308]},"id":"way/866927607"}
+,
+{"type":"Feature","properties":{"@id":"way/866927608","landuse":"quarry","name":"Угольный разрез \"Юнь-Ягинский\"","resource":"coal"},"geometry":{"type":"Point","coordinates":[64.41197,67.51542]},"id":"way/866927608"}
+,
+{"type":"Feature","properties":{"@id":"way/866927609","landuse":"quarry","name":"Угольный разрез \"Юнь-Ягинский\"","resource":"coal"},"geometry":{"type":"Point","coordinates":[64.30351,67.52598]},"id":"way/866927609"}
+,
+{"type":"Feature","properties":{"@id":"way/867000222","disused":"quarry","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[150.09376,-33.38385]},"id":"way/867000222"}
+,
+{"type":"Feature","properties":{"@id":"way/867636583","landuse":"quarry","name":"Springvale Colliery","resource":"coal"},"geometry":{"type":"Point","coordinates":[150.10571,-33.40233]},"id":"way/867636583"}
+,
+{"type":"Feature","properties":{"@id":"way/875641763","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[106.75858,21.13188]},"id":"way/875641763"}
+,
+{"type":"Feature","properties":{"@id":"way/881901370","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[130.89988,45.17787]},"id":"way/881901370"}
+,
+{"type":"Feature","properties":{"@id":"way/881901371","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[130.92446,45.17535]},"id":"way/881901371"}
+,
+{"type":"Feature","properties":{"@id":"way/881901374","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[130.89834,45.16708]},"id":"way/881901374"}
+,
+{"type":"Feature","properties":{"@id":"way/881901377","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[130.91799,45.17342]},"id":"way/881901377"}
+,
+{"type":"Feature","properties":{"@id":"way/882804167","landuse":"quarry","resource":"coal","source":"maxar Premium"},"geometry":{"type":"Point","coordinates":[117.32913,25.67987]},"id":"way/882804167"}
+,
+{"type":"Feature","properties":{"@id":"way/885682346","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-96.35211,42.30387]},"id":"way/885682346"}
+,
+{"type":"Feature","properties":{"@id":"way/891944186","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[68.65615,48.96847]},"id":"way/891944186"}]}
