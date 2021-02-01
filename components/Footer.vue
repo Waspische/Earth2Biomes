@@ -14,7 +14,12 @@
         class="primary darken-1 py-4 text-center white--text"
         cols="12"
       >
-        If you like this projet, support me using the code <strong>19DBDIXSCW</strong>
+        The data comes from openstreetmap.org. If you like this project, support me using the code <strong>19DBDIXSCW</strong>
+        <br>
+        To submit an idea, you can
+        <v-btn plain text x-small color="accent" href="https://forms.gle/8Ak6HTaVh5hFyf4Q9">
+          click here
+        </v-btn>
       </v-col>
     </v-row>
   </v-footer>

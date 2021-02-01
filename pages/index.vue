@@ -1,89 +1,290 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <div class="text-center">
-        <logo />
-        <vuetify-logo />
-      </div>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
+  <v-container>
+    <Snackbar />
+    <v-card id="menu-wrapper">
+      <v-card-title>
+        <span>Earth2 Biomes</span>
+        <v-spacer />
+        <v-icon>mdi-earth</v-icon>
+      </v-card-title>
+      <v-expansion-panels>
+        <v-expansion-panel
+          v-for="biome in biomes"
+          :key="biome.name"
+          class="mt-0"
+        >
+          <v-divider />
+          <v-expansion-panel-header>
+            {{ biome.name }}
+          </v-expansion-panel-header>
+          <v-expansion-panel-content>
+            <v-radio-group
+              v-model="selectedLanduse"
+              class="ma-0"
+              hide-details="auto"
             >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-col>
-  </v-row>
+              <v-radio
+                v-for="landuse in biome.landuses"
+                :key="landuse.name"
+                :value="landuse.name"
+                :label="`${landuse.name}`"
+                @click="onLanduseSelection(landuse)"
+              />
+            </v-radio-group>
+          </v-expansion-panel-content>
+        </v-expansion-panel>
+      </v-expansion-panels>
+    </v-card>
+    <v-layout id="map-wrapper" fluid>
+      <v-flex id="map" />
+    </v-layout>
+  </v-container>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
+import Vue from 'vue'
+import mapboxgl from 'mapbox-gl'
+import centroid from '@turf/centroid'
+import Snackbar from '../components/Snackbar'
+import MapPopup from '~/components/MapPopup'
 
 export default {
+  name: 'MapboxMap',
   components: {
-    Logo,
-    VuetifyLogo
+    Snackbar
+  },
+  data () {
+    return {
+      biomes: [
+        {
+          name: 'Quarries',
+          landuses: [
+            {
+              name: 'Gold',
+              fileName: 'goldMines',
+              color: '#FFD700'
+            },
+            {
+              name: 'Clay',
+              fileName: 'clayMines',
+              color: '#D4C59C'
+            },
+            {
+              name: 'Sand',
+              fileName: 'sandMines',
+              color: '#c2b280'
+            },
+            {
+              name: 'Peat',
+              fileName: 'peatMines',
+              color: '#766D52'
+            },
+            {
+              name: 'Coal',
+              fileName: 'coalMines',
+              color: '#36454f'
+            },
+            {
+              name: 'Uranium',
+              fileName: 'uraniumMines',
+              color: '#757575'
+            },
+            {
+              name: 'Silver',
+              fileName: 'silverMines',
+              color: '#C0C0C0'
+            },
+            {
+              name: 'Iron ore',
+              fileName: 'ironOreMines',
+              color: '#4e4f55'
+            }
+          ]
+        }
+        // {
+        //   name: 'Urban',
+        //   landuses: [
+        //     {
+        //       name: 'Cities',
+        //       fileName: 'goldMines.json',
+        //       color: '#FFD700'
+        //     }
+        //   ]
+        // }
+      ],
+      selectedLanduse: null,
+      previousLanduse: null,
+      accessToken: 'pk.eyJ1Ijoid2FzcGlzY2hlIiwiYSI6ImNrazBidGRsNzBmdmIyeHJyYThjZG0wYzYifQ.qZQp-6ddFiyakTvvyCv8Gw', // your access token. Needed if you using Mapbox maps
+      mapStyle: 'mapbox://styles/mapbox/light-v10',
+      minesBoundary: {
+        id: 'minesBoundary',
+        source: 'carte',
+        type: 'fill',
+        minzoom: 11,
+        paint: {
+          'fill-color': '#B42222',
+          'fill-opacity': 0.8
+        },
+        filter: ['==', '$type', 'Polygon']
+      },
+      minesLocation: {
+        id: 'minesLocation',
+        source: 'carte',
+        type: 'circle',
+        paint: {
+          'circle-radius': 3,
+          'circle-color': '#90CAF9'
+        },
+        filter: ['==', '$type', 'Point']
+      },
+      minesLabels: {
+        id: 'minesLabels',
+        source: 'labels',
+        type: 'circle',
+        maxzoom: 11,
+        paint: {
+          'circle-radius': 4,
+          'circle-color': '#ff001d',
+          'circle-stroke-color': '#000',
+          'circle-stroke-width': 1
+        }
+      },
+      minesLocationStroke: {
+        id: 'minesLocation-stroke',
+        type: 'line',
+        source: 'carte',
+        minzoom: 11,
+        layout: {
+          visibility: 'visible',
+          'line-join': 'round',
+          'line-cap': 'round'
+        },
+        paint: {
+          'line-width': 4,
+          'line-color': '#90CAF9'
+        }
+      }
+    }
+  },
+  mounted () {
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYWlzaHdlcnlhIiwiYSI6ImNrYzVyYXBlNzBrZGgzMG8wc3FtZjU5NDAifQ.u4azaXjkh41xSMC1NJLhTw'
+
+    // create a new mapbox instance
+    this.map = new mapboxgl.Map({
+      container: 'map',
+      style: this.mapStyle,
+      zoom: 1 // starting zoom
+    })
+    this.map.addControl(new mapboxgl.NavigationControl(), 'top-right')
+    this.map.on('load', this.onMapLoad)
+    this.map.on('zoom', this.onZoom)
+    // this.map.on('sourcedataloading', this.onSourceDataLoading)
+  },
+  methods: {
+    onMapLoad (event) {
+      // in component
+      // this.map = event.map
+      // or just to store if you want have access from other components
+      // this.$store.map = event.map
+      // Here we cathing 'load' map event
+      this.map.addSource('carte', {
+        type: 'geojson',
+        data: {
+          type: 'FeatureCollection',
+          features: []
+        }
+      })
+      this.map.addSource('labels', {
+        type: 'geojson',
+        data: {
+          type: 'FeatureCollection',
+          features: []
+        }
+      })
+
+      this.map.addLayer(this.minesBoundary)
+      this.map.addLayer(this.minesLocation)
+      this.map.addLayer(this.minesLocationStroke)
+      this.map.addLayer(this.minesLabels)
+      this.map.on('click', 'minesBoundary', this.onFeatureClick)
+      this.map.on('click', 'minesLabels', this.onFeatureClick)
+
+      this.map.on('mouseenter', 'minesBoundary', this.onMouseEnter)
+      this.map.on('mouseenter', 'minesLabels', this.onMouseEnter)
+      this.map.on('mouseleave', 'minesBoundary', this.onMouseOut)
+      this.map.on('mouseleave', 'minesLabels', this.onMouseOut)
+      // this.map.on("click", this.onClick)
+    },
+    async onLanduseSelection (landuse) {
+      console.log(this.selectedLanduse)
+      if (this.selectedLanduse !== this.previousLanduse) {
+        this.previousLanduse = this.selectedLanduse
+        await this.map.getSource('carte').setData('./data/' + landuse.fileName + '.json')
+        await this.map.getSource('labels').setData('./data/' + landuse.fileName + 'Labels.json')
+        this.map.setPaintProperty('minesBoundary', 'fill-color', landuse.color)
+        this.map.setPaintProperty('minesLocation', 'circle-color', landuse.color)
+        this.map.setPaintProperty('minesLabels', 'circle-color', landuse.color)
+        this.map.setPaintProperty('minesLocation-stroke', 'line-color', landuse.color)
+      }
+    },
+    onZoom () {
+      console.log(this.map.getZoom())
+    },
+    // Change the cursor to a pointer when the mouse is over the states layer.
+    onMouseEnter () {
+      this.map.getCanvas().style.cursor = 'pointer'
+    },
+    // Change it back to a pointer when it leaves.
+    onMouseOut () {
+      this.map.getCanvas().style.cursor = ''
+    },
+    // When a click event occurs on a feature in the states layer, open a popup at the
+    // location of the click, with description HTML from its properties.
+    onFeatureClick (e) {
+      const currentFeature = e.features[0]
+      const popUps = document.getElementsByClassName('mapboxgl-popup')
+      /** Check if there is already a popup on the map and if so, remove it */
+      if (popUps[0]) { popUps[0].remove() };
+
+      const centeredFeature = centroid(e.features[0])
+      const lat = centeredFeature.geometry.coordinates[1]
+      const lng = centeredFeature.geometry.coordinates[0]
+      const name = (currentFeature.properties.name === undefined) ? this.selectedLanduse : currentFeature.properties.name
+
+      const popupContent = new Vue({
+        ...MapPopup,
+        parent: this,
+        propsData: {
+          popupName: name,
+          lat,
+          lng
+        }
+      }).$mount()
+
+      new mapboxgl.Popup({ closeButton: false })
+        .setLngLat(e.lngLat)
+        .setDOMContent(popupContent.$el)
+        .addTo(this.map)
+    }
   }
+
 }
 </script>
+
+<style >
+#menu-wrapper{
+  position: relative;
+  z-index: 3;
+  width: 250px;
+}
+
+#map-wrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+</style>
