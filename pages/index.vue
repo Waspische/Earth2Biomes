@@ -219,7 +219,7 @@ export default {
       console.log(this.selectedLanduse)
       if (this.selectedLanduse !== this.previousLanduse) {
         this.previousLanduse = this.selectedLanduse
-        await this.map.getSource('carte').setData('./data/' + landuse.fileName + '.json')
+        await this.map.getSource('carte').d('./data/' + landuse.fileName + '.json')
         await this.map.getSource('labels').setData('./data/' + landuse.fileName + 'Labels.json')
         this.map.setPaintProperty('minesBoundary', 'fill-color', landuse.color)
         this.map.setPaintProperty('minesLocation', 'circle-color', landuse.color)
