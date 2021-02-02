@@ -30,7 +30,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/100521239","landuse":"quarry","name":"Кар'єр ЦГЗК № 1","name:ru":"Карьер ЦГОКа №1","resource":"iron_ore"},"geometry":{"type":"Point","coordinates":[33.41178,47.99283]},"id":"way/100521239"}
 ,
-{"type":"Feature","properties":{"@id":"way/104415370","description":"disused; exhausted 1989","disused:landuse":"quarry","landuse":"quarry","operator":"LAMCO","resource":"iron_ore","source":"Cnes / Spot Image 2009"},"geometry":{"type":"Point","coordinates":[-8.4971,7.5397]},"id":"way/104415370"}
+{"type":"Feature","properties":{"@id":"way/104415370",
+  "url":"disused; exhausted 1989","disused:landuse":"quarry","landuse":"quarry","operator":"LAMCO","resource":"iron_ore","source":"Cnes / Spot Image 2009"},"geometry":{"type":"Point","coordinates":[-8.4971,7.5397]},"id":"way/104415370"}
 ,
 {"type":"Feature","properties":{"@id":"way/105125029","landuse":"quarry","name":"demir işletmesi","resource":"iron_ore","source":"bing"},"geometry":{"type":"Point","coordinates":[38.12709,39.46475]},"id":"way/105125029"}
 ,

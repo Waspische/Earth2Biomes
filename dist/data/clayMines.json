@@ -2261,7 +2261,7 @@
       "type": "Feature",
       "properties": {
         "@id": "relation/9366777",
-        "description": "Tongrube",
+        "url": "Tongrube",
         "landuse": "quarry",
         "name": "Tongrube",
         "operator": "Wienerberger AG",
@@ -8866,7 +8866,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/96842184",
-        "description": "Fundort von Danuvius guggenmosi, eines aufrecht gehenden Menschenaffens aus dem Miozän (11,62Mya)",
+        "url": "Fundort von Danuvius guggenmosi, eines aufrecht gehenden Menschenaffens aus dem Miozän (11,62Mya)",
         "geological": "palaeontological_site",
         "landuse": "quarry",
         "name": "Tongrube",
@@ -13568,7 +13568,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/241353312",
-        "description": "clay surface mine",
+        "url": "clay surface mine",
         "landuse": "quarry",
         "name": "Lehmgrube",
         "resource": "clay"
@@ -15059,7 +15059,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/272269344",
-        "description": "Lehmabbau",
+        "url": "Lehmabbau",
         "landuse": "quarry",
         "operator": "Jacobi-Walther",
         "resource": "clay"
@@ -95249,7 +95249,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/538553147",
-        "description": "Barreiro, extração de argila",
+        "url": "Barreiro, extração de argila",
         "landuse": "quarry",
         "resource": "clay"
       },
@@ -100123,7 +100123,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/551331432",
-        "description": "Barreiro, extração de argila",
+        "url": "Barreiro, extração de argila",
         "landuse": "quarry",
         "resource": "clay"
       },
@@ -100268,7 +100268,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/552479724",
-        "description": "Barreiro, extração de argila",
+        "url": "Barreiro, extração de argila",
         "landuse": "quarry",
         "resource": "clay",
         "source": "DigitalGlobe"
@@ -100438,7 +100438,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/552481584",
-        "description": "Barreiro, extração de argila",
+        "url": "Barreiro, extração de argila",
         "landuse": "quarry",
         "resource": "clay"
       },
@@ -100701,7 +100701,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/564848939",
-        "description": "Barreiro, extração de argila",
+        "url": "Barreiro, extração de argila",
         "landuse": "quarry",
         "resource": "clay"
       },
@@ -100754,7 +100754,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/564848940",
-        "description": "Barreiro, extração de argila",
+        "url": "Barreiro, extração de argila",
         "landuse": "quarry",
         "resource": "clay"
       },
@@ -100811,7 +100811,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/564849693",
-        "description": "Barreiro, extração de argila",
+        "url": "Barreiro, extração de argila",
         "landuse": "quarry",
         "resource": "clay"
       },
@@ -100860,7 +100860,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/564849695",
-        "description": "Barreiro, extração de argila",
+        "url": "Barreiro, extração de argila",
         "landuse": "quarry",
         "resource": "clay"
       },
@@ -100913,7 +100913,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/564849696",
-        "description": "Barreiro, extração de argila",
+        "url": "Barreiro, extração de argila",
         "landuse": "quarry",
         "resource": "clay"
       },
@@ -100986,7 +100986,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/564849697",
-        "description": "Barreiro, extração de argila",
+        "url": "Barreiro, extração de argila",
         "landuse": "quarry",
         "resource": "clay"
       },
@@ -101076,7 +101076,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/566221805",
-        "description": "Barreiro, extração de argila",
+        "url": "Barreiro, extração de argila",
         "landuse": "quarry",
         "resource": "clay"
       },
@@ -101133,7 +101133,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/566221806",
-        "description": "Barreiro, extração de argila",
+        "url": "Barreiro, extração de argila",
         "landuse": "quarry",
         "resource": "clay"
       },
@@ -101465,7 +101465,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/570382959",
-        "description": "Barreiro, extração de argila",
+        "url": "Barreiro, extração de argila",
         "landuse": "quarry",
         "resource": "clay"
       },
@@ -101522,7 +101522,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/570386966",
-        "description": "Barreiro, extração de argila",
+        "url": "Barreiro, extração de argila",
         "landuse": "quarry",
         "resource": "clay"
       },
@@ -101587,7 +101587,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/570386967",
-        "description": "Barreiro, extração de argila",
+        "url": "Barreiro, extração de argila",
         "landuse": "quarry",
         "resource": "clay"
       },
@@ -101708,7 +101708,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/570386968",
-        "description": "Barreiro, extração de argila",
+        "url": "Barreiro, extração de argila",
         "landuse": "quarry",
         "resource": "clay"
       },
@@ -101749,7 +101749,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/570548264",
-        "description": "Barreiro, extração de argila",
+        "url": "Barreiro, extração de argila",
         "landuse": "quarry",
         "resource": "clay"
       },
@@ -102306,7 +102306,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/600035946",
-        "description": "Barreiro, extração de argila",
+        "url": "Barreiro, extração de argila",
         "landuse": "quarry",
         "resource": "clay"
       },
@@ -102379,7 +102379,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/600035948",
-        "description": "Barreiro, extração de argila",
+        "url": "Barreiro, extração de argila",
         "landuse": "quarry",
         "resource": "clay",
         "source": "DigitalGlobe"
@@ -102485,7 +102485,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/628264729",
-        "description": "Barreiro, extração de argila",
+        "url": "Barreiro, extração de argila",
         "landuse": "quarry",
         "resource": "clay"
       },
@@ -105176,7 +105176,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/704061588",
-        "description": "Barreiro, extração de argila",
+        "url": "Barreiro, extração de argila",
         "landuse": "quarry",
         "resource": "clay"
       },
@@ -111133,7 +111133,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/777363124",
-        "description": "Barreiro, extração de argila",
+        "url": "Barreiro, extração de argila",
         "landuse": "quarry",
         "resource": "clay"
       },
@@ -115203,7 +115203,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/792936987",
-        "description": "Barreiro, extração de argila",
+        "url": "Barreiro, extração de argila",
         "landuse": "quarry",
         "resource": "clay"
       },
@@ -115352,7 +115352,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/797419478",
-        "description": "Barreiro, extração de argila",
+        "url": "Barreiro, extração de argila",
         "landuse": "quarry",
         "resource": "clay"
       },
@@ -115389,7 +115389,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/798438382",
-        "description": "Barreiro, extração de argila",
+        "url": "Barreiro, extração de argila",
         "landuse": "quarry",
         "resource": "clay"
       },
@@ -120130,7 +120130,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/866171329",
-        "description": "Barreiro, extração de argila",
+        "url": "Barreiro, extração de argila",
         "landuse": "quarry",
         "resource": "clay",
         "source": "Maxar"
@@ -123737,7 +123737,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/879096311",
-        "description": "Barreiro, extração de argila",
+        "url": "Barreiro, extração de argila",
         "landuse": "quarry",
         "resource": "clay"
       },

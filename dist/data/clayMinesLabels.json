@@ -26,7 +26,8 @@
 ,
 {"type":"Feature","properties":{"@id":"relation/8429533","landuse":"quarry","name":"Carrière du Danube","name:de":"Tagebau Danube","name:en":"Danube quarry","name:fr":"Carrière du Danube","name:nl":"Groeve van Danube","operator":"Lebailly","resource":"clay","type":"multipolygon","url":"https://lebailly.eu/argiles/carriere-du-danube/"},"geometry":{"type":"Point","coordinates":[3.77617,50.48731]},"id":"relation/8429533"}
 ,
-{"type":"Feature","properties":{"@id":"relation/9366777","description":"Tongrube","landuse":"quarry","name":"Tongrube","operator":"Wienerberger AG","resource":"clay","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[11.02825,51.03485]},"id":"relation/9366777"}
+{"type":"Feature","properties":{"@id":"relation/9366777",
+  "url":"Tongrube","landuse":"quarry","name":"Tongrube","operator":"Wienerberger AG","resource":"clay","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[11.02825,51.03485]},"id":"relation/9366777"}
 ,
 {"type":"Feature","properties":{"@id":"relation/9529403","description:en":"Borrow Area","description:zh":"採泥區","fixme":"Soil variety","landuse":"quarry","resource":"clay","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[114.17937,22.53936]},"id":"relation/9529403"}
 ,
@@ -90,7 +91,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/91570553","landuse":"quarry","name":"Tongrube Zievel","resource":"clay"},"geometry":{"type":"Point","coordinates":[6.72135,50.61468]},"id":"way/91570553"}
 ,
-{"type":"Feature","properties":{"@id":"way/96842184","description":"Fundort von Danuvius guggenmosi, eines aufrecht gehenden Menschenaffens aus dem Miozän (11,62Mya)","geological":"palaeontological_site","landuse":"quarry","name":"Tongrube","resource":"clay","source":"Fundort lt. Wikipedia-Artikel zu Danuvius guggenmosi"},"geometry":{"type":"Point","coordinates":[10.59129,47.927]},"id":"way/96842184"}
+{"type":"Feature","properties":{"@id":"way/96842184",
+  "url":"Fundort von Danuvius guggenmosi, eines aufrecht gehenden Menschenaffens aus dem Miozän (11,62Mya)","geological":"palaeontological_site","landuse":"quarry","name":"Tongrube","resource":"clay","source":"Fundort lt. Wikipedia-Artikel zu Danuvius guggenmosi"},"geometry":{"type":"Point","coordinates":[10.59129,47.927]},"id":"way/96842184"}
 ,
 {"type":"Feature","properties":{"@id":"way/98855068","landuse":"quarry","name":"Tongrube","operator":"Wienerberger Ziegelindustrie GmbH","resource":"clay"},"geometry":{"type":"Point","coordinates":[7.34483,51.84947]},"id":"way/98855068"}
 ,
@@ -164,7 +166,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/235935968","landuse":"quarry","name":"Tongrube","resource":"clay"},"geometry":{"type":"Point","coordinates":[8.53377,52.21361]},"id":"way/235935968"}
 ,
-{"type":"Feature","properties":{"@id":"way/241353312","description":"clay surface mine","landuse":"quarry","name":"Lehmgrube","resource":"clay"},"geometry":{"type":"Point","coordinates":[13.64438,51.01201]},"id":"way/241353312"}
+{"type":"Feature","properties":{"@id":"way/241353312",
+  "url":"clay surface mine","landuse":"quarry","name":"Lehmgrube","resource":"clay"},"geometry":{"type":"Point","coordinates":[13.64438,51.01201]},"id":"way/241353312"}
 ,
 {"type":"Feature","properties":{"@id":"way/252656030","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[26.51602,50.35019]},"id":"way/252656030"}
 ,
@@ -184,7 +187,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/269402559","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[15.39498,48.45664]},"id":"way/269402559"}
 ,
-{"type":"Feature","properties":{"@id":"way/272269344","description":"Lehmabbau","landuse":"quarry","operator":"Jacobi-Walther","resource":"clay"},"geometry":{"type":"Point","coordinates":[10.80828,49.49002]},"id":"way/272269344"}
+{"type":"Feature","properties":{"@id":"way/272269344",
+  "url":"Lehmabbau","landuse":"quarry","operator":"Jacobi-Walther","resource":"clay"},"geometry":{"type":"Point","coordinates":[10.80828,49.49002]},"id":"way/272269344"}
 ,
 {"type":"Feature","properties":{"@id":"way/273745918","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-1.58716,53.54915]},"id":"way/273745918"}
 ,
@@ -1716,7 +1720,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/535801573","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[86.00159,26.78659]},"id":"way/535801573"}
 ,
-{"type":"Feature","properties":{"@id":"way/538553147","description":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.83162,-23.03765]},"id":"way/538553147"}
+{"type":"Feature","properties":{"@id":"way/538553147",
+  "url":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.83162,-23.03765]},"id":"way/538553147"}
 ,
 {"type":"Feature","properties":{"@id":"way/539014584","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[85.47303,27.68082]},"id":"way/539014584"}
 ,
@@ -1828,11 +1833,14 @@
 ,
 {"type":"Feature","properties":{"@id":"way/550416986","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-8.57133,40.03078]},"id":"way/550416986"}
 ,
-{"type":"Feature","properties":{"@id":"way/551331432","description":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.86634,-23.06349]},"id":"way/551331432"}
+{"type":"Feature","properties":{"@id":"way/551331432",
+  "url":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.86634,-23.06349]},"id":"way/551331432"}
 ,
-{"type":"Feature","properties":{"@id":"way/552479724","description":"Barreiro, extração de argila","landuse":"quarry","resource":"clay","source":"DigitalGlobe"},"geometry":{"type":"Point","coordinates":[-47.86639,-23.08499]},"id":"way/552479724"}
+{"type":"Feature","properties":{"@id":"way/552479724",
+  "url":"Barreiro, extração de argila","landuse":"quarry","resource":"clay","source":"DigitalGlobe"},"geometry":{"type":"Point","coordinates":[-47.86639,-23.08499]},"id":"way/552479724"}
 ,
-{"type":"Feature","properties":{"@id":"way/552481584","description":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.8555,-23.08862]},"id":"way/552481584"}
+{"type":"Feature","properties":{"@id":"way/552481584",
+  "url":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.8555,-23.08862]},"id":"way/552481584"}
 ,
 {"type":"Feature","properties":{"@id":"way/557068863","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[82.90562,27.6079]},"id":"way/557068863"}
 ,
@@ -1840,23 +1848,31 @@
 ,
 {"type":"Feature","properties":{"@id":"way/558031430","access":"permissive","landuse":"quarry","name":"Lehmgrube (Tonabbau)","resource":"clay"},"geometry":{"type":"Point","coordinates":[9.39262,48.89919]},"id":"way/558031430"}
 ,
-{"type":"Feature","properties":{"@id":"way/564848939","description":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.81608,-23.00655]},"id":"way/564848939"}
+{"type":"Feature","properties":{"@id":"way/564848939",
+  "url":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.81608,-23.00655]},"id":"way/564848939"}
 ,
-{"type":"Feature","properties":{"@id":"way/564848940","description":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.82205,-23.02412]},"id":"way/564848940"}
+{"type":"Feature","properties":{"@id":"way/564848940",
+  "url":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.82205,-23.02412]},"id":"way/564848940"}
 ,
-{"type":"Feature","properties":{"@id":"way/564849693","description":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.88383,-23.09419]},"id":"way/564849693"}
+{"type":"Feature","properties":{"@id":"way/564849693",
+  "url":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.88383,-23.09419]},"id":"way/564849693"}
 ,
-{"type":"Feature","properties":{"@id":"way/564849695","description":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.88842,-23.09185]},"id":"way/564849695"}
+{"type":"Feature","properties":{"@id":"way/564849695",
+  "url":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.88842,-23.09185]},"id":"way/564849695"}
 ,
-{"type":"Feature","properties":{"@id":"way/564849696","description":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.8809,-23.08923]},"id":"way/564849696"}
+{"type":"Feature","properties":{"@id":"way/564849696",
+  "url":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.8809,-23.08923]},"id":"way/564849696"}
 ,
-{"type":"Feature","properties":{"@id":"way/564849697","description":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.87209,-23.0907]},"id":"way/564849697"}
+{"type":"Feature","properties":{"@id":"way/564849697",
+  "url":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.87209,-23.0907]},"id":"way/564849697"}
 ,
 {"type":"Feature","properties":{"@id":"way/565120692","landuse":"quarry","name":"глина","resource":"clay"},"geometry":{"type":"Point","coordinates":[32.00423,49.91928]},"id":"way/565120692"}
 ,
-{"type":"Feature","properties":{"@id":"way/566221805","description":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.86071,-23.10803]},"id":"way/566221805"}
+{"type":"Feature","properties":{"@id":"way/566221805",
+  "url":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.86071,-23.10803]},"id":"way/566221805"}
 ,
-{"type":"Feature","properties":{"@id":"way/566221806","description":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.85914,-23.10116]},"id":"way/566221806"}
+{"type":"Feature","properties":{"@id":"way/566221806",
+  "url":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.85914,-23.10116]},"id":"way/566221806"}
 ,
 {"type":"Feature","properties":{"@id":"way/568303129","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[32.5507,0.16422]},"id":"way/568303129"}
 ,
@@ -1864,15 +1880,20 @@
 ,
 {"type":"Feature","properties":{"@id":"way/570212973","landuse":"quarry","operator":"Ceranor","resource":"clay"},"geometry":{"type":"Point","coordinates":[-5.49551,42.27883]},"id":"way/570212973"}
 ,
-{"type":"Feature","properties":{"@id":"way/570382959","description":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.8561,-23.06053]},"id":"way/570382959"}
+{"type":"Feature","properties":{"@id":"way/570382959",
+  "url":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.8561,-23.06053]},"id":"way/570382959"}
 ,
-{"type":"Feature","properties":{"@id":"way/570386966","description":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.90248,-23.08475]},"id":"way/570386966"}
+{"type":"Feature","properties":{"@id":"way/570386966",
+  "url":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.90248,-23.08475]},"id":"way/570386966"}
 ,
-{"type":"Feature","properties":{"@id":"way/570386967","description":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.89963,-23.08688]},"id":"way/570386967"}
+{"type":"Feature","properties":{"@id":"way/570386967",
+  "url":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.89963,-23.08688]},"id":"way/570386967"}
 ,
-{"type":"Feature","properties":{"@id":"way/570386968","description":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.90209,-23.08699]},"id":"way/570386968"}
+{"type":"Feature","properties":{"@id":"way/570386968",
+  "url":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.90209,-23.08699]},"id":"way/570386968"}
 ,
-{"type":"Feature","properties":{"@id":"way/570548264","description":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.85535,-23.0957]},"id":"way/570548264"}
+{"type":"Feature","properties":{"@id":"way/570548264",
+  "url":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.85535,-23.0957]},"id":"way/570548264"}
 ,
 {"type":"Feature","properties":{"@id":"way/579268357","landuse":"quarry","name":"Weinerberger Brick","resource":"clay","source":"bing"},"geometry":{"type":"Point","coordinates":[-2.21542,52.33671]},"id":"way/579268357"}
 ,
@@ -1880,11 +1901,14 @@
 ,
 {"type":"Feature","properties":{"@id":"way/588154908","landuse":"quarry","resource":"clay","source":"digitalGlobe Premium"},"geometry":{"type":"Point","coordinates":[106.68948,26.43988]},"id":"way/588154908"}
 ,
-{"type":"Feature","properties":{"@id":"way/600035946","description":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.86089,-23.0578]},"id":"way/600035946"}
+{"type":"Feature","properties":{"@id":"way/600035946",
+  "url":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.86089,-23.0578]},"id":"way/600035946"}
 ,
-{"type":"Feature","properties":{"@id":"way/600035948","description":"Barreiro, extração de argila","landuse":"quarry","resource":"clay","source":"DigitalGlobe"},"geometry":{"type":"Point","coordinates":[-47.86812,-23.06398]},"id":"way/600035948"}
+{"type":"Feature","properties":{"@id":"way/600035948",
+  "url":"Barreiro, extração de argila","landuse":"quarry","resource":"clay","source":"DigitalGlobe"},"geometry":{"type":"Point","coordinates":[-47.86812,-23.06398]},"id":"way/600035948"}
 ,
-{"type":"Feature","properties":{"@id":"way/628264729","description":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.8544,-23.04399]},"id":"way/628264729"}
+{"type":"Feature","properties":{"@id":"way/628264729",
+  "url":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.8544,-23.04399]},"id":"way/628264729"}
 ,
 {"type":"Feature","properties":{"@id":"way/635002951","landuse":"quarry","mml:class":"32112","resource":"clay","source":"nls.fi database import"},"geometry":{"type":"Point","coordinates":[31.04586,62.96294]},"id":"way/635002951"}
 ,
@@ -1940,7 +1964,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/699016646","landuse":"quarry","name":"Карьер глины","resource":"clay"},"geometry":{"type":"Point","coordinates":[47.81838,59.87158]},"id":"way/699016646"}
 ,
-{"type":"Feature","properties":{"@id":"way/704061588","description":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.87711,-23.08973]},"id":"way/704061588"}
+{"type":"Feature","properties":{"@id":"way/704061588",
+  "url":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.87711,-23.08973]},"id":"way/704061588"}
 ,
 {"type":"Feature","properties":{"@id":"way/704500957","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[12.56333,42.57188]},"id":"way/704500957"}
 ,
@@ -2060,7 +2085,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/771912157","landuse":"quarry","name":"глина","resource":"clay"},"geometry":{"type":"Point","coordinates":[31.76875,49.82047]},"id":"way/771912157"}
 ,
-{"type":"Feature","properties":{"@id":"way/777363124","description":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.82934,-23.09995]},"id":"way/777363124"}
+{"type":"Feature","properties":{"@id":"way/777363124",
+  "url":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.82934,-23.09995]},"id":"way/777363124"}
 ,
 {"type":"Feature","properties":{"@id":"way/777801602","landuse":"quarry","resource":"clay","source":"maxar Premium"},"geometry":{"type":"Point","coordinates":[106.83153,31.58987]},"id":"way/777801602"}
 ,
@@ -2128,15 +2154,18 @@
 ,
 {"type":"Feature","properties":{"@id":"way/792687177","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[27.88876,49.65162]},"id":"way/792687177"}
 ,
-{"type":"Feature","properties":{"@id":"way/792936987","description":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.85572,-23.11483]},"id":"way/792936987"}
+{"type":"Feature","properties":{"@id":"way/792936987",
+  "url":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.85572,-23.11483]},"id":"way/792936987"}
 ,
 {"type":"Feature","properties":{"@id":"way/793885939","landuse":"quarry","name":"Закинутий кар'єр","operator":"Нелегальний","resource":"clay"},"geometry":{"type":"Point","coordinates":[31.73233,49.73393]},"id":"way/793885939"}
 ,
 {"type":"Feature","properties":{"@id":"way/793885940","landuse":"quarry","name":"Закинутий кар'єр","operator":"Нелегальний","resource":"clay"},"geometry":{"type":"Point","coordinates":[31.73405,49.73441]},"id":"way/793885940"}
 ,
-{"type":"Feature","properties":{"@id":"way/797419478","description":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.83495,-23.09892]},"id":"way/797419478"}
+{"type":"Feature","properties":{"@id":"way/797419478",
+  "url":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.83495,-23.09892]},"id":"way/797419478"}
 ,
-{"type":"Feature","properties":{"@id":"way/798438382","description":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.865,-23.05894]},"id":"way/798438382"}
+{"type":"Feature","properties":{"@id":"way/798438382",
+  "url":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.865,-23.05894]},"id":"way/798438382"}
 ,
 {"type":"Feature","properties":{"@id":"way/799018633","landuse":"quarry","resource":"clay","source":"maxar Premium"},"geometry":{"type":"Point","coordinates":[104.93504,28.85109]},"id":"way/799018633"}
 ,
@@ -2218,7 +2247,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/863537078","landuse":"quarry","name":"Carrière Morne Coco","operator":"EIFFAGE","resource":"clay"},"geometry":{"type":"Point","coordinates":[-52.29063,4.89523]},"id":"way/863537078"}
 ,
-{"type":"Feature","properties":{"@id":"way/866171329","description":"Barreiro, extração de argila","landuse":"quarry","resource":"clay","source":"Maxar"},"geometry":{"type":"Point","coordinates":[-47.82994,-23.07193]},"id":"way/866171329"}
+{"type":"Feature","properties":{"@id":"way/866171329",
+  "url":"Barreiro, extração de argila","landuse":"quarry","resource":"clay","source":"Maxar"},"geometry":{"type":"Point","coordinates":[-47.82994,-23.07193]},"id":"way/866171329"}
 ,
 {"type":"Feature","properties":{"@id":"way/866959206","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[18.63308,50.81085]},"id":"way/866959206"}
 ,
@@ -2268,7 +2298,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/878692325","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[85.59547,26.91692]},"id":"way/878692325"}
 ,
-{"type":"Feature","properties":{"@id":"way/879096311","description":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.78508,-23.12424]},"id":"way/879096311"}
+{"type":"Feature","properties":{"@id":"way/879096311",
+  "url":"Barreiro, extração de argila","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[-47.78508,-23.12424]},"id":"way/879096311"}
 ,
 {"type":"Feature","properties":{"@id":"way/880007390","landuse":"quarry","resource":"clay"},"geometry":{"type":"Point","coordinates":[32.51195,0.09066]},"id":"way/880007390"}
 ,

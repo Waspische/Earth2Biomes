@@ -8902,7 +8902,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/104415370",
-        "description": "disused; exhausted 1989",
+        "url": "disused; exhausted 1989",
         "disused:landuse": "quarry",
         "landuse": "quarry",
         "operator": "LAMCO",

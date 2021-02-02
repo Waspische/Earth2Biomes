@@ -50,6 +50,27 @@
 { "type": "Feature", "properties": { "name": "Alpha Kingdom 9", "url": "https://app.earth2.io/#thegrid/f915a6d5-f627-40a2-95bd-2e511872c335" }, "geometry": { "type": "Point", "coordinates": [ 32.576695, -25.973478 ] } },
 { "type": "Feature", "properties": { "name": "Alpha Kingdom 14", "url": "https://app.earth2.io/#thegrid/6a2a9688-5734-42b4-96ef-b3df7c27d3ec" }, "geometry": { "type": "Point", "coordinates": [ 69.1858, 34.540925 ] } },
 { "type": "Feature", "properties": { "name": "Alpha Kingdom 17", "url": "https://app.earth2.io/#thegrid/4dfc8b8f-8da1-430a-a6d8-fb935857f717" }, "geometry": { "type": "Point", "coordinates": [ 8.524532, 47.376092 ] } },
-{ "type": "Feature", "properties": { "name": "Alpha Kingdom 19", "url": "https://app.earth2.io/#thegrid/7c3dedff-3aab-4c6c-8a7b-d34c7edde50d" }, "geometry": { "type": "Point", "coordinates": [ 73.522224, -53.091601 ] } }
+{ "type": "Feature", "properties": { "name": "Alpha Kingdom 19", "url": "https://app.earth2.io/#thegrid/7c3dedff-3aab-4c6c-8a7b-d34c7edde50d" }, "geometry": { "type": "Point", "coordinates": [ 73.522224, -53.091601 ] } },
+  { "type": "Feature", "properties": { "name": "Akrotiri", "url": "https://app.earth2.io/#thegrid/fd751118-4228-4f58-86e5-70334b7b677c" }, "geometry": { "type": "Point", "coordinates": [ 32.996407, 34.580366 ] } },
+  { "type": "Feature", "properties": { "name": "Tomorrowland", "url": "https://app.earth2.io/#thegrid/ca7d3f66-4fe0-400e-bb9f-b6c9fec97c4d" }, "geometry": { "type": "Point", "coordinates": [ 2.449437, 6.381495 ] } },
+  { "type": "Feature", "properties": { "name": "Avalon City", "url": "https://app.earth2.io/#thegrid/f11029ac-30c4-4278-a55f-7e0a481246cc" }, "geometry": { "type": "Point", "coordinates": [ 84.162483, 27.569917 ] } },
+  { "type": "Feature", "properties": { "name": "Eye of Ra", "url": "https://app.earth2.io/#thegrid/c53b85c4-8e18-456a-98a8-e1190d05fe58" }, "geometry": { "type": "Point", "coordinates": [ -86.340694, 12.246243 ] } },
+  { "type": "Feature", "properties": { "name": "GS HydroCity", "url": "https://app.earth2.io/#thegrid/4b65b7e8-89b7-4912-91e9-7fb0cefe0b0d" }, "geometry": { "type": "Point", "coordinates": [ 69.347334, 38.378538 ] } },
+  { "type": "Feature", "properties": { "name": "Slum City", "url": "https://app.earth2.io/#thegrid/ad17f123-4b69-4fae-bfd7-8dc7a7942289" }, "geometry": { "type": "Point", "coordinates": [ -16.010942, 18.151887 ] } },
+  { "type": "Feature", "properties": { "name": "Pirate City", "url": "https://app.earth2.io/#thegrid/24d61a0a-235d-4d04-91ba-8c1cbe0fa68a" }, "geometry": { "type": "Point", "coordinates": [ 51.407261, 10.44004 ] } },
+  { "type": "Feature", "properties": { "name": "Rezion City", "url": "https://app.earth2.io/#thegrid/74e279ed-de0c-4315-a948-2ad1c64f3276" }, "geometry": { "type": "Point", "coordinates": [ 21.167221, 4.337511 ] } },
+  { "type": "Feature", "properties": { "name": "Techlandia", "url": "https://app.earth2.io/#thegrid/c372dcb8-bf0e-47ff-8088-3bcbcd644021" }, "geometry": { "type": "Point", "coordinates": [ -16.165266, 14.219209 ] } },
+  { "type": "Feature", "properties": { "name": "Techopolis", "url": "https://app.earth2.io/#thegrid/fa5db81c-df67-4106-8e52-99ee06fce09c" }, "geometry": { "type": "Point", "coordinates": [ 15.277176, -4.314402 ] } },
+  { "type": "Feature", "properties": { "name": "Techtion 8", "url": "https://app.earth2.io/#thegrid/7172f350-c1c5-4c92-a72d-4b2a8924620f" }, "geometry": { "type": "Point", "coordinates": [ 27.476464, -29.305487 ] } },
+  { "type": "Feature", "properties": { "name": "Windward city", "url": "https://app.earth2.io/#thegrid/68fce9cc-f95b-4c7d-847c-b4cb9231753d" }, "geometry": { "type": "Point", "coordinates": [ -62.56748, 17.156865 ] } },
+  { "type": "Feature", "properties": { "name": "Zigurat City", "url": "23.https://app.earth2.io/#thegrid/4bea5752-f38e-4dd0-b079-84213d4ef660" }, "geometry": { "type": "Point", "coordinates": [ -15.943909, 23.711496 ] } },
+  { "type": "Feature", "properties": { "name": "Club2", "url": "https://app.earth2.io/#thegrid/be7065b1-583f-4981-8e73-c9259b03364a" }, "geometry": { "type": "Point", "coordinates": [ 28.910437, -2.387205 ] } },
+  { "type": "Feature", "properties": { "name": "Rivermouth", "url": "https://app.earth2.io/#thegrid/e94e1b15-92a0-44a7-844a-0d56395d1f9c" }, "geometry": { "type": "Point", "coordinates": [ 1.594992, 6.236637 ] } },
+  { "type": "Feature", "properties": { "name": "Synthcity", "url": "https://app.earth2.io/#thegrid/e2aa5785-ed80-40ee-aa6d-3e273807794f" }, "geometry": { "type": "Point", "coordinates": [ -17.478905, 14.755378 ] } },
+  { "type": "Feature", "properties": { "name": "iKeR Empire", "url": "https://app.earth2.io/#thegrid/34ae8871-7f54-4d2e-99c9-ed898261b8d7" }, "geometry": { "type": "Point", "coordinates": [ 25.697021, -21.504186 ] } },
+  { "type": "Feature", "properties": { "name": "Omega City", "url": "https://app.earth2.io/#thegrid/e5e12d9e-19bc-47df-804e-c8d1b37fdd9b" }, "geometry": { "type": "Point", "coordinates": [ 37.233353, 19.68882 ] } },
+  { "type": "Feature", "properties": { "name": "Man City", "url": "https://app.earth2.io/#thegrid/323a6863-828a-43ca-93e5-f61019324f72" }, "geometry": { "type": "Point", "coordinates": [ 31.210184, -26.522807 ] } },
+  { "type": "Feature", "properties": { "name": "New mega", "url": "https://app.earth2.io/#thegrid/2294c926-2f9b-4dc0-98da-8fbe8e19fb35" }, "geometry": { "type": "Point", "coordinates": [ 40.610447, -15.149849 ] } },
+  { "type": "Feature", "properties": { "name": "Triton Bay", "url": "https://app.earth2.io/#thegrid/c1a3a86b-060c-4559-b815-a166f905a094" }, "geometry": { "type": "Point", "coordinates": [ -12.284689, -36.987746 ] } }
 ]
 }

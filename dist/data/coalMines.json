@@ -14183,7 +14183,7 @@
       "type": "Feature",
       "properties": {
         "@id": "relation/10408312",
-        "description": "Бурый уголь",
+        "url": "Бурый уголь",
         "landuse": "quarry",
         "name": "угольный разрез Ангренский",
         "name:ru": "угольный разрез Ангренский",
@@ -29644,7 +29644,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/118198721",
-        "description": "Горловский угольный разрез",
+        "url": "Горловский угольный разрез",
         "landuse": "quarry",
         "name": "Горловский участок Горловского разреза",
         "operator": "АО «Сибирский Антрацит»",
@@ -86672,7 +86672,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/628893566",
-        "description": "Külszíni lignitfejtés.",
+        "url": "Külszíni lignitfejtés.",
         "landuse": "quarry",
         "name": "Bükkábrányi lignitbánya",
         "resource": "coal",

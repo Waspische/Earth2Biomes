@@ -34,7 +34,8 @@
 ,
 {"type":"Feature","properties":{"@id":"relation/9567761","landuse":"quarry","resource":"coal","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[21.24518,44.72326]},"id":"relation/9567761"}
 ,
-{"type":"Feature","properties":{"@id":"relation/10408312","description":"Бурый уголь","landuse":"quarry","name":"угольный разрез Ангренский","name:ru":"угольный разрез Ангренский","resource":"coal","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[70.18129,41.03859]},"id":"relation/10408312"}
+{"type":"Feature","properties":{"@id":"relation/10408312",
+  "url":"Бурый уголь","landuse":"quarry","name":"угольный разрез Ангренский","name:ru":"угольный разрез Ангренский","resource":"coal","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[70.18129,41.03859]},"id":"relation/10408312"}
 ,
 {"type":"Feature","properties":{"@id":"relation/11268963","disused":"yes","landuse":"quarry","resource":"coal","source:geometry":"Maxar","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[79.06938,20.0792]},"id":"relation/11268963"}
 ,
@@ -142,7 +143,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/117807504","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[86.44998,23.71149]},"id":"way/117807504"}
 ,
-{"type":"Feature","properties":{"@id":"way/118198721","description":"Горловский угольный разрез","landuse":"quarry","name":"Горловский участок Горловского разреза","operator":"АО «Сибирский Антрацит»","resource":"coal"},"geometry":{"type":"Point","coordinates":[83.58756,54.56902]},"id":"way/118198721"}
+{"type":"Feature","properties":{"@id":"way/118198721",
+  "url":"Горловский угольный разрез","landuse":"quarry","name":"Горловский участок Горловского разреза","operator":"АО «Сибирский Антрацит»","resource":"coal"},"geometry":{"type":"Point","coordinates":[83.58756,54.56902]},"id":"way/118198721"}
 ,
 {"type":"Feature","properties":{"@id":"way/118198755","landuse":"quarry","name":"Ургунский участок Горловского разреза","operator":"АО «Сибирский Антрацит»","resource":"coal"},"geometry":{"type":"Point","coordinates":[83.46116,54.49868]},"id":"way/118198755"}
 ,
@@ -830,7 +832,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/617809808","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[-106.85964,45.88001]},"id":"way/617809808"}
 ,
-{"type":"Feature","properties":{"@id":"way/628893566","description":"Külszíni lignitfejtés.","landuse":"quarry","name":"Bükkábrányi lignitbánya","resource":"coal","wikidata":"Q16255799"},"geometry":{"type":"Point","coordinates":[20.717,47.88259]},"id":"way/628893566"}
+{"type":"Feature","properties":{"@id":"way/628893566",
+  "url":"Külszíni lignitfejtés.","landuse":"quarry","name":"Bükkábrányi lignitbánya","resource":"coal","wikidata":"Q16255799"},"geometry":{"type":"Point","coordinates":[20.717,47.88259]},"id":"way/628893566"}
 ,
 {"type":"Feature","properties":{"@id":"way/642028323","landuse":"quarry","resource":"coal"},"geometry":{"type":"Point","coordinates":[150.50361,-24.20298]},"id":"way/642028323"}
 ,

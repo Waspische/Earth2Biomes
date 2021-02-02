@@ -124,7 +124,8 @@
 ,
 {"type":"Feature","properties":{"@id":"relation/10755623","landuse":"quarry","natural":"wetland","resource":"peat","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[29.65064,60.87682]},"id":"relation/10755623"}
 ,
-{"type":"Feature","properties":{"@id":"relation/10772406","description":"Torvtäkt, torvbruk (Peat extraction site).","landuse":"quarry","resource":"peat","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[14.72976,59.13314]},"id":"relation/10772406"}
+{"type":"Feature","properties":{"@id":"relation/10772406",
+  "url":"Torvtäkt, torvbruk (Peat extraction site).","landuse":"quarry","resource":"peat","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[14.72976,59.13314]},"id":"relation/10772406"}
 ,
 {"type":"Feature","properties":{"@id":"relation/10824212","landuse":"quarry","resource":"peat","type":"multipolygon"},"geometry":{"type":"Point","coordinates":[14.74675,59.09857]},"id":"relation/10824212"}
 ,
@@ -214,7 +215,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/50392729","landuse":"quarry","name":"Торфове Родовище \"Морочно\"","resource":"peat"},"geometry":{"type":"Point","coordinates":[26.47322,51.75592]},"id":"way/50392729"}
 ,
-{"type":"Feature","properties":{"@id":"way/53724432","description":"Torfabbau","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[8.07533,53.12141]},"id":"way/53724432"}
+{"type":"Feature","properties":{"@id":"way/53724432",
+  "url":"Torfabbau","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[8.07533,53.12141]},"id":"way/53724432"}
 ,
 {"type":"Feature","properties":{"@id":"way/53764795","landuse":"quarry","name":"Torfstich","resource":"peat"},"geometry":{"type":"Point","coordinates":[8.098,53.06879]},"id":"way/53764795"}
 ,
@@ -222,7 +224,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/53767277","landuse":"quarry","name":"Torfstich","resource":"peat"},"geometry":{"type":"Point","coordinates":[8.09994,53.06187]},"id":"way/53767277"}
 ,
-{"type":"Feature","properties":{"@id":"way/55420412","description":"Torfabbau","landuse":"quarry","name":"Torfabbau","resource":"peat"},"geometry":{"type":"Point","coordinates":[7.99162,53.06903]},"id":"way/55420412"}
+{"type":"Feature","properties":{"@id":"way/55420412",
+  "url":"Torfabbau","landuse":"quarry","name":"Torfabbau","resource":"peat"},"geometry":{"type":"Point","coordinates":[7.99162,53.06903]},"id":"way/55420412"}
 ,
 {"type":"Feature","properties":{"@id":"way/61759822","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[82.69638,55.0226]},"id":"way/61759822"}
 ,
@@ -290,7 +293,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/94525967","landuse":"quarry","name":"Torfabbau","resource":"peat"},"geometry":{"type":"Point","coordinates":[8.05961,53.13421]},"id":"way/94525967"}
 ,
-{"type":"Feature","properties":{"@id":"way/94533925","description":"Torfabbau","landuse":"quarry","name":"Torfabbau","resource":"peat"},"geometry":{"type":"Point","coordinates":[7.99917,53.03433]},"id":"way/94533925"}
+{"type":"Feature","properties":{"@id":"way/94533925",
+  "url":"Torfabbau","landuse":"quarry","name":"Torfabbau","resource":"peat"},"geometry":{"type":"Point","coordinates":[7.99917,53.03433]},"id":"way/94533925"}
 ,
 {"type":"Feature","properties":{"@id":"way/97307684","landuse":"quarry","natural":"wetland","resource":"peat","wetland":"bog"},"geometry":{"type":"Point","coordinates":[31.73429,59.73299]},"id":"way/97307684"}
 ,
@@ -434,7 +438,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/106232549","clc:code":"412","landuse":"quarry","managed":"yes","name":"Haapahaikulansuo","natural":"wetland","note":"Corine Beat bogs","resource":"peat","source":"corine_2006","wetland":"bog"},"geometry":{"type":"Point","coordinates":[26.86234,60.8392]},"id":"way/106232549"}
 ,
-{"type":"Feature","properties":{"@id":"way/106532800","description":"торфоразработка","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[54.03907,63.52532]},"id":"way/106532800"}
+{"type":"Feature","properties":{"@id":"way/106532800",
+  "url":"торфоразработка","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[54.03907,63.52532]},"id":"way/106532800"}
 ,
 {"type":"Feature","properties":{"@id":"way/107075320","landuse":"quarry","name":"Laviassuo","operator":"Vapo","resource":"peat"},"geometry":{"type":"Point","coordinates":[25.97069,61.1115]},"id":"way/107075320"}
 ,
@@ -496,9 +501,11 @@
 ,
 {"type":"Feature","properties":{"@id":"way/119638116","landuse":"quarry","resource":"peat","source":"Bing"},"geometry":{"type":"Point","coordinates":[23.22515,62.26302]},"id":"way/119638116"}
 ,
-{"type":"Feature","properties":{"@id":"way/119774118","description":"Torfabbau","landuse":"quarry","name":"Torfabbau","resource":"peat"},"geometry":{"type":"Point","coordinates":[7.97492,53.08268]},"id":"way/119774118"}
+{"type":"Feature","properties":{"@id":"way/119774118",
+  "url":"Torfabbau","landuse":"quarry","name":"Torfabbau","resource":"peat"},"geometry":{"type":"Point","coordinates":[7.97492,53.08268]},"id":"way/119774118"}
 ,
-{"type":"Feature","properties":{"@id":"way/120306099","description":"Torfabbau","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[8.01876,53.09366]},"id":"way/120306099"}
+{"type":"Feature","properties":{"@id":"way/120306099",
+  "url":"Torfabbau","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[8.01876,53.09366]},"id":"way/120306099"}
 ,
 {"type":"Feature","properties":{"@id":"way/121796762","landuse":"quarry","name":"Šepetos durpynas","resource":"peat"},"geometry":{"type":"Point","coordinates":[25.02206,55.78778]},"id":"way/121796762"}
 ,
@@ -1302,7 +1309,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/189049927","landuse":"quarry","resource":"peat","source":"MML 2012"},"geometry":{"type":"Point","coordinates":[24.16256,63.21064]},"id":"way/189049927"}
 ,
-{"type":"Feature","properties":{"@id":"way/189308790","description":"торф","landuse":"quarry","name":"Заозёрское","resource":"peat"},"geometry":{"type":"Point","coordinates":[29.12503,59.69769]},"id":"way/189308790"}
+{"type":"Feature","properties":{"@id":"way/189308790",
+  "url":"торф","landuse":"quarry","name":"Заозёрское","resource":"peat"},"geometry":{"type":"Point","coordinates":[29.12503,59.69769]},"id":"way/189308790"}
 ,
 {"type":"Feature","properties":{"@id":"way/189332320","landuse":"quarry","name":"Oriinselänneva","resource":"peat","source":"MML 2012"},"geometry":{"type":"Point","coordinates":[24.12779,63.55551]},"id":"way/189332320"}
 ,
@@ -1328,7 +1336,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/201059729","landuse":"quarry","resource":"peat","source":"NRCan-CanVec-10.0"},"geometry":{"type":"Point","coordinates":[-96.20623,50.04874]},"id":"way/201059729"}
 ,
-{"type":"Feature","properties":{"@id":"way/207184253","description":"Torfabbau","landuse":"quarry","name":"Torfabbau","resource":"peat"},"geometry":{"type":"Point","coordinates":[8.03416,53.04279]},"id":"way/207184253"}
+{"type":"Feature","properties":{"@id":"way/207184253",
+  "url":"Torfabbau","landuse":"quarry","name":"Torfabbau","resource":"peat"},"geometry":{"type":"Point","coordinates":[8.03416,53.04279]},"id":"way/207184253"}
 ,
 {"type":"Feature","properties":{"@id":"way/213901586","landuse":"quarry","resource":"peat","source":"NŽT ortofoto 2009-2010"},"geometry":{"type":"Point","coordinates":[21.99951,56.25287]},"id":"way/213901586"}
 ,
@@ -1388,7 +1397,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/236763843","landuse":"quarry","natural":"wetland","operator":"Bord na Móna","resource":"peat","wetland":"bog"},"geometry":{"type":"Point","coordinates":[-7.40376,53.68525]},"id":"way/236763843"}
 ,
-{"type":"Feature","properties":{"@id":"way/240399958","description":"Torfabbau","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[7.94126,53.07861]},"id":"way/240399958"}
+{"type":"Feature","properties":{"@id":"way/240399958",
+  "url":"Torfabbau","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[7.94126,53.07861]},"id":"way/240399958"}
 ,
 {"type":"Feature","properties":{"@id":"way/247024405","landuse":"quarry","name":"Torfabbau","resource":"peat"},"geometry":{"type":"Point","coordinates":[8.04916,53.14731]},"id":"way/247024405"}
 ,
@@ -1692,29 +1702,41 @@
 ,
 {"type":"Feature","properties":{"@id":"way/452491760","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[22.53836,61.78855]},"id":"way/452491760"}
 ,
-{"type":"Feature","properties":{"@id":"way/475880063","description":"Peat workings","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[-2.79949,55.01262]},"id":"way/475880063"}
+{"type":"Feature","properties":{"@id":"way/475880063",
+  "url":"Peat workings","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[-2.79949,55.01262]},"id":"way/475880063"}
 ,
-{"type":"Feature","properties":{"@id":"way/475886643","description":"Peat workings","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[-3.02967,55.01481]},"id":"way/475886643"}
+{"type":"Feature","properties":{"@id":"way/475886643",
+  "url":"Peat workings","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[-3.02967,55.01481]},"id":"way/475886643"}
 ,
-{"type":"Feature","properties":{"@id":"way/475901746","description":"Peat workings","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[-3.15781,54.9959]},"id":"way/475901746"}
+{"type":"Feature","properties":{"@id":"way/475901746",
+  "url":"Peat workings","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[-3.15781,54.9959]},"id":"way/475901746"}
 ,
-{"type":"Feature","properties":{"@id":"way/475902185","description":"Peat workings","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[-3.15552,55.00501]},"id":"way/475902185"}
+{"type":"Feature","properties":{"@id":"way/475902185",
+  "url":"Peat workings","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[-3.15552,55.00501]},"id":"way/475902185"}
 ,
-{"type":"Feature","properties":{"@id":"way/475902839","description":"Peat workings","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[-3.21215,55.02877]},"id":"way/475902839"}
+{"type":"Feature","properties":{"@id":"way/475902839",
+  "url":"Peat workings","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[-3.21215,55.02877]},"id":"way/475902839"}
 ,
-{"type":"Feature","properties":{"@id":"way/475903822","description":"Old peat workings","disused":"yes","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[-3.06722,55.07405]},"id":"way/475903822"}
+{"type":"Feature","properties":{"@id":"way/475903822",
+  "url":"Old peat workings","disused":"yes","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[-3.06722,55.07405]},"id":"way/475903822"}
 ,
-{"type":"Feature","properties":{"@id":"way/475906719","description":"Peat workings","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[-3.19189,54.93055]},"id":"way/475906719"}
+{"type":"Feature","properties":{"@id":"way/475906719",
+  "url":"Peat workings","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[-3.19189,54.93055]},"id":"way/475906719"}
 ,
-{"type":"Feature","properties":{"@id":"way/475906720","description":"Peat workings","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[-3.22203,54.93648]},"id":"way/475906720"}
+{"type":"Feature","properties":{"@id":"way/475906720",
+  "url":"Peat workings","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[-3.22203,54.93648]},"id":"way/475906720"}
 ,
-{"type":"Feature","properties":{"@id":"way/475907176","description":"Peat workings","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[-3.22027,54.92128]},"id":"way/475907176"}
+{"type":"Feature","properties":{"@id":"way/475907176",
+  "url":"Peat workings","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[-3.22027,54.92128]},"id":"way/475907176"}
 ,
-{"type":"Feature","properties":{"@id":"way/475908378","description":"Old peat workings","disused":"yes","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[-3.16377,54.91283]},"id":"way/475908378"}
+{"type":"Feature","properties":{"@id":"way/475908378",
+  "url":"Old peat workings","disused":"yes","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[-3.16377,54.91283]},"id":"way/475908378"}
 ,
-{"type":"Feature","properties":{"@id":"way/475913135","abandoned":"yes","description":"Old peat workings","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[-3.21641,54.8661]},"id":"way/475913135"}
+{"type":"Feature","properties":{"@id":"way/475913135","abandoned":"yes",
+  "url":"Old peat workings","landuse":"quarry","resource":"peat"},"geometry":{"type":"Point","coordinates":[-3.21641,54.8661]},"id":"way/475913135"}
 ,
-{"type":"Feature","properties":{"@id":"way/481556346","description":"Haapasuo peat production area.","landuse":"quarry","name":"Vapo Haapasuo Turvetuotantoalue","resource":"peat","source":"local knowledge"},"geometry":{"type":"Point","coordinates":[26.07369,61.90462]},"id":"way/481556346"}
+{"type":"Feature","properties":{"@id":"way/481556346",
+  "url":"Haapasuo peat production area.","landuse":"quarry","name":"Vapo Haapasuo Turvetuotantoalue","resource":"peat","source":"local knowledge"},"geometry":{"type":"Point","coordinates":[26.07369,61.90462]},"id":"way/481556346"}
 ,
 {"type":"Feature","properties":{"@id":"way/482584172","landuse":"quarry","resource":"peat","source":"Bing"},"geometry":{"type":"Point","coordinates":[-96.49557,49.63704]},"id":"way/482584172"}
 ,

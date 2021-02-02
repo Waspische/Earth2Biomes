@@ -354,7 +354,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/32953914","landuse":"quarry","name":"Quarzsandgrube Schwer","resource":"sand"},"geometry":{"type":"Point","coordinates":[9.89204,48.36195]},"id":"way/32953914"}
 ,
-{"type":"Feature","properties":{"@id":"way/33914146","description":"Sandabbau","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[10.71237,48.84577]},"id":"way/33914146"}
+{"type":"Feature","properties":{"@id":"way/33914146",
+  "url":"Sandabbau","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[10.71237,48.84577]},"id":"way/33914146"}
 ,
 {"type":"Feature","properties":{"@id":"way/34701881","addr:city":"Windischleuba","addr:country":"DE","addr:housenumber":"1","addr:postcode":"04603","addr:street":"Hauptstraße","contact:email":"michael.dimmer@icloud.com","contact:mobile":"+49 160 92337045","contact:phone":"+49 3447 834485","contact:website":"http://www.kieswerk-windischleuba.de/","landuse":"quarry","name":"Kieswerk Windischleuba","note":"Kiesgrube","opening_hours":"Mo-Th 06:30-16:00; Fr 06:30-15:45; Sa,Su.PH off","operator":"D.L.S. GmbH & Co. KG Kieswerk Windischleuba","resource":"sand","source":"Bing"},"geometry":{"type":"Point","coordinates":[12.45961,51.01798]},"id":"way/34701881"}
 ,
@@ -402,7 +403,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/42317317","landuse":"quarry","resource":"sand","source":"Regione Lombardia - La banca dati territoriali CTR10000 è prodotta da Regione Lombardia - Infrastruttura per l'Informazione Territoriale"},"geometry":{"type":"Point","coordinates":[11.29709,45.01116]},"id":"way/42317317"}
 ,
-{"type":"Feature","properties":{"@id":"way/42612398","description":"Kiesgrube","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[10.52369,54.15283]},"id":"way/42612398"}
+{"type":"Feature","properties":{"@id":"way/42612398",
+  "url":"Kiesgrube","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[10.52369,54.15283]},"id":"way/42612398"}
 ,
 {"type":"Feature","properties":{"@id":"way/42612683","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[10.51433,54.15615]},"id":"way/42612683"}
 ,
@@ -442,7 +444,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/62869255","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[12.57606,54.06491]},"id":"way/62869255"}
 ,
-{"type":"Feature","properties":{"@id":"way/66732951","description":"Hiekkakuoppa","landuse":"quarry","resource":"sand","source":"landsat","surface":"sand"},"geometry":{"type":"Point","coordinates":[25.6741,62.21006]},"id":"way/66732951"}
+{"type":"Feature","properties":{"@id":"way/66732951",
+  "url":"Hiekkakuoppa","landuse":"quarry","resource":"sand","source":"landsat","surface":"sand"},"geometry":{"type":"Point","coordinates":[25.6741,62.21006]},"id":"way/66732951"}
 ,
 {"type":"Feature","properties":{"@id":"way/68810495","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[10.22844,49.75812]},"id":"way/68810495"}
 ,
@@ -452,7 +455,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/71769397","landuse":"quarry","resource":"sand","source":"CanVec 6.0 - NRCan"},"geometry":{"type":"Point","coordinates":[-84.91772,47.97007]},"id":"way/71769397"}
 ,
-{"type":"Feature","properties":{"@id":"way/73210858","description":"Hiekkakuoppa","landuse":"quarry","resource":"sand","surface":"sand"},"geometry":{"type":"Point","coordinates":[25.85573,62.36839]},"id":"way/73210858"}
+{"type":"Feature","properties":{"@id":"way/73210858",
+  "url":"Hiekkakuoppa","landuse":"quarry","resource":"sand","surface":"sand"},"geometry":{"type":"Point","coordinates":[25.85573,62.36839]},"id":"way/73210858"}
 ,
 {"type":"Feature","properties":{"@id":"way/83842032","landuse":"quarry","name":"Sandgrube","resource":"sand"},"geometry":{"type":"Point","coordinates":[10.97554,48.57619]},"id":"way/83842032"}
 ,
@@ -658,7 +662,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/128492201","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[10.33191,54.08319]},"id":"way/128492201"}
 ,
-{"type":"Feature","properties":{"@id":"way/128511104","description":"pedreres d'arena","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[3.12266,39.77823]},"id":"way/128511104"}
+{"type":"Feature","properties":{"@id":"way/128511104",
+  "url":"pedreres d'arena","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[3.12266,39.77823]},"id":"way/128511104"}
 ,
 {"type":"Feature","properties":{"@id":"way/129761278","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[10.31748,54.08161]},"id":"way/129761278"}
 ,
@@ -812,7 +817,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/177133765","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[43.85335,56.371]},"id":"way/177133765"}
 ,
-{"type":"Feature","properties":{"@id":"way/177966384","abandoned":"yes","description":"Песчаный карьер","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[39.1836,56.63256]},"id":"way/177966384"}
+{"type":"Feature","properties":{"@id":"way/177966384","abandoned":"yes",
+  "url":"Песчаный карьер","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[39.1836,56.63256]},"id":"way/177966384"}
 ,
 {"type":"Feature","properties":{"@id":"way/178601137","landuse":"quarry","resource":"sand","surface":"sand"},"geometry":{"type":"Point","coordinates":[53.8473,67.60598]},"id":"way/178601137"}
 ,
@@ -1848,7 +1854,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/444925185","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[29.52277,67.4834]},"id":"way/444925185"}
 ,
-{"type":"Feature","properties":{"@id":"way/444928213","description":"гидронамыв , погрузка песка","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[76.96898,61.15211]},"id":"way/444928213"}
+{"type":"Feature","properties":{"@id":"way/444928213",
+  "url":"гидронамыв , погрузка песка","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[76.96898,61.15211]},"id":"way/444928213"}
 ,
 {"type":"Feature","properties":{"@id":"way/444942453","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[29.35189,67.39883]},"id":"way/444942453"}
 ,
@@ -1946,7 +1953,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/464323814","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[26.58657,60.98752]},"id":"way/464323814"}
 ,
-{"type":"Feature","properties":{"@id":"way/464760036","description":"Kisebb homokbánya, partifecske fészkekkel.","landuse":"quarry","name":"Homokbánya","resource":"sand","source":"turistautak.hu","source:date":"2013-12-02","url":"http://turistautak.hu/poi.php?id=131156"},"geometry":{"type":"Point","coordinates":[20.64718,48.22084]},"id":"way/464760036"}
+{"type":"Feature","properties":{"@id":"way/464760036",
+  "url":"Kisebb homokbánya, partifecske fészkekkel.","landuse":"quarry","name":"Homokbánya","resource":"sand","source":"turistautak.hu","source:date":"2013-12-02","url":"http://turistautak.hu/poi.php?id=131156"},"geometry":{"type":"Point","coordinates":[20.64718,48.22084]},"id":"way/464760036"}
 ,
 {"type":"Feature","properties":{"@id":"way/466208778","landuse":"quarry","name":"Homokbánya","resource":"sand"},"geometry":{"type":"Point","coordinates":[20.31183,48.09336]},"id":"way/466208778"}
 ,
@@ -2144,7 +2152,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/518151068","landuse":"quarry","name":"GDC Güdücüler Madencilik Silis Kum Sanayi, Sanayi ve Filitre Kumu İşletmeciliği","operator":"Güdücüler Madencilik Silis Kum Sanayi, Sanayi ve Filitre Kumu İşletmeciliği","resource":"sand"},"geometry":{"type":"Point","coordinates":[27.13685,41.35226]},"id":"way/518151068"}
 ,
-{"type":"Feature","properties":{"@id":"way/518677637","addr:housenumber":"119","description":"вважається продовженням промзони зліва","landuse":"quarry","name":"Нелегальний кар'єр","name:uk":"Нелегальний кар'єр","resource":"sand"},"geometry":{"type":"Point","coordinates":[29.27713,50.76349]},"id":"way/518677637"}
+{"type":"Feature","properties":{"@id":"way/518677637","addr:housenumber":"119",
+  "url":"вважається продовженням промзони зліва","landuse":"quarry","name":"Нелегальний кар'єр","name:uk":"Нелегальний кар'єр","resource":"sand"},"geometry":{"type":"Point","coordinates":[29.27713,50.76349]},"id":"way/518677637"}
 ,
 {"type":"Feature","properties":{"@id":"way/520072606","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[26.98141,60.95789]},"id":"way/520072606"}
 ,
@@ -2442,9 +2451,11 @@
 ,
 {"type":"Feature","properties":{"@id":"way/666339305","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[15.47292,69.00053]},"id":"way/666339305"}
 ,
-{"type":"Feature","properties":{"@id":"way/668595471","description":"Sand and Stone Sale Production","landuse":"quarry","name":"သဲကျောက်ထုတ်လုပ်ရေးလုပ်ငန်း","name:en":"Sand and Stone Sale Production","name:my":"သဲကျောက်ထုတ်လုပ်ရေးလုပ်ငန်း","resource":"sand","source":"omm-drd mapping - local knowledge + bing"},"geometry":{"type":"Point","coordinates":[97.5533,16.27524]},"id":"way/668595471"}
+{"type":"Feature","properties":{"@id":"way/668595471",
+  "url":"Sand and Stone Sale Production","landuse":"quarry","name":"သဲကျောက်ထုတ်လုပ်ရေးလုပ်ငန်း","name:en":"Sand and Stone Sale Production","name:my":"သဲကျောက်ထုတ်လုပ်ရေးလုပ်ငန်း","resource":"sand","source":"omm-drd mapping - local knowledge + bing"},"geometry":{"type":"Point","coordinates":[97.5533,16.27524]},"id":"way/668595471"}
 ,
-{"type":"Feature","properties":{"@id":"way/668595477","description":"A place where sand and river single production for construction","landuse":"quarry","name":"သဲ၊ကျောက်ထုတ်လုပ်ရေး","name:en":"Sand And River Production","name:my":"သဲ၊ကျောက်ထုတ်လုပ်ရေး","resource":"sand","source":"omm-drd mapping - local knowledge + bing"},"geometry":{"type":"Point","coordinates":[97.53822,16.49727]},"id":"way/668595477"}
+{"type":"Feature","properties":{"@id":"way/668595477",
+  "url":"A place where sand and river single production for construction","landuse":"quarry","name":"သဲ၊ကျောက်ထုတ်လုပ်ရေး","name:en":"Sand And River Production","name:my":"သဲ၊ကျောက်ထုတ်လုပ်ရေး","resource":"sand","source":"omm-drd mapping - local knowledge + bing"},"geometry":{"type":"Point","coordinates":[97.53822,16.49727]},"id":"way/668595477"}
 ,
 {"type":"Feature","properties":{"@id":"way/668696591","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[-97.49551,35.19233]},"id":"way/668696591"}
 ,
@@ -2474,7 +2485,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/680719448","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[7.99823,49.88821]},"id":"way/680719448"}
 ,
-{"type":"Feature","properties":{"@id":"way/683031568","area":"yes","description":"Used during construction of Tuen Mun New Town in 1970s","landuse":"quarry","name":"前採泥區 Former Borrow Area","name:en":"Former Borrow Area","name:zh":"前採泥區","name:zh-Hans":"前采泥区","name:zh-Hant":"前採泥區","resource":"sand"},"geometry":{"type":"Point","coordinates":[113.94065,22.37231]},"id":"way/683031568"}
+{"type":"Feature","properties":{"@id":"way/683031568","area":"yes",
+  "url":"Used during construction of Tuen Mun New Town in 1970s","landuse":"quarry","name":"前採泥區 Former Borrow Area","name:en":"Former Borrow Area","name:zh":"前採泥區","name:zh-Hans":"前采泥区","name:zh-Hant":"前採泥區","resource":"sand"},"geometry":{"type":"Point","coordinates":[113.94065,22.37231]},"id":"way/683031568"}
 ,
 {"type":"Feature","properties":{"@id":"way/684517824","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[14.55169,51.57092]},"id":"way/684517824"}
 ,
@@ -2822,7 +2834,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/789210176","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[23.99659,67.5572]},"id":"way/789210176"}
 ,
-{"type":"Feature","properties":{"@id":"way/790529713","description":"https://photos.app.goo.gl/FFHcWut4RcUCW7uU7","email":"j.kozlowski@lubuskiekruszywa.pl","fax":"+48 68 391 33 53","image":"https://images.mapillary.com/a5n8NFIjxXJJNOJCYfZ8PA/thumb-2048.jpg","landuse":"quarry","mapillary":"https://www.mapillary.com/map/im/a5n8NFIjxXJJNOJCYfZ8PA","name":"Lubuskie Kruszywa Kopalnia Tarnawa","phone":"+48 68 383 27 89;48 601 053 832","resource":"sand","website":"http://lubuskiekruszywa.pl/"},"geometry":{"type":"Point","coordinates":[15.15021,51.91859]},"id":"way/790529713"}
+{"type":"Feature","properties":{"@id":"way/790529713",
+  "url":"https://photos.app.goo.gl/FFHcWut4RcUCW7uU7","email":"j.kozlowski@lubuskiekruszywa.pl","fax":"+48 68 391 33 53","image":"https://images.mapillary.com/a5n8NFIjxXJJNOJCYfZ8PA/thumb-2048.jpg","landuse":"quarry","mapillary":"https://www.mapillary.com/map/im/a5n8NFIjxXJJNOJCYfZ8PA","name":"Lubuskie Kruszywa Kopalnia Tarnawa","phone":"+48 68 383 27 89;48 601 053 832","resource":"sand","website":"http://lubuskiekruszywa.pl/"},"geometry":{"type":"Point","coordinates":[15.15021,51.91859]},"id":"way/790529713"}
 ,
 {"type":"Feature","properties":{"@id":"way/790872995","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[7.73527,52.64148]},"id":"way/790872995"}
 ,
@@ -3056,7 +3069,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/843871345","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[30.53152,50.6362]},"id":"way/843871345"}
 ,
-{"type":"Feature","properties":{"@id":"way/844693628","description":"砂取場","landuse":"quarry","resource":"sand","source":"GSImaps/seamlessphoto;GSImaps/std;survey"},"geometry":{"type":"Point","coordinates":[139.98465,35.26896]},"id":"way/844693628"}
+{"type":"Feature","properties":{"@id":"way/844693628",
+  "url":"砂取場","landuse":"quarry","resource":"sand","source":"GSImaps/seamlessphoto;GSImaps/std;survey"},"geometry":{"type":"Point","coordinates":[139.98465,35.26896]},"id":"way/844693628"}
 ,
 {"type":"Feature","properties":{"@id":"way/844852232","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[17.31897,52.38018]},"id":"way/844852232"}
 ,
@@ -3130,7 +3144,8 @@
 ,
 {"type":"Feature","properties":{"@id":"way/855600574","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[20.70121,46.16139]},"id":"way/855600574"}
 ,
-{"type":"Feature","properties":{"@id":"way/855621132","description":"Atribute übernommen aus Punkt","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[7.84394,52.54928]},"id":"way/855621132"}
+{"type":"Feature","properties":{"@id":"way/855621132",
+  "url":"Atribute übernommen aus Punkt","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[7.84394,52.54928]},"id":"way/855621132"}
 ,
 {"type":"Feature","properties":{"@id":"way/857388634","landuse":"quarry","resource":"sand"},"geometry":{"type":"Point","coordinates":[11.03211,48.41846]},"id":"way/857388634"}
 ,
