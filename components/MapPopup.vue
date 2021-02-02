@@ -11,6 +11,7 @@
         {{ popupName }}
       </v-card-title>
       <v-card-text
+        v-if="type === 'quarry'"
         class="pa-0"
       >
         <v-btn
@@ -25,7 +26,14 @@
         </v-btn>
         {{ geoposition }}
       </v-card-text>
+      <v-card-text
+        v-if="type === 'urban'"
+        class="pa-0 justify-center"
+      >
+        Click to open in Earth2
+      </v-card-text>
       <v-card-actions
+        v-if="type === 'quarry'"
         class="justify-center"
       >
         <v-btn
@@ -48,15 +56,20 @@ import { mapMutations } from 'vuex'
 
 export default {
   name: 'MapPopup',
-  props: ['popupName', 'lat', 'lng'],
+  props: ['popupName', 'lat', 'lng', 'type'],
   data () {
     return {
-      geoposition: this.lat.toString().substring(0, 10) + ', ' + this.lng.toString().substring(0, 10),
       snackbar: false,
       text: 'Position copied in clipboard'
     }
   },
   computed: {
+    geoposition () {
+      if (this.type === 'quarry') {
+        return this.lat.toString().substring(0, 10) + ', ' + this.lng.toString().substring(0, 10)
+      }
+      return null
+    }
   },
   methods: {
     onCopy (e) {

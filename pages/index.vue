@@ -26,7 +26,7 @@
               <v-radio
                 v-for="landuse in biome.landuses"
                 :key="landuse.name"
-                :value="landuse.name"
+                :value="landuse"
                 :label="`${landuse.name}`"
                 @click="onLanduseSelection(landuse)"
               />
@@ -62,55 +62,63 @@ export default {
             {
               name: 'Gold',
               fileName: 'goldMines',
-              color: '#FFD700'
+              color: '#FFD700',
+              type: 'quarry'
             },
             {
               name: 'Clay',
               fileName: 'clayMines',
-              color: '#D4C59C'
+              color: '#D4C59C',
+              type: 'quarry'
             },
             {
               name: 'Sand',
               fileName: 'sandMines',
-              color: '#c2b280'
+              color: '#c2b280',
+              type: 'quarry'
             },
             {
               name: 'Peat',
               fileName: 'peatMines',
-              color: '#766D52'
+              color: '#766D52',
+              type: 'quarry'
             },
             {
               name: 'Coal',
               fileName: 'coalMines',
-              color: '#36454f'
+              color: '#36454f',
+              type: 'quarry'
             },
             {
               name: 'Uranium',
               fileName: 'uraniumMines',
-              color: '#757575'
+              color: '#757575',
+              type: 'quarry'
             },
             {
               name: 'Silver',
               fileName: 'silverMines',
-              color: '#C0C0C0'
+              color: '#C0C0C0',
+              type: 'quarry'
             },
             {
               name: 'Iron ore',
               fileName: 'ironOreMines',
-              color: '#4e4f55'
+              color: '#4e4f55',
+              type: 'quarry'
+            }
+          ]
+        },
+        {
+          name: 'Urban',
+          landuses: [
+            {
+              name: 'Cities',
+              fileName: 'cities',
+              type: 'urban'
             }
           ]
         }
-        // {
-        //   name: 'Urban',
-        //   landuses: [
-        //     {
-        //       name: 'Cities',
-        //       fileName: 'goldMines.json',
-        //       color: '#FFD700'
-        //     }
-        //   ]
-        // }
       ],
       selectedLanduse: null,
       previousLanduse: null,
@@ -122,7 +130,6 @@ export default {
         type: 'fill',
         minzoom: 11,
         paint: {
-          'fill-color': '#B42222',
           'fill-opacity': 0.8
         },
         filter: ['==', '$type', 'Polygon']
@@ -144,9 +151,26 @@ export default {
         maxzoom: 11,
         paint: {
           'circle-radius': 4,
-          'circle-color': '#ff001d',
           'circle-stroke-color': '#000',
           'circle-stroke-width': 1
+        }
+      },
+      citiesLocation: {
+        id: 'citiesLocation',
+        source: 'urban',
+        type: 'symbol',
+        layout: {
+          'icon-image': 'town-hall-15',
+          'icon-allow-overlap': true,
+          'text-font': [
+            'Open Sans Bold',
+            'Arial Unicode MS Bold'
+          ]
+        },
+        paint: {
+          'text-color': '#202',
+          'text-halo-color': '#fff',
+          'text-halo-width': 2
         }
       },
       minesLocationStroke: {
@@ -173,7 +197,8 @@ export default {
     this.map = new mapboxgl.Map({
       container: 'map',
       style: this.mapStyle,
-      zoom: 1 // starting zoom
+      zoom: 1, // starting zoom
+      sprite: 'mapbox://sprites/mapbox/bright-v8'
     })
     this.map.addControl(new mapboxgl.NavigationControl(), 'top-right')
     this.map.on('load', this.onMapLoad)
@@ -186,7 +211,6 @@ export default {
       // this.map = event.map
       // or just to store if you want have access from other components
       // this.$store.map = event.map
-      // Here we cathing 'load' map event
       this.map.addSource('carte', {
         type: 'geojson',
         data: {
@@ -201,30 +225,55 @@ export default {
           features: []
         }
       })
+      this.map.addSource('urban', {
+        type: 'geojson',
+        data: {
+          type: 'FeatureCollection',
+          features: []
+        }
+      })
 
       this.map.addLayer(this.minesBoundary)
       this.map.addLayer(this.minesLocation)
       this.map.addLayer(this.minesLocationStroke)
       this.map.addLayer(this.minesLabels)
+      this.map.addLayer(this.citiesLocation)
       this.map.on('click', 'minesBoundary', this.onFeatureClick)
       this.map.on('click', 'minesLabels', this.onFeatureClick)
+      this.map.on('click', 'citiesLocation', this.onCityClick)
 
       this.map.on('mouseenter', 'minesBoundary', this.onMouseEnter)
       this.map.on('mouseenter', 'minesLabels', this.onMouseEnter)
       this.map.on('mouseleave', 'minesBoundary', this.onMouseOut)
       this.map.on('mouseleave', 'minesLabels', this.onMouseOut)
+      this.map.on('mouseenter', 'citiesLocation', this.onMouseEnterCity)
+      this.map.on('mouseleave', 'citiesLocation', this.onMouseOutCity)
       // this.map.on("click", this.onClick)
     },
     async onLanduseSelection (landuse) {
       console.log(this.selectedLanduse)
       if (this.selectedLanduse !== this.previousLanduse) {
         this.previousLanduse = this.selectedLanduse
-        await this.map.getSource('carte').d('./data/' + landuse.fileName + '.json')
-        await this.map.getSource('labels').setData('./data/' + landuse.fileName + 'Labels.json')
-        this.map.setPaintProperty('minesBoundary', 'fill-color', landuse.color)
-        this.map.setPaintProperty('minesLocation', 'circle-color', landuse.color)
-        this.map.setPaintProperty('minesLabels', 'circle-color', landuse.color)
-        this.map.setPaintProperty('minesLocation-stroke', 'line-color', landuse.color)
+        if (landuse.type === 'quarry') {
+          await this.map.getSource('carte').setData('./data/' + landuse.fileName + '.json')
+          await this.map.getSource('labels').setData('./data/' + landuse.fileName + 'Labels.json')
+          this.map.setLayoutProperty('minesLocation', 'visibility', 'visible')
+          this.map.setLayoutProperty('minesLabels', 'visibility', 'visible')
+          this.map.setLayoutProperty('minesBoundary', 'visibility', 'visible')
+          this.map.setLayoutProperty('minesLocation-stroke', 'visibility', 'visible')
+          this.map.setLayoutProperty('citiesLocation', 'visibility', 'none')
+          this.map.setPaintProperty('minesBoundary', 'fill-color', landuse.color)
+          this.map.setPaintProperty('minesLocation', 'circle-color', landuse.color)
+          this.map.setPaintProperty('minesLabels', 'circle-color', landuse.color)
+          this.map.setPaintProperty('minesLocation-stroke', 'line-color', landuse.color)
+        } else if (landuse.type === 'urban') {
+          await this.map.getSource('urban').setData('./data/' + landuse.fileName + '.json')
+          this.map.setLayoutProperty('minesLocation', 'visibility', 'none')
+          this.map.setLayoutProperty('minesLabels', 'visibility', 'none')
+          this.map.setLayoutProperty('minesBoundary', 'visibility', 'none')
+          this.map.setLayoutProperty('minesLocation-stroke', 'visibility', 'none')
+          this.map.setLayoutProperty('citiesLocation', 'visibility', 'visible')
+        }
       }
     },
     onZoom () {
@@ -234,7 +283,36 @@ export default {
     onMouseEnter () {
       this.map.getCanvas().style.cursor = 'pointer'
     },
+    onMouseEnterCity (e) {
+      this.map.getCanvas().style.cursor = 'pointer'
+      const currentFeature = e.features[0]
+      const name = (currentFeature.properties.name === undefined) ? this.selectedLanduse : currentFeature.properties.name
+      const coordinates = e.features[0].geometry.coordinates.slice()
+
+      while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+        coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360
+      }
+      const popupContent = new Vue({
+        ...MapPopup,
+        parent: this,
+        propsData: {
+          popupName: name,
+          type: this.selectedLanduse.type
+        }
+      }).$mount()
+
+      new mapboxgl.Popup({ closeButton: false })
+        .setLngLat(coordinates)
+        .setDOMContent(popupContent.$el)
+        .addTo(this.map)
+    },
     // Change it back to a pointer when it leaves.
+    onMouseOutCity () {
+      this.map.getCanvas().style.cursor = ''
+      const popUps = document.getElementsByClassName('mapboxgl-popup')
+      /** Check if there is already a popup on the map and if so, remove it */
+      if (popUps[0]) { popUps[0].remove() };
+    },
     onMouseOut () {
       this.map.getCanvas().style.cursor = ''
     },
@@ -249,7 +327,7 @@ export default {
       const centeredFeature = centroid(e.features[0])
       const lat = centeredFeature.geometry.coordinates[1]
       const lng = centeredFeature.geometry.coordinates[0]
-      const name = (currentFeature.properties.name === undefined) ? this.selectedLanduse : currentFeature.properties.name
+      const name = (currentFeature.properties.name === undefined) ? this.selectedLanduse.name : currentFeature.properties.name
 
       const popupContent = new Vue({
         ...MapPopup,
@@ -265,6 +343,12 @@ export default {
         .setLngLat(e.lngLat)
         .setDOMContent(popupContent.$el)
         .addTo(this.map)
+    },
+    onCityClick (e) {
+      const currentFeature = e.features[0]
+      const url = currentFeature.properties.url
+      const win = window.open(url, '_blank')
+      win.focus()
     }
   }
 
