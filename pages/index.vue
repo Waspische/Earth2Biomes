@@ -61,49 +61,49 @@ export default {
           landuses: [
             {
               name: 'Gold',
-              fileName: 'goldMines',
+              fileName: 'goldMinesLabels',
               color: '#FFD700',
               type: 'quarry'
             },
             {
               name: 'Clay',
-              fileName: 'clayMines',
+              fileName: 'clayMinesLabels',
               color: '#D4C59C',
               type: 'quarry'
             },
             {
               name: 'Sand',
-              fileName: 'sandMines',
+              fileName: 'sandMinesLabels',
               color: '#c2b280',
               type: 'quarry'
             },
             {
               name: 'Peat',
-              fileName: 'peatMines',
+              fileName: 'peatMinesLabels',
               color: '#766D52',
               type: 'quarry'
             },
             {
               name: 'Coal',
-              fileName: 'coalMines',
+              fileName: 'coalMinesLabels',
               color: '#36454f',
               type: 'quarry'
             },
             {
               name: 'Uranium',
-              fileName: 'uraniumMines',
+              fileName: 'uraniumMinesLabels',
               color: '#757575',
               type: 'quarry'
             },
             {
               name: 'Silver',
-              fileName: 'silverMines',
+              fileName: 'silverMinesLabels',
               color: '#C0C0C0',
               type: 'quarry'
             },
             {
               name: 'Iron ore',
-              fileName: 'ironOreMines',
+              fileName: 'ironOreMinesLabels',
               color: '#4e4f55',
               type: 'quarry'
             }
@@ -154,40 +154,9 @@ export default {
       previousLanduse: null,
       accessToken: 'pk.eyJ1Ijoid2FzcGlzY2hlIiwiYSI6ImNrazBidGRsNzBmdmIyeHJyYThjZG0wYzYifQ.qZQp-6ddFiyakTvvyCv8Gw', // your access token. Needed if you using Mapbox maps
       mapStyle: 'mapbox://styles/mapbox/light-v10',
-      minesBoundary: {
-        id: 'minesBoundary',
-        source: 'carte',
-        type: 'fill',
-        minzoom: 11,
-        paint: {
-          'fill-opacity': 0.8
-        },
-        filter: ['==', '$type', 'Polygon']
-      },
-      minesLocation: {
-        id: 'minesLocation',
-        source: 'carte',
-        type: 'circle',
-        paint: {
-          'circle-radius': 3,
-          'circle-color': '#90CAF9'
-        },
-        filter: ['==', '$type', 'Point']
-      },
-      minesLabels: {
-        id: 'minesLabels',
-        source: 'labels',
-        type: 'circle',
-        maxzoom: 11,
-        paint: {
-          'circle-radius': 4,
-          'circle-stroke-color': '#000',
-          'circle-stroke-width': 1
-        }
-      },
-      wellsLabels: {
-        id: 'wellsLabels',
-        source: 'labels',
+      landuseLocation: {
+        id: 'landuseLocation',
+        source: 'landuse',
         type: 'circle',
         paint: {
           'circle-radius': 4,
@@ -212,21 +181,6 @@ export default {
           'text-halo-color': '#fff',
           'text-halo-width': 2
         }
-      },
-      minesLocationStroke: {
-        id: 'minesLocation-stroke',
-        type: 'line',
-        source: 'carte',
-        minzoom: 11,
-        layout: {
-          visibility: 'visible',
-          'line-join': 'round',
-          'line-cap': 'round'
-        },
-        paint: {
-          'line-width': 4,
-          'line-color': '#90CAF9'
-        }
       }
     }
   },
@@ -247,18 +201,7 @@ export default {
   },
   methods: {
     onMapLoad (event) {
-      // in component
-      // this.map = event.map
-      // or just to store if you want have access from other components
-      // this.$store.map = event.map
-      this.map.addSource('carte', {
-        type: 'geojson',
-        data: {
-          type: 'FeatureCollection',
-          features: []
-        }
-      })
-      this.map.addSource('labels', {
+      this.map.addSource('landuse', {
         type: 'geojson',
         data: {
           type: 'FeatureCollection',
@@ -273,26 +216,15 @@ export default {
         }
       })
 
-      this.map.addLayer(this.minesBoundary)
-      this.map.addLayer(this.minesLocation)
-      this.map.addLayer(this.minesLocationStroke)
-      this.map.addLayer(this.minesLabels)
+      this.map.addLayer(this.landuseLocation)
       this.map.addLayer(this.citiesLocation)
-      this.map.addLayer(this.wellsLabels)
-      this.map.on('click', 'minesBoundary', this.onFeatureClick)
-      this.map.on('click', 'minesLabels', this.onFeatureClick)
-      this.map.on('click', 'wellsLabels', this.onFeatureClick)
+      this.map.on('click', 'landuseLocation', this.onFeatureClick)
       this.map.on('click', 'citiesLocation', this.onCityClick)
 
-      this.map.on('mouseenter', 'minesBoundary', this.onMouseEnter)
-      this.map.on('mouseenter', 'minesLabels', this.onMouseEnter)
-      this.map.on('mouseenter', 'wellsLabels', this.onMouseEnter)
-      this.map.on('mouseleave', 'minesBoundary', this.onMouseOut)
-      this.map.on('mouseleave', 'minesLabels', this.onMouseOut)
-      this.map.on('mouseleave', 'wellsLabels', this.onMouseOut)
+      this.map.on('mouseenter', 'landuseLocation', this.onMouseEnter)
+      this.map.on('mouseleave', 'landuseLocation', this.onMouseOut)
       this.map.on('mouseenter', 'citiesLocation', this.onMouseEnterCity)
       this.map.on('mouseleave', 'citiesLocation', this.onMouseOutCity)
-      // this.map.on("click", this.onClick)
     },
     async onLanduseSelection (landuse) {
       console.log(this.selectedLanduse)
@@ -301,42 +233,14 @@ export default {
         /** Check if there is already a popup on the map and if so, remove it */
         if (popUps[0]) { popUps[0].remove() };
         this.previousLanduse = this.selectedLanduse
-        if (landuse.type === 'quarry') {
-          await this.map.getSource('carte').setData('./data/' + landuse.fileName + '.json')
-          await this.map.getSource('labels').setData('./data/' + landuse.fileName + 'Labels.json')
-          this.map.setLayoutProperty('minesLocation', 'visibility', 'visible')
-          this.map.setLayoutProperty('minesLabels', 'visibility', 'visible')
-          this.map.setLayoutProperty('wellsLabels', 'visibility', 'none')
-          this.map.setLayoutProperty('minesBoundary', 'visibility', 'visible')
-          this.map.setLayoutProperty('minesLocation-stroke', 'visibility', 'visible')
+        if (landuse.type === 'quarry' || landuse.type === 'well') {
+          await this.map.getSource('landuse').setData('./data/' + landuse.fileName + '.json')
+          this.map.setLayoutProperty('landuseLocation', 'visibility', 'visible')
           this.map.setLayoutProperty('citiesLocation', 'visibility', 'none')
-          this.map.setPaintProperty('minesBoundary', 'fill-color', landuse.color)
-          this.map.setPaintProperty('minesLocation', 'circle-color', landuse.color)
-          this.map.setPaintProperty('minesLabels', 'circle-color', landuse.color)
-          this.map.setPaintProperty('minesLocation-stroke', 'line-color', landuse.color)
-        } else if (landuse.type === 'well') {
-          await this.map.getSource('labels').setData('./data/' + landuse.fileName + '.json')
-          await this.map.getSource('carte').setData({
-            type: 'FeatureCollection',
-            features: []
-          })
-          this.map.setLayoutProperty('minesLocation', 'visibility', 'visible')
-          this.map.setLayoutProperty('minesLabels', 'visibility', 'none')
-          this.map.setLayoutProperty('wellsLabels', 'visibility', 'visible')
-          this.map.setLayoutProperty('minesBoundary', 'visibility', 'visible')
-          this.map.setLayoutProperty('minesLocation-stroke', 'visibility', 'visible')
-          this.map.setLayoutProperty('citiesLocation', 'visibility', 'none')
-          this.map.setPaintProperty('minesBoundary', 'fill-color', landuse.color)
-          this.map.setPaintProperty('minesLocation', 'circle-color', landuse.color)
-          this.map.setPaintProperty('wellsLabels', 'circle-color', landuse.color)
-          this.map.setPaintProperty('minesLocation-stroke', 'line-color', landuse.color)
+          this.map.setPaintProperty('landuseLocation', 'circle-color', landuse.color)
         } else if (landuse.type === 'urban') {
           await this.map.getSource('urban').setData('./data/' + landuse.fileName + '.json')
-          this.map.setLayoutProperty('minesLocation', 'visibility', 'none')
-          this.map.setLayoutProperty('minesLabels', 'visibility', 'none')
-          this.map.setLayoutProperty('wellsLabels', 'visibility', 'none')
-          this.map.setLayoutProperty('minesBoundary', 'visibility', 'none')
-          this.map.setLayoutProperty('minesLocation-stroke', 'visibility', 'none')
+          this.map.setLayoutProperty('landuseLocation', 'visibility', 'none')
           this.map.setLayoutProperty('citiesLocation', 'visibility', 'visible')
         }
       }
