@@ -11,15 +11,25 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    titleTemplate: '%s - front',
-    title: 'front',
+    titleTemplate: '%s',
+    title: 'Earth2Biomes',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'Discover the differents resources available on Earth1 to buy on Earth2.' },
+      { hid: 'author', name: 'author', content: 'Waspische' },
+      { hid: 'description', name: 'copyright', content: 'My own copyright' },
+      { hid: 'og:type', property: 'og:type', content: 'wbesite' },
+      { hid: 'og:type', property: 'og:url', content: 'https://waspische.github.io/Earth2Biomes/' },
+      { hid: 'og:type', property: 'og:title', content: 'Earth2Biomes' },
+      { hid: 'og:type', property: 'og:description', content: 'Discover the differents resources available on Earth1 to buy on Earth2.' },
+      { hid: 'og:type', property: 'twitter:card', content: 'summary_large_image' },
+      { hid: 'og:type', property: 'twitter:url', content: 'https://waspische.github.io/Earth2Biomes/' },
+      { hid: 'og:type', property: 'twitter:title', content: 'Earth2Biomes' },
+      { hid: 'og:type', property: 'twitter:description', content: 'Discover the differents resources available on Earth1 to buy on Earth2.' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico?v=2' },
       { rel: 'stylesheet', href: 'https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' }
 
     ]
