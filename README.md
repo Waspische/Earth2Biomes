@@ -1,4 +1,11 @@
-# front
+# Earth2 Biomes
+
+Welcome in this project repository !
+
+You're someone curious if you are here.
+Please don't look at the code quality, I'm neither an expert nor had time to refactor the code ;)
+
+
 
 ## Build Setup
 
