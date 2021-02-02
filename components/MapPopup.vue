@@ -11,7 +11,7 @@
         {{ popupName }}
       </v-card-title>
       <v-card-text
-        v-if="type === 'quarry'"
+        v-if="type === 'quarry' || type === 'well'"
         class="pa-0"
       >
         <v-btn
@@ -33,7 +33,7 @@
         Click to open in Earth2
       </v-card-text>
       <v-card-actions
-        v-if="type === 'quarry'"
+        v-if="type === 'quarry' || type === 'well'"
         class="justify-center"
       >
         <v-btn
@@ -60,13 +60,13 @@ export default {
   data () {
     return {
       snackbar: false,
-      text: 'Position copied in clipboard'
+      text: 'Position copied in clipboard. It can be unprecised, so look around ;)'
     }
   },
   computed: {
     geoposition () {
-      if (this.type === 'quarry') {
-        return this.lat.toString().substring(0, 10) + ', ' + this.lng.toString().substring(0, 10)
+      if (this.type === 'quarry' || this.type === 'well') {
+        return this.lat.toString().substring(0, 8) + ', ' + this.lng.toString().substring(0, 8)
       }
       return null
     }
@@ -79,6 +79,7 @@ export default {
       console.log(e)
     },
     snackTime (snack) {
+      console.log('snacktime')
       this.setSnack(this.text)
     },
     ...mapMutations({

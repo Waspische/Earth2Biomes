@@ -15,13 +15,6 @@
         mdi-open-in-new
       </v-icon> Earth2 map
     </v-btn>
-    <v-btn
-      text
-      color="secondary"
-      @click.native="show = false"
-    >
-      Close
-    </v-btn>
   </v-snackbar>
 </template>
 
@@ -37,6 +30,7 @@ export default {
   },
   created () {
     this.$store.watch(state => state.snackbar.snack, () => {
+      console.log('snack')
       const msg = this.$store.state.snackbar.snack
       if (msg !== '') {
         this.show = true

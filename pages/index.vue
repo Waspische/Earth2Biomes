@@ -118,8 +118,38 @@ export default {
               type: 'urban'
             }
           ]
+        },
+        {
+          name: 'Petroleum well',
+          landuses: [
+            {
+              name: 'Oil',
+              fileName: 'oilWells',
+              color: '#494c4f',
+              type: 'well'
+            },
+            {
+              name: 'Gas',
+              fileName: 'gasWells',
+              color: '#ffdf46',
+              type: 'well'
+            },
+            {
+              name: 'Offshore',
+              fileName: 'offshoreWells',
+              color: '#cad7d9',
+              type: 'well'
+            }
+          ]
         }
       ],
+      emptyGeojson: {
+        type: 'geojson',
+        data: {
+          type: 'FeatureCollection',
+          features: []
+        }
+      },
       selectedLanduse: null,
       previousLanduse: null,
       accessToken: 'pk.eyJ1Ijoid2FzcGlzY2hlIiwiYSI6ImNrazBidGRsNzBmdmIyeHJyYThjZG0wYzYifQ.qZQp-6ddFiyakTvvyCv8Gw', // your access token. Needed if you using Mapbox maps
@@ -149,6 +179,16 @@ export default {
         source: 'labels',
         type: 'circle',
         maxzoom: 11,
+        paint: {
+          'circle-radius': 4,
+          'circle-stroke-color': '#000',
+          'circle-stroke-width': 1
+        }
+      },
+      wellsLabels: {
+        id: 'wellsLabels',
+        source: 'labels',
+        type: 'circle',
         paint: {
           'circle-radius': 4,
           'circle-stroke-color': '#000',
@@ -238,14 +278,18 @@ export default {
       this.map.addLayer(this.minesLocationStroke)
       this.map.addLayer(this.minesLabels)
       this.map.addLayer(this.citiesLocation)
+      this.map.addLayer(this.wellsLabels)
       this.map.on('click', 'minesBoundary', this.onFeatureClick)
       this.map.on('click', 'minesLabels', this.onFeatureClick)
+      this.map.on('click', 'wellsLabels', this.onFeatureClick)
       this.map.on('click', 'citiesLocation', this.onCityClick)
 
       this.map.on('mouseenter', 'minesBoundary', this.onMouseEnter)
       this.map.on('mouseenter', 'minesLabels', this.onMouseEnter)
+      this.map.on('mouseenter', 'wellsLabels', this.onMouseEnter)
       this.map.on('mouseleave', 'minesBoundary', this.onMouseOut)
       this.map.on('mouseleave', 'minesLabels', this.onMouseOut)
+      this.map.on('mouseleave', 'wellsLabels', this.onMouseOut)
       this.map.on('mouseenter', 'citiesLocation', this.onMouseEnterCity)
       this.map.on('mouseleave', 'citiesLocation', this.onMouseOutCity)
       // this.map.on("click", this.onClick)
@@ -253,12 +297,16 @@ export default {
     async onLanduseSelection (landuse) {
       console.log(this.selectedLanduse)
       if (this.selectedLanduse !== this.previousLanduse) {
+        const popUps = document.getElementsByClassName('mapboxgl-popup')
+        /** Check if there is already a popup on the map and if so, remove it */
+        if (popUps[0]) { popUps[0].remove() };
         this.previousLanduse = this.selectedLanduse
         if (landuse.type === 'quarry') {
           await this.map.getSource('carte').setData('./data/' + landuse.fileName + '.json')
           await this.map.getSource('labels').setData('./data/' + landuse.fileName + 'Labels.json')
           this.map.setLayoutProperty('minesLocation', 'visibility', 'visible')
           this.map.setLayoutProperty('minesLabels', 'visibility', 'visible')
+          this.map.setLayoutProperty('wellsLabels', 'visibility', 'none')
           this.map.setLayoutProperty('minesBoundary', 'visibility', 'visible')
           this.map.setLayoutProperty('minesLocation-stroke', 'visibility', 'visible')
           this.map.setLayoutProperty('citiesLocation', 'visibility', 'none')
@@ -266,10 +314,27 @@ export default {
           this.map.setPaintProperty('minesLocation', 'circle-color', landuse.color)
           this.map.setPaintProperty('minesLabels', 'circle-color', landuse.color)
           this.map.setPaintProperty('minesLocation-stroke', 'line-color', landuse.color)
+        } else if (landuse.type === 'well') {
+          await this.map.getSource('labels').setData('./data/' + landuse.fileName + '.json')
+          await this.map.getSource('carte').setData({
+            type: 'FeatureCollection',
+            features: []
+          })
+          this.map.setLayoutProperty('minesLocation', 'visibility', 'visible')
+          this.map.setLayoutProperty('minesLabels', 'visibility', 'none')
+          this.map.setLayoutProperty('wellsLabels', 'visibility', 'visible')
+          this.map.setLayoutProperty('minesBoundary', 'visibility', 'visible')
+          this.map.setLayoutProperty('minesLocation-stroke', 'visibility', 'visible')
+          this.map.setLayoutProperty('citiesLocation', 'visibility', 'none')
+          this.map.setPaintProperty('minesBoundary', 'fill-color', landuse.color)
+          this.map.setPaintProperty('minesLocation', 'circle-color', landuse.color)
+          this.map.setPaintProperty('wellsLabels', 'circle-color', landuse.color)
+          this.map.setPaintProperty('minesLocation-stroke', 'line-color', landuse.color)
         } else if (landuse.type === 'urban') {
           await this.map.getSource('urban').setData('./data/' + landuse.fileName + '.json')
           this.map.setLayoutProperty('minesLocation', 'visibility', 'none')
           this.map.setLayoutProperty('minesLabels', 'visibility', 'none')
+          this.map.setLayoutProperty('wellsLabels', 'visibility', 'none')
           this.map.setLayoutProperty('minesBoundary', 'visibility', 'none')
           this.map.setLayoutProperty('minesLocation-stroke', 'visibility', 'none')
           this.map.setLayoutProperty('citiesLocation', 'visibility', 'visible')
@@ -320,13 +385,22 @@ export default {
     // location of the click, with description HTML from its properties.
     onFeatureClick (e) {
       const currentFeature = e.features[0]
+      console.log(currentFeature)
       const popUps = document.getElementsByClassName('mapboxgl-popup')
       /** Check if there is already a popup on the map and if so, remove it */
       if (popUps[0]) { popUps[0].remove() };
 
-      const centeredFeature = centroid(e.features[0])
-      const lat = centeredFeature.geometry.coordinates[1]
-      const lng = centeredFeature.geometry.coordinates[0]
+      let lat, lng
+
+      if (currentFeature.geometry.type === 'Polygon') {
+        const centeredFeature = centroid(e.features[0])
+        lat = centeredFeature.geometry.coordinates[1]
+        lng = centeredFeature.geometry.coordinates[0]
+      } else if (currentFeature.geometry.type === 'Point') {
+        lat = currentFeature.geometry.coordinates[1]
+        lng = currentFeature.geometry.coordinates[0]
+      }
+
       const name = (currentFeature.properties.name === undefined) ? this.selectedLanduse.name : currentFeature.properties.name
 
       const popupContent = new Vue({
@@ -335,7 +409,8 @@ export default {
         propsData: {
           popupName: name,
           lat,
-          lng
+          lng,
+          type: this.selectedLanduse.type
         }
       }).$mount()
 

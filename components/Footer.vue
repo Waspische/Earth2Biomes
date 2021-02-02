@@ -16,7 +16,7 @@
       >
         The data comes from openstreetmap.org. If you like this project, support me using the code <strong>19DBDIXSCW</strong> or <a target="_blank" rel="noopener noreferrer" href="https://ko-fi.com/earth2biomes">buy me a coffee ☕️</a>
         <br>
-        To submit an idea, you can
+        To submit an idea/bug, you can
         <a href="https://forms.gle/8Ak6HTaVh5hFyf4Q9" target="_blank" rel="noopener noreferrer">
           click here
         </a>
