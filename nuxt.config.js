@@ -43,7 +43,8 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    '~plugins/vue2clipboard.js'
+    '~plugins/vue2clipboard.js',
+    '@/plugins/GoogleAnalytics'
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -54,8 +55,7 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify',
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/vuetify'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -87,9 +87,5 @@ export default {
         }
       }
     }
-  },
-
-  googleAnalytics: {
-    id: 'UA-188571251-1'
   }
 }
