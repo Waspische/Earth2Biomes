@@ -224,7 +224,7 @@ export default {
     // this.map.on('sourcedataloading', this.onSourceDataLoading)
 
     this.quarriesTypes = await fetch(
-      '/data/mines/OSM_quarriesTypes.json'
+      './data/mines/OSM_quarriesTypes.json'
     ).then(res => res.json())
   },
   methods: {
