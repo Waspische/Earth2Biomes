@@ -257,6 +257,7 @@ export default {
       this.map.on('mouseleave', 'citiesLocation', this.onMouseOutCity)
     },
     async onLanduseSelection (landuse) {
+      this.trackBiomeClick(landuse)
       if (this.selectedLanduse !== this.previousLanduse) {
         const popUps = document.getElementsByClassName('mapboxgl-popup')
         /** Check if there is already a popup on the map and if so, remove it */
@@ -376,6 +377,12 @@ export default {
       const url = currentFeature.properties.url
       const win = window.open(url, '_blank')
       win.focus()
+    },
+    trackBiomeClick (landuse) {
+      this.$gtag.event('click', {
+        event_category: 'biome',
+        event_label: landuse.key
+      })
     }
   }
 
