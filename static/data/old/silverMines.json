@@ -1,0 +1,4990 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2021-02-02T14:18:03Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/176358539",
+        "landuse": "quarry",
+        "resource": "silver",
+        "source": "bing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              29.7329874,
+              39.4538291
+            ],
+            [
+              29.7326168,
+              39.4545361
+            ],
+            [
+              29.7317992,
+              39.4548728
+            ],
+            [
+              29.7307418,
+              39.4561184
+            ],
+            [
+              29.7303635,
+              39.4565462
+            ],
+            [
+              29.7300266,
+              39.4566763
+            ],
+            [
+              29.7297619,
+              39.4564951
+            ],
+            [
+              29.7294945,
+              39.4558909
+            ],
+            [
+              29.7293769,
+              39.4548973
+            ],
+            [
+              29.729074,
+              39.4541826
+            ],
+            [
+              29.7288886,
+              39.4528022
+            ],
+            [
+              29.7299242,
+              39.4525665
+            ],
+            [
+              29.7308835,
+              39.453122
+            ],
+            [
+              29.7318428,
+              39.45292
+            ],
+            [
+              29.7327149,
+              39.4532904
+            ],
+            [
+              29.7329874,
+              39.4538291
+            ]
+          ]
+        ]
+      },
+      "id": "way/176358539"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/176358547",
+        "landuse": "quarry",
+        "resource": "silver",
+        "source": "bing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              29.7382743,
+              39.4529032
+            ],
+            [
+              29.7391464,
+              39.4529116
+            ],
+            [
+              29.7400294,
+              39.4533409
+            ],
+            [
+              29.7409778,
+              39.4534419
+            ],
+            [
+              29.7410759,
+              39.4542247
+            ],
+            [
+              29.7401929,
+              39.4549569
+            ],
+            [
+              29.738536,
+              39.4563541
+            ],
+            [
+              29.7383615,
+              39.457625
+            ],
+            [
+              29.7383833,
+              39.4586602
+            ],
+            [
+              29.7392336,
+              39.4596618
+            ],
+            [
+              29.7394298,
+              39.4605203
+            ],
+            [
+              29.739517,
+              39.4611851
+            ],
+            [
+              29.7386559,
+              39.462254
+            ],
+            [
+              29.7383179,
+              39.4630956
+            ],
+            [
+              29.7367046,
+              39.4630451
+            ],
+            [
+              29.7350913,
+              39.4613787
+            ],
+            [
+              29.7341974,
+              39.4592157
+            ],
+            [
+              29.7330964,
+              39.4590222
+            ],
+            [
+              29.7327149,
+              39.4584751
+            ],
+            [
+              29.7326168,
+              39.4579028
+            ],
+            [
+              29.7328457,
+              39.4559669
+            ],
+            [
+              29.7332054,
+              39.4557481
+            ],
+            [
+              29.7343936,
+              39.4562194
+            ],
+            [
+              29.7350041,
+              39.4551673
+            ],
+            [
+              29.7352766,
+              39.4540984
+            ],
+            [
+              29.7359742,
+              39.4535429
+            ],
+            [
+              29.736334,
+              39.4530631
+            ],
+            [
+              29.7370861,
+              39.4532062
+            ],
+            [
+              29.7371842,
+              39.4530126
+            ],
+            [
+              29.7382743,
+              39.4529032
+            ]
+          ]
+        ]
+      },
+      "id": "way/176358547"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/184346398",
+        "landuse": "quarry",
+        "name": "Minera Pierina",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.5877103,
+              -9.4343257
+            ],
+            [
+              -77.591737,
+              -9.4378572
+            ],
+            [
+              -77.5936147,
+              -9.4385633
+            ],
+            [
+              -77.5939574,
+              -9.4394746
+            ],
+            [
+              -77.5939578,
+              -9.4405069
+            ],
+            [
+              -77.5957626,
+              -9.4418856
+            ],
+            [
+              -77.5955297,
+              -9.4485651
+            ],
+            [
+              -77.596268,
+              -9.4536864
+            ],
+            [
+              -77.596006,
+              -9.4569284
+            ],
+            [
+              -77.5965538,
+              -9.4603817
+            ],
+            [
+              -77.5998165,
+              -9.4634591
+            ],
+            [
+              -77.6034127,
+              -9.4711644
+            ],
+            [
+              -77.6074376,
+              -9.4750639
+            ],
+            [
+              -77.608064,
+              -9.4791453
+            ],
+            [
+              -77.6022934,
+              -9.481101
+            ],
+            [
+              -77.6007454,
+              -9.4803023
+            ],
+            [
+              -77.5997689,
+              -9.4787519
+            ],
+            [
+              -77.5975555,
+              -9.479488
+            ],
+            [
+              -77.5885278,
+              -9.4746645
+            ],
+            [
+              -77.5815498,
+              -9.4734195
+            ],
+            [
+              -77.576215,
+              -9.465315
+            ],
+            [
+              -77.5805019,
+              -9.4606166
+            ],
+            [
+              -77.5820261,
+              -9.4568344
+            ],
+            [
+              -77.5772556,
+              -9.451838
+            ],
+            [
+              -77.5814069,
+              -9.4450176
+            ],
+            [
+              -77.5820201,
+              -9.4429904
+            ],
+            [
+              -77.5810963,
+              -9.4409913
+            ],
+            [
+              -77.583092,
+              -9.4388517
+            ],
+            [
+              -77.5843952,
+              -9.4348119
+            ],
+            [
+              -77.5849966,
+              -9.4347473
+            ],
+            [
+              -77.5854312,
+              -9.4350586
+            ],
+            [
+              -77.5877103,
+              -9.4343257
+            ]
+          ]
+        ]
+      },
+      "id": "way/184346398"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/303419211",
+        "building": "yes",
+        "disused": "*",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.6869988,
+              42.4867283
+            ],
+            [
+              8.6871654,
+              42.486469
+            ],
+            [
+              8.6873335,
+              42.4865277
+            ],
+            [
+              8.687167,
+              42.486787
+            ],
+            [
+              8.6869988,
+              42.4867283
+            ]
+          ]
+        ]
+      },
+      "id": "way/303419211"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/331307243",
+        "landuse": "quarry",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.3511542,
+              46.0537383
+            ],
+            [
+              11.351172,
+              46.0534992
+            ],
+            [
+              11.3511686,
+              46.0531852
+            ],
+            [
+              11.351244,
+              46.0531376
+            ],
+            [
+              11.3515799,
+              46.0531685
+            ],
+            [
+              11.3516553,
+              46.0532137
+            ],
+            [
+              11.3515353,
+              46.0533303
+            ],
+            [
+              11.3514633,
+              46.0535967
+            ],
+            [
+              11.3513811,
+              46.053913
+            ],
+            [
+              11.3512645,
+              46.054158
+            ],
+            [
+              11.3509081,
+              46.0542246
+            ],
+            [
+              11.3507538,
+              46.0545244
+            ],
+            [
+              11.3503974,
+              46.0545719
+            ],
+            [
+              11.3501643,
+              46.0544958
+            ],
+            [
+              11.3501026,
+              46.0543174
+            ],
+            [
+              11.350202,
+              46.054208
+            ],
+            [
+              11.3504316,
+              46.0541105
+            ],
+            [
+              11.3507093,
+              46.0540153
+            ],
+            [
+              11.3508669,
+              46.053913
+            ],
+            [
+              11.3510657,
+              46.0538631
+            ],
+            [
+              11.3511542,
+              46.0537383
+            ]
+          ]
+        ]
+      },
+      "id": "way/331307243"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/404631157",
+        "abandoned:man_made": "adit",
+        "building": "yes",
+        "description": "Schaubergwerk",
+        "image": "http://geo.hlipp.de/photo/12967",
+        "name": "Trau auf Gott Erbstolln",
+        "resource": "silver",
+        "tourism": "museum"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.4348664,
+              50.8263959
+            ],
+            [
+              13.4348932,
+              50.8263553
+            ],
+            [
+              13.4349932,
+              50.8263816
+            ],
+            [
+              13.4349664,
+              50.8264223
+            ],
+            [
+              13.4348664,
+              50.8263959
+            ]
+          ]
+        ]
+      },
+      "id": "way/404631157"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/729396529",
+        "landuse": "quarry",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -5.5826666,
+              30.2403305
+            ],
+            [
+              -5.5848459,
+              30.2389675
+            ],
+            [
+              -5.5872124,
+              30.2386903
+            ],
+            [
+              -5.5879077,
+              30.2370385
+            ],
+            [
+              -5.5874397,
+              30.2350748
+            ],
+            [
+              -5.584886,
+              30.2345434
+            ],
+            [
+              -5.5836693,
+              30.2346012
+            ],
+            [
+              -5.5821853,
+              30.2339889
+            ],
+            [
+              -5.5810221,
+              30.2342893
+            ],
+            [
+              -5.5799658,
+              30.2355484
+            ],
+            [
+              -5.580407,
+              30.2364725
+            ],
+            [
+              -5.5783881,
+              30.238956
+            ],
+            [
+              -5.5799123,
+              30.2396606
+            ],
+            [
+              -5.5809285,
+              30.2400186
+            ],
+            [
+              -5.5815034,
+              30.2397645
+            ],
+            [
+              -5.5826666,
+              30.2403305
+            ]
+          ]
+        ]
+      },
+      "id": "way/729396529"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/94153747",
+        "@relations": [
+          {
+            "role": "",
+            "rel": 6691986,
+            "reltags": {
+              "end_date": "1969",
+              "mineshaft_type": "winding",
+              "name": "Grube Himmelsfürst",
+              "razed:man_made": "mineshaft",
+              "resource": "silver",
+              "start_date": "1572",
+              "type": "site",
+              "wikidata": "Q1619152",
+              "wikipedia": "de:Himmelsfürst Fundgrube"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            13.2989534,
+            50.8579073
+          ],
+          [
+            13.2989534,
+            50.8577416
+          ],
+          [
+            13.2992576,
+            50.8577416
+          ],
+          [
+            13.2992576,
+            50.8579073
+          ],
+          [
+            13.2989534,
+            50.8579073
+          ]
+        ]
+      },
+      "id": "way/94153747"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/308204331",
+        "disused": "yes",
+        "ele": "905",
+        "historic": "mine",
+        "man_made": "adit",
+        "name": "Canopa delle Sette Colonne",
+        "place": "locality",
+        "ref": "048",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1527655,
+          46.1154205
+        ]
+      },
+      "id": "node/308204331"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/333757040",
+        "description": "alter Förderturm",
+        "disused": "yes",
+        "heritage": "yes",
+        "historic": "technical_monument",
+        "image": "http://commons.wikimedia.org/wiki/File:Tuerkschacht.JPG",
+        "man_made": "mineshaft",
+        "name": "Türkschacht",
+        "note": "alter Förderturm",
+        "pithead": "yes",
+        "resource": "silver",
+        "wikidata": "Q1474174",
+        "wikipedia": "de:Fundgrube Türk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6470331,
+          50.5754621
+        ]
+      },
+      "id": "node/333757040"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/419780674",
+        "access": "no",
+        "barrier": "gate",
+        "disused": "yes",
+        "man_made": "adit",
+        "name": "Königlich Verträglicher Gesellschaft Stolln",
+        "resource": "silver",
+        "start_date": "1801"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3729814,
+          50.9275408
+        ]
+      },
+      "id": "node/419780674"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/429661269",
+        "abandoned:man_made": "mineshaft",
+        "description": "Rekonstruiertes Schaubergwerk",
+        "heritage": "4",
+        "heritage:operator": "lfd",
+        "image": "http://geo.hlipp.de/photo/9201",
+        "name": "Bartholomäusschacht",
+        "ref:lfd": "09208635",
+        "resource": "silver",
+        "start_date": "1529",
+        "tourism": "museum",
+        "wikimedia_commons": "Category:Bartholomäusschacht"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3194381,
+          50.8602974
+        ]
+      },
+      "id": "node/429661269"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/552984319",
+        "disused": "yes",
+        "fee": "yes",
+        "historic": "yes",
+        "man_made": "adit",
+        "name": "štola Jana Evangelisty",
+        "name:de": "Johann-Evangelista-Erbstollen",
+        "opening_hours": "May-Oct Tu-Su 10:00-16:00",
+        "resource": "silver",
+        "tourism": "museum",
+        "wikidata": "Q10421310",
+        "wikipedia": "cs:Štola Jan Evangelista"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5652597,
+          50.8749702
+        ]
+      },
+      "id": "node/552984319"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/570106547",
+        "disused": "yes",
+        "length": "150",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.827452,
+          47.9061006
+        ]
+      },
+      "id": "node/570106547"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/570106558",
+        "disused": "yes",
+        "man_made": "adit",
+        "operator": "50",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8280828,
+          47.90501
+        ]
+      },
+      "id": "node/570106558"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/694067095",
+        "disused": "yes",
+        "man_made": "mineshaft",
+        "name": "Amalie",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5755825,
+          50.4285591
+        ]
+      },
+      "id": "node/694067095"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/747433858",
+        "@relations": [
+          {
+            "role": "",
+            "rel": 6691986,
+            "reltags": {
+              "end_date": "1969",
+              "mineshaft_type": "winding",
+              "name": "Grube Himmelsfürst",
+              "razed:man_made": "mineshaft",
+              "resource": "silver",
+              "start_date": "1572",
+              "type": "site",
+              "wikidata": "Q1619152",
+              "wikipedia": "de:Himmelsfürst Fundgrube"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2989578,
+          50.8575924
+        ]
+      },
+      "id": "node/747433858"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/789824044",
+        "ele": "295.73",
+        "name": "alte Silbermine",
+        "note": "Straße heißt am Kupferstollen, eher Kupfermine?",
+        "razed:man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.0660412,
+          49.517697
+        ]
+      },
+      "id": "node/789824044"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1307288227",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "name": "Canopa di Santa Colomba",
+        "ref": "025",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.181254,
+          46.1222002
+        ]
+      },
+      "id": "node/1307288227"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1307288270",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "name": "Canopa dell'Uccello",
+        "ref": "019",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1860869,
+          46.1208015
+        ]
+      },
+      "id": "node/1307288270"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1307288307",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "name": "Canopa Dos del lago",
+        "ref": "023",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1826889,
+          46.1236269
+        ]
+      },
+      "id": "node/1307288307"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1307288443",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "name": "Canopa delle Acque",
+        "ref": "022",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.185626,
+          46.1177389
+        ]
+      },
+      "id": "node/1307288443"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1381846152",
+        "disused": "yes",
+        "man_made": "adit",
+        "name": "Ancienne Mine d'Argent",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.5335659,
+          44.7866465
+        ]
+      },
+      "id": "node/1381846152"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1403279710",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "mineshaft_type": "winding",
+        "name": "Oberer Troster Stolln/Eishöhle",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6584474,
+          50.5838856
+        ]
+      },
+      "id": "node/1403279710"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1403279901",
+        "disused": "yes",
+        "man_made": "mineshaft",
+        "mineshaft_type": "winding",
+        "name": "St. Anna am Freudenstein",
+        "resource": "silver",
+        "wikidata": "Q1309225",
+        "wikipedia": "de:St. Anna am Freudenstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6565092,
+          50.5827567
+        ]
+      },
+      "id": "node/1403279901"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1403279902",
+        "disused": "yes",
+        "man_made": "mineshaft",
+        "mineshaft_type": "winding",
+        "name": "Troster Tagesstolln",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6577631,
+          50.5844439
+        ]
+      },
+      "id": "node/1403279902"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1403279903",
+        "description": "Wasserabzugsrösche für den Unteren Troster Stolln",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "mineshaft_type": "winding",
+        "name": "Unterer Troster Stolln",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6587334,
+          50.5834072
+        ]
+      },
+      "id": "node/1403279903"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1820488471",
+        "disused": "yes",
+        "man_made": "adit",
+        "mine": "Kongsberg Sølvverk",
+        "name": "Underbergstollen",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6240319,
+          59.6774583
+        ]
+      },
+      "id": "node/1820488471"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2210064243",
+        "depth": "300",
+        "disused": "yes",
+        "headframe": "no",
+        "man_made": "mineshaft",
+        "name": "Puits de Poullaba",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7213317,
+          48.355672
+        ]
+      },
+      "id": "node/2210064243"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2291633789",
+        "disused": "yes",
+        "historic": "yes",
+        "man_made": "mineshaft",
+        "resource": "silver",
+        "source": "gps"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.8067459,
+          62.3722471
+        ]
+      },
+      "id": "node/2291633789"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2339274642",
+        "man_made": "mineshaft",
+        "mineshaft_type": "winding",
+        "name": "Szyb Anioł",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8496694,
+          50.4256309
+        ]
+      },
+      "id": "node/2339274642"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2340246686",
+        "disused": "yes",
+        "historic": "mine_shaft",
+        "mineshaft_type": "air",
+        "name": "Szyb Żmija",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8453487,
+          50.4252477
+        ]
+      },
+      "id": "node/2340246686"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2392560992",
+        "disused": "yes",
+        "length": "326",
+        "man_made": "adit",
+        "name": "Štola sv. Antonína Paduánského",
+        "resource": "silver",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.2552455,
+          49.9297198
+        ]
+      },
+      "id": "node/2392560992"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2392790207",
+        "alt_name": "Dänemarská štola",
+        "disused": "yes",
+        "fixme": "location",
+        "length": "100",
+        "man_made": "adit",
+        "name": "Poličanská štola",
+        "resource": "silver",
+        "website": "http://kutnahora.xf.cz/DOLY/KUTNAHORA/POLICAN/POLICAN.htm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.2528962,
+          49.9275624
+        ]
+      },
+      "id": "node/2392790207"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2468625407",
+        "disused": "yes",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.488336,
+          51.2336868
+        ]
+      },
+      "id": "node/2468625407"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2877228633",
+        "depth": "104",
+        "end_date": "1805",
+        "man_made": "mineshaft",
+        "resource": "silver",
+        "source": "http://faktaark.statkart.no/SSRFakta/faktaarkfraobjektid?enhet=380403",
+        "ssr:stedsnr": "508650",
+        "start_date": "1624"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6078675,
+          59.6672741
+        ]
+      },
+      "id": "node/2877228633"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2977500716",
+        "historic": "mine",
+        "resource": "silver",
+        "ssr:stedsnr": "205652"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6012785,
+          59.6752959
+        ]
+      },
+      "id": "node/2977500716"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2977500717",
+        "historic": "mine",
+        "resource": "silver",
+        "ssr:stedsnr": "448934"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6001214,
+          59.6768099
+        ]
+      },
+      "id": "node/2977500717"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2977500718",
+        "man_made": "mineshaft",
+        "resource": "silver",
+        "ssr:stedsnr": "266920"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.5934295,
+          59.6856597
+        ]
+      },
+      "id": "node/2977500718"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2977500719",
+        "man_made": "mineshaft",
+        "resource": "silver",
+        "source": "http://faktaark.statkart.no/SSRFakta/faktaarkfraobjektid?enhet=380802",
+        "ssr:stedsnr": "508924"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.5974537,
+          59.6800095
+        ]
+      },
+      "id": "node/2977500719"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2977500720",
+        "man_made": "mineshaft",
+        "resource": "silver",
+        "source": "http://faktaark.statkart.no/SSRFakta/faktaarkfraobjektid?enhet=380795",
+        "ssr:stedsnr": "933929"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.5942085,
+          59.6843831
+        ]
+      },
+      "id": "node/2977500720"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2977500721",
+        "historic": "mine",
+        "resource": "silver",
+        "source": "http://faktaark.statkart.no/SSRFakta/faktaarkfraobjektid?enhet=380797",
+        "ssr:stedsnr": "144919"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.5968126,
+          59.6807546
+        ]
+      },
+      "id": "node/2977500721"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2977500722",
+        "man_made": "mineshaft",
+        "resource": "silver",
+        "source": "http://faktaark.statkart.no/SSRFakta/faktaarkfraobjektid?enhet=380800",
+        "ssr:stedsnr": "326929"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.597704,
+          59.6796851
+        ]
+      },
+      "id": "node/2977500722"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2977500723",
+        "historic": "mine",
+        "resource": "silver",
+        "source": "http://faktaark.statkart.no/SSRFakta/faktaarkfraobjektid?enhet=380396",
+        "ssr:stedsnr": "23657"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6002257,
+          59.6764248
+        ]
+      },
+      "id": "node/2977500723"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2977500724",
+        "historic": "mine",
+        "resource": "silver",
+        "source": "http://faktaark.statkart.no/SSRFakta/faktaarkfraobjektid?enhet=380799",
+        "ssr:stedsnr": "873913"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.5995059,
+          59.6775781
+        ]
+      },
+      "id": "node/2977500724"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2977500725",
+        "historic": "mine",
+        "resource": "silver",
+        "source": "http://faktaark.statkart.no/SSRFakta/faktaarkfraobjektid?enhet=380796",
+        "ssr:stedsnr": "751937"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.5960517,
+          59.6819671
+        ]
+      },
+      "id": "node/2977500725"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2978130888",
+        "man_made": "mineshaft",
+        "resource": "silver",
+        "source": "http://faktaark.statkart.no/SSRFakta/faktaarkfraobjektid?enhet=380404",
+        "ssr:stedsnr": "873581"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6081018,
+          59.6665842
+        ]
+      },
+      "id": "node/2978130888"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2978130889",
+        "comment": "The location from the source listed here is wrong. this new position is based on name sign at the mine and info from Norsk Bergverksmuseum",
+        "historic": "mine",
+        "resource": "silver",
+        "ssr:stedsnr": "933668"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6056946,
+          59.6707997
+        ]
+      },
+      "id": "node/2978130889"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2978130890",
+        "historic": "mine",
+        "man_made": "adit",
+        "name": "Else stoll",
+        "place": "locality",
+        "resource": "silver",
+        "source": "http://faktaark.statkart.no/SSRFakta/faktaarkfraobjektid?enhet=380406",
+        "ssr:stedsnr": "144638"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.5968237,
+          59.6645518
+        ]
+      },
+      "id": "node/2978130890"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2978130891",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "resource": "silver",
+        "source": "http://faktaark.statkart.no/SSRFakta/faktaarkfraobjektid?enhet=380401",
+        "ssr:stedsnr": "144635"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6067489,
+          59.6685845
+        ]
+      },
+      "id": "node/2978130891"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2978130892",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "resource": "silver",
+        "source": "http://faktaark.statkart.no/SSRFakta/faktaarkfraobjektid?enhet=380405",
+        "ssr:stedsnr": "205649"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6103383,
+          59.6624112
+        ]
+      },
+      "id": "node/2978130892"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2978130893",
+        "comment": "The location from the source listed here is wrong. this new position is based on name sign at the mine and general local knowledge.",
+        "historic": "mine",
+        "resource": "silver",
+        "source": "http://faktaark.statkart.no/SSRFakta/faktaarkfraobjektid?enhet=380399",
+        "ssr:stedsnr": "691614"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6055338,
+          59.6703553
+        ]
+      },
+      "id": "node/2978130893"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2978130895",
+        "man_made": "mineshaft",
+        "resource": "silver",
+        "source": "http://faktaark.statkart.no/SSRFakta/faktaarkfraobjektid?enhet=380609",
+        "ssr:stedsnr": "508557"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6131491,
+          59.6493114
+        ]
+      },
+      "id": "node/2978130895"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2978130896",
+        "man_made": "mineshaft",
+        "resource": "silver",
+        "source": "survey",
+        "ssr:stedsnr": "691610"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6113644,
+          59.6614707
+        ]
+      },
+      "id": "node/2978130896"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2978180162",
+        "historic": "mine",
+        "place": "locality",
+        "resource": "silver",
+        "ssr:stedsnr": "569537"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.5936346,
+          59.6505031
+        ]
+      },
+      "id": "node/2978180162"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2978180163",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver",
+        "source": "http://faktaark.statkart.no/SSRFakta/faktaarkfraobjektid?enhet=380595",
+        "ssr:stedsnr": "629546"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.5966114,
+          59.6391825
+        ]
+      },
+      "id": "node/2978180163"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2978180164",
+        "comment": "The location from the source listed here is wrong. this new position is based on name sign at the mine and general local knowledge.",
+        "historic": "mine",
+        "resource": "silver",
+        "source": "http://faktaark.statkart.no/SSRFakta/faktaarkfraobjektid?enhet=380400",
+        "ssr:stedsnr": "629633"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6058668,
+          59.6699183
+        ]
+      },
+      "id": "node/2978180164"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2978180165",
+        "historic": "mine",
+        "resource": "silver",
+        "source": "local knowledge;http://aps.ngu.no/pls/oradb/minres_Mi_list_fkom.Alle_fkom?p_kommunenr=0604R&p_sprak=N"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.5938441,
+          59.6511673
+        ]
+      },
+      "id": "node/2978180165"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2978180166",
+        "historic": "mine",
+        "resource": "silver",
+        "source": "http://faktaark.statkart.no/SSRFakta/faktaarkfraobjektid?enhet=380597",
+        "ssr:stedsnr": "144560"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.5935756,
+          59.6437882
+        ]
+      },
+      "id": "node/2978180166"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3061134260",
+        "abandoned": "yes",
+        "image": "http://commons.wikimedia.org/wiki/File:2014_Naundorf_historisches_Gasthaus_Zur_Schmiede.jpg",
+        "name": "Windleithe Erbstollen",
+        "resource": "silver",
+        "start_date": "1711"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.6515604,
+          50.8392307
+        ]
+      },
+      "id": "node/3061134260"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3137862050",
+        "disused": "yes",
+        "headframe": "no",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.1475137,
+          47.5174317
+        ]
+      },
+      "id": "node/3137862050"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3166297898",
+        "disused": "yes",
+        "historic": "mine_shaft",
+        "man_made": "mineshaft",
+        "name": "Sølvgruva",
+        "place": "locality",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4466944,
+          62.4933446
+        ]
+      },
+      "id": "node/3166297898"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3188801142",
+        "disused": "yes",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.4884016,
+          51.2818412
+        ]
+      },
+      "id": "node/3188801142"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3233176071",
+        "name": "Windleithe Erbstolln",
+        "razed:man_made": "mineshaft",
+        "resource": "silver",
+        "start_date": "~1700"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.6515766,
+          50.8394221
+        ]
+      },
+      "id": "node/3233176071"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3259765225",
+        "abandoned": "yes",
+        "landuse": "quarry",
+        "name": "معدن متروکه",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.2335501,
+          33.5247585
+        ]
+      },
+      "id": "node/3259765225"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3306287029",
+        "disused": "yes",
+        "man_made": "adit",
+        "name": "Starina",
+        "resource": "silver",
+        "source": "survey, GPS"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.4080913,
+          49.0380626
+        ]
+      },
+      "id": "node/3306287029"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3424484894",
+        "access": "no",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "name": "Ferdinandstollen (ehemals Grube Straßburgerin)",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.3981541,
+          48.4650159
+        ]
+      },
+      "id": "node/3424484894"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3750193525",
+        "disused": "yes",
+        "man_made": "mineshaft",
+        "mineshaft_type": "winding",
+        "name": "Joseph Hauptkunst & Treibschacht",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2189625,
+          51.0629379
+        ]
+      },
+      "id": "node/3750193525"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3890538956",
+        "close": "yes",
+        "description": "Ingresso Inferiore della Canopa Busa del Pomar",
+        "disused": "yes",
+        "ele": "514",
+        "historic": "mine",
+        "man_made": "adit",
+        "name": "Busa del Pomar",
+        "ref": "57",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1258441,
+          46.1187209
+        ]
+      },
+      "id": "node/3890538956"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3890539657",
+        "close": "yes",
+        "description": "Ingresso principale della Canopa Busa del Pomar",
+        "ele": "534",
+        "historic": "mine",
+        "man_made": "adit",
+        "name": "Busa del Pomar",
+        "ref": "56",
+        "resource": "silver",
+        "wikidata": "Q21887380"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1267016,
+          46.1183985
+        ]
+      },
+      "id": "node/3890539657"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3890539658",
+        "close": "yes",
+        "description": "Ingresso Superiore della Canopa Busa del Pomar",
+        "disused": "yes",
+        "ele": "534",
+        "historic": "mine",
+        "man_made": "adit",
+        "name": "Busa del Pomar",
+        "ref": "55",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1267839,
+          46.1182651
+        ]
+      },
+      "id": "node/3890539658"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3890560700",
+        "close": "yes",
+        "description": "Canopa principale del dosso dei Furli",
+        "disused": "yes",
+        "ele": "360",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1135284,
+          46.1468993
+        ]
+      },
+      "id": "node/3890560700"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3891547834",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "name": "Canopa dei Bamponi",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1865255,
+          46.1232786
+        ]
+      },
+      "id": "node/3891547834"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3891547835",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "name": "Canopa di Magnago",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1740719,
+          46.0923488
+        ]
+      },
+      "id": "node/3891547835"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3891619344",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1865969,
+          46.1238535
+        ]
+      },
+      "id": "node/3891619344"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3891619345",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.186742,
+          46.1240482
+        ]
+      },
+      "id": "node/3891619345"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3891619346",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1867442,
+          46.1249124
+        ]
+      },
+      "id": "node/3891619346"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3891619347",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1861398,
+          46.1254904
+        ]
+      },
+      "id": "node/3891619347"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3891619348",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1866836,
+          46.1255693
+        ]
+      },
+      "id": "node/3891619348"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3936273861",
+        "description": "Canopa di piccole dimensioni - 2",
+        "disused": "yes",
+        "ele": "374",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1128864,
+          46.1475488
+        ]
+      },
+      "id": "node/3936273861"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3936273862",
+        "description": "Canopa di piccole dimensioni - 1",
+        "disused": "yes",
+        "ele": "370",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1128405,
+          46.1476564
+        ]
+      },
+      "id": "node/3936273862"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3936273863",
+        "description": "Mini canopa",
+        "disused": "yes",
+        "ele": "379",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1128701,
+          46.1473769
+        ]
+      },
+      "id": "node/3936273863"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3937191939",
+        "description": "Canopa piena di immondizie",
+        "disused": "yes",
+        "ele": "730",
+        "historic": "mine",
+        "man_made": "adit",
+        "ref": "076",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1405851,
+          46.1307408
+        ]
+      },
+      "id": "node/3937191939"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3937201452",
+        "close": "yes",
+        "description": "Canopa quasi completamente chiusa",
+        "disused": "yes",
+        "ele": "732",
+        "historic": "mine",
+        "man_made": "adit",
+        "name": "Canopa chiusa",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1406702,
+          46.1307923
+        ]
+      },
+      "id": "node/3937201452"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3946545888",
+        "disused": "yes",
+        "ele": "748",
+        "historic": "mine",
+        "man_made": "adit",
+        "name": "Canopa 075",
+        "ref": "075",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1423616,
+          46.1288559
+        ]
+      },
+      "id": "node/3946545888"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3946557466",
+        "disused": "yes",
+        "ele": "741",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "name": "Cadino 059",
+        "ref": "059",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1407324,
+          46.1277535
+        ]
+      },
+      "id": "node/3946557466"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3948937130",
+        "description": "Piccolo cadino",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.14027,
+          46.12692
+        ]
+      },
+      "id": "node/3948937130"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3950231381",
+        "description": "Cadino recintato sulla sommita del Monte Galina",
+        "disused": "yes",
+        "ele": "988",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "name": "Cadino 16",
+        "ref": "16",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1623964,
+          46.1214371
+        ]
+      },
+      "id": "node/3950231381"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3950231407",
+        "description": "Cadino profondo recintato",
+        "disused": "yes",
+        "ele": "980",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "name": "Cadino recintato",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1626208,
+          46.1228547
+        ]
+      },
+      "id": "node/3950231407"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3950231408",
+        "description": "Cadino profondo recintato",
+        "disused": "yes",
+        "ele": "980",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "name": "Cadino recintato",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1624749,
+          46.1231499
+        ]
+      },
+      "id": "node/3950231408"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3950526211",
+        "description": "Cadino profondo circa 2 - 3 metri",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1400281,
+          46.1268353
+        ]
+      },
+      "id": "node/3950526211"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3950736673",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "name": "069",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.15004,
+          46.10775
+        ]
+      },
+      "id": "node/3950736673"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3950736674",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "name": "Cadino 070",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.152855,
+          46.113564
+        ]
+      },
+      "id": "node/3950736674"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3950736693",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "name": "canopa 078",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.152614,
+          46.113308
+        ]
+      },
+      "id": "node/3950736693"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3950737521",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "name": "Canopa Tana Zalda",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.15267,
+          46.11385
+        ]
+      },
+      "id": "node/3950737521"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3961997560",
+        "close": "yes",
+        "description": "Canopa con accesso completamente ostruito da rifiuti",
+        "disused": "yes",
+        "ele": "408",
+        "historic": "mine",
+        "man_made": "adit",
+        "ref": "59",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1211397,
+          46.1153669
+        ]
+      },
+      "id": "node/3961997560"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3962073420",
+        "close": "yes",
+        "description": "Canopa posta su una paretina a circa 4 - 5 metri dalla base",
+        "disused": "yes",
+        "ele": "507",
+        "historic": "mine",
+        "man_made": "adit",
+        "ref": "58",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1249299,
+          46.1187556
+        ]
+      },
+      "id": "node/3962073420"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3964505535",
+        "close": "no",
+        "disused": "yes",
+        "ele": "918",
+        "historic": "mine",
+        "man_made": "adit",
+        "name": "Canopa 06 - del Raita",
+        "ref": "06",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1934983,
+          46.1137159
+        ]
+      },
+      "id": "node/3964505535"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3974237068",
+        "close": "no",
+        "disused": "yes",
+        "ele": "946",
+        "historic": "mine",
+        "man_made": "adit",
+        "name": "Canopa 025",
+        "ref": "025",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1796226,
+          46.1195413
+        ]
+      },
+      "id": "node/3974237068"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3974382639",
+        "close": "no",
+        "disused": "yes",
+        "ele": "962",
+        "historic": "mine",
+        "man_made": "adit",
+        "name": "Canopa 027 (?)",
+        "ref": "027?",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1727526,
+          46.1263554
+        ]
+      },
+      "id": "node/3974382639"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3974385660",
+        "close": "no",
+        "disused": "yes",
+        "ele": "955",
+        "historic": "mine",
+        "man_made": "adit",
+        "name": "Canopa 027 bis",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1716947,
+          46.1266239
+        ]
+      },
+      "id": "node/3974385660"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3974554654",
+        "close": "yes",
+        "description": "Piccolo ingresso a canopa attualmente troppo stretto per il passaggio di una persona",
+        "disused": "yes",
+        "ele": "967",
+        "historic": "mine",
+        "man_made": "adit",
+        "name": "Micro Canopa",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1727731,
+          46.1260013
+        ]
+      },
+      "id": "node/3974554654"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3978426718",
+        "description": "Canopa bassa e stretta",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "name": "Canopa bassa",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1524753,
+          46.1151122
+        ]
+      },
+      "id": "node/3978426718"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3978426719",
+        "disused": "yes",
+        "ele": "873",
+        "historic": "mine",
+        "man_made": "adit",
+        "name": "Canopa squadrata",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1522668,
+          46.1147384
+        ]
+      },
+      "id": "node/3978426719"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3978463863",
+        "description": "Canopa con molte impronte di animali",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "name": "Canopa impronte",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1510202,
+          46.1157157
+        ]
+      },
+      "id": "node/3978463863"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3978463864",
+        "description": "Canopa con accesso a curca 1 metro di altezza dalla cengia",
+        "disused": "yes",
+        "man_made": "adit",
+        "name": "Canopa rialzata",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1509218,
+          46.11575
+        ]
+      },
+      "id": "node/3978463864"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3978482326",
+        "description": "Assaggio",
+        "disused": "yes",
+        "man_made": "adit",
+        "name": "Canopa breve",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1500063,
+          46.115799
+        ]
+      },
+      "id": "node/3978482326"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3978482327",
+        "description": "Canopa non esplorata",
+        "disused": "yes",
+        "man_made": "adit",
+        "name": "Canopa gemella",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.150875,
+          46.115769
+        ]
+      },
+      "id": "node/3978482327"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3978482328",
+        "description": "Canopa con cunicolo lungo",
+        "disused": "yes",
+        "man_made": "adit",
+        "name": "Canopa lunga",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1508806,
+          46.1157674
+        ]
+      },
+      "id": "node/3978482328"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3978500064",
+        "man_made": "mineshaft",
+        "name": "Cadino",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1477799,
+          46.1167803
+        ]
+      },
+      "id": "node/3978500064"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3984749084",
+        "disused": "yes",
+        "ele": "980",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "name": "Cadino del tasso",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1621009,
+          46.1227125
+        ]
+      },
+      "id": "node/3984749084"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3998040611",
+        "close": "yes",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "ref": "06",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1855778,
+          46.1178974
+        ]
+      },
+      "id": "node/3998040611"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3998104746",
+        "close": "yes",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1836195,
+          46.1198889
+        ]
+      },
+      "id": "node/3998104746"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3998104747",
+        "close": "yes",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1834334,
+          46.1200015
+        ]
+      },
+      "id": "node/3998104747"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4003279962",
+        "close": "no",
+        "disused": "yes",
+        "ele": "979",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "ref": "33?",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.153316,
+          46.1167375
+        ]
+      },
+      "id": "node/4003279962"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4003293899",
+        "close": "no",
+        "description": "Canopa ampia e con un discreto sviluppo",
+        "disused": "yes",
+        "ele": "973",
+        "historic": "mine",
+        "man_made": "adit",
+        "ref": "37",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1570805,
+          46.1148793
+        ]
+      },
+      "id": "node/4003293899"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4003350330",
+        "close": "no",
+        "disused": "yes",
+        "ele": "981",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "ref": "21",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1570011,
+          46.1151035
+        ]
+      },
+      "id": "node/4003350330"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4005695089",
+        "disused": "yes",
+        "ele": "964",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1548794,
+          46.1142461
+        ]
+      },
+      "id": "node/4005695089"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4005699189",
+        "disused": "yes",
+        "ele": "975",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1567737,
+          46.114768
+        ]
+      },
+      "id": "node/4005699189"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4005699190",
+        "disused": "yes",
+        "ele": "978",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1569749,
+          46.1148564
+        ]
+      },
+      "id": "node/4005699190"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4005699191",
+        "disused": "yes",
+        "ele": "978",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1569749,
+          46.1150053
+        ]
+      },
+      "id": "node/4005699191"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4013281392",
+        "description": "Cadino con pareti verticali, profondo e circondato da rete di protezione.",
+        "disused": "yes",
+        "ele": "925",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1521424,
+          46.1159501
+        ]
+      },
+      "id": "node/4013281392"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4015450640",
+        "description": "Cadino con pareti verticali profondo alcuni metri (pericoloso).",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1492767,
+          46.1163366
+        ]
+      },
+      "id": "node/4015450640"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4015450641",
+        "description": "Cadino largo e basso.",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1492424,
+          46.1163412
+        ]
+      },
+      "id": "node/4015450641"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4018140122",
+        "close": "no",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2025414,
+          46.1261464
+        ]
+      },
+      "id": "node/4018140122"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4018153540",
+        "close": "no",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2017188,
+          46.1283603
+        ]
+      },
+      "id": "node/4018153540"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4018154422",
+        "close": "no",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2017371,
+          46.1282381
+        ]
+      },
+      "id": "node/4018154422"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4018167738",
+        "close": "no",
+        "description": "Canopa molto bassa (circa 30 cm) difficilmente percorribile",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2013922,
+          46.1285286
+        ]
+      },
+      "id": "node/4018167738"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4028952384",
+        "close": "no",
+        "description": "Cadino verticale profondo 3 metri",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1556776,
+          46.1139017
+        ]
+      },
+      "id": "node/4028952384"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4028953812",
+        "close": "no",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1556819,
+          46.1138217
+        ]
+      },
+      "id": "node/4028953812"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4028959925",
+        "close": "no",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1550124,
+          46.1100585
+        ]
+      },
+      "id": "node/4028959925"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4028962128",
+        "close": "no",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1547275,
+          46.1099114
+        ]
+      },
+      "id": "node/4028962128"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4028991821",
+        "close": "no",
+        "description": "Assaggio",
+        "disused": "yes",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1552408,
+          46.1115306
+        ]
+      },
+      "id": "node/4028991821"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4028993358",
+        "close": "no",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1555657,
+          46.1119918
+        ]
+      },
+      "id": "node/4028993358"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4028996920",
+        "close": "no",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1559454,
+          46.1120584
+        ]
+      },
+      "id": "node/4028996920"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4030942099",
+        "close": "yes",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1547884,
+          46.1095706
+        ]
+      },
+      "id": "node/4030942099"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4030965202",
+        "close": "no",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1555943,
+          46.1121096
+        ]
+      },
+      "id": "node/4030965202"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4030965203",
+        "close": "no",
+        "description": "Cadino pericoloso profondo circa 5 m a pareti verticali",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1556359,
+          46.1121679
+        ]
+      },
+      "id": "node/4030965203"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4031616216",
+        "close": "yes",
+        "description": "Piccola canopa quasi completamente ostruita",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1533297,
+          46.1077645
+        ]
+      },
+      "id": "node/4031616216"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4031628955",
+        "close": "yes",
+        "description": "Piccola canopa",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1533896,
+          46.1076689
+        ]
+      },
+      "id": "node/4031628955"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4031629059",
+        "close": "no",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1532902,
+          46.1075407
+        ]
+      },
+      "id": "node/4031629059"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4031721477",
+        "close": "yes",
+        "disused": "no",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1531882,
+          46.1067214
+        ]
+      },
+      "id": "node/4031721477"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4031725900",
+        "close": "no",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.153011,
+          46.1065378
+        ]
+      },
+      "id": "node/4031725900"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4055406902",
+        "close": "yes",
+        "description": "Canopa con ingresso quasi completamente ostruito",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "ref": "64",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.144432,
+          46.1203594
+        ]
+      },
+      "id": "node/4055406902"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4055420861",
+        "close": "no",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "ref": "65",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1438146,
+          46.1207759
+        ]
+      },
+      "id": "node/4055420861"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4055478292",
+        "close": "yes",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1480563,
+          46.116978
+        ]
+      },
+      "id": "node/4055478292"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4055484778",
+        "close": "yes",
+        "description": "Cadino profondo circa 6 metri",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1434979,
+          46.1213303
+        ]
+      },
+      "id": "node/4055484778"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4057102675",
+        "close": "no",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "ref": "61",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1279776,
+          46.1116553
+        ]
+      },
+      "id": "node/4057102675"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4057102676",
+        "close": "yes",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1274994,
+          46.1118577
+        ]
+      },
+      "id": "node/4057102676"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4068549283",
+        "close": "yes",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1634348,
+          46.1237526
+        ]
+      },
+      "id": "node/4068549283"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4068549284",
+        "close": "no",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1635877,
+          46.1238211
+        ]
+      },
+      "id": "node/4068549284"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4068549285",
+        "close": "no",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1637933,
+          46.124611
+        ]
+      },
+      "id": "node/4068549285"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4070416382",
+        "close": "no",
+        "disused": "yes",
+        "ele": "914",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "name": "Busa del corno",
+        "ref": "019",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1559051,
+          46.118639
+        ]
+      },
+      "id": "node/4070416382"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4085595459",
+        "close": "yes",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "ref": "071",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1488811,
+          46.120315
+        ]
+      },
+      "id": "node/4085595459"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4085595460",
+        "close": "yes",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "ref": "072",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1482457,
+          46.1204303
+        ]
+      },
+      "id": "node/4085595460"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4085595461",
+        "close": "yes",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.147922,
+          46.1221121
+        ]
+      },
+      "id": "node/4085595461"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4085598589",
+        "close": "yes",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1475436,
+          46.1218613
+        ]
+      },
+      "id": "node/4085598589"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4085598590",
+        "close": "yes",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1476611,
+          46.1219412
+        ]
+      },
+      "id": "node/4085598590"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4090888814",
+        "close": "yes",
+        "disused": "yes",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1452685,
+          46.1205599
+        ]
+      },
+      "id": "node/4090888814"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4090888815",
+        "close": "yes",
+        "disused": "yes",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1451262,
+          46.1205941
+        ]
+      },
+      "id": "node/4090888815"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4090888816",
+        "close": "yes",
+        "disused": "yes",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1451357,
+          46.1205991
+        ]
+      },
+      "id": "node/4090888816"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4095870804",
+        "close": "no",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1674001,
+          46.1738239
+        ]
+      },
+      "id": "node/4095870804"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4095875952",
+        "close": "no",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "name": "Bus delle Strie",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1656167,
+          46.1855295
+        ]
+      },
+      "id": "node/4095875952"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4095877708",
+        "close": "no",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.163833,
+          46.1861987
+        ]
+      },
+      "id": "node/4095877708"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4095877709",
+        "close": "no",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1638358,
+          46.1862467
+        ]
+      },
+      "id": "node/4095877709"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4095919454",
+        "close": "yes",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.162159,
+          46.1860433
+        ]
+      },
+      "id": "node/4095919454"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4095919455",
+        "close": "no",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1619343,
+          46.186296
+        ]
+      },
+      "id": "node/4095919455"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4126940060",
+        "close": "no",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1498148,
+          46.1022139
+        ]
+      },
+      "id": "node/4126940060"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4126940061",
+        "close": "no",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1504374,
+          46.1029525
+        ]
+      },
+      "id": "node/4126940061"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4126940062",
+        "close": "no",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1477123,
+          46.1030462
+        ]
+      },
+      "id": "node/4126940062"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4126940063",
+        "close": "no",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1528556,
+          46.1035868
+        ]
+      },
+      "id": "node/4126940063"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4158084210",
+        "disused": "yes",
+        "historic": "mine_shaft",
+        "resource": "silver",
+        "start_date": "1750",
+        "type": "vertical"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.3415386,
+          41.5692335
+        ]
+      },
+      "id": "node/4158084210"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4404862661",
+        "comment": "correction of position is based on name sign at the mine and general local knowledge.",
+        "historic": "mine",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6047933,
+          59.6712209
+        ]
+      },
+      "id": "node/4404862661"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4404862662",
+        "man_made": "mineshaft",
+        "resource": "silver",
+        "ssr:stedsnr": "144912"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.5990943,
+          59.6782392
+        ]
+      },
+      "id": "node/4404862662"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4553651837",
+        "disused": "yes",
+        "length": "0",
+        "man_made": "adit",
+        "name": "Baňa Margita",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.6191209,
+          48.8080114
+        ]
+      },
+      "id": "node/4553651837"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4802297274",
+        "disused": "yes",
+        "man_made": "adit",
+        "name": "Mundloch König David Stolln",
+        "note": "mit Stahlplatte verwahrt",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5282457,
+          51.1274813
+        ]
+      },
+      "id": "node/4802297274"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4802297275",
+        "alt_name": "König David Hilfsstolln",
+        "disused": "yes",
+        "man_made": "adit",
+        "name": "Güte Gottes Stollnmundloch",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.530101,
+          51.1258781
+        ]
+      },
+      "id": "node/4802297275"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4857981387",
+        "abandoned": "no",
+        "headframe": "no",
+        "heritage": "1",
+        "historic": "mine",
+        "man_made": "mineshaft",
+        "name": "Szyb Adam",
+        "resource": "silver",
+        "tourism": "attraction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.7888204,
+          50.4297985
+        ]
+      },
+      "id": "node/4857981387"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4865355831",
+        "historic": "mine_shaft",
+        "mineshaft_type": "air",
+        "name": "Szyb Pomoc Szczęściu",
+        "name:de": "Glückhilf",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8304653,
+          50.4215029
+        ]
+      },
+      "id": "node/4865355831"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4929069027",
+        "disused:man_made": "mineshaft",
+        "headframe": "no",
+        "historic": "mine",
+        "name": "Mina Colonia",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.8818622,
+          -21.8729361
+        ]
+      },
+      "id": "node/4929069027"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5073210478",
+        "access": "private",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.2836667,
+          47.2803667
+        ]
+      },
+      "id": "node/5073210478"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5762167119",
+        "description": "Bergbau erstmals Anfang des 11. Jahrhundert.\nUnter \"Herzog Ludwig\" 1717/19 bis 1733.\nUnter Silber-Marie\" 1873 erneute Aufnahme.\n1825 als \"alte aufsässige wassergefüllte Grube\" bezeichnet.",
+        "direction": "90",
+        "disused": "yes",
+        "man_made": "adit",
+        "name": "Herzog Ludwig",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7888211,
+          51.6904353
+        ]
+      },
+      "id": "node/5762167119"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5801482320",
+        "disused": "yes",
+        "length": "65",
+        "man_made": "adit",
+        "name": "Unterer, lehnschaftlicher Suchstollen Juliane Marie",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2810855,
+          51.8616477
+        ]
+      },
+      "id": "node/5801482320"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5944500141",
+        "disused": "yes",
+        "man_made": "adit",
+        "name": "Amalie",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.577581,
+          50.4296247
+        ]
+      },
+      "id": "node/5944500141"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5944500142",
+        "description": "führt nach Südwesten zum Doppelschacht direkt südlich des Branntwein Wegs",
+        "disused": "yes",
+        "man_made": "adit",
+        "name": "Hauptstollen Amalie (Amalia)",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5788095,
+          50.4295384
+        ]
+      },
+      "id": "node/5944500142"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5944500143",
+        "disused": "yes",
+        "man_made": "mineshaft",
+        "name": "Amalie",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5760588,
+          50.4284223
+        ]
+      },
+      "id": "node/5944500143"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5955421599",
+        "man_made": "mineshaft",
+        "resource": "silver",
+        "source": "http://faktaark.statkart.no/SSRFakta/faktaarkfraobjektid?enhet=380796",
+        "ssr:stedsnr": "751937"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.596181,
+          59.6820146
+        ]
+      },
+      "id": "node/5955421599"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6001280736",
+        "disused": "yes",
+        "man_made": "adit",
+        "name": "Miniera",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8406773,
+          44.2326005
+        ]
+      },
+      "id": "node/6001280736"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6140827775",
+        "disused": "yes",
+        "man_made": "adit",
+        "name": "Miniera",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8442189,
+          44.2685046
+        ]
+      },
+      "id": "node/6140827775"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6140832842",
+        "disused": "yes",
+        "man_made": "adit",
+        "name": "Miniera",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8406647,
+          44.2331105
+        ]
+      },
+      "id": "node/6140832842"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6203719954",
+        "disused": "yes",
+        "man_made": "adit",
+        "name": "Amalie",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5798645,
+          50.4296836
+        ]
+      },
+      "id": "node/6203719954"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6203895207",
+        "disused": "yes",
+        "man_made": "mineshaft",
+        "name": "Amalie",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5780799,
+          50.4280912
+        ]
+      },
+      "id": "node/6203895207"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6203895224",
+        "disused": "yes",
+        "man_made": "mineshaft",
+        "name": "Amalie",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.576081,
+          50.4284761
+        ]
+      },
+      "id": "node/6203895224"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6203895225",
+        "disused": "yes",
+        "man_made": "mineshaft",
+        "name": "Amalie",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5786566,
+          50.4281664
+        ]
+      },
+      "id": "node/6203895225"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6276206209",
+        "disused": "yes",
+        "man_made": "mineshaft",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.1202215,
+          54.8806681
+        ]
+      },
+      "id": "node/6276206209"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6854169645",
+        "disused": "yes",
+        "historic": "mine",
+        "man_made": "adit",
+        "name": "Silberloch",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.4647274,
+          50.6974335
+        ]
+      },
+      "id": "node/6854169645"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6871202265",
+        "man_made": "adit",
+        "name": "Mine",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.4429024,
+          37.5572427
+        ]
+      },
+      "id": "node/6871202265"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7035018295",
+        "description": "This was the original entrance to the Gerard Silver Mine. That mine was abandoned in the early 1900's but the shaft is still present.",
+        "man_made": "mineshaft",
+        "name": "Gerard Mine Entriance",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.0670804,
+          31.7097502
+        ]
+      },
+      "id": "node/7035018295"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7035028371",
+        "description": "This is the entrance for the Goodenough Mine Tour.",
+        "man_made": "adit",
+        "name": "Goodenough Mine",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.0669005,
+          31.7109627
+        ]
+      },
+      "id": "node/7035028371"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7035028372",
+        "description": "This is the entrance to the Toughnut Mine.",
+        "man_made": "adit",
+        "name": "Toughnut Mine",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.0663712,
+          31.710491
+        ]
+      },
+      "id": "node/7035028372"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7099335295",
+        "disused": "yes",
+        "man_made": "adit",
+        "name": "Stollensystem Silberlei",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.3239246,
+          50.129655
+        ]
+      },
+      "id": "node/7099335295"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7099335296",
+        "disused": "yes",
+        "man_made": "adit",
+        "name": "Stollensystem Silberlei",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.3238213,
+          50.129747
+        ]
+      },
+      "id": "node/7099335296"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7099335297",
+        "disused": "yes",
+        "man_made": "adit",
+        "name": "Stollensystem Silberlei",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.3237275,
+          50.1298484
+        ]
+      },
+      "id": "node/7099335297"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7126633263",
+        "disused": "yes",
+        "man_made": "mineshaft",
+        "mine": "Grube Altermann",
+        "name": "David-Schacht (Maschinenschacht)",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2906844,
+          50.3832928
+        ]
+      },
+      "id": "node/7126633263"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7126638543",
+        "disused": "yes",
+        "man_made": "mineshaft",
+        "mine": "Grube Altermann",
+        "name": "St.Jacob Schacht",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2909756,
+          50.3836857
+        ]
+      },
+      "id": "node/7126638543"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7126645205",
+        "disused": "yes",
+        "man_made": "mineshaft",
+        "mine": "Grube Altermann",
+        "name": "Charlotte",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2928415,
+          50.3836081
+        ]
+      },
+      "id": "node/7126645205"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7126661535",
+        "disused": "yes",
+        "man_made": "mineshaft",
+        "name": "Versuchsschacht",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2918884,
+          50.3827325
+        ]
+      },
+      "id": "node/7126661535"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7126663315",
+        "disused": "yes",
+        "man_made": "mineshaft",
+        "mine": "Grube Altermann",
+        "name": "Philipp Schacht",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2876442,
+          50.3851274
+        ]
+      },
+      "id": "node/7126663315"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7126685399",
+        "description": "sehr schlecht im Gelände zu erkennen",
+        "disused": "yes",
+        "man_made": "adit",
+        "mine": "Grube Altermann",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.288361,
+          50.3857878
+        ]
+      },
+      "id": "node/7126685399"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7126685400",
+        "disused": "yes",
+        "man_made": "mineshaft",
+        "mine": "Grube Altermann",
+        "name": "Carl Schacht",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2886886,
+          50.384915
+        ]
+      },
+      "id": "node/7126685400"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7141725664",
+        "description": "große Halde",
+        "disused": "yes",
+        "man_made": "mineshaft",
+        "mine": "Grube Altermann",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2854923,
+          50.3860811
+        ]
+      },
+      "id": "node/7141725664"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7141725764",
+        "disused": "yes",
+        "man_made": "mineshaft",
+        "mine": "Grube Altermann",
+        "name": "Lichtschacht Siegmundstollen",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2867344,
+          50.3857413
+        ]
+      },
+      "id": "node/7141725764"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7141736260",
+        "description": "evtl. Stollenmund Siegmundstollen, Höhe 260m, Stollenmund verschüttet",
+        "disused": "yes",
+        "man_made": "adit",
+        "mine": "Grube Altermann",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2844324,
+          50.3859153
+        ]
+      },
+      "id": "node/7141736260"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7141742242",
+        "disused": "yes",
+        "man_made": "mineshaft",
+        "mine": "Grube Altermann",
+        "name": "Friedrich Schacht",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2898318,
+          50.3845276
+        ]
+      },
+      "id": "node/7141742242"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7141767938",
+        "disused": "yes",
+        "man_made": "mineshaft",
+        "mine": "Grube Altermann",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2935391,
+          50.383824
+        ]
+      },
+      "id": "node/7141767938"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7141767939",
+        "disused": "yes",
+        "man_made": "mineshaft",
+        "mine": "Grube Altermann",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2933494,
+          50.3837821
+        ]
+      },
+      "id": "node/7141767939"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7141767940",
+        "disused": "yes",
+        "man_made": "mineshaft",
+        "mine": "Grube Altermann",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2928488,
+          50.3838862
+        ]
+      },
+      "id": "node/7141767940"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7141767941",
+        "disused": "yes",
+        "man_made": "mineshaft",
+        "mine": "Grube Altermann",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2922984,
+          50.3841686
+        ]
+      },
+      "id": "node/7141767941"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7141767942",
+        "disused": "yes",
+        "man_made": "mineshaft",
+        "mine": "Grube Altermann",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.291846,
+          50.3841692
+        ]
+      },
+      "id": "node/7141767942"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7141767943",
+        "disused": "yes",
+        "man_made": "mineshaft",
+        "mine": "Grube Altermann",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.291093,
+          50.3842836
+        ]
+      },
+      "id": "node/7141767943"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7143239210",
+        "description": "sehr schlecht im Gelände zu erkennen",
+        "disused": "yes",
+        "man_made": "adit",
+        "mine": "Grube Altermann",
+        "name": "Neuer Stollen",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2893365,
+          50.3852023
+        ]
+      },
+      "id": "node/7143239210"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7143239211",
+        "disused": "yes",
+        "man_made": "mineshaft",
+        "mine": "Grube Altermann",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2875008,
+          50.3850149
+        ]
+      },
+      "id": "node/7143239211"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7179361431",
+        "depth": "106m",
+        "disused": "yes",
+        "end_date": "1767",
+        "man_made": "adit",
+        "name": "Grube Rose",
+        "note": "Außer Betrieb",
+        "resource": "silver",
+        "start_date": "1570"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4503942,
+          51.7952055
+        ]
+      },
+      "id": "node/7179361431"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7179361433",
+        "disused": "yes",
+        "end_date": "1769",
+        "man_made": "adit",
+        "name": "Altenauer Hoffnungsstollen",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4599059,
+          51.7902329
+        ]
+      },
+      "id": "node/7179361433"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7245474255",
+        "man_made": "adit",
+        "name": "Anna",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.1855105,
+          50.6908976
+        ]
+      },
+      "id": "node/7245474255"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7609735823",
+        "historic": "mine",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.7478692,
+          47.7670548
+        ]
+      },
+      "id": "node/7609735823"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7609735824",
+        "historic": "mine",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.7477405,
+          47.7667447
+        ]
+      },
+      "id": "node/7609735824"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7609735825",
+        "historic": "mine",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.7465925,
+          47.7651401
+        ]
+      },
+      "id": "node/7609735825"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7645889322",
+        "disused": "yes",
+        "headframe": "no",
+        "historic": "mine_shaft",
+        "mineshaft_type": "winding",
+        "name": "Ruina Szybu Heinzmann",
+        "name:de": "Heinzmann",
+        "resource": "silver",
+        "source:geometry": "geoportal.gov.pl:Orto/ISOK_CIEŃ-laser/EGB&GPS&Mariusz Senderowski",
+        "source:user": "zVID"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8489041,
+          50.4234456
+        ]
+      },
+      "id": "node/7645889322"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7745279656",
+        "disused": "yes",
+        "man_made": "mineshaft",
+        "name": "Knappenstube",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8437169,
+          47.0865377
+        ]
+      },
+      "id": "node/7745279656"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7792139133",
+        "man_made": "mineshaft",
+        "name": "Red Mask Mine",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.304922,
+          41.3404002
+        ]
+      },
+      "id": "node/7792139133"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8101019043",
+        "direction": "130",
+        "man_made": "adit",
+        "name": "Saint Louis",
+        "resource": "silver"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1576702,
+          48.2178531
+        ]
+      },
+      "id": "node/8101019043"
+    }
+  ]
+}

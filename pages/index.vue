@@ -60,51 +60,80 @@ export default {
           name: 'Quarries',
           landuses: [
             {
+              key: 'gold',
               name: 'Gold',
-              fileName: 'goldMinesLabels',
               color: '#FFD700',
               type: 'quarry'
             },
             {
-              name: 'Clay',
-              fileName: 'clayMinesLabels',
-              color: '#D4C59C',
-              type: 'quarry'
-            },
-            {
-              name: 'Sand',
-              fileName: 'sandMinesLabels',
-              color: '#c2b280',
-              type: 'quarry'
-            },
-            {
-              name: 'Peat',
-              fileName: 'peatMinesLabels',
-              color: '#766D52',
-              type: 'quarry'
-            },
-            {
+              key: 'coal',
               name: 'Coal',
-              fileName: 'coalMinesLabels',
               color: '#36454f',
               type: 'quarry'
             },
             {
+              key: 'uranium',
               name: 'Uranium',
-              fileName: 'uraniumMinesLabels',
               color: '#757575',
               type: 'quarry'
             },
             {
+              key: 'silver',
               name: 'Silver',
-              fileName: 'silverMinesLabels',
               color: '#C0C0C0',
               type: 'quarry'
             },
             {
+              key: 'iron_ore',
               name: 'Iron ore',
-              fileName: 'ironOreMinesLabels',
               color: '#4e4f55',
+              type: 'quarry'
+            },
+            {
+              key: 'copper',
+              name: 'Copper',
+              color: '#b87333',
+              type: 'quarry'
+            },
+            {
+              key: 'marble',
+              name: 'Marble',
+              color: '#596e7f',
+              type: 'quarry'
+            }
+          ]
+        },
+        {
+          name: 'Gem stones',
+          landuses: [
+            {
+              key: 'diamond',
+              name: 'Diamond',
+              color: '#b9f2ff',
+              type: 'quarry'
+            },
+            {
+              key: 'opal',
+              name: 'Opal',
+              color: '#a8c3bc',
+              type: 'quarry'
+            },
+            {
+              key: 'amethyst',
+              name: 'Amethyst',
+              color: '#9966cc',
+              type: 'quarry'
+            },
+            {
+              key: 'quartz',
+              name: 'Quartz',
+              color: '#DDDDDF',
+              type: 'quarry'
+            },
+            {
+              key: 'ruby',
+              name: 'Ruby',
+              color: '#e0115f',
               type: 'quarry'
             }
           ]
@@ -114,7 +143,7 @@ export default {
           landuses: [
             {
               name: 'Cities',
-              fileName: 'cities',
+              fileName: 'cities/cities',
               type: 'urban'
             }
           ]
@@ -143,13 +172,7 @@ export default {
           ]
         }
       ],
-      emptyGeojson: {
-        type: 'geojson',
-        data: {
-          type: 'FeatureCollection',
-          features: []
-        }
-      },
+      quarriesTypes: [],
       selectedLanduse: null,
       previousLanduse: null,
       accessToken: 'pk.eyJ1Ijoid2FzcGlzY2hlIiwiYSI6ImNrazBidGRsNzBmdmIyeHJyYThjZG0wYzYifQ.qZQp-6ddFiyakTvvyCv8Gw', // your access token. Needed if you using Mapbox maps
@@ -161,7 +184,8 @@ export default {
         paint: {
           'circle-radius': 4,
           'circle-stroke-color': '#000',
-          'circle-stroke-width': 1
+          'circle-stroke-width': 1,
+          'circle-opacity': 0.6
         }
       },
       citiesLocation: {
@@ -184,7 +208,7 @@ export default {
       }
     }
   },
-  mounted () {
+  async mounted () {
     mapboxgl.accessToken = 'pk.eyJ1IjoiYWlzaHdlcnlhIiwiYSI6ImNrYzVyYXBlNzBrZGgzMG8wc3FtZjU5NDAifQ.u4azaXjkh41xSMC1NJLhTw'
 
     // create a new mapbox instance
@@ -198,6 +222,10 @@ export default {
     this.map.on('load', this.onMapLoad)
     this.map.on('zoom', this.onZoom)
     // this.map.on('sourcedataloading', this.onSourceDataLoading)
+
+    this.quarriesTypes = await fetch(
+      '/data/mines/OSM_quarriesTypes.json'
+    ).then(res => res.json())
   },
   methods: {
     onMapLoad (event) {
@@ -208,6 +236,7 @@ export default {
           features: []
         }
       })
+
       this.map.addSource('urban', {
         type: 'geojson',
         data: {
@@ -218,6 +247,7 @@ export default {
 
       this.map.addLayer(this.landuseLocation)
       this.map.addLayer(this.citiesLocation)
+      this.map.setLayoutProperty('landuseLocation', 'visibility', 'none')
       this.map.on('click', 'landuseLocation', this.onFeatureClick)
       this.map.on('click', 'citiesLocation', this.onCityClick)
 
@@ -227,14 +257,33 @@ export default {
       this.map.on('mouseleave', 'citiesLocation', this.onMouseOutCity)
     },
     async onLanduseSelection (landuse) {
-      console.log(this.selectedLanduse)
       if (this.selectedLanduse !== this.previousLanduse) {
         const popUps = document.getElementsByClassName('mapboxgl-popup')
         /** Check if there is already a popup on the map and if so, remove it */
         if (popUps[0]) { popUps[0].remove() };
+
         this.previousLanduse = this.selectedLanduse
-        if (landuse.type === 'quarry' || landuse.type === 'well') {
+        if (landuse.type === 'quarry') {
+          await this.map.getSource('landuse').setData('./data/mines/OSM_allresourcesLabels.json')
+          // this.map.setFilter('landuseLocation', ['==', ['get', 'resource'], landuse.key])
+          // this.map.setFilter('landuseLocation', ['==', ['get', 'disused'], 'yes'])
+          // this.map.setFilter('landuseLocation', ['==', ['get', 'abandoned'], 'yes'])
+          const filtered = this.quarriesTypes.filter(function (type) {
+            return type.includes(landuse.key)
+          })
+          this.map.setFilter('landuseLocation', [
+            'match',
+            ['get', 'resource'],
+            filtered,
+            true,
+            false
+          ])
+          this.map.setLayoutProperty('landuseLocation', 'visibility', 'visible')
+          this.map.setLayoutProperty('citiesLocation', 'visibility', 'none')
+          this.map.setPaintProperty('landuseLocation', 'circle-color', landuse.color)
+        } else if (landuse.type === 'well') {
           await this.map.getSource('landuse').setData('./data/' + landuse.fileName + '.json')
+          this.map.setFilter('landuseLocation', null)
           this.map.setLayoutProperty('landuseLocation', 'visibility', 'visible')
           this.map.setLayoutProperty('citiesLocation', 'visibility', 'none')
           this.map.setPaintProperty('landuseLocation', 'circle-color', landuse.color)
@@ -246,7 +295,7 @@ export default {
       }
     },
     onZoom () {
-      console.log(this.map.getZoom())
+      // console.log(this.map.getZoom())
     },
     // Change the cursor to a pointer when the mouse is over the states layer.
     onMouseEnter () {
@@ -289,7 +338,6 @@ export default {
     // location of the click, with description HTML from its properties.
     onFeatureClick (e) {
       const currentFeature = e.features[0]
-      console.log(currentFeature)
       const popUps = document.getElementsByClassName('mapboxgl-popup')
       /** Check if there is already a popup on the map and if so, remove it */
       if (popUps[0]) { popUps[0].remove() };

@@ -1,0 +1,5 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"@id":"way/176358539","landuse":"quarry","resource":"silver","source":"bing"},"geometry":{"type":"Point","coordinates":[29.73067,39.45431]},"id":"way/176358539"}
+,
+{"type":"Feature","properties":{"@id":"node/3259765225","abandoned":"yes","landuse":"quarry","name":"معدن متروکه","resource":"silver"},"geometry":{"type":"Point","coordinates":[50.2335501,33.5247585]},"id":"node/3259765225"}
+,
+{"type":"Feature","properties":{"@id":"way/94153747","@relations":[{"role":"","rel":6691986,"reltags":{"end_date":"1969","mineshaft_type":"winding","name":"Grube Himmelsfürst","razed:man_made":"mineshaft","resource":"silver","start_date":"1572","type":"site","wikidata":"Q1619152","wikipedia":"de:Himmelsfürst Fundgrube"}}]},"geometry":{"type":"Point","coordinates":[null,null]},"id":"way/94153747"}]}
