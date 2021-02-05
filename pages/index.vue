@@ -1,40 +1,75 @@
 <template>
   <v-container>
     <Snackbar />
-    <v-card id="menu-wrapper">
-      <v-card-title>
-        <span>Earth2 Biomes</span>
-        <v-spacer />
-        <v-icon>mdi-earth</v-icon>
-      </v-card-title>
-      <v-expansion-panels>
-        <v-expansion-panel
+    <v-navigation-drawer
+      id="menu-wrapper"
+      v-model="drawer"
+      :mini-variant.sync="mini"
+      permanent
+      width="300"
+      class="rounded"
+    >
+      <v-list-item class="px-2">
+        <v-list-item-avatar>
+          <v-btn
+            icon
+            @click.stop="mini = !mini"
+          >
+            <v-icon>mdi-menu</v-icon>
+          </v-btn>
+        </v-list-item-avatar>
+        <v-list-item-title>Earth2 Biomes</v-list-item-title>
+        <v-btn
+          icon
+          @click.stop="mini = !mini"
+        >
+          <v-icon>mdi-chevron-left</v-icon>
+        </v-btn>
+      </v-list-item>
+      <v-divider />
+      <v-list dense>
+        <v-list-group
           v-for="biome in biomes"
           :key="biome.name"
-          class="mt-0"
+          no-action
+          :prepend-icon="biome.icon"
         >
-          <v-divider />
-          <v-expansion-panel-header>
-            {{ biome.name }}
-          </v-expansion-panel-header>
-          <v-expansion-panel-content>
-            <v-radio-group
-              v-model="selectedLanduse"
-              class="ma-0"
-              hide-details="auto"
-            >
-              <v-radio
-                v-for="landuse in biome.landuses"
-                :key="landuse.name"
-                :value="landuse"
-                :label="`${landuse.name}`"
-                @click="onLanduseSelection(landuse)"
-              />
-            </v-radio-group>
-          </v-expansion-panel-content>
-        </v-expansion-panel>
-      </v-expansion-panels>
-    </v-card>
+          <template v-slot:activator>
+            <v-list-item-content>
+              <v-list-item-title>{{ biome.name }}</v-list-item-title>
+            </v-list-item-content>
+          </template>
+          <v-list-group
+            v-for="category in biome.categories"
+            :key="category.name"
+            sub-group
+            no-action
+            class="mt-0"
+          >
+            <template v-slot:activator>
+              <v-list-item-content>
+                <v-list-item-title>{{ category.name }}</v-list-item-title>
+              </v-list-item-content>
+            </template>
+            <v-list-item>
+              <v-radio-group
+                v-model="selectedLanduse"
+                class="ma-0"
+                hide-details="auto"
+              >
+                <v-radio
+                  v-for="landuse in category.landuses"
+                  :key="landuse.name"
+                  :value="landuse"
+                  :label="`${landuse.name}`"
+                  @click="onLanduseSelection(landuse)"
+                />
+              </v-radio-group>
+            </v-list-item>
+          </v-list-group>
+        </v-list-group>
+      </v-list>
+    </v-navigation-drawer>
     <v-layout id="map-wrapper" fluid>
       <v-flex id="map" />
     </v-layout>
@@ -55,126 +90,140 @@ export default {
   },
   data () {
     return {
+      drawer: true,
+      mini: false,
+      selectedLanduse: null,
+      previousLanduse: null,
       biomes: [
         {
-          name: 'Quarries',
-          landuses: [
+          name: 'Resources',
+          icon: 'mdi-earth',
+          categories: [
             {
-              key: 'gold',
-              name: 'Gold',
-              color: '#FFD700',
-              type: 'quarry'
+              name: 'Quarries',
+              landuses: [
+                {
+                  key: 'gold',
+                  name: 'Gold',
+                  color: '#FFD700',
+                  type: 'quarry'
+                },
+                {
+                  key: 'coal',
+                  name: 'Coal',
+                  color: '#36454f',
+                  type: 'quarry'
+                },
+                {
+                  key: 'uranium',
+                  name: 'Uranium',
+                  color: '#757575',
+                  type: 'quarry'
+                },
+                {
+                  key: 'silver',
+                  name: 'Silver',
+                  color: '#C0C0C0',
+                  type: 'quarry'
+                },
+                {
+                  key: 'iron_ore',
+                  name: 'Iron ore',
+                  color: '#4e4f55',
+                  type: 'quarry'
+                },
+                {
+                  key: 'copper',
+                  name: 'Copper',
+                  color: '#b87333',
+                  type: 'quarry'
+                },
+                {
+                  key: 'marble',
+                  name: 'Marble',
+                  color: '#596e7f',
+                  type: 'quarry'
+                }
+              ]
             },
             {
-              key: 'coal',
-              name: 'Coal',
-              color: '#36454f',
-              type: 'quarry'
+              name: 'Gem stones',
+              landuses: [
+                {
+                  key: 'diamond',
+                  name: 'Diamond',
+                  color: '#b9f2ff',
+                  type: 'quarry'
+                },
+                {
+                  key: 'opal',
+                  name: 'Opal',
+                  color: '#a8c3bc',
+                  type: 'quarry'
+                },
+                {
+                  key: 'amethyst',
+                  name: 'Amethyst',
+                  color: '#9966cc',
+                  type: 'quarry'
+                },
+                {
+                  key: 'quartz',
+                  name: 'Quartz',
+                  color: '#DDDDDF',
+                  type: 'quarry'
+                },
+                {
+                  key: 'ruby',
+                  name: 'Ruby',
+                  color: '#e0115f',
+                  type: 'quarry'
+                }
+              ]
             },
             {
-              key: 'uranium',
-              name: 'Uranium',
-              color: '#757575',
-              type: 'quarry'
-            },
-            {
-              key: 'silver',
-              name: 'Silver',
-              color: '#C0C0C0',
-              type: 'quarry'
-            },
-            {
-              key: 'iron_ore',
-              name: 'Iron ore',
-              color: '#4e4f55',
-              type: 'quarry'
-            },
-            {
-              key: 'copper',
-              name: 'Copper',
-              color: '#b87333',
-              type: 'quarry'
-            },
-            {
-              key: 'marble',
-              name: 'Marble',
-              color: '#596e7f',
-              type: 'quarry'
-            }
-          ]
-        },
-        {
-          name: 'Gem stones',
-          landuses: [
-            {
-              key: 'diamond',
-              name: 'Diamond',
-              color: '#b9f2ff',
-              type: 'quarry'
-            },
-            {
-              key: 'opal',
-              name: 'Opal',
-              color: '#a8c3bc',
-              type: 'quarry'
-            },
-            {
-              key: 'amethyst',
-              name: 'Amethyst',
-              color: '#9966cc',
-              type: 'quarry'
-            },
-            {
-              key: 'quartz',
-              name: 'Quartz',
-              color: '#DDDDDF',
-              type: 'quarry'
-            },
-            {
-              key: 'ruby',
-              name: 'Ruby',
-              color: '#e0115f',
-              type: 'quarry'
+              name: 'Petroleum well',
+              landuses: [
+                {
+                  name: 'Oil',
+                  fileName: 'oilWells',
+                  color: '#494c4f',
+                  type: 'well'
+                },
+                {
+                  name: 'Gas',
+                  fileName: 'gasWells',
+                  color: '#ffdf46',
+                  type: 'well'
+                },
+                {
+                  name: 'Offshore',
+                  fileName: 'offshoreWells',
+                  color: '#cad7d9',
+                  type: 'well'
+                }
+              ]
             }
           ]
         },
         {
           name: 'Urban',
-          landuses: [
+          icon: 'mdi-city',
+          categories: [
             {
               name: 'Cities',
-              fileName: 'cities/cities',
-              type: 'urban'
-            }
-          ]
-        },
-        {
-          name: 'Petroleum well',
-          landuses: [
-            {
-              name: 'Oil',
-              fileName: 'oilWells',
-              color: '#494c4f',
-              type: 'well'
-            },
-            {
-              name: 'Gas',
-              fileName: 'gasWells',
-              color: '#ffdf46',
-              type: 'well'
-            },
-            {
-              name: 'Offshore',
-              fileName: 'offshoreWells',
-              color: '#cad7d9',
-              type: 'well'
+              landuses: [
+                {
+                  name: 'Cities',
+                  fileName: 'cities/cities',
+                  type: 'urban'
+                }
+              ]
             }
           ]
         }
       ],
       quarriesTypes: [],
-      selectedLanduse: null,
-      previousLanduse: null,
       accessToken: 'pk.eyJ1Ijoid2FzcGlzY2hlIiwiYSI6ImNrazBidGRsNzBmdmIyeHJyYThjZG0wYzYifQ.qZQp-6ddFiyakTvvyCv8Gw', // your access token. Needed if you using Mapbox maps
       mapStyle: 'mapbox://styles/mapbox/light-v10',
       landuseLocation: {
@@ -393,7 +442,6 @@ export default {
 #menu-wrapper{
   position: relative;
   z-index: 3;
-  width: 250px;
 }
 
 #map-wrapper{
