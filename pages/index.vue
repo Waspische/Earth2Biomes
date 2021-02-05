@@ -29,7 +29,7 @@
       <v-divider />
       <v-list dense>
         <v-list-group
-          v-for="biome in biomes"
+          v-for="biome in filteredBiomes"
           :key="biome.name"
           no-action
           :prepend-icon="biome.icon"
@@ -39,6 +39,17 @@
               <v-list-item-title>{{ biome.name }}</v-list-item-title>
             </v-list-item-content>
           </template>
+          <v-select
+            v-model="selectedSource"
+            class="pr-4 pt-4 pl-16"
+            :items="datasources"
+            item-text="label"
+            item-value="key"
+            label="Datasource"
+            hide-details="auto"
+            dense
+            @change="onDatasourceSelection"
+          />
           <v-list-group
             v-for="category in biome.categories"
             :key="category.name"
@@ -94,6 +105,14 @@ export default {
       mini: false,
       selectedLanduse: null,
       previousLanduse: null,
+      selectedSource: 'OSM',
+      datasources: [{
+        key: 'OSM',
+        label: 'OpenStreet Map'
+      }, {
+        key: 'MRDS',
+        label: 'MR Data'
+      }],
       biomes: [
         {
           name: 'Resources',
@@ -101,6 +120,7 @@ export default {
           categories: [
             {
               name: 'Quarries',
+              datasource: 'OSM',
               landuses: [
                 {
                   key: 'gold',
@@ -128,7 +148,7 @@ export default {
                 },
                 {
                   key: 'iron_ore',
-                  name: 'Iron ore',
+                  name: 'Iron',
                   color: '#4e4f55',
                   type: 'quarry'
                 },
@@ -148,6 +168,7 @@ export default {
             },
             {
               name: 'Gem stones',
+              datasource: 'OSM',
               landuses: [
                 {
                   key: 'diamond',
@@ -183,6 +204,7 @@ export default {
             },
             {
               name: 'Petroleum well',
+              datasource: 'OSM',
               landuses: [
                 {
                   name: 'Oil',
@@ -201,6 +223,72 @@ export default {
                   fileName: 'offshoreWells',
                   color: '#cad7d9',
                   type: 'well'
+                }
+              ]
+            },
+            {
+              name: 'Quarries',
+              datasource: 'MRDS',
+              landuses: [
+                {
+                  key: 'nickel',
+                  name: 'Nickel',
+                  color: '#727472',
+                  type: 'quarry'
+                },
+                {
+                  key: 'iron',
+                  name: 'Iron',
+                  color: '#4e4f55',
+                  type: 'quarry'
+                },
+                {
+                  key: 'aluminum',
+                  name: 'Aluminum',
+                  color: '#848789',
+                  type: 'quarry'
+                },
+                {
+                  key: 'copper',
+                  name: 'Copper',
+                  color: '#b87333',
+                  type: 'quarry'
+                },
+                {
+                  key: 'lead',
+                  name: 'Lead',
+                  color: '#212121',
+                  type: 'quarry'
+                },
+                {
+                  key: 'pge',
+                  name: 'PGE',
+                  color: '#bdcdde',
+                  type: 'quarry'
+                },
+                {
+                  key: 'gold',
+                  name: 'Gold',
+                  color: '#FFD700',
+                  type: 'quarry'
+                },
+                {
+                  key: 'rare earth elements',
+                  name: 'Rare Earths',
+                  color: '#665647',
+                  type: 'quarry'
+                },
+                {
+                  key: 'diamond',
+                  name: 'Diamond',
+                  color: '#b9f2ff',
+                  type: 'quarry'
+                },
+                {
+                  key: 'potash',
+                  name: 'Potash',
+                  color: '#e07757',
+                  type: 'quarry'
                 }
               ]
             }
@@ -223,7 +311,7 @@ export default {
           ]
         }
       ],
-      quarriesTypes: [],
+      depositsTypes: [],
       accessToken: 'pk.eyJ1Ijoid2FzcGlzY2hlIiwiYSI6ImNrazBidGRsNzBmdmIyeHJyYThjZG0wYzYifQ.qZQp-6ddFiyakTvvyCv8Gw', // your access token. Needed if you using Mapbox maps
       mapStyle: 'mapbox://styles/mapbox/light-v10',
       landuseLocation: {
@@ -257,6 +345,16 @@ export default {
       }
     }
   },
+  computed: {
+    filteredBiomes () {
+      return this.biomes.map(b => ({
+        ...b,
+        categories: b.categories.filter(c =>
+          c.datasource === this.selectedSource || c.datasource === undefined
+        )
+      }))
+    }
+  },
   async mounted () {
     mapboxgl.accessToken = 'pk.eyJ1IjoiYWlzaHdlcnlhIiwiYSI6ImNrYzVyYXBlNzBrZGgzMG8wc3FtZjU5NDAifQ.u4azaXjkh41xSMC1NJLhTw'
 
@@ -270,10 +368,9 @@ export default {
     this.map.addControl(new mapboxgl.NavigationControl(), 'top-right')
     this.map.on('load', this.onMapLoad)
     this.map.on('zoom', this.onZoom)
-    // this.map.on('sourcedataloading', this.onSourceDataLoading)
 
-    this.quarriesTypes = await fetch(
-      './data/mines/OSM_quarriesTypes.json'
+    this.depositsTypes = await fetch(
+      './data/mines/' + this.selectedSource + '_depositsTypes.json'
     ).then(res => res.json())
   },
   methods: {
@@ -305,6 +402,11 @@ export default {
       this.map.on('mouseenter', 'citiesLocation', this.onMouseEnterCity)
       this.map.on('mouseleave', 'citiesLocation', this.onMouseOutCity)
     },
+    async onDatasourceSelection () {
+      this.depositsTypes = await fetch(
+        './data/mines/' + this.selectedSource + '_depositsTypes.json'
+      ).then(res => res.json())
+    },
     async onLanduseSelection (landuse) {
       this.trackBiomeClick(landuse)
       if (this.selectedLanduse !== this.previousLanduse) {
@@ -314,11 +416,11 @@ export default {
 
         this.previousLanduse = this.selectedLanduse
         if (landuse.type === 'quarry') {
-          await this.map.getSource('landuse').setData('./data/mines/OSM_allresourcesLabels.json')
+          await this.map.getSource('landuse').setData('./data/mines/' + this.selectedSource + '_mineralDeposits.json')
           // this.map.setFilter('landuseLocation', ['==', ['get', 'resource'], landuse.key])
           // this.map.setFilter('landuseLocation', ['==', ['get', 'disused'], 'yes'])
           // this.map.setFilter('landuseLocation', ['==', ['get', 'abandoned'], 'yes'])
-          const filtered = this.quarriesTypes.filter(function (type) {
+          const filtered = this.depositsTypes.filter(function (type) {
             return type.includes(landuse.key)
           })
           this.map.setFilter('landuseLocation', [
