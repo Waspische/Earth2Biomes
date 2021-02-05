@@ -279,15 +279,57 @@ export default {
                   type: 'quarry'
                 },
                 {
+                  key: 'potash',
+                  name: 'Potash',
+                  color: '#e07757',
+                  type: 'quarry'
+                },
+                {
+                  key: 'silver',
+                  name: 'Silver',
+                  color: '#C0C0C0',
+                  type: 'quarry'
+                }
+              ]
+            },
+            {
+              name: 'Gem stones',
+              datasource: 'MRDS',
+              landuses: [
+                {
                   key: 'diamond',
                   name: 'Diamond',
                   color: '#b9f2ff',
                   type: 'quarry'
                 },
                 {
-                  key: 'potash',
-                  name: 'Potash',
-                  color: '#e07757',
+                  key: 'sapphire',
+                  name: 'Sapphire',
+                  color: '#0f52ba',
+                  type: 'quarry'
+                },
+                {
+                  key: 'amethyst',
+                  name: 'Amethyst',
+                  color: '#9966cc',
+                  type: 'quarry'
+                },
+                {
+                  key: 'emerald',
+                  name: 'Emerald',
+                  color: '#50C878',
+                  type: 'quarry'
+                },
+                {
+                  key: 'jade',
+                  name: 'Jade',
+                  color: '#00a86b',
+                  type: 'quarry'
+                },
+                {
+                  key: 'ruby',
+                  name: 'Ruby',
+                  color: '#e0115f',
                   type: 'quarry'
                 }
               ]

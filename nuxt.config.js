@@ -31,7 +31,7 @@ export default {
       { hid: 'og:image', property: 'twitter:image', content: 'https://waspische.github.io/Earth2Biomes/meta_image.png' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico?v=2' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' }
 
     ]
