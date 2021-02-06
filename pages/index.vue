@@ -26,6 +26,11 @@
           <v-icon>mdi-chevron-left</v-icon>
         </v-btn>
       </v-list-item>
+      <v-list-item dense>
+        <div class="text-caption">
+          Referral code <strong>HABN6K6K3X</strong>
+        </div>
+      </v-list-item>
       <v-divider />
       <v-list dense>
         <v-list-group
@@ -40,6 +45,7 @@
             </v-list-item-content>
           </template>
           <v-select
+            v-if="biome.name === 'Resources'"
             v-model="selectedSource"
             class="pr-4 pt-4 pl-16"
             :items="datasources"
