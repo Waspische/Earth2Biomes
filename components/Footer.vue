@@ -17,8 +17,8 @@
         If you like this project, support me using the code <strong>HABN6K6K3X</strong> or <a target="_blank" rel="noopener noreferrer" href="https://ko-fi.com/earth2biomes" @click="trackFooterClick('kofi')">buy me a coffee ☕️</a>
         <br>
         To submit an idea/bug, you can
-        <a href="https://forms.gle/8Ak6HTaVh5hFyf4Q9" target="_blank" rel="noopener noreferrer" @click="trackFooterClick('form')">
-          click here
+        <a href="https://discord.gg/ffkcKmsbaH" target="_blank" rel="noopener noreferrer" @click="trackFooterClick('discord')">
+          join us on discord
         </a>
       </v-col>
     </v-row>
