@@ -27,7 +27,7 @@
         </v-btn>
       </v-list-item>
       <v-list-item dense>
-        <div class="text-caption">
+        <div class="text-caption pl-12">
           Referral code <strong>HABN6K6K3X</strong>
         </div>
       </v-list-item>
@@ -125,19 +125,50 @@ export default {
           icon: 'mdi-earth',
           categories: [
             {
-              name: 'Quarries',
+              name: 'Most mined minerals',
+              datasource: 'OSM',
+              tooltip: 'Tooltip',
+              landuses: [
+                {
+                  key: 'coal',
+                  name: 'Coal',
+                  color: '#36454f',
+                  type: 'quarry'
+                },
+                {
+                  key: 'iron_ore',
+                  name: 'Iron',
+                  color: '#4e4f55',
+                  type: 'quarry'
+                },
+                {
+                  key: 'bauxite',
+                  name: 'Bauxite',
+                  color: '#665e5a',
+                  type: 'quarry'
+                },
+                {
+                  key: 'phosphate',
+                  name: 'Phosphate',
+                  color: '#4e4f55',
+                  type: 'quarry'
+                },
+                {
+                  key: 'gypsum',
+                  name: 'Gypsum',
+                  color: '#c6c9ca',
+                  type: 'quarry'
+                }
+              ]
+            },
+            {
+              name: 'Other minerals',
               datasource: 'OSM',
               landuses: [
                 {
                   key: 'gold',
                   name: 'Gold',
                   color: '#FFD700',
-                  type: 'quarry'
-                },
-                {
-                  key: 'coal',
-                  name: 'Coal',
-                  color: '#36454f',
                   type: 'quarry'
                 },
                 {
@@ -150,12 +181,6 @@ export default {
                   key: 'silver',
                   name: 'Silver',
                   color: '#C0C0C0',
-                  type: 'quarry'
-                },
-                {
-                  key: 'iron_ore',
-                  name: 'Iron',
-                  color: '#4e4f55',
                   type: 'quarry'
                 },
                 {
@@ -233,6 +258,43 @@ export default {
               ]
             },
             {
+              name: 'Most mined minerals',
+              datasource: 'MRDS',
+              tooltip: 'Tooltip',
+              landuses: [
+                {
+                  key: 'coal',
+                  name: 'Coal',
+                  color: '#36454f',
+                  type: 'quarry'
+                },
+                {
+                  key: 'iron',
+                  name: 'Iron',
+                  color: '#4e4f55',
+                  type: 'quarry'
+                },
+                {
+                  key: 'bauxite',
+                  name: 'Bauxite',
+                  color: '#665e5a',
+                  type: 'quarry'
+                },
+                {
+                  key: 'phosphate',
+                  name: 'Phosphate',
+                  color: '#4e4f55',
+                  type: 'quarry'
+                },
+                {
+                  key: 'gypsum',
+                  name: 'Gypsum',
+                  color: '#c6c9ca',
+                  type: 'quarry'
+                }
+              ]
+            },
+            {
               name: 'Quarries',
               datasource: 'MRDS',
               landuses: [
@@ -240,12 +302,6 @@ export default {
                   key: 'nickel',
                   name: 'Nickel',
                   color: '#727472',
-                  type: 'quarry'
-                },
-                {
-                  key: 'iron',
-                  name: 'Iron',
-                  color: '#4e4f55',
                   type: 'quarry'
                 },
                 {
