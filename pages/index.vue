@@ -551,7 +551,7 @@ export default {
       }
     },
     onZoom () {
-      // console.log(this.map.getZoom())
+      console.log(this.map.getZoom())
     },
     // Change the cursor to a pointer when the mouse is over the states layer.
     onMouseEnter () {
