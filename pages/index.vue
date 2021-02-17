@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container fluid class="pa-0">
     <Snackbar />
     <v-navigation-drawer
       id="menu-wrapper"
@@ -7,7 +7,7 @@
       :mini-variant.sync="mini"
       permanent
       width="300"
-      class="rounded"
+      class="rounded ml-4 mt-4"
     >
       <v-list-item class="px-2">
         <v-list-item-avatar>
@@ -460,7 +460,7 @@ export default {
     }
   },
   async mounted () {
-    mapboxgl.accessToken = 'pk.eyJ1IjoiYWlzaHdlcnlhIiwiYSI6ImNrYzVyYXBlNzBrZGgzMG8wc3FtZjU5NDAifQ.u4azaXjkh41xSMC1NJLhTw'
+    mapboxgl.accessToken = this.accessToken
 
     // create a new mapbox instance
     this.map = new mapboxgl.Map({
