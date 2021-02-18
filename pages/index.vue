@@ -18,7 +18,7 @@
             <v-icon>mdi-menu</v-icon>
           </v-btn>
         </v-list-item-avatar>
-        <v-list-item-title>Earth2 Biomes</v-list-item-title>
+        <v-list-item-title>{{ biomes.name }}</v-list-item-title>
         <v-btn
           icon
           @click.stop="mini = !mini"
@@ -26,70 +26,60 @@
           <v-icon>mdi-chevron-left</v-icon>
         </v-btn>
       </v-list-item>
-      <v-list-item dense>
-        <div class="text-caption pl-12">
-          Referral code <strong>HABN6K6K3X</strong>
-        </div>
-      </v-list-item>
       <v-divider />
       <v-list dense>
+        <v-select
+          v-model="selectedSource"
+          class="pr-4 pt-4 pl-16"
+          :items="datasources"
+          item-text="label"
+          item-value="key"
+          label="Datasource"
+          hide-details="auto"
+          dense
+          @change="onDatasourceSelection"
+        />
         <v-list-group
-          v-for="biome in filteredBiomes"
-          :key="biome.name"
+          v-for="category in filteredBiomes"
+          :key="category.id"
+          sub-group
           no-action
-          :prepend-icon="biome.icon"
+          class="mt-0"
         >
           <template v-slot:activator>
             <v-list-item-content>
-              <v-list-item-title>{{ biome.name }}</v-list-item-title>
+              <v-list-item-title>{{ category.name }}</v-list-item-title>
             </v-list-item-content>
           </template>
-          <v-select
-            v-if="biome.name === 'Resources'"
-            v-model="selectedSource"
-            class="pr-4 pt-4 pl-16"
-            :items="datasources"
-            item-text="label"
-            item-value="key"
-            label="Datasource"
-            hide-details="auto"
-            dense
-            @change="onDatasourceSelection"
-          />
-          <v-list-group
-            v-for="category in biome.categories"
-            :key="category.name"
-            sub-group
-            no-action
-            class="mt-0"
-          >
-            <template v-slot:activator>
-              <v-list-item-content>
-                <v-list-item-title>{{ category.name }}</v-list-item-title>
-              </v-list-item-content>
-            </template>
-            <v-list-item>
-              <v-radio-group
-                v-model="selectedLanduse"
-                class="ma-0"
-                hide-details="auto"
-              >
-                <v-radio
-                  v-for="landuse in category.landuses"
-                  :key="landuse.name"
-                  :value="landuse"
-                  :label="`${landuse.name}`"
-                  @click="onLanduseSelection(landuse)"
-                />
-              </v-radio-group>
-            </v-list-item>
-          </v-list-group>
+          <v-list-item>
+            <v-radio-group
+              v-model="selectedLanduse"
+              class="ma-0"
+              hide-details="auto"
+            >
+              <v-radio
+                v-for="landuse in category.landuses"
+                :key="landuse.name"
+                :value="landuse"
+                :label="`${landuse.name}`"
+                @click="onLanduseSelection(landuse)"
+              />
+            </v-radio-group>
+          </v-list-item>
         </v-list-group>
       </v-list>
     </v-navigation-drawer>
-    <v-layout id="map-wrapper" fluid>
-      <v-flex id="map" />
-    </v-layout>
+
+    <v-row
+      id="map-wrapper"
+      fluid
+      no-gutters
+    >
+      <v-col
+        id="map"
+        cols="12"
+      />
+    </v-row>
   </v-container>
 </template>
 
@@ -119,302 +109,291 @@ export default {
         key: 'MRDS',
         label: 'MR Data'
       }],
-      biomes: [
-        {
-          name: 'Resources',
-          icon: 'mdi-earth',
-          categories: [
-            {
-              name: 'Most mined minerals',
-              datasource: 'OSM',
-              tooltip: 'Tooltip',
-              landuses: [
-                {
-                  key: 'coal',
-                  name: 'Coal',
-                  color: '#36454f',
-                  type: 'quarry'
-                },
-                {
-                  key: 'iron_ore',
-                  name: 'Iron',
-                  color: '#4e4f55',
-                  type: 'quarry'
-                },
-                {
-                  key: 'bauxite',
-                  name: 'Bauxite',
-                  color: '#665e5a',
-                  type: 'quarry'
-                },
-                {
-                  key: 'phosphate',
-                  name: 'Phosphate',
-                  color: '#4e4f55',
-                  type: 'quarry'
-                },
-                {
-                  key: 'gypsum',
-                  name: 'Gypsum',
-                  color: '#c6c9ca',
-                  type: 'quarry'
-                }
-              ]
-            },
-            {
-              name: 'Other minerals',
-              datasource: 'OSM',
-              landuses: [
-                {
-                  key: 'gold',
-                  name: 'Gold',
-                  color: '#FFD700',
-                  type: 'quarry'
-                },
-                {
-                  key: 'uranium',
-                  name: 'Uranium',
-                  color: '#757575',
-                  type: 'quarry'
-                },
-                {
-                  key: 'silver',
-                  name: 'Silver',
-                  color: '#C0C0C0',
-                  type: 'quarry'
-                },
-                {
-                  key: 'copper',
-                  name: 'Copper',
-                  color: '#b87333',
-                  type: 'quarry'
-                },
-                {
-                  key: 'marble',
-                  name: 'Marble',
-                  color: '#596e7f',
-                  type: 'quarry'
-                }
-              ]
-            },
-            {
-              name: 'Gem stones',
-              datasource: 'OSM',
-              landuses: [
-                {
-                  key: 'diamond',
-                  name: 'Diamond',
-                  color: '#b9f2ff',
-                  type: 'quarry'
-                },
-                {
-                  key: 'opal',
-                  name: 'Opal',
-                  color: '#a8c3bc',
-                  type: 'quarry'
-                },
-                {
-                  key: 'amethyst',
-                  name: 'Amethyst',
-                  color: '#9966cc',
-                  type: 'quarry'
-                },
-                {
-                  key: 'quartz',
-                  name: 'Quartz',
-                  color: '#DDDDDF',
-                  type: 'quarry'
-                },
-                {
-                  key: 'ruby',
-                  name: 'Ruby',
-                  color: '#e0115f',
-                  type: 'quarry'
-                }
-              ]
-            },
-            {
-              name: 'Petroleum well',
-              datasource: 'OSM',
-              landuses: [
-                {
-                  name: 'Oil',
-                  fileName: 'oilWells',
-                  color: '#494c4f',
-                  type: 'well'
-                },
-                {
-                  name: 'Gas',
-                  fileName: 'gasWells',
-                  color: '#ffdf46',
-                  type: 'well'
-                },
-                {
-                  name: 'Offshore',
-                  fileName: 'offshoreWells',
-                  color: '#cad7d9',
-                  type: 'well'
-                }
-              ]
-            },
-            {
-              name: 'Most mined minerals',
-              datasource: 'MRDS',
-              tooltip: 'Tooltip',
-              landuses: [
-                {
-                  key: 'coal',
-                  name: 'Coal',
-                  color: '#36454f',
-                  type: 'quarry'
-                },
-                {
-                  key: 'iron',
-                  name: 'Iron',
-                  color: '#4e4f55',
-                  type: 'quarry'
-                },
-                {
-                  key: 'bauxite',
-                  name: 'Bauxite',
-                  color: '#665e5a',
-                  type: 'quarry'
-                },
-                {
-                  key: 'phosphate',
-                  name: 'Phosphate',
-                  color: '#4e4f55',
-                  type: 'quarry'
-                },
-                {
-                  key: 'gypsum',
-                  name: 'Gypsum',
-                  color: '#c6c9ca',
-                  type: 'quarry'
-                }
-              ]
-            },
-            {
-              name: 'Quarries',
-              datasource: 'MRDS',
-              landuses: [
-                {
-                  key: 'nickel',
-                  name: 'Nickel',
-                  color: '#727472',
-                  type: 'quarry'
-                },
-                {
-                  key: 'aluminum',
-                  name: 'Aluminum',
-                  color: '#848789',
-                  type: 'quarry'
-                },
-                {
-                  key: 'copper',
-                  name: 'Copper',
-                  color: '#b87333',
-                  type: 'quarry'
-                },
-                {
-                  key: 'lead',
-                  name: 'Lead',
-                  color: '#212121',
-                  type: 'quarry'
-                },
-                {
-                  key: 'pge',
-                  name: 'PGE',
-                  color: '#bdcdde',
-                  type: 'quarry'
-                },
-                {
-                  key: 'gold',
-                  name: 'Gold',
-                  color: '#FFD700',
-                  type: 'quarry'
-                },
-                {
-                  key: 'rare earth elements',
-                  name: 'Rare Earths',
-                  color: '#665647',
-                  type: 'quarry'
-                },
-                {
-                  key: 'potash',
-                  name: 'Potash',
-                  color: '#e07757',
-                  type: 'quarry'
-                },
-                {
-                  key: 'silver',
-                  name: 'Silver',
-                  color: '#C0C0C0',
-                  type: 'quarry'
-                }
-              ]
-            },
-            {
-              name: 'Gem stones',
-              datasource: 'MRDS',
-              landuses: [
-                {
-                  key: 'diamond',
-                  name: 'Diamond',
-                  color: '#b9f2ff',
-                  type: 'quarry'
-                },
-                {
-                  key: 'sapphire',
-                  name: 'Sapphire',
-                  color: '#0f52ba',
-                  type: 'quarry'
-                },
-                {
-                  key: 'amethyst',
-                  name: 'Amethyst',
-                  color: '#9966cc',
-                  type: 'quarry'
-                },
-                {
-                  key: 'emerald',
-                  name: 'Emerald',
-                  color: '#50C878',
-                  type: 'quarry'
-                },
-                {
-                  key: 'jade',
-                  name: 'Jade',
-                  color: '#00a86b',
-                  type: 'quarry'
-                },
-                {
-                  key: 'ruby',
-                  name: 'Ruby',
-                  color: '#e0115f',
-                  type: 'quarry'
-                }
-              ]
-            }
-          ]
-        },
-        {
-          name: 'Urban',
-          icon: 'mdi-city',
-          categories: [
-            {
-              name: 'Cities',
-              landuses: [
-                {
-                  name: 'Cities',
-                  fileName: 'cities/cities',
-                  type: 'urban'
-                }
-              ]
-            }
-          ]
-        }
-      ],
+      biomes: {
+        name: 'Resources',
+        icon: 'mdi-earth',
+        categories: [
+          {
+            id: 'osm_mmm',
+            name: 'Most mined minerals',
+            datasource: 'OSM',
+            tooltip: 'Tooltip',
+            landuses: [
+              {
+                key: 'coal',
+                name: 'Coal',
+                color: '#36454f',
+                type: 'quarry'
+              },
+              {
+                key: 'iron_ore',
+                name: 'Iron',
+                color: '#4e4f55',
+                type: 'quarry'
+              },
+              {
+                key: 'bauxite',
+                name: 'Bauxite',
+                color: '#665e5a',
+                type: 'quarry'
+              },
+              {
+                key: 'phosphate',
+                name: 'Phosphate',
+                color: '#4e4f55',
+                type: 'quarry'
+              },
+              {
+                key: 'gypsum',
+                name: 'Gypsum',
+                color: '#c6c9ca',
+                type: 'quarry'
+              }
+            ]
+          },
+          {
+            id: 'osm_other',
+            name: 'Other minerals',
+            datasource: 'OSM',
+            landuses: [
+              {
+                key: 'gold',
+                name: 'Gold',
+                color: '#FFD700',
+                type: 'quarry'
+              },
+              {
+                key: 'uranium',
+                name: 'Uranium',
+                color: '#757575',
+                type: 'quarry'
+              },
+              {
+                key: 'silver',
+                name: 'Silver',
+                color: '#C0C0C0',
+                type: 'quarry'
+              },
+              {
+                key: 'copper',
+                name: 'Copper',
+                color: '#b87333',
+                type: 'quarry'
+              },
+              {
+                key: 'marble',
+                name: 'Marble',
+                color: '#596e7f',
+                type: 'quarry'
+              }
+            ]
+          },
+          {
+            id: 'osm_gem',
+            name: 'Gem stones',
+            datasource: 'OSM',
+            landuses: [
+              {
+                key: 'diamond',
+                name: 'Diamond',
+                color: '#b9f2ff',
+                type: 'quarry'
+              },
+              {
+                key: 'opal',
+                name: 'Opal',
+                color: '#a8c3bc',
+                type: 'quarry'
+              },
+              {
+                key: 'amethyst',
+                name: 'Amethyst',
+                color: '#9966cc',
+                type: 'quarry'
+              },
+              {
+                key: 'quartz',
+                name: 'Quartz',
+                color: '#DDDDDF',
+                type: 'quarry'
+              },
+              {
+                key: 'ruby',
+                name: 'Ruby',
+                color: '#e0115f',
+                type: 'quarry'
+              }
+            ]
+          },
+          {
+            id: 'osm_petrol',
+            name: 'Petroleum well',
+            datasource: 'OSM',
+            landuses: [
+              {
+                name: 'Oil',
+                fileName: 'oilWells',
+                color: '#494c4f',
+                type: 'well'
+              },
+              {
+                name: 'Gas',
+                fileName: 'gasWells',
+                color: '#ffdf46',
+                type: 'well'
+              },
+              {
+                name: 'Offshore',
+                fileName: 'offshoreWells',
+                color: '#cad7d9',
+                type: 'well'
+              }
+            ]
+          },
+          {
+            id: 'mrds_mmm',
+            name: 'Most mined minerals',
+            datasource: 'MRDS',
+            tooltip: 'Tooltip',
+            landuses: [
+              {
+                key: 'coal',
+                name: 'Coal',
+                color: '#36454f',
+                type: 'quarry'
+              },
+              {
+                key: 'iron',
+                name: 'Iron',
+                color: '#4e4f55',
+                type: 'quarry'
+              },
+              {
+                key: 'bauxite',
+                name: 'Bauxite',
+                color: '#665e5a',
+                type: 'quarry'
+              },
+              {
+                key: 'phosphate',
+                name: 'Phosphate',
+                color: '#4e4f55',
+                type: 'quarry'
+              },
+              {
+                key: 'gypsum',
+                name: 'Gypsum',
+                color: '#c6c9ca',
+                type: 'quarry'
+              }
+            ]
+          },
+          {
+            id: 'mrds_quarries',
+            name: 'Quarries',
+            datasource: 'MRDS',
+            landuses: [
+              {
+                key: 'nickel',
+                name: 'Nickel',
+                color: '#727472',
+                type: 'quarry'
+              },
+              {
+                key: 'aluminum',
+                name: 'Aluminum',
+                color: '#848789',
+                type: 'quarry'
+              },
+              {
+                key: 'copper',
+                name: 'Copper',
+                color: '#b87333',
+                type: 'quarry'
+              },
+              {
+                key: 'lead',
+                name: 'Lead',
+                color: '#212121',
+                type: 'quarry'
+              },
+              {
+                key: 'pge',
+                name: 'PGE',
+                color: '#bdcdde',
+                type: 'quarry'
+              },
+              {
+                key: 'gold',
+                name: 'Gold',
+                color: '#FFD700',
+                type: 'quarry'
+              },
+              {
+                key: 'rare earth elements',
+                name: 'Rare Earths',
+                color: '#665647',
+                type: 'quarry'
+              },
+              {
+                key: 'potash',
+                name: 'Potash',
+                color: '#e07757',
+                type: 'quarry'
+              },
+              {
+                key: 'silver',
+                name: 'Silver',
+                color: '#C0C0C0',
+                type: 'quarry'
+              }
+            ]
+          },
+          {
+            id: 'mrds_gem',
+            name: 'Gem stones',
+            datasource: 'MRDS',
+            landuses: [
+              {
+                key: 'diamond',
+                name: 'Diamond',
+                color: '#b9f2ff',
+                type: 'quarry'
+              },
+              {
+                key: 'sapphire',
+                name: 'Sapphire',
+                color: '#0f52ba',
+                type: 'quarry'
+              },
+              {
+                key: 'amethyst',
+                name: 'Amethyst',
+                color: '#9966cc',
+                type: 'quarry'
+              },
+              {
+                key: 'emerald',
+                name: 'Emerald',
+                color: '#50C878',
+                type: 'quarry'
+              },
+              {
+                key: 'jade',
+                name: 'Jade',
+                color: '#00a86b',
+                type: 'quarry'
+              },
+              {
+                key: 'ruby',
+                name: 'Ruby',
+                color: '#e0115f',
+                type: 'quarry'
+              }
+            ]
+          }
+        ]
+      },
       depositsTypes: [],
       accessToken: 'pk.eyJ1Ijoid2FzcGlzY2hlIiwiYSI6ImNrazBidGRsNzBmdmIyeHJyYThjZG0wYzYifQ.qZQp-6ddFiyakTvvyCv8Gw', // your access token. Needed if you using Mapbox maps
       mapStyle: 'mapbox://styles/mapbox/light-v10',
@@ -451,12 +430,9 @@ export default {
   },
   computed: {
     filteredBiomes () {
-      return this.biomes.map(b => ({
-        ...b,
-        categories: b.categories.filter(c =>
-          c.datasource === this.selectedSource || c.datasource === undefined
-        )
-      }))
+      return this.biomes.categories.filter(c =>
+        c.datasource === this.selectedSource || c.datasource === undefined
+      )
     }
   },
   async mounted () {
