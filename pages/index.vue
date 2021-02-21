@@ -407,24 +407,6 @@ export default {
           'circle-stroke-width': 1,
           'circle-opacity': 0.6
         }
-      },
-      citiesLocation: {
-        id: 'citiesLocation',
-        source: 'urban',
-        type: 'symbol',
-        layout: {
-          'icon-image': 'town-hall-15',
-          'icon-allow-overlap': true,
-          'text-font': [
-            'Open Sans Bold',
-            'Arial Unicode MS Bold'
-          ]
-        },
-        paint: {
-          'text-color': '#202',
-          'text-halo-color': '#fff',
-          'text-halo-width': 2
-        }
       }
     }
   },
@@ -463,24 +445,12 @@ export default {
         }
       })
 
-      this.map.addSource('urban', {
-        type: 'geojson',
-        data: {
-          type: 'FeatureCollection',
-          features: []
-        }
-      })
-
       this.map.addLayer(this.landuseLocation)
-      this.map.addLayer(this.citiesLocation)
       this.map.setLayoutProperty('landuseLocation', 'visibility', 'none')
       this.map.on('click', 'landuseLocation', this.onFeatureClick)
-      this.map.on('click', 'citiesLocation', this.onCityClick)
 
       this.map.on('mouseenter', 'landuseLocation', this.onMouseEnter)
       this.map.on('mouseleave', 'landuseLocation', this.onMouseOut)
-      this.map.on('mouseenter', 'citiesLocation', this.onMouseEnterCity)
-      this.map.on('mouseleave', 'citiesLocation', this.onMouseOutCity)
     },
     async onDatasourceSelection () {
       this.depositsTypes = await fetch(
@@ -511,18 +481,12 @@ export default {
             false
           ])
           this.map.setLayoutProperty('landuseLocation', 'visibility', 'visible')
-          this.map.setLayoutProperty('citiesLocation', 'visibility', 'none')
           this.map.setPaintProperty('landuseLocation', 'circle-color', landuse.color)
         } else if (landuse.type === 'well') {
           await this.map.getSource('landuse').setData('./data/' + landuse.fileName + '.json')
           this.map.setFilter('landuseLocation', null)
           this.map.setLayoutProperty('landuseLocation', 'visibility', 'visible')
-          this.map.setLayoutProperty('citiesLocation', 'visibility', 'none')
           this.map.setPaintProperty('landuseLocation', 'circle-color', landuse.color)
-        } else if (landuse.type === 'urban') {
-          await this.map.getSource('urban').setData('./data/' + landuse.fileName + '.json')
-          this.map.setLayoutProperty('landuseLocation', 'visibility', 'none')
-          this.map.setLayoutProperty('citiesLocation', 'visibility', 'visible')
         }
       }
     },
@@ -532,36 +496,6 @@ export default {
     // Change the cursor to a pointer when the mouse is over the states layer.
     onMouseEnter () {
       this.map.getCanvas().style.cursor = 'pointer'
-    },
-    onMouseEnterCity (e) {
-      this.map.getCanvas().style.cursor = 'pointer'
-      const currentFeature = e.features[0]
-      const name = (currentFeature.properties.name === undefined) ? this.selectedLanduse : currentFeature.properties.name
-      const coordinates = e.features[0].geometry.coordinates.slice()
-
-      while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-        coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360
-      }
-      const popupContent = new Vue({
-        ...MapPopup,
-        parent: this,
-        propsData: {
-          popupName: name,
-          type: this.selectedLanduse.type
-        }
-      }).$mount()
-
-      new mapboxgl.Popup({ closeButton: false })
-        .setLngLat(coordinates)
-        .setDOMContent(popupContent.$el)
-        .addTo(this.map)
-    },
-    // Change it back to a pointer when it leaves.
-    onMouseOutCity () {
-      this.map.getCanvas().style.cursor = ''
-      const popUps = document.getElementsByClassName('mapboxgl-popup')
-      /** Check if there is already a popup on the map and if so, remove it */
-      if (popUps[0]) { popUps[0].remove() };
     },
     onMouseOut () {
       this.map.getCanvas().style.cursor = ''
@@ -602,12 +536,6 @@ export default {
         .setLngLat(e.lngLat)
         .setDOMContent(popupContent.$el)
         .addTo(this.map)
-    },
-    onCityClick (e) {
-      const currentFeature = e.features[0]
-      const url = currentFeature.properties.url
-      const win = window.open(url, '_blank')
-      win.focus()
     },
     trackBiomeClick (landuse) {
       this.$gtag.event('click', {

@@ -19,7 +19,7 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-toolbar app>
+    <v-app-bar app>
       <v-toolbar-title>
         <router-link to="/" tag="span" style="cursor: pointer">
           Earth2 Biomes
@@ -33,7 +33,7 @@
         <v-btn
           v-for="item in menuItems"
           :key="item.title"
-          flat
+          text
           :to="item.path"
         >
           <v-icon left dark>
@@ -46,7 +46,7 @@
       <span class="hidden-sm-and-up">
         <v-app-bar-nav-icon @click="sidebar = !sidebar" />
       </span>
-    </v-toolbar>
+    </v-app-bar>
   </v-container>
 </template>
 
@@ -57,8 +57,8 @@ export default {
     return {
       sidebar: false,
       menuItems: [
-        { title: 'Resources', path: '/', icon: 'mdi-earth' }
-        // { title: 'Cities', path: '/cities', icon: 'mdi-city' }
+        { title: 'Resources', path: '/', icon: 'mdi-earth' },
+        { title: 'Cities', path: '/cities', icon: 'mdi-city' }
       ]
     }
   }
