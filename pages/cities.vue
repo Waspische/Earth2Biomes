@@ -13,7 +13,7 @@
           <v-btn
             target="_blank"
             rel="noopener noreferrer"
-            href="https://discord.gg/ffkcKmsbaH"
+            href="https://discord.gg/ZvU5Qvqrz6"
             color="secondary"
             text
           >
