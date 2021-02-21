@@ -170,7 +170,7 @@
               small
               @click="flyToCity(item)"
             >
-              mdi-eye
+              mdi-map-marker
             </v-icon>
           </template>
         </v-data-table>
