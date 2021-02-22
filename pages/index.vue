@@ -543,6 +543,11 @@ export default {
         event_label: landuse.key
       })
     }
+  },
+  head () {
+    return {
+      title: 'Resources'
+    }
   }
 
 }

@@ -393,6 +393,11 @@ export default {
       /** Check if there is already a popup on the map and if so, remove it */
       if (popUps[0]) { popUps[0].remove() };
     }
+  },
+  head () {
+    return {
+      title: 'Cities'
+    }
   }
 }
 </script>
