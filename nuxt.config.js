@@ -25,15 +25,15 @@ export default {
       { hid: 'author', name: 'author', content: 'Waspische' },
       { hid: 'description', name: 'copyright', content: 'My own copyright' },
       { hid: 'og:type', property: 'og:type', content: 'wbesite' },
-      { hid: 'og:url', property: 'og:url', content: 'https://waspische.github.io/Earth2Biomes/' },
+      { hid: 'og:url', property: 'og:url', content: 'https://earth2biomes.com/' },
       { hid: 'og:title', property: 'og:title', content: 'Earth2Biomes' },
       { hid: 'og:description', property: 'og:description', content: 'Discover the differents resources available on Earth1 to buy on Earth2.' },
-      { hid: 'og:image', property: 'og:image', content: 'https://waspische.github.io/Earth2Biomes/meta_image.png' },
+      { hid: 'og:image', property: 'og:image', content: 'https://earth2biomes.com/meta_image.png' },
       { hid: 'og:card', property: 'twitter:card', content: 'summary_large_image' },
-      { hid: 'og:url', property: 'twitter:url', content: 'https://waspische.github.io/Earth2Biomes/' },
+      { hid: 'og:url', property: 'twitter:url', content: 'https://earth2biomes.com/' },
       { hid: 'og:title', property: 'twitter:title', content: 'Earth2Biomes' },
       { hid: 'og:description', property: 'twitter:description', content: 'Discover the differents resources available on Earth1 to buy on Earth2.' },
-      { hid: 'og:image', property: 'twitter:image', content: 'https://waspische.github.io/Earth2Biomes/meta_image.png' }
+      { hid: 'og:image', property: 'twitter:image', content: 'https://earth2biomes.com/meta_image.png' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
