@@ -4,7 +4,7 @@
 set -e
 
 # build
-yarn generate
+NODE_ENV=prod yarn generate
 
 # navigate into the build output directory
 cd dist

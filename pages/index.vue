@@ -101,13 +101,13 @@ export default {
       mini: false,
       selectedLanduse: null,
       previousLanduse: null,
-      selectedSource: 'OSM',
+      selectedSource: 'MRDS',
       datasources: [{
         key: 'OSM',
         label: 'OpenStreet Map'
       }, {
         key: 'MRDS',
-        label: 'MR Data'
+        label: 'MRDS Data'
       }],
       biomes: {
         name: 'Resources',

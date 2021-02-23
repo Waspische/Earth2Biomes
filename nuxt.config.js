@@ -9,9 +9,11 @@ export default {
     base: '/'
   },
 
-  env: {
-    baseUrl: process.env.BASE_URL || 'http://localhost:3000',
-    publicApiUrl: process.env.PUBLIC_API_URL || 'http://localhost:8080/api/public'
+  publicRuntimeConfig: {
+    baseUrl: process.env.NODE_ENV === 'prod' ? 'https://earth2biomes.com' : 'http://localhost:3000',
+    axios: {
+      baseURL: process.env.NODE_ENV === 'prod' ? 'https://earth-2-biomes.herokuapp.com/api/public' : 'http://localhost:8080/api/public'
+    }
   },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
@@ -70,8 +72,9 @@ export default {
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
-    baseURL: 'https://earth-2-biomes.herokuapp.com/api/public'
-    // baseURL: 'http://localhost:8080/api/public'
+    // baseURL: process.env.publicApiUrl
+    // fallback if no runtime config
+    baseURL: 'http://localhost:8080/api/public'
   },
 
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)

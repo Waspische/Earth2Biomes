@@ -115,8 +115,28 @@
                         >
                           <v-text-field
                             v-model="editedCity.url"
-                            label="Url"
+                            label="Property url"
                             hint="https://app.earth2.io/#propertyInfo/YOUR_ID"
+                          />
+                        </v-col>
+                        <v-col
+                          cols="12"
+                          sm="12"
+                          md="6"
+                        >
+                          <v-text-field
+                            v-model="editedCity.discord"
+                            label="Discord server"
+                          />
+                        </v-col>
+                        <v-col
+                          cols="12"
+                          sm="12"
+                          md="6"
+                        >
+                          <v-text-field
+                            v-model="editedCity.website"
+                            label="Website"
                           />
                         </v-col>
                       </v-row>
@@ -206,7 +226,9 @@ export default {
       search: '',
       editedCity: {
         cityName: '',
-        url: ''
+        url: '',
+        discord: '',
+        website: ''
       },
       accessToken: 'pk.eyJ1Ijoid2FzcGlzY2hlIiwiYSI6ImNrazBidGRsNzBmdmIyeHJyYThjZG0wYzYifQ.qZQp-6ddFiyakTvvyCv8Gw', // your access token. Needed if you using Mapbox maps
       mapStyle: 'mapbox://styles/mapbox/light-v10',
@@ -214,7 +236,9 @@ export default {
       editedIndex: -1,
       defaultCity: {
         cityName: '',
-        url: ''
+        url: '',
+        discord: '',
+        website: ''
       },
       citiesLocation: {
         id: 'citiesLocation',
@@ -283,12 +307,7 @@ export default {
             type: 'Point',
             coordinates: [place.location.coordinates[0], place.location.coordinates[1]]
           },
-          properties: {
-            id: place.id,
-            cityName: place.cityName,
-            url: place.url,
-            group: place.group
-          }
+          properties: place
         }
       ))
       this.map.getSource('urban').setData({
@@ -298,7 +317,6 @@ export default {
       return places
     },
     flyToCity (currentFeature) {
-      console.log(currentFeature)
       this.$vuetify.goTo(0)
       this.map.flyTo({
         center: currentFeature.geometry.coordinates,
