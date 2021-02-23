@@ -83,7 +83,7 @@
 
                   <v-card-text>
                     <v-container>
-                      <v-row>
+                      <v-row dense>
                         <v-col
                           cols="12"
                           sm="6"
@@ -166,32 +166,79 @@
           </template>
 
           <template v-slot:item.actions="{ item }">
-            <v-icon
-              small
-              class="mr-2"
-              @click="editCity(item)"
-            >
-              mdi-pencil
-            </v-icon>
             <v-btn
+              plain
+              class="pa-0 mr-1"
+              min-width="0"
+            >
+              <v-icon
+                dense
+                plain
+                class="mr-1"
+                @click="editCity(item)"
+              >
+                mdi-pencil
+              </v-icon>
+            </v-btn>
+            <v-btn
+              plain
+              min-width="0"
+              class="pa-0 mr-1"
               target="_blank"
               rel="noopener noreferrer"
               icon
               :href="item.properties.url"
             >
               <v-icon
-                small
-                class="mr-2"
+                dense
               >
                 mdi-open-in-new
               </v-icon>
             </v-btn>
-            <v-icon
-              small
-              @click="flyToCity(item)"
+            <v-btn
+              plain
+              min-width="0"
+              class="pa-0 mr-1"
             >
-              mdi-map-marker
-            </v-icon>
+              <v-icon
+                dense
+                @click="flyToCity(item)"
+              >
+                mdi-map-marker
+              </v-icon>
+            </v-btn>
+            <v-btn
+              v-if="item.properties.discord"
+              plain
+              class="pa-0 mr-1"
+              min-width="0"
+              target="_blank"
+              rel="noopener noreferrer"
+              icon
+              :href="item.properties.discord"
+            >
+              <v-icon
+                dense
+              >
+                mdi-discord
+              </v-icon>
+            </v-btn>
+            <v-btn
+              v-if="item.properties.website"
+              plain
+              min-width="0"
+              class="pa-0 mr-1"
+              target="_blank"
+              rel="noopener noreferrer"
+              icon
+              :href="item.properties.website"
+            >
+              <v-icon
+                dense
+              >
+                mdi-web
+              </v-icon>
+            </v-btn>
           </template>
         </v-data-table>
       </v-col>
