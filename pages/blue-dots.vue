@@ -94,7 +94,7 @@ export default {
       drawer: true,
       mini: false,
       accessToken: 'pk.eyJ1Ijoid2FzcGlzY2hlIiwiYSI6ImNrazBidGRsNzBmdmIyeHJyYThjZG0wYzYifQ.qZQp-6ddFiyakTvvyCv8Gw', // your access token. Needed if you using Mapbox maps
-      mapStyle: 'mapbox://styles/waspische/cklpos4zs6fvp17nn54pe1rtz',
+      mapStyle: 'mapbox://styles/waspische/cklpn034z3o3z17o0n12ui4l0',
       commodityFilter: '',
       mines: []
     }
