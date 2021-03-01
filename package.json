@@ -14,7 +14,9 @@
   "dependencies": {
     "@nuxt/types": "^2.14.12",
     "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/toast": "^3.3.1",
     "@turf/centroid": "^6.3.0",
+    "@turf/turf": "^6.3.0",
     "core-js": "^3.6.5",
     "mapbox-gl": "^2.0.1",
     "nuxt": "^2.14.6",

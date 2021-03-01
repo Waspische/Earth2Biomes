@@ -2,6 +2,7 @@
   <v-snackbar
     v-model="show"
     :timeout="timeout"
+    class="snack"
   >
     {{ message }}
     <v-btn
@@ -43,5 +44,7 @@ export default {
 </script>
 
 <style scoped>
-
+.snack {
+  z-index: 999;
+}
 </style>
