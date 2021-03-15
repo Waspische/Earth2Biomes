@@ -24,12 +24,6 @@
         </v-col>
       </v-row>
     </v-snackbar>
-    <v-alert
-      type="info"
-      class="ml-8 mr-8"
-    >
-      You can submit your own city here to contribute to the Cities Database. Every contribution will be reviewed.
-    </v-alert>
     <v-row
       fluid
     >
@@ -45,11 +39,17 @@
         xs="12"
         md="6"
       >
+        <v-alert
+          type="info"
+          class="ml-2 mr-2"
+        >
+          You can submit your own city here to contribute to the Cities Database. Every contribution will be reviewed.
+        </v-alert>
         <v-data-table
           :headers="headers"
           :items="cities"
           :items-per-page="5"
-          :search="search"
+          :search="onSearch"
           class="elevation-1"
         >
           <template v-slot:top>
@@ -240,6 +240,93 @@
               </v-icon>
             </v-btn>
           </template>
+          <template v-slot:item.actions="{ item }">
+            <v-btn
+              plain
+              class="pa-0 mr-1"
+              min-width="0"
+            >
+              <v-icon
+                dense
+                plain
+                class="mr-1"
+                @click="editCity(item)"
+              >
+                mdi-pencil
+              </v-icon>
+            </v-btn>
+            <v-btn
+              plain
+              min-width="0"
+              class="pa-0 mr-1"
+              target="_blank"
+              rel="noopener noreferrer"
+              icon
+              :href="item.properties.url"
+            >
+              <v-icon
+                dense
+              >
+                mdi-open-in-new
+              </v-icon>
+            </v-btn>
+            <v-btn
+              plain
+              min-width="0"
+              class="pa-0 mr-1"
+            >
+              <v-icon
+                dense
+                @click="flyToCity(item)"
+              >
+                mdi-map-marker
+              </v-icon>
+            </v-btn>
+            <v-btn
+              v-if="item.properties.discord"
+              plain
+              class="pa-0 mr-1"
+              min-width="0"
+              target="_blank"
+              rel="noopener noreferrer"
+              icon
+              :href="item.properties.discord"
+            >
+              <v-icon
+                dense
+              >
+                mdi-discord
+              </v-icon>
+            </v-btn>
+            <v-btn
+              v-if="item.properties.website"
+              plain
+              min-width="0"
+              class="pa-0 mr-1"
+              target="_blank"
+              rel="noopener noreferrer"
+              icon
+              :href="item.properties.website"
+            >
+              <v-icon
+                dense
+              >
+                mdi-web
+              </v-icon>
+            </v-btn>
+          </template>
+
+          <template v-slot:item.detail="{ item }">
+            <v-btn
+              plain
+              text
+              class="pa-0 mr-1"
+              min-width="0"
+              :to="{ name: 'cities-id', params: { id: item.properties.id} }"
+            >
+              More info
+            </v-btn>
+          </template>
         </v-data-table>
       </v-col>
     </v-row>
@@ -266,7 +353,8 @@ export default {
           value: 'properties.cityName'
         },
         { text: 'Group', value: 'properties.group.groupName' },
-        { text: 'Actions', value: 'actions', sortable: false }
+        { text: 'Actions', value: 'actions', sortable: false },
+        { text: '', value: 'detail', sortable: false }
       ],
       cities: [],
       groups: [],
@@ -310,6 +398,30 @@ export default {
   computed: {
     formTitle () {
       return this.editedIndex === -1 ? 'New City' : 'Edit City'
+    },
+    onSearch () {
+      const value = this.search.trim().toLowerCase()
+
+      // Filter visible features that don't match the input value.
+      const filtered = this.cities.filter(function (city) {
+        const name = city.properties.cityName.trim().toLowerCase()
+        return name.includes(value)
+      })
+
+      // Set the filter to populate features into the layer.
+      if (filtered.length) {
+        this.map.setFilter('citiesLocation', [
+          'match',
+          ['get', 'cityName'],
+          filtered.map(function (feature) {
+            return feature.properties.cityName
+          }),
+          true,
+          false
+        ])
+      }
+
+      return this.search
     }
   },
   mounted () {
@@ -346,7 +458,7 @@ export default {
       this.groups = await this.getGroups()
     },
     async getCities () {
-      const data = await this.$axios.$get('/cities?size=1000')
+      const data = await this.$axios.$get('/cities?size=1000') // todo update back
       const places = data.map(place => (
         {
           type: 'Feature',

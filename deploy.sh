@@ -3,10 +3,10 @@
 # abort on errors
 set -e
 
-# build
+# dist
 NODE_ENV=prod yarn generate
 
-# navigate into the build output directory
+# navigate into the dist output directory
 cd dist
 touch .nojekyll
 
