@@ -135,7 +135,7 @@
                     {{ city.description }}
                   </v-list-item-content>
                   <v-list-item-content v-else class="text-justify">
-                    No description available. Consider adding one to get the city stats.
+                    No description available. Consider adding one to get the city stats later.
                   </v-list-item-content>
                 </v-list-item-content>
               </v-list>

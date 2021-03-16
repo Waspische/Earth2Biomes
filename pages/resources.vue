@@ -91,7 +91,7 @@ import Snackbar from '../components/Snackbar'
 import MapPopup from '~/components/MapPopup'
 
 export default {
-  name: 'Landing',
+  name: 'Resources',
   components: {
     Snackbar
   },

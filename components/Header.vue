@@ -73,7 +73,7 @@ export default {
     return {
       sidebar: false,
       menuItems: [
-        { title: 'Resources', path: '/', icon: 'mdi-earth' },
+        { title: 'Resources', path: '/resources', icon: 'mdi-earth' },
         { title: 'Cities', path: '/cities', icon: 'mdi-city' }
       ]
     }
