@@ -82,65 +82,73 @@
                   </v-card-title>
 
                   <v-card-text>
-                    <v-container>
-                      <v-row dense>
-                        <v-col
-                          cols="12"
-                          sm="6"
-                          md="6"
-                        >
-                          <v-text-field
-                            v-model="editedCity.cityName"
-                            label="Name"
-                          />
-                        </v-col>
-                        <v-col
-                          cols="12"
-                          sm="6"
-                          md="6"
-                        >
-                          <v-select
-                            v-model="editedCity.group"
-                            :items="groups"
-                            item-text="groupName"
-                            item-value="id"
-                            return-object
-                            label="Group"
-                          />
-                        </v-col>
-                        <v-col
-                          cols="12"
-                          sm="12"
-                          md="12"
-                        >
-                          <v-text-field
-                            v-model="editedCity.url"
-                            label="Property url"
-                            hint="https://app.earth2.io/#propertyInfo/YOUR_ID"
-                          />
-                        </v-col>
-                        <v-col
-                          cols="12"
-                          sm="12"
-                          md="6"
-                        >
-                          <v-text-field
-                            v-model="editedCity.discord"
-                            label="Discord server"
-                          />
-                        </v-col>
-                        <v-col
-                          cols="12"
-                          sm="12"
-                          md="6"
-                        >
-                          <v-text-field
-                            v-model="editedCity.website"
-                            label="Website"
-                          />
-                        </v-col>
-                      </v-row>
-                    </v-container>
+                    <v-row dense>
+                      <v-col
+                        cols="12"
+                        sm="6"
+                        md="6"
+                      >
+                        <v-text-field
+                          v-model="editedCity.cityName"
+                          label="Name"
+                        />
+                      </v-col>
+                      <v-col
+                        cols="12"
+                        sm="6"
+                        md="6"
+                      >
+                        <v-select
+                          v-model="editedCity.group"
+                          :items="groups"
+                          item-text="groupName"
+                          item-value="id"
+                          return-object
+                          label="Group"
+                        />
+                      </v-col>
+                      <v-col
+                        cols="12"
+                        sm="12"
+                        md="12"
+                      >
+                        <v-text-field
+                          v-model="editedCity.url"
+                          label="Property url"
+                          hint="https://app.earth2.io/#propertyInfo/YOUR_ID"
+                        />
+                      </v-col>
+                      <v-col
+                        cols="12"
+                        sm="12"
+                        md="6"
+                      >
+                        <v-text-field
+                          v-model="editedCity.discord"
+                          label="Discord server"
+                        />
+                      </v-col>
+                      <v-col
+                        cols="12"
+                        sm="12"
+                        md="6"
+                      >
+                        <v-text-field
+                          v-model="editedCity.website"
+                          label="Website"
+                        />
+                      </v-col>
+                      <v-col
+                        cols="12"
+                        sm="12"
+                        md="12"
+                      >
+                        <v-textarea
+                          v-model="editedCity.description"
+                          label="Description"
+                        />
+                      </v-col>
+                    </v-row>
                   </v-card-text>
 
                   <v-card-actions>
@@ -165,81 +173,6 @@
             </v-toolbar>
           </template>
 
-          <template v-slot:item.actions="{ item }">
-            <v-btn
-              plain
-              class="pa-0 mr-1"
-              min-width="0"
-            >
-              <v-icon
-                dense
-                plain
-                class="mr-1"
-                @click="editCity(item)"
-              >
-                mdi-pencil
-              </v-icon>
-            </v-btn>
-            <v-btn
-              plain
-              min-width="0"
-              class="pa-0 mr-1"
-              target="_blank"
-              rel="noopener noreferrer"
-              icon
-              :href="item.properties.url"
-            >
-              <v-icon
-                dense
-              >
-                mdi-open-in-new
-              </v-icon>
-            </v-btn>
-            <v-btn
-              plain
-              min-width="0"
-              class="pa-0 mr-1"
-            >
-              <v-icon
-                dense
-                @click="flyToCity(item)"
-              >
-                mdi-map-marker
-              </v-icon>
-            </v-btn>
-            <v-btn
-              v-if="item.properties.discord"
-              plain
-              class="pa-0 mr-1"
-              min-width="0"
-              target="_blank"
-              rel="noopener noreferrer"
-              icon
-              :href="item.properties.discord"
-            >
-              <v-icon
-                dense
-              >
-                mdi-discord
-              </v-icon>
-            </v-btn>
-            <v-btn
-              v-if="item.properties.website"
-              plain
-              min-width="0"
-              class="pa-0 mr-1"
-              target="_blank"
-              rel="noopener noreferrer"
-              icon
-              :href="item.properties.website"
-            >
-              <v-icon
-                dense
-              >
-                mdi-web
-              </v-icon>
-            </v-btn>
-          </template>
           <template v-slot:item.actions="{ item }">
             <v-btn
               plain
@@ -341,6 +274,8 @@ import MapPopup from '~/components/MapPopup'
 
 export default {
   name: 'MapboxMap',
+  components: {
+  },
   data () {
     return {
       show: false,
@@ -363,7 +298,8 @@ export default {
         cityName: '',
         url: '',
         discord: '',
-        website: ''
+        website: '',
+        description: ''
       },
       accessToken: 'pk.eyJ1Ijoid2FzcGlzY2hlIiwiYSI6ImNrazBidGRsNzBmdmIyeHJyYThjZG0wYzYifQ.qZQp-6ddFiyakTvvyCv8Gw', // your access token. Needed if you using Mapbox maps
       mapStyle: 'mapbox://styles/mapbox/light-v10',
@@ -373,7 +309,8 @@ export default {
         cityName: '',
         url: '',
         discord: '',
-        website: ''
+        website: '',
+        description: ''
       },
       citiesLocation: {
         id: 'citiesLocation',
