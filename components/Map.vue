@@ -26,7 +26,7 @@
 <script>
 import { LMap, LTileLayer, LGeoJson } from 'vue2-leaflet'
 // import allQuaries from '~/data/allQuarries.json'
-const getAllQuarries = () => import('static/data/allQuarries.json').then(m => m.default || m)
+// const getAllQuarries = () => import('static/data/allQuarries.json').then(m => m.default || m)
 
 export default {
   name: 'Map',
@@ -86,9 +86,9 @@ export default {
       }
     }
   },
-  async created () {
+  created () {
     this.loading = true
-    this.geojson = await getAllQuarries()
+    // this.geojson = await getAllQuarries()
     this.loading = false
   }
 }

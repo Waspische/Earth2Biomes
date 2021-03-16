@@ -29,7 +29,7 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar app>
+    <v-app-bar app flat>
       <v-toolbar-title>
         <router-link to="/" tag="span" style="cursor: pointer">
           Earth2 Biomes

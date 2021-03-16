@@ -230,9 +230,11 @@
           cols="12"
           md="6"
         >
-          <v-card class="mt-2">
+          <v-card class="mt-2 d-flex" style="flex-direction: column">
             <v-card-title>Class distribution</v-card-title>
-            <apexchart type="pie" width="100%" :options="classChartOptions" :series="classSeries" />
+            <div class="" style="align-self: center;">
+              <apexchart type="pie" width="100%" :options="classChartOptions" :series="classSeries" />
+            </div>
           </v-card>
         </v-col>
       </v-row>
@@ -312,6 +314,8 @@ export default {
       classSeries: [44, 55, 13, 43, 22],
       classChartOptions: {
         chart: {
+          width: '100%',
+          height: 300,
           type: 'pie'
         },
         labels: ['Class 1', 'Class 2', 'Class 3', 'Class 4', 'Class 5'],
