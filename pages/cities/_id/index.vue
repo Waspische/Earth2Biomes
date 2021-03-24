@@ -65,7 +65,7 @@
                   </v-list-item>
 
                   <v-list-item
-                    href="https://app.earth2.io/#thegrid/af828af6-96d8-4a2c-9751-9d61d070b8ec"
+                    :href="city.url"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -84,7 +84,7 @@
                   </v-list-item>
                   <v-list-item
                     v-if="city.website"
-                    href="https://app.earth2.io/#thegrid/af828af6-96d8-4a2c-9751-9d61d070b8ec"
+                    :href="city.website"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -103,7 +103,7 @@
                   </v-list-item>
                   <v-list-item
                     v-if="city.discord"
-                    href="https://app.earth2.io/#thegrid/af828af6-96d8-4a2c-9751-9d61d070b8ec"
+                    :href="city.discord"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
