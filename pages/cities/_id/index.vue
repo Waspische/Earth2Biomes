@@ -144,11 +144,11 @@
         </v-col>
       </v-row>
       <v-alert
+        v-if="!hasData"
         type="warning"
         class="mx-2 mt-4"
       >
-        Information below is fake and should be available in the future.
-        If you want your city data here, please fill at least the description and, website or discord link.
+        Contact Wasp#1975 on discord to get your city info
       </v-alert>
       <v-row>
         <v-col
@@ -160,18 +160,54 @@
         >
           <v-card class="mb-2 flex-grow-1">
             <v-card-title>Number of tiles owned</v-card-title>
-            <v-card-text class="text-center text-h4 text--primary pb-0">
-              63 485
-            </v-card-text>
-            <apexchart type="area" height="60" :options="userChartOptions" :series="userSeries" />
+            <template v-if="hasData">
+              <v-card-text
+                class="text-center text-h4 text--primary pb-0"
+              >
+                {{ tilesSoldLastNumber }}
+              </v-card-text>
+              <apexchart type="area" height="60" :options="lineChartOption" :series="tilesSoldSeries" />
+            </template>
+            <template v-else>
+              <v-card-text
+                class="text-center text--primary pb-2"
+              >
+                No data yet ...
+              </v-card-text>
+            </template>
           </v-card>
 
           <v-card class="mt-2 flex-grow-1">
             <v-card-title>Number of players</v-card-title>
-            <v-card-text class="text-center text-h4 text--primary pb-0">
-              456
-            </v-card-text>
-            <apexchart type="area" height="60" :options="userChartOptions" :series="userSeries" />
+            <template v-if="hasData">
+              <v-card-text class="text-center text-h4 text--primary pb-0">
+                {{ playersLastNumber }}
+              </v-card-text>
+              <apexchart type="area" height="60" :options="lineChartOption" :series="playersSeries" />
+            </template>
+            <template v-else>
+              <v-card-text
+                class="text-center text--primary pb-2"
+              >
+                No data yet ...
+              </v-card-text>
+            </template>
+          </v-card>
+
+          <v-card class="mt-4 d-flex" style="flex-direction: column">
+            <v-card-title>Class distribution</v-card-title>
+            <template v-if="hasData">
+              <div class="" style="align-self: center;">
+                <apexchart type="pie" width="100%" :options="classDistributionChartOptions" :series="classSeries" />
+              </div>
+            </template>
+            <template v-else>
+              <v-card-text
+                class="text-center text--primary pb-2"
+              >
+                No data yet ...
+              </v-card-text>
+            </template>
           </v-card>
         </v-col>
         <v-col
@@ -181,60 +217,29 @@
           class="d-flex"
         >
           <v-card class="flex-grow-1">
-            <v-card-title>Top 5 players</v-card-title>
-            <v-list>
-              <v-list-item>
-                <v-btn color="green" icon outlined>
-                  1
-                </v-btn>
-                <v-list-item-content class="ml-3">
-                  Wasp
-                </v-list-item-content>
-              </v-list-item>
-              <v-list-item>
-                <v-btn color="orange" icon outlined>
-                  2
-                </v-btn>
-                <v-list-item-content class="ml-3">
-                  Wasp
-                </v-list-item-content>
-              </v-list-item>
-              <v-list-item>
-                <v-btn color="red" icon outlined>
-                  3
-                </v-btn>
-                <v-list-item-content class="ml-3">
-                  Wasp
-                </v-list-item-content>
-              </v-list-item>
-              <v-list-item>
-                <v-btn color="grey" icon outlined>
-                  4
-                </v-btn>
-                <v-list-item-content class="ml-3">
-                  Wasp
-                </v-list-item-content>
-              </v-list-item>
-              <v-list-item>
-                <v-btn color="grey" icon outlined>
-                  5
-                </v-btn>
-                <v-list-item-content class="ml-3">
-                  Wasp
-                </v-list-item-content>
-              </v-list-item>
-            </v-list>
-          </v-card>
-        </v-col>
-        <v-col
-          cols="12"
-          md="6"
-        >
-          <v-card class="mt-2 d-flex" style="flex-direction: column">
-            <v-card-title>Class distribution</v-card-title>
-            <div class="" style="align-self: center;">
-              <apexchart type="pie" width="100%" :options="classChartOptions" :series="classSeries" />
-            </div>
+            <v-card-title>Top 10 players</v-card-title>
+            <template v-if="hasData">
+              <v-list
+                v-for="(player, index) in top10Players"
+                :key="player.title"
+              >
+                <v-list-item>
+                  <v-btn :color="playerColor(index)" icon outlined>
+                    {{ index + 1 }}
+                  </v-btn>
+                  <v-list-item-content class="ml-3">
+                    {{ player.username }} <span class="grey--text"> {{ player.tileNumber }} tiles</span>
+                  </v-list-item-content>
+                </v-list-item>
+              </v-list>
+            </template>
+            <template v-else>
+              <v-card-text
+                class="text-center text--primary pb-2"
+              >
+                No player info yet
+              </v-card-text>
+            </template>
           </v-card>
         </v-col>
       </v-row>
@@ -256,11 +261,7 @@ export default {
       error: false,
       accessToken: 'pk.eyJ1Ijoid2FzcGlzY2hlIiwiYSI6ImNrazBidGRsNzBmdmIyeHJyYThjZG0wYzYifQ.qZQp-6ddFiyakTvvyCv8Gw', // your access token. Needed if you using Mapbox maps
       mapStyle: 'mapbox://styles/mapbox/light-v10',
-      userSeries: [{
-        name: 'Number of players',
-        data: [31, 40, 28, 51, 42, 109, 100]
-      }],
-      userChartOptions: {
+      lineChartOption: {
         chart: {
           height: '100%',
           type: 'area',
@@ -294,7 +295,6 @@ export default {
         grid: { show: false },
         xaxis: {
           type: 'datetime',
-          categories: ['2018-09-19T00:00:00.000Z', '2018-09-19T01:30:00.000Z', '2018-09-19T02:30:00.000Z', '2018-09-19T03:30:00.000Z', '2018-09-19T04:30:00.000Z', '2018-09-19T05:30:00.000Z', '2018-09-19T06:30:00.000Z'],
           labels: { show: false },
           axisBorder: { show: false },
           axisTicks: { show: false }
@@ -309,16 +309,28 @@ export default {
           x: {
             format: 'dd/MM/yy HH:mm'
           }
+        },
+        noData: {
+          text: 'Loading...'
         }
       },
-      classSeries: [44, 55, 13, 43, 22],
-      classChartOptions: {
+      tilesSoldSeries: [],
+      tilesSoldLastNumber: '',
+      playersSeries: [],
+      playersLastNumber: '',
+      classSeries: [],
+      classDistributionChartOptions: {
         chart: {
           width: '100%',
           height: 300,
           type: 'pie'
         },
-        labels: ['Class 1', 'Class 2', 'Class 3', 'Class 4', 'Class 5'],
+        labels: ['Class 1', 'Class 2', 'Class 3', 'Class 4', 'Class 5', 'No class'],
+        dataLabels: {
+          formatter (value, { seriesIndex, dataPointIndex, w }) {
+            return w.config.labels[seriesIndex] + ':  ' + Math.trunc(value) + '%'
+          }
+        },
         animations: {
           enabled: true,
           easing: 'easeinout',
@@ -340,8 +352,17 @@ export default {
         },
         stroke: {
           colors: ['#1E1E1E']
+        },
+        noData: {
+          text: 'Loading...'
         }
-      }
+      },
+      top10Players: []
+    }
+  },
+  computed: {
+    hasData () {
+      return this.tilesSoldLastNumber !== ''
     }
   },
   created () {
@@ -363,6 +384,8 @@ export default {
     this.map.on('load', this.onMapLoad)
 
     console.log(this.city)
+
+    this.getCityStats()
   },
   methods: {
     onMapLoad (event) {
@@ -379,8 +402,6 @@ export default {
         const response = await this.$axios.$get('/cities/' + fetchedId)
         this.loading = false
         this.city = response
-        console.log('city')
-        console.log(this.city)
       } catch (error) {
         this.loading = false
         this.error = true
@@ -388,11 +409,44 @@ export default {
         console.log('error')
         console.log(error)
       }
+    },
+    async getCityStats () {
+      console.log('getCityStats')
+      const fetchedId = this.$route.params.id
+      try {
+        const response = await this.$axios.$get('/city-stats/' + fetchedId)
+        console.log(response)
+        this.tilesSoldSeries = [{
+          name: 'Number of tiles',
+          data: response.tileNumberSoldData
+        }]
+        this.tilesSoldLastNumber = response.tileNumberSoldData[response.tileNumberSoldData.length - 1].y
+        this.playersSeries = [{
+          name: 'Number of players',
+          data: response.playerNumberData
+        }]
+        this.playersLastNumber = response.playerNumberData[response.playerNumberData.length - 1].y
+        this.classSeries = response.classDistributionFrom1to5
+        this.top10Players = response.top10Players
+      } catch (error) {
+        this.error = true
+      }
+    },
+    playerColor (index) {
+      let color = 'grey'
+      if (index === 0) {
+        color = 'green'
+      } else if (index === 1) {
+        color = 'orange'
+      } else if (index === 2) {
+        color = 'red'
+      }
+      return color
     }
   },
   head () {
     return {
-      title: 'Dorkslayer'
+      title: this.city ? this.city.cityName : ''
     }
   }
 }

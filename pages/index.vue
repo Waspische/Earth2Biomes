@@ -1,5 +1,5 @@
 <template>
-  <v-template>
+  <div>
     <v-container class="pt-12 pb-0 pt-lg-15 text-center px-0">
       <v-row justify="center">
         <v-col cols="12" md="12">
@@ -15,7 +15,7 @@
           <h2
             class="text-h6 text-sm-h5 mt-4"
           >
-            Aiming to provide the biggest opensource source of information that are not available in Earth2.
+            Aiming to provide the biggest opensource source of information that are NOT available in Earth2.
           </h2>
         </v-col>
       </v-row>
@@ -25,144 +25,186 @@
     </div>
 
     <v-container fluid class="pa-0">
-      <v-sheet class="pb-6 pt-4 px-md-12 px-4">
-        <v-row justify="space-around">
-          <v-col cols="12" md="6" xs="12">
-            <div class="text-center">
-              <div class="text-h5">
-                129
-              </div>
-              <div class="body-1 ma-4">
-                MegaCities available here with their links to Earth2 location, website and Discord server
-              </div>
-
-              <v-btn
-                class="mt-4"
-                elevation="2"
-                color="primary darken-1"
-                large
-                to="/cities"
-              >
-                <v-icon left dark>
-                  mdi-city
-                </v-icon>
-                City map
-              </v-btn>
-            </div>
-          </v-col>
-
-          <v-col cols="12" md="6" xs="12">
-            <div class="text-center">
-              <div class="text-h5">
-                > 10.000
-              </div>
-              <div class="body-1 ma-4">
-                Blue dots ! They appeared during less than 1 hour on earth2.io all over the map, representing data from the US Mineral Resource Data System
-              </div>
-
-              <v-btn
-                class="mt-4"
-                elevation="2"
-                color="primary darken-1"
-                large
-                to="/blue-dots"
-              >
-                <v-icon left dark>
-                  mdi-dots-horizontal-circle
-                </v-icon>
-                Blue dots
-              </v-btn>
-            </div>
-          </v-col>
-
-          <v-col cols="12" md="6" xs="12">
-            <div class="text-center">
-              <div class="text-h5">
-                25
-              </div>
-              <div class="body-1 ma-4">
-                Resource types from different sources including the most mined minerals from Earth 1
-              </div>
-              <v-btn
-                class="mt-4"
-                elevation="2"
-                color="primary darken-1"
-                large
-                to="/resources"
-              >
-                <v-icon left dark>
-                  mdi-dots-horizontal-circle
-                </v-icon>
-                Resources map
-              </v-btn>
-            </div>
-          </v-col>
-        </v-row>
-        <v-divider class="ma-10" />
-        <v-row class="my-4" justify="space-around">
-          <v-col cols="12" md="5" xs="12">
-            <div>
-              <div class="text-h5 primary--text mb-4">
-                Why should you buy resources ?
-              </div>
-              <div class="body-1 ">
-                <blockquote class="text-justify font-italic">
-                  Phase 2 will allow you to mine resources [...]. If you’re sitting on a literal goldmine, yes, that surely will come in handy soon. But some people may be sitting on a metaphorical one without even realising it for years, until suddenly a formerly undiscovered raw material under their soil becomes the most important element for an exciting new technology, demanded by basically everyone.
-                </blockquote>
-                <p class="text-right">
-                  - Shane on Discord
-                </p>
-              </div>
-            </div>
-          </v-col>
-
-          <v-col cols="12" md="5" xs="12">
-            <div>
+      <v-sheet class="pb-6 px-md-12 px-4">
+        <v-row>
+          <v-col cols="12" offset-md="1" md="3" xs="2">
+            <div class="ma-4">
               <v-img
-                :src="require('@/assets/mining.jpg')"
-                max-height="300"
+                :src="require('@/assets/resources-district.png')"
+                max-height="120"
                 contain
               />
             </div>
           </v-col>
-        </v-row>
-        <v-divider class="ma-10" />
-        <v-row class="my-4" justify="space-around">
-          <v-col cols="12" md="5">
-            <div>
-              <v-img
-                :src="require('@/assets/city.jpg')"
-                max-height="300"
-                contain
-              />
-            </div>
-          </v-col>
-          <v-col cols="12" md="5">
-            <div>
-              <div class="text-h5 primary--text mb-4">
-                Why Megacities are important ?
-              </div>
-              <div class="body-1 text-justify">
-                Megacities are where communities bought their tiles together to construct a common project. They often have a long term vision of the game and therefore are good places to invest as their value should keep increasing over and over. It's also a good way to meet and join new people and construct you Earth2 network.
+          <v-col cols="12" md="7" xs="10">
+            <div class="text-center">
+              <div class="body-1 ma-4">
+                To provide you the most accurate mine information, we collaborate with Resources District. Their main mission is to create a net of Distribution Centers of Raw Materials, and become a place exclusively dedicated to trade it.
               </div>
             </div>
           </v-col>
-        </v-row>
-
-        <v-divider class="ma-10" />
-        <v-row class="my-4">
-          <v-col cols="8" class="mx-auto">
-            <div class="text-h5">
-              Do you appreciate the content here ?
-            </div>
-            <div class="text-subtitle-1">
-              Support me using the code <span class="primary--text font-weight-bold"> HABN6K6K3X</span> when buying tiles and get a 5% discount in game
+          <v-col cols="12" md="12" xs="12">
+            <div class="text-center">
+              <v-btn
+                class="mt-4"
+                elevation="2"
+                color="success darken-1"
+                large
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://discord.gg/C2HZ5VF3GN"
+              >
+                <v-icon left dark>
+                  mdi-discord
+                </v-icon>
+                Join Resources District
+              </v-btn>
             </div>
           </v-col>
         </v-row>
       </v-sheet>
+      <v-row justify="space-around">
+        <v-col cols="12" md="12">
+          <div class="text-center text-h6 text-sm-h5 text-md-h4 text-lg-h3 mt-8">
+            Some stats
+          </div>
+        </v-col>
+        <v-col cols="12" md="6" xs="12">
+          <div class="text-center">
+            <div class="text-h5">
+              129
+            </div>
+            <div class="body-1 ma-4">
+              MegaCities available here with their links to Earth2 location, website and Discord server
+            </div>
+
+            <v-btn
+              class="mt-4"
+              elevation="2"
+              color="primary darken-1"
+              large
+              to="/cities"
+            >
+              <v-icon left dark>
+                mdi-city
+              </v-icon>
+              City map
+            </v-btn>
+          </div>
+        </v-col>
+
+        <v-col cols="12" md="6" xs="12">
+          <div class="text-center">
+            <div class="text-h5">
+              > 10.000
+            </div>
+            <div class="body-1 ma-4">
+              Blue dots ! They appeared during less than 1 hour on earth2.io all over the map, representing data from the US Mineral Resource Data System
+            </div>
+
+            <v-btn
+              class="mt-4"
+              elevation="2"
+              color="primary darken-1"
+              large
+              to="/blue-dots"
+            >
+              <v-icon left dark>
+                mdi-dots-horizontal-circle
+              </v-icon>
+              Blue dots
+            </v-btn>
+          </div>
+        </v-col>
+
+        <v-col cols="12" md="6" xs="12">
+          <div class="text-center">
+            <div class="text-h5">
+              25
+            </div>
+            <div class="body-1 ma-4">
+              Resource types from different sources including the most mined minerals from Earth 1
+            </div>
+            <v-btn
+              class="mt-4"
+              elevation="2"
+              color="primary darken-1"
+              large
+              to="/resources"
+            >
+              <v-icon left dark>
+                mdi-dots-horizontal-circle
+              </v-icon>
+              Resources map
+            </v-btn>
+          </div>
+        </v-col>
+      </v-row>
+      <v-divider class="ma-10" />
+      <v-row class="my-4" justify="space-around">
+        <v-col cols="12" md="5" xs="12">
+          <div>
+            <div class="text-h5 primary--text mb-4">
+              Why should you buy resources ?
+            </div>
+            <div class="body-1 ">
+              <blockquote class="text-justify font-italic">
+                Phase 2 will allow you to mine resources [...]. If you’re sitting on a literal goldmine, yes, that surely will come in handy soon. But some people may be sitting on a metaphorical one without even realising it for years, until suddenly a formerly undiscovered raw material under their soil becomes the most important element for an exciting new technology, demanded by basically everyone.
+              </blockquote>
+              <p class="text-right">
+                - Shane on Discord
+              </p>
+            </div>
+          </div>
+        </v-col>
+
+        <v-col cols="12" md="5" xs="12">
+          <div>
+            <v-img
+              :src="require('@/assets/mining.jpg')"
+              max-height="300"
+              contain
+            />
+          </div>
+        </v-col>
+      </v-row>
+      <v-divider class="ma-10" />
+      <v-row class="my-4" justify="space-around">
+        <v-col cols="12" md="5">
+          <div>
+            <v-img
+              :src="require('@/assets/city.jpg')"
+              max-height="300"
+              contain
+            />
+          </div>
+        </v-col>
+        <v-col cols="12" md="5">
+          <div>
+            <div class="text-h5 primary--text mb-4">
+              Why Megacities are important ?
+            </div>
+            <div class="body-1 text-justify">
+              Megacities are where communities bought their tiles together to construct a common project. They often have a long term vision of the game and therefore are good places to invest as their value should keep increasing over and over. It's also a good way to meet and join new people and construct you Earth2 network.
+            </div>
+          </div>
+        </v-col>
+      </v-row>
+
+      <v-divider class="ma-10" />
+      <v-row class="my-4">
+        <v-col cols="8" class="mx-auto">
+          <div class="text-h5">
+            Do you appreciate the content here ?
+          </div>
+          <div class="text-subtitle-1">
+            Support me using the code <span class="primary--text font-weight-bold"> HABN6K6K3X</span> when buying tiles and get a 5% discount in game
+          </div>
+        </v-col>
+      </v-row>
+      </v-sheet>
     </v-container>
-  </v-template>
+  </div>
 </template>
 
 <script>
