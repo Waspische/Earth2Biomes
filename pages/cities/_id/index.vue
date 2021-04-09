@@ -158,13 +158,13 @@
           class="d-flex"
           style="flex-direction:column"
         >
-          <v-card class="mb-2 flex-grow-1">
+          <v-card class="mb-2">
             <v-card-title>Number of tiles owned</v-card-title>
             <template v-if="hasData">
               <v-card-text
                 class="text-center text-h4 text--primary pb-0"
               >
-                {{ tilesSoldLastNumber }}
+                {{ tilesSoldLastNumber | formatNumber }}
               </v-card-text>
               <apexchart type="area" height="60" :options="lineChartOption" :series="tilesSoldSeries" />
             </template>
@@ -177,11 +177,11 @@
             </template>
           </v-card>
 
-          <v-card class="mt-2 flex-grow-1">
+          <v-card class="mt-2">
             <v-card-title>Number of players</v-card-title>
             <template v-if="hasData">
               <v-card-text class="text-center text-h4 text--primary pb-0">
-                {{ playersLastNumber }}
+                {{ playersLastNumber | formatNumber }}
               </v-card-text>
               <apexchart type="area" height="60" :options="lineChartOption" :series="playersSeries" />
             </template>
@@ -194,7 +194,7 @@
             </template>
           </v-card>
 
-          <v-card class="mt-4 d-flex" style="flex-direction: column">
+          <v-card class="mt-4 d-flex flex-grow-1" style="flex-direction: column">
             <v-card-title>Class distribution</v-card-title>
             <template v-if="hasData">
               <div class="" style="align-self: center;">
@@ -222,13 +222,18 @@
               <v-list
                 v-for="(player, index) in top10Players"
                 :key="player.title"
+                dense
+                class="py-1"
               >
                 <v-list-item>
                   <v-btn :color="playerColor(index)" icon outlined>
                     {{ index + 1 }}
                   </v-btn>
                   <v-list-item-content class="ml-3">
-                    {{ player.username }} <span class="grey--text"> {{ player.tileNumber }} tiles</span>
+                    <a :href="playerLink(player)" target="_blank" rel="noopener noreferrer">
+                      {{ player.username }}
+                    </a>
+                    <span class="grey--text"> {{ player.tileNumber | formatNumber }} tiles</span>
                   </v-list-item-content>
                 </v-list-item>
               </v-list>
@@ -254,6 +259,11 @@ import chart from 'vue-apexcharts'
 export default {
   name: 'Id',
   components: { apexchart: chart },
+  filters: {
+    formatNumber (number) {
+      return new Intl.NumberFormat().format(number)
+    }
+  },
   data () {
     return {
       city: null,
@@ -442,6 +452,9 @@ export default {
         color = 'red'
       }
       return color
+    },
+    playerLink (player) {
+      return 'https://app.earth2.io/#profile/' + player.playerId
     }
   },
   head () {
@@ -454,5 +467,8 @@ export default {
 
 <style scoped>
 svg.apexcharts-svg { background: transparent !important; }
-
+.v-application a {
+  color: #fff;
+  text-decoration: none; /* no underline */
+}
 </style>

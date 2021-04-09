@@ -342,7 +342,8 @@ export default {
       // Filter visible features that don't match the input value.
       const filtered = this.cities.filter(function (city) {
         const name = city.properties.cityName.trim().toLowerCase()
-        return name.includes(value)
+        const group = city.properties.group ? city.properties.group.groupName.trim().toLowerCase() : ''
+        return name.includes(value) || group.includes(value)
       })
 
       // Set the filter to populate features into the layer.

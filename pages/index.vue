@@ -15,7 +15,7 @@
           <h2
             class="text-h6 text-sm-h5 mt-4"
           >
-            Aiming to provide the biggest opensource source of information that are NOT available in Earth2.
+            Aiming to provide the biggest open source of information that are NOT available in Earth2.
           </h2>
         </v-col>
       </v-row>
@@ -27,39 +27,84 @@
     <v-container fluid class="pa-0">
       <v-sheet class="pb-6 px-md-12 px-4">
         <v-row>
-          <v-col cols="12" offset-md="1" md="3" xs="2">
-            <div class="ma-4">
-              <v-img
-                :src="require('@/assets/resources-district.png')"
-                max-height="120"
-                contain
-              />
+          <v-col cols="12" md="12">
+            <div class="text-center text-h6 text-sm-h5 text-md-h4 text-lg-h3 mt-8">
+              Our Partners
             </div>
           </v-col>
-          <v-col cols="12" md="7" xs="10">
-            <div class="text-center">
-              <div class="body-1 ma-4">
-                To provide you the most accurate mine information, we collaborate with Resources District. Their main mission is to create a net of Distribution Centers of Raw Materials, and become a place exclusively dedicated to trade it.
-              </div>
-            </div>
+          <v-col cols="12" md="6" xs="12">
+            <v-row align="center">
+              <v-col cols="12" md="4" xs="2" class="my-4 mx-0 pa-0">
+                <div>
+                  <v-img
+                    :src="require('@/assets/agv.png')"
+                    max-height="100"
+                    contain
+                  />
+                </div>
+              </v-col>
+              <v-col cols="12" md="8" xs="10" class="my-4 mx-0 pa-0">
+                <div class="text-center">
+                  <div class="body-1">
+                    Alchera Global Venture is an earth2.io community with high ambitions. And a ❤ for sea lions.
+                  </div>
+                </div>
+              </v-col>
+              <v-col cols="12" md="12" xs="12">
+                <div class="text-center">
+                  <v-btn
+                    elevation="2"
+                    color="success darken-1"
+                    large
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://discord.gg/dg3PkWGyKB"
+                  >
+                    <v-icon left dark>
+                      mdi-discord
+                    </v-icon>
+                    Join AGV
+                  </v-btn>
+                </div>
+              </v-col>
+            </v-row>
           </v-col>
-          <v-col cols="12" md="12" xs="12">
-            <div class="text-center">
-              <v-btn
-                class="mt-4"
-                elevation="2"
-                color="success darken-1"
-                large
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://discord.gg/C2HZ5VF3GN"
-              >
-                <v-icon left dark>
-                  mdi-discord
-                </v-icon>
-                Join Resources District
-              </v-btn>
-            </div>
+          <v-col cols="12" md="6" xs="12">
+            <v-row align="center">
+              <v-col cols="12" md="4" xs="2" class="my-4 mx-0 pa-0">
+                <div>
+                  <v-img
+                    :src="require('@/assets/resources-district.png')"
+                    max-height="100"
+                    contain
+                  />
+                </div>
+              </v-col>
+              <v-col cols="12" md="8" xs="10" class="my-4 mx-0 pa-0">
+                <div class="text-center">
+                  <div class="body-1">
+                    Resources District is the Earth2 largest mining network and the place to trade resources.
+                  </div>
+                </div>
+              </v-col>
+              <v-col cols="12" md="12" xs="12">
+                <div class="text-center">
+                  <v-btn
+                    elevation="2"
+                    color="success darken-1"
+                    large
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://discord.gg/C2HZ5VF3GN"
+                  >
+                    <v-icon left dark>
+                      mdi-discord
+                    </v-icon>
+                    Join Resources District
+                  </v-btn>
+                </div>
+              </v-col>
+            </v-row>
           </v-col>
         </v-row>
       </v-sheet>
@@ -185,7 +230,7 @@
               Why Megacities are important ?
             </div>
             <div class="body-1 text-justify">
-              Megacities are where communities bought their tiles together to construct a common project. They often have a long term vision of the game and therefore are good places to invest as their value should keep increasing over and over. It's also a good way to meet and join new people and construct you Earth2 network.
+              Megacities are where communities bought their tiles together to construct a common project. They often have a long term vision of the game and therefore are good places to invest as their value should keep increasing over and over. It's also a good way to meet and join new people and construct your Earth2 network.
             </div>
           </div>
         </v-col>
