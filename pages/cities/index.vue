@@ -51,6 +51,8 @@
           :items-per-page="5"
           :search="onSearch"
           class="elevation-1"
+          :loading="loadingData"
+          loading-text="Loading... Please wait"
         >
           <template v-slot:top>
             <v-toolbar
@@ -360,6 +362,9 @@ export default {
       }
 
       return this.search
+    },
+    loadingData () {
+      return this.cities.length === 0
     }
   },
   mounted () {
