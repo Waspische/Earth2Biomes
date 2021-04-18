@@ -148,7 +148,7 @@
         type="warning"
         class="mx-2 mt-4"
       >
-        Contact Wasp#1975 on discord to get your city info
+        Contact Wasp#1975 on discord to get your city info. For live example, check <strong><a class="text" href="https://earth2biomes.com/cities/b97d56b3-ff4d-4fab-83eb-a0f614fa9bf6">Sea Lions Colony</a></strong>
       </v-alert>
       <v-row>
         <v-col

@@ -367,6 +367,11 @@ export default {
       return this.cities.length === 0
     }
   },
+  watch: {
+    dialog (val) {
+      val || this.close()
+    }
+  },
   mounted () {
     mapboxgl.accessToken = this.accessToken
 
@@ -430,6 +435,7 @@ export default {
       return data
     },
     editCity (city) {
+      this.editedIndex = this.cities.indexOf(city)
       this.editedCity = Object.assign({}, city.properties)
       this.dialog = true
     },
