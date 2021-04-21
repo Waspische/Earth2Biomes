@@ -5,6 +5,10 @@ export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
+  // server: {
+  //   port: 8000 // default: 3000
+  // },
+
   generate: {
     fallback: true
   },

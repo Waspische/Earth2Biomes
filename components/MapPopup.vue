@@ -1,18 +1,18 @@
 <template>
   <div class="popup-wrapper">
     <v-card
-      class="grey darken-1 rounded-lg mx-2"
-      max-width="225px"
-      outlined
+      class="rounded-lg mx-2 transparent-card"
+      max-width="250px"
+      flat
     >
       <v-card-title
-        class="pa-2"
+        class="pa-0 text-center"
       >
         {{ popupName }}
       </v-card-title>
       <v-card-text
         v-if="type === 'quarry' || type === 'well'"
-        class="pa-0"
+        class="pa-0 text-center"
       >
         <v-btn
           v-clipboard:copy="geoposition"
@@ -28,9 +28,9 @@
       </v-card-text>
       <v-card-text
         v-if="type === 'urban'"
-        class="pa-0 justify-center"
+        class="pb-1 text-center"
       >
-        Click to open in Earth2
+        Click for details
       </v-card-text>
       <v-card-actions
         v-if="type === 'quarry' || type === 'well'"
@@ -105,7 +105,7 @@ export default {
 
 .mapboxgl-popup-content {
   font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
-  background-color: #757575;
+  background-color: rgba(117,117,117,0.7);
   padding: 0;
   border-radius: 8px;
 }
@@ -113,28 +113,31 @@ export default {
   border: 15px solid transparent;
 }
 .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
-  border-top-color: #757575;
+  border-top-color: rgba(117,117,117,0.7);
 }
 .mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
-  border-right-color: #757575;
+  border-right-color: rgba(117,117,117,0.7);
 }
 .mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
-  border-left-color: #757575;
+  border-left-color: rgba(117,117,117,0.7);
 }
 .mapboxgl-popup-anchor-top .mapboxgl-popup-tip {
-  border-bottom-color: #757575;
+  border-bottom-color: rgba(117,117,117,0.7);
 }
 .mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip {
-  border-top-color: #757575;
+  border-top-color: rgba(117,117,117,0.7);
 }
 .mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip {
-  border-top-color: #757575;
+  border-top-color: rgba(117,117,117,0.7);
 }
 .mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip {
-  border-bottom-color: #757575;
+  border-bottom-color: rgba(117,117,117,0.7);
 }
 .mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip {
-  border-bottom-color: #757575;
+  border-bottom-color:rgba(117,117,117,0.7);
+}
+.transparent-card {
+  background-color: rgba(117,117,117,0) !important;
 }
 
 </style>

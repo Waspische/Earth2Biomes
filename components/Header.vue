@@ -16,16 +16,6 @@
           </v-list-item-action>
           <v-list-item-content>{{ item.title }}</v-list-item-content>
         </v-list-item>
-
-        <v-list-item
-          to="/blue-dots"
-          class="primary darken-1"
-        >
-          <v-list-item-action />
-          <v-list-item-content>
-            SHOW ME THE BLUE DOTS
-          </v-list-item-content>
-        </v-list-item>
       </v-list>
     </v-navigation-drawer>
 
@@ -40,12 +30,6 @@
       </v-toolbar-title>
       <v-spacer />
       <v-toolbar-items class="hidden-xs-only">
-        <v-btn
-          class="primary darken-1"
-          to="/blue-dots"
-        >
-          SHOW ME THE BLUE DOTS !
-        </v-btn>
         <v-btn
           v-for="item in menuItems"
           :key="item.title"
@@ -74,7 +58,8 @@ export default {
       sidebar: false,
       menuItems: [
         { title: 'Resources', path: '/resources', icon: 'mdi-earth' },
-        { title: 'Cities', path: '/cities', icon: 'mdi-city' }
+        { title: 'Cities', path: '/cities', icon: 'mdi-city' },
+        { title: 'Blue Dots', path: '/blue-dots', icon: 'mdi-dots-grid' }
       ]
     }
   }

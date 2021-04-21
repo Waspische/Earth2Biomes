@@ -9,23 +9,15 @@
     <section v-else>
       <v-card
         elevation="4"
-        class="pa-4 mb-4"
+        class="pa-3 mb-4"
         rounded
       >
-        <v-app-bar
-          flat
-          color="rgba(0, 0, 0, 0)"
-        >
-          <v-toolbar-title class="title pl-0 text-wrap">
-            {{ city.cityName }} <span v-if="city.group">- This city is part of {{ city.group.groupName }}</span>
-          </v-toolbar-title>
-
-          <v-spacer />
-
-          <v-toolbar-title class="subtitle-1 text--secondary pl-0 text-wrap">
-            Last updated on {{ $moment(city.lastUpdated).local().format("ddd, MMMM Do YYYY, hh:mm") }}
-          </v-toolbar-title>
-        </v-app-bar>
+        <v-card-title class="title pa-0 text-wrap">
+          <span>{{ city.cityName }} <span v-if="city.group"> - This city is part of {{ city.group.groupName }}</span></span>
+        </v-card-title>
+        <v-card-text class="subtitle-2 text--secondary pa-0 text-wrap">
+          Last updated on {{ $moment(city.lastUpdated).local().format("ddd, MMMM Do YYYY, hh:mm") }}
+        </v-card-text>
       </v-card>
 
       <v-row>
@@ -135,7 +127,7 @@
                     {{ city.description }}
                   </v-list-item-content>
                   <v-list-item-content v-else class="text-justify">
-                    No description available. Consider adding one to get the city stats later.
+                    No description available.
                   </v-list-item-content>
                 </v-list-item-content>
               </v-list>

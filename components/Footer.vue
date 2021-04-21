@@ -1,5 +1,6 @@
 <template>
   <v-footer
+    v-if="!$vuetify.breakpoint.xsOnly"
     padless
     absolute
     app

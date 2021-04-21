@@ -24,246 +24,289 @@
         </v-col>
       </v-row>
     </v-snackbar>
-    <v-row
-      fluid
+    <v-dialog
+      v-model="citiesDialog"
+      width="auto "
+      :fullscreen="$vuetify.breakpoint.xsOnly"
+      transition="scroll-y-transition"
     >
-      <v-col
-        cols="12"
-        xs="12"
-        md="6"
-      >
-        <v-card id="map" style="height: 450px" />
-      </v-col>
-      <v-col
-        cols="12"
-        xs="12"
-        md="6"
-      >
-        <v-alert
-          type="info"
-          class="ml-2 mr-2"
-        >
-          You can submit your own city here to contribute to the Cities Database. Every contribution will be reviewed.
-        </v-alert>
-        <v-data-table
-          :headers="headers"
-          :items="cities"
-          :items-per-page="5"
-          :search="onSearch"
-          class="elevation-1"
-          :loading="loadingData"
-          loading-text="Loading... Please wait"
-        >
-          <template v-slot:top>
-            <v-toolbar
-              flat
+      <template v-slot:activator="{ on: citiesDialogBtn, attrs }">
+        <v-tooltip right>
+          <template v-slot:activator="{ on: tooltip }">
+            <v-btn
+              id="cities-dialog-btn"
+              color="primary darken-1"
+              v-bind="attrs"
+              class="ml-4 mt-4"
+              elevation="2"
+              fab
+              large
+              v-on="{ ...tooltip, ...citiesDialogBtn }"
             >
-              <v-text-field
-                v-model="search"
-                label="Search city name or group"
-              />
-              <v-spacer />
-              <v-dialog
-                v-model="dialog"
-                max-width="500px"
+              <v-icon dark>
+                mdi-city
+              </v-icon>
+            </v-btn>
+          </template>
+          <span>Show city list</span>
+        </v-tooltip>
+      </template>
+
+      <v-card>
+        <v-card-title class="headline">
+          Earth2 cities
+        </v-card-title>
+
+        <v-card-text>
+          <v-alert
+            type="info"
+            class="ml-2 mr-2"
+          >
+            You can submit your own city here to contribute to the Cities Database. Every contribution will be reviewed.
+          </v-alert>
+          <v-data-table
+            :headers="headers"
+            :items="cities"
+            :items-per-page="5"
+            :search="onSearch"
+            class="elevation-1"
+            :loading="loadingData"
+            loading-text="Loading... Please wait"
+          >
+            <template v-slot:top>
+              <v-toolbar
+                flat
               >
-                <template v-slot:activator="{ on, attrs }">
-                  <v-btn
-                    color="primary"
-                    dark
-                    class="mb-2"
-                    v-bind="attrs"
-                    v-on="on"
-                  >
-                    New City
-                  </v-btn>
-                </template>
-                <v-card>
-                  <v-card-title>
-                    <span class="headline">{{ formTitle }}</span>
-                  </v-card-title>
-
-                  <v-card-text>
-                    <v-row dense>
-                      <v-col
-                        cols="12"
-                        sm="6"
-                        md="6"
-                      >
-                        <v-text-field
-                          v-model="editedCity.cityName"
-                          label="Name"
-                        />
-                      </v-col>
-                      <v-col
-                        cols="12"
-                        sm="6"
-                        md="6"
-                      >
-                        <v-select
-                          v-model="editedCity.group"
-                          :items="groups"
-                          item-text="groupName"
-                          item-value="id"
-                          return-object
-                          label="Group"
-                        />
-                      </v-col>
-                      <v-col
-                        cols="12"
-                        sm="12"
-                        md="12"
-                      >
-                        <v-text-field
-                          v-model="editedCity.url"
-                          label="Property url"
-                          hint="https://app.earth2.io/#propertyInfo/YOUR_ID"
-                        />
-                      </v-col>
-                      <v-col
-                        cols="12"
-                        sm="12"
-                        md="6"
-                      >
-                        <v-text-field
-                          v-model="editedCity.discord"
-                          label="Discord server"
-                        />
-                      </v-col>
-                      <v-col
-                        cols="12"
-                        sm="12"
-                        md="6"
-                      >
-                        <v-text-field
-                          v-model="editedCity.website"
-                          label="Website"
-                        />
-                      </v-col>
-                      <v-col
-                        cols="12"
-                        sm="12"
-                        md="12"
-                      >
-                        <v-textarea
-                          v-model="editedCity.description"
-                          label="Description"
-                        />
-                      </v-col>
-                    </v-row>
-                  </v-card-text>
-
-                  <v-card-actions>
-                    <v-spacer />
-                    <v-btn
-                      color="blue darken-1"
-                      text
-                      @click="close"
-                    >
-                      Cancel
-                    </v-btn>
+                <v-text-field
+                  v-model="search"
+                  label="Search city name or group"
+                />
+                <v-spacer />
+                <v-dialog
+                  v-model="dialog"
+                  max-width="500px"
+                >
+                  <template v-slot:activator="{ on, attrs }">
                     <v-btn
                       color="primary"
-                      text
-                      @click="save"
+                      dark
+                      class="mb-2"
+                      v-bind="attrs"
+                      v-on="on"
                     >
-                      Save
+                      New City
                     </v-btn>
-                  </v-card-actions>
-                </v-card>
-              </v-dialog>
-            </v-toolbar>
-          </template>
+                  </template>
+                  <v-card>
+                    <v-card-title>
+                      <span class="headline">{{ formTitle }}</span>
+                    </v-card-title>
 
-          <template v-slot:item.actions="{ item }">
-            <v-btn
-              plain
-              class="pa-0 mr-1"
-              min-width="0"
-            >
-              <v-icon
-                dense
+                    <v-card-text>
+                      <v-row dense>
+                        <v-col
+                          cols="12"
+                          sm="6"
+                          md="6"
+                        >
+                          <v-text-field
+                            v-model="editedCity.cityName"
+                            label="Name"
+                          />
+                        </v-col>
+                        <v-col
+                          cols="12"
+                          sm="6"
+                          md="6"
+                        >
+                          <v-select
+                            v-model="editedCity.group"
+                            :items="groups"
+                            item-text="groupName"
+                            item-value="id"
+                            return-object
+                            label="Group"
+                          />
+                        </v-col>
+                        <v-col
+                          cols="12"
+                          sm="12"
+                          md="12"
+                        >
+                          <v-text-field
+                            v-model="editedCity.url"
+                            label="Property url"
+                            hint="https://app.earth2.io/#propertyInfo/YOUR_ID"
+                          />
+                        </v-col>
+                        <v-col
+                          cols="12"
+                          sm="12"
+                          md="6"
+                        >
+                          <v-text-field
+                            v-model="editedCity.discord"
+                            label="Discord server"
+                          />
+                        </v-col>
+                        <v-col
+                          cols="12"
+                          sm="12"
+                          md="6"
+                        >
+                          <v-text-field
+                            v-model="editedCity.website"
+                            label="Website"
+                          />
+                        </v-col>
+                        <v-col
+                          cols="12"
+                          sm="12"
+                          md="12"
+                        >
+                          <v-textarea
+                            v-model="editedCity.description"
+                            label="Description"
+                          />
+                        </v-col>
+                      </v-row>
+                    </v-card-text>
+
+                    <v-card-actions>
+                      <v-spacer />
+                      <v-btn
+                        color="blue darken-1"
+                        text
+                        @click="close"
+                      >
+                        Cancel
+                      </v-btn>
+                      <v-btn
+                        color="primary"
+                        text
+                        @click="save"
+                      >
+                        Save
+                      </v-btn>
+                    </v-card-actions>
+                  </v-card>
+                </v-dialog>
+              </v-toolbar>
+            </template>
+
+            <template v-slot:item.actions="{ item }">
+              <v-btn
                 plain
-                class="mr-1"
-                @click="editCity(item)"
+                class="pa-0 mr-1"
+                min-width="0"
               >
-                mdi-pencil
-              </v-icon>
-            </v-btn>
-            <v-btn
-              plain
-              min-width="0"
-              class="pa-0 mr-1"
-              target="_blank"
-              rel="noopener noreferrer"
-              icon
-              :href="item.properties.url"
-            >
-              <v-icon
-                dense
+                <v-icon
+                  dense
+                  plain
+                  class="mr-1"
+                  @click="editCity(item)"
+                >
+                  mdi-pencil
+                </v-icon>
+              </v-btn>
+              <v-btn
+                plain
+                min-width="0"
+                class="pa-0 mr-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                icon
+                :href="item.properties.url"
               >
-                mdi-open-in-new
-              </v-icon>
-            </v-btn>
-            <v-btn
-              plain
-              min-width="0"
-              class="pa-0 mr-1"
-            >
-              <v-icon
-                dense
-                @click="flyToCity(item)"
+                <v-icon
+                  dense
+                >
+                  mdi-open-in-new
+                </v-icon>
+              </v-btn>
+              <v-btn
+                plain
+                min-width="0"
+                class="pa-0 mr-1"
               >
-                mdi-map-marker
-              </v-icon>
-            </v-btn>
-            <v-btn
-              v-if="item.properties.discord"
-              plain
-              class="pa-0 mr-1"
-              min-width="0"
-              target="_blank"
-              rel="noopener noreferrer"
-              icon
-              :href="item.properties.discord"
-            >
-              <v-icon
-                dense
+                <v-icon
+                  dense
+                  @click="flyToCity(item)"
+                >
+                  mdi-map-marker
+                </v-icon>
+              </v-btn>
+              <v-btn
+                v-if="item.properties.discord"
+                plain
+                class="pa-0 mr-1"
+                min-width="0"
+                target="_blank"
+                rel="noopener noreferrer"
+                icon
+                :href="item.properties.discord"
               >
-                mdi-discord
-              </v-icon>
-            </v-btn>
-            <v-btn
-              v-if="item.properties.website"
-              plain
-              min-width="0"
-              class="pa-0 mr-1"
-              target="_blank"
-              rel="noopener noreferrer"
-              icon
-              :href="item.properties.website"
-            >
-              <v-icon
-                dense
+                <v-icon
+                  dense
+                >
+                  mdi-discord
+                </v-icon>
+              </v-btn>
+              <v-btn
+                v-if="item.properties.website"
+                plain
+                min-width="0"
+                class="pa-0 mr-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                icon
+                :href="item.properties.website"
               >
-                mdi-web
-              </v-icon>
-            </v-btn>
-          </template>
+                <v-icon
+                  dense
+                >
+                  mdi-web
+                </v-icon>
+              </v-btn>
+            </template>
 
-          <template v-slot:item.detail="{ item }">
-            <v-btn
-              plain
-              text
-              class="pa-0 mr-1"
-              min-width="0"
-              :to="{ name: 'cities-id', params: { id: item.properties.id} }"
-            >
-              More info
-            </v-btn>
-          </template>
-        </v-data-table>
-      </v-col>
+            <template v-slot:item.detail="{ item }">
+              <v-btn
+                plain
+                text
+                class="pa-0 mr-1"
+                min-width="0"
+                :to="{ name: 'cities-id', params: { id: item.properties.id} }"
+              >
+                More info
+              </v-btn>
+            </template>
+          </v-data-table>
+        </v-card-text>
+
+        <v-divider />
+
+        <v-card-actions>
+          <v-spacer />
+          <v-btn
+            color="primary"
+            text
+            @click="citiesDialog = false"
+          >
+            Close
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+    <v-row
+      id="map-wrapper"
+      fluid
+      no-gutters
+    >
+      <v-col
+        id="map"
+        cols="12"
+      />
     </v-row>
   </v-container>
 </template>
@@ -289,11 +332,11 @@ export default {
           align: 'start',
           value: 'properties.cityName'
         },
-        { text: 'Group', value: 'properties.group.groupName' },
         { text: 'Actions', value: 'actions', sortable: false },
         { text: '', value: 'detail', sortable: false }
       ],
       cities: [],
+      citiesDialog: false,
       groups: [],
       search: '',
       editedCity: {
@@ -304,7 +347,7 @@ export default {
         description: ''
       },
       accessToken: 'pk.eyJ1Ijoid2FzcGlzY2hlIiwiYSI6ImNrazBidGRsNzBmdmIyeHJyYThjZG0wYzYifQ.qZQp-6ddFiyakTvvyCv8Gw', // your access token. Needed if you using Mapbox maps
-      mapStyle: 'mapbox://styles/mapbox/light-v10',
+      mapStyle: 'mapbox://styles/mapbox/dark-v10',
       dialog: false,
       editedIndex: -1,
       defaultCity: {
@@ -424,6 +467,7 @@ export default {
       return places
     },
     flyToCity (currentFeature) {
+      this.citiesDialog = false
       this.$vuetify.goTo(0)
       this.map.flyTo({
         center: currentFeature.geometry.coordinates,
@@ -529,5 +573,17 @@ export default {
 </script>
 
 <style scoped>
+#cities-dialog-btn {
+  position: relative;
+  z-index: 3;
+}
 
+#map-wrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
 </style>
