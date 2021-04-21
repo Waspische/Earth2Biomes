@@ -529,9 +529,9 @@ export default {
     },
     onCityClick (e) {
       const currentFeature = e.features[0]
-      const url = currentFeature.properties.url
-      const win = window.open(url, '_blank')
-      win.focus()
+      const cityId = currentFeature.properties.id
+      console.log(currentFeature)
+      this.$router.push('/cities/' + cityId)
     },
     onMouseEnterCity (e) {
       this.map.getCanvas().style.cursor = 'pointer'

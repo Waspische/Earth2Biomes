@@ -31,16 +31,46 @@
       <v-spacer />
       <v-toolbar-items class="hidden-xs-only">
         <v-btn
-          v-for="item in menuItems"
-          :key="item.title"
           text
-          :to="item.path"
+          to="/"
         >
           <v-icon left dark>
-            {{ item.icon }}
+            mdi-home
           </v-icon>
-          {{ item.title }}
+          Home
         </v-btn>
+        <v-menu
+          v-for="item in menuItems"
+          :key="item.title"
+          offset-y
+        >
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn
+              text
+              v-bind="attrs"
+              v-on="on"
+            >
+              <v-icon left dark>
+                {{ item.icon }}
+              </v-icon>
+              {{ item.title }}
+            </v-btn>
+          </template>
+          <v-list>
+            <v-list-item
+              v-for="(subtitle, index) in item.subtitles"
+              :key="index"
+              :to="subtitle.path"
+            >
+              <v-list-item-title>
+                <v-icon left dark>
+                  {{ subtitle.icon }}
+                </v-icon>
+                {{ subtitle.subtitle }}
+              </v-list-item-title>
+            </v-list-item>
+          </v-list>
+        </v-menu>
       </v-toolbar-items>
 
       <span class="hidden-sm-and-up">
@@ -57,9 +87,22 @@ export default {
     return {
       sidebar: false,
       menuItems: [
-        { title: 'Resources', path: '/resources', icon: 'mdi-earth' },
-        { title: 'Cities', path: '/cities', icon: 'mdi-city' },
-        { title: 'Blue Dots', path: '/blue-dots', icon: 'mdi-dots-grid' }
+        {
+          title: 'Cities',
+          subtitles: [
+            { subtitle: 'Map', path: '/cities', icon: 'mdi-map' }
+            // { subtitle: 'Leaderboard', path: '/cities/leaderboard', icon: 'mdi-trophy' }
+          ],
+          icon: 'mdi-city'
+        },
+        {
+          title: 'Resources',
+          subtitles: [
+            { subtitle: 'Map', path: '/resources', icon: 'mdi-map' },
+            { subtitle: 'Blue Dots', path: '/blue-dots', icon: 'mdi-dots-grid' }
+          ],
+          icon: 'mdi-earth'
+        }
       ]
     }
   }
