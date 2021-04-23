@@ -173,7 +173,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .gold {
   /*background:linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);*/
   background: #BF953F;  /* fallback for old browsers */
@@ -192,8 +192,6 @@ export default {
 }
 .top-leaders{
   border: 1px solid white;
-}
-.btn-cls{
-  background: #0a6ebd !important;
+  justify-content: center !important;
 }
 </style>
