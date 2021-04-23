@@ -7,15 +7,35 @@
     >
       <v-list>
         <v-list-item
+          to="/"
+        >
+          <v-list-item-icon>
+            <v-icon>mdi-home</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-title>Home</v-list-item-title>
+        </v-list-item>
+        <v-list-group
           v-for="item in menuItems"
           :key="item.title"
-          :to="item.path"
+          :prepend-icon="item.icon"
         >
-          <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>{{ item.title }}</v-list-item-content>
-        </v-list-item>
+          <template v-slot:activator>
+            <v-list-item-title>{{ item.title }}</v-list-item-title>
+          </template>
+          <v-list-item
+            v-for="(subtitle, i) in item.subtitles"
+            :key="i"
+            :to="subtitle.path"
+            link
+          >
+            <v-list-item-title v-text="subtitle.subtitle" />
+
+            <v-list-item-icon>
+              <v-icon v-text="subtitle.icon" />
+            </v-list-item-icon>
+          </v-list-item>
+        </v-list-group>
       </v-list>
     </v-navigation-drawer>
 
@@ -90,8 +110,8 @@ export default {
         {
           title: 'Cities',
           subtitles: [
-            { subtitle: 'Map', path: '/cities', icon: 'mdi-map' }
-            // { subtitle: 'Leaderboard', path: '/cities/leaderboard', icon: 'mdi-trophy' }
+            { subtitle: 'Map', path: '/cities', icon: 'mdi-map' },
+            { subtitle: 'Leaderboard', path: '/leaderboard', icon: 'mdi-trophy' }
           ],
           icon: 'mdi-city'
         },

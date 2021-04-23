@@ -17,6 +17,7 @@
     "@nuxtjs/toast": "^3.3.1",
     "@turf/centroid": "^6.3.0",
     "@turf/turf": "^6.3.0",
+    "animejs": "^3.2.1",
     "apexcharts": "^3.25.0",
     "core-js": "^3.6.5",
     "diff-match-patch": "^1.0.5",
