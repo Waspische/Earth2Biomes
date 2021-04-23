@@ -19,7 +19,6 @@
           Last updated on {{ $moment(city.lastUpdated).local().format("ddd, MMMM Do YYYY, hh:mm") }}
         </v-card-text>
       </v-card>
-
       <v-row>
         <v-col
           cols="12"
@@ -143,6 +142,32 @@
         Contact Wasp#1975 on discord to get your city info. For live example, check <strong><a class="text" href="https://earth2biomes.com/cities/b97d56b3-ff4d-4fab-83eb-a0f614fa9bf6">Sea Lions Colony</a></strong>
       </v-alert>
       <v-row>
+        <v-col v-if="city.validated" cols="12" md="12">
+          <v-card>
+            <v-card-title>Properties for sale</v-card-title>
+            <v-data-table
+              :headers="propertiesForSaleHeaders"
+              :items="propertiesForSale"
+              :items-per-page="10"
+            >
+              <template v-slot:item.discount="{ item }">
+                <span :class="discountColor(getDiscount(item))">{{ item.discount | formatNumber }}%</span>
+              </template>
+              <template v-slot:item.buy="{ item }">
+                <v-btn
+                  small
+                  color="primary darken-1"
+                  min-width="0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  :href="item.propertyUrl"
+                >
+                  Buy
+                </v-btn>
+              </template>
+            </v-data-table>
+          </v-card>
+        </v-col>
         <v-col
           cols="12"
           md="6"
@@ -253,7 +278,7 @@ export default {
   components: { apexchart: chart },
   filters: {
     formatNumber (number) {
-      return new Intl.NumberFormat().format(number)
+      return new Intl.NumberFormat().format(Math.trunc(number))
     }
   },
   data () {
@@ -359,12 +384,55 @@ export default {
           text: 'Loading...'
         }
       },
-      top10Players: []
+      top10Players: [],
+      propertiesForSale: [],
+      propertiesForSaleHeaders: [
+        {
+          text: 'Description',
+          align: 'start',
+          value: 'description',
+          width: '40%'
+        },
+        {
+          text: 'Tile count',
+          value: 'tileCount',
+          width: '10%'
+        },
+        {
+          text: 'New land price',
+          value: 'newLandPrice',
+          width: '15%'
+        },
+        {
+          text: 'Price',
+          value: 'price',
+          width: '10%'
+        },
+        {
+          text: 'Discount',
+          value: 'discount',
+          width: '15%'
+        },
+        {
+          text: 'Class',
+          value: 'tileClass',
+          width: '5%'
+        },
+        {
+          text: '',
+          value: 'buy',
+          sortable: false,
+          width: '5%'
+        }
+      ]
     }
   },
   computed: {
     hasData () {
       return this.tilesSoldLastNumber !== ''
+    },
+    hasPropertiesForSale () {
+      return this.propertiesForSale && this.propertiesForSale.length === 0
     }
   },
   created () {
@@ -430,6 +498,15 @@ export default {
         this.playersLastNumber = response.playerNumberData[response.playerNumberData.length - 1].y
         this.classSeries = response.classDistributionFrom1to5
         this.top10Players = response.top10Players
+        this.propertiesForSale = (response.propertiesForSale ? response.propertiesForSale : [])
+          .map((prop) => {
+            return {
+              ...prop,
+              discount: this.getDiscount(prop),
+              newLandPrice: this.getNewLandPrice(prop),
+              propertyUrl: 'https://app.earth2.io/#thegrid/' + prop.propertyId
+            }
+          })
       } catch (error) {
         this.error = true
       }
@@ -447,6 +524,24 @@ export default {
     },
     playerLink (player) {
       return 'https://app.earth2.io/#profile/' + player.playerId
+    },
+    getDiscount (property) {
+      const discount = (((property.tradingValue * property.tileCount) - property.price) / (property.tradingValue * property.tileCount)) * 100 * -1
+      return this.toFixed(discount, 2)
+    },
+    getNewLandPrice (property) {
+      return this.toFixed(property.tradingValue * property.tileCount, 2)
+    },
+    discountColor (discount) {
+      let color = 'red--text'
+      if (discount <= 0) {
+        color = 'green--text'
+      }
+      return color
+    },
+    toFixed (num, fixed) {
+      const re = new RegExp('^-?\\d+(?:.\\d{0,' + (fixed || -1) + '})?')
+      return num.toString().match(re)[0]
     }
   },
   head () {

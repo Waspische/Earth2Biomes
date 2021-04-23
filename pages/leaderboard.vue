@@ -1,6 +1,76 @@
 <template>
   <v-container>
     <h1 class="text-h6 text-sm-h5 text-md-h4 text-lg-h3 text-center">
+      Featured Cities
+      <v-tooltip right>
+        <template v-slot:activator="{ on, attrs }">
+          <v-icon
+            v-bind="attrs"
+            v-on="on"
+          >
+            mdi-information-outline
+          </v-icon>
+        </template>
+        <div style="width: 150px">
+          Featured cities have their properties for sale listed
+        </div>
+      </v-tooltip>
+    </h1>
+    <v-row class="ma-4">
+      <v-col
+        cols="12"
+        md="3"
+        sm="4"
+      >
+        <v-card
+          class="pb-3"
+          color="grey darken-3"
+          height="100%"
+        >
+          <v-card-title>
+            <div class="single-line">
+              Your city here
+            </div>
+          </v-card-title>
+          <v-card-text class="triple-line pb-0">
+            <b>Contact me on discord to promote your city! Wasp#1975</b>
+          </v-card-text>
+        </v-card>
+      </v-col>
+      <v-col
+        v-for="featuredCity in featured"
+        :key="featuredCity.id"
+        cols="12"
+        md="3"
+        sm="4"
+      >
+        <v-card
+          class="pb-3"
+          height="100%"
+          color="grey darken-3"
+          :to="{ name: 'cities-id', params: { id: featuredCity.id} }"
+        >
+          <v-card-title>
+            <div class="single-line">
+              {{ featuredCity.cityName }}
+            </div>
+          </v-card-title>
+          <v-card-text class="triple-line pb-0">
+            {{ featuredCity.description }}
+          </v-card-text>
+          <v-card-actions>
+            <v-btn
+              color="primary darken-1"
+              text
+              :to="{ name: 'cities-id', params: { id: featuredCity.id} }"
+            >
+              Discover
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-col>
+    </v-row>
+    <h1 class="text-h6 text-sm-h5 text-md-h4 text-lg-h3 text-center">
       Cities leaderboard
     </h1>
     <v-row justify="center" class="ma-4">
@@ -133,6 +203,7 @@ export default {
     }
   },
   data: () => ({
+    featured: [],
     cities: [],
     overlay: false,
     first: {
@@ -151,18 +222,24 @@ export default {
       tileNumberSold: 0
     }
   }),
-  created () {
-    this.getCities()
+  async created () {
+    this.overlay = true
+    await this.getCities()
+    await this.getFeaturedCities()
+    this.overlay = false
   },
   methods: {
     async getCities () {
-      this.overlay = true
       const response = await this.$axios.$get('/city-stats/leaderboard')
-      this.overlay = false
       this.cities = response.content
       this.first = this.cities.shift()
       this.second = this.cities.shift()
       this.third = this.cities.shift()
+    },
+    async getFeaturedCities () {
+      const response = await this.$axios.$get('/cities/validated')
+      this.featured = response
+      console.log(response)
     }
   },
   head () {
@@ -190,8 +267,26 @@ export default {
   background: -webkit-linear-gradient(to bottom, #f46b45, #eea849);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #f46b45, #eea849); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-.top-leaders{
+.top-leaders {
   border: 1px solid white;
   justify-content: center !important;
+}
+.triple-line {
+  /*line-height: 1.375rem;*/
+  /*height: 4.125rem;*/
+  /*overflow: hidden;*/
+  /*text-overflow: ellipsis;*/
+  /*width: 100%;*/
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.single-line {
+  white-space: nowrap ;
+  word-break: normal;
+  overflow: hidden ;
+  text-overflow: ellipsis;
 }
 </style>
