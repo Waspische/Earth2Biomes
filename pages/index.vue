@@ -25,10 +25,163 @@
     </div>
 
     <v-container fluid class="pa-0">
-      <v-sheet class="pb-6 px-md-12 px-4">
+      <v-sheet class="py-6 px-md-12 px-4">
         <v-row>
           <v-col cols="12" md="12">
-            <div class="text-center text-h6 text-sm-h5 text-md-h4 text-lg-h3 mt-8">
+            <div class="text-center text-h6 text-sm-h5 text-md-h4 text-lg-h3">
+              Main Features
+            </div>
+          </v-col>
+          <v-col cols="12" md="4" xs="12">
+            <div class="text-center">
+              <div class="text-h5">
+                Leaderboard
+              </div>
+              <div class="body-1 ma-4">
+                Ever wonder what was the biggest cities around Earth2? Find the answer now!
+              </div>
+              <v-btn
+                class="mt-4"
+                elevation="2"
+                color="primary darken-1"
+                large
+                to="/leaderboard"
+              >
+                <v-icon left dark>
+                  mdi-city
+                </v-icon>
+                Leaderboard
+              </v-btn>
+            </div>
+          </v-col>
+          <v-col cols="12" md="4" xs="12">
+            <div class="text-center">
+              <div class="text-h5">
+                Statistics
+              </div>
+              <div class="body-1 ma-4">
+                As a city owner, you may be interested in knowing if your city keep growing. You will find the size of the city, number of players and your best players.
+              </div>
+              <v-btn
+                class="mt-4"
+                elevation="2"
+                color="primary darken-1"
+                large
+                to="/cities"
+              >
+                <v-icon left dark>
+                  mdi-city
+                </v-icon>
+                City Map
+              </v-btn>
+            </div>
+          </v-col>
+
+          <v-col cols="12" md="4" xs="12">
+            <div class="text-center">
+              <div class="text-h5">
+                Properties for sale
+              </div>
+              <div class="body-1 ma-4">
+                As a player, you can check the offers on the marketplace located in the city you want.
+              </div>
+              <v-btn
+                class="mt-4"
+                elevation="2"
+                color="primary darken-1"
+                large
+                to="/cities"
+              >
+                <v-icon left dark>
+                  mdi-city
+                </v-icon>
+                Properties for sale
+              </v-btn>
+            </div>
+          </v-col>
+        </v-row>
+      </v-sheet>
+      <v-row justify="space-around" class="py-6 px-md-12 px-4">
+        <v-col cols="12" md="12">
+          <div class="text-center text-h6 text-sm-h5 text-md-h4 text-lg-h3">
+            Some stats
+          </div>
+        </v-col>
+        <v-col cols="12" md="4" xs="12">
+          <div class="text-center">
+            <div class="text-h5">
+              129
+            </div>
+            <div class="body-1 ma-4">
+              MegaCities available with their links to Earth2 location, website and Discord server
+            </div>
+
+            <v-btn
+              class="mt-4"
+              elevation="2"
+              color="primary darken-1"
+              large
+              to="/cities"
+            >
+              <v-icon left dark>
+                mdi-city
+              </v-icon>
+              City map
+            </v-btn>
+          </div>
+        </v-col>
+
+        <v-col cols="12" md="4" xs="12">
+          <div class="text-center">
+            <div class="text-h5">
+              > 10.000
+            </div>
+            <div class="body-1 ma-4">
+              Blue dots ! They appeared during less than 1 hour on earth2.io all over the map, representing data from the US Mineral Resource Data System
+            </div>
+
+            <v-btn
+              class="mt-4"
+              elevation="2"
+              color="primary darken-1"
+              large
+              to="/blue-dots"
+            >
+              <v-icon left dark>
+                mdi-dots-horizontal-circle
+              </v-icon>
+              Blue dots
+            </v-btn>
+          </div>
+        </v-col>
+
+        <v-col cols="12" md="4" xs="12">
+          <div class="text-center">
+            <div class="text-h5">
+              25
+            </div>
+            <div class="body-1 ma-4">
+              Resource types from different sources including the most mined minerals from Earth 1
+            </div>
+            <v-btn
+              class="mt-4"
+              elevation="2"
+              color="primary darken-1"
+              large
+              to="/resources"
+            >
+              <v-icon left dark>
+                mdi-dots-horizontal-circle
+              </v-icon>
+              Resources map
+            </v-btn>
+          </div>
+        </v-col>
+      </v-row>
+      <v-sheet class="py-6">
+        <v-row>
+          <v-col cols="12" md="12">
+            <div class="text-center text-h6 text-sm-h5 text-md-h4 text-lg-h3">
               Our Partners
             </div>
           </v-col>
@@ -108,84 +261,6 @@
           </v-col>
         </v-row>
       </v-sheet>
-      <v-row justify="space-around">
-        <v-col cols="12" md="12">
-          <div class="text-center text-h6 text-sm-h5 text-md-h4 text-lg-h3 mt-8">
-            Some stats
-          </div>
-        </v-col>
-        <v-col cols="12" md="6" xs="12">
-          <div class="text-center">
-            <div class="text-h5">
-              129
-            </div>
-            <div class="body-1 ma-4">
-              MegaCities available here with their links to Earth2 location, website and Discord server
-            </div>
-
-            <v-btn
-              class="mt-4"
-              elevation="2"
-              color="primary darken-1"
-              large
-              to="/cities"
-            >
-              <v-icon left dark>
-                mdi-city
-              </v-icon>
-              City map
-            </v-btn>
-          </div>
-        </v-col>
-
-        <v-col cols="12" md="6" xs="12">
-          <div class="text-center">
-            <div class="text-h5">
-              > 10.000
-            </div>
-            <div class="body-1 ma-4">
-              Blue dots ! They appeared during less than 1 hour on earth2.io all over the map, representing data from the US Mineral Resource Data System
-            </div>
-
-            <v-btn
-              class="mt-4"
-              elevation="2"
-              color="primary darken-1"
-              large
-              to="/blue-dots"
-            >
-              <v-icon left dark>
-                mdi-dots-horizontal-circle
-              </v-icon>
-              Blue dots
-            </v-btn>
-          </div>
-        </v-col>
-
-        <v-col cols="12" md="6" xs="12">
-          <div class="text-center">
-            <div class="text-h5">
-              25
-            </div>
-            <div class="body-1 ma-4">
-              Resource types from different sources including the most mined minerals from Earth 1
-            </div>
-            <v-btn
-              class="mt-4"
-              elevation="2"
-              color="primary darken-1"
-              large
-              to="/resources"
-            >
-              <v-icon left dark>
-                mdi-dots-horizontal-circle
-              </v-icon>
-              Resources map
-            </v-btn>
-          </div>
-        </v-col>
-      </v-row>
-      <v-divider class="ma-10" />
       <v-row class="my-4" justify="space-around">
         <v-col cols="12" md="5" xs="12">
           <div>

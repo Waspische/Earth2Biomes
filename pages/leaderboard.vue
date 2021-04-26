@@ -230,16 +230,24 @@ export default {
   },
   methods: {
     async getCities () {
-      const response = await this.$axios.$get('/city-stats/leaderboard')
-      this.cities = response.content
-      this.first = this.cities.shift()
-      this.second = this.cities.shift()
-      this.third = this.cities.shift()
+      try {
+        const response = await this.$axios.$get('/city-stats/leaderboard')
+        this.cities = response.content
+        this.first = this.cities.shift()
+        this.second = this.cities.shift()
+        this.third = this.cities.shift()
+      } catch (e) {
+        console.log(e)
+      }
     },
     async getFeaturedCities () {
-      const response = await this.$axios.$get('/cities/validated')
-      this.featured = response
-      console.log(response)
+      try {
+        const response = await this.$axios.$get('/cities/validated')
+        this.featured = response
+        console.log(response)
+      } catch (e) {
+        console.log(e)
+      }
     }
   },
   head () {
