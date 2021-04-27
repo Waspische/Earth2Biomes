@@ -142,7 +142,7 @@
         Contact Wasp#1975 on discord to get your city info. For live example, check <strong><a class="text" href="https://earth2biomes.com/cities/b97d56b3-ff4d-4fab-83eb-a0f614fa9bf6">Sea Lions Colony</a></strong>
       </v-alert>
       <v-row>
-        <v-col v-if="city.validated" cols="12" md="12">
+        <v-col cols="12" md="12">
           <v-card>
             <v-card-title>Properties for sale</v-card-title>
             <v-data-table

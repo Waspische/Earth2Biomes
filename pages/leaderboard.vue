@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <h1 class="text-h6 text-sm-h5 text-md-h4 text-lg-h3 text-center">
-      Featured Cities
+      Best City projects
       <v-tooltip right>
         <template v-slot:activator="{ on, attrs }">
           <v-icon
