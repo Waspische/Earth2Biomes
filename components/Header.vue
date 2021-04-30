@@ -44,7 +44,7 @@
         <router-link to="/" tag="span" style="cursor: pointer">
           Earth2 Biomes
           <div class="text-caption">
-            Referral code <strong>HABN6K6K3X</strong>
+            Referral code <strong>HABN6K6K3X</strong> / Wasp#1975
           </div>
         </router-link>
       </v-toolbar-title>

@@ -134,17 +134,15 @@
           </v-card>
         </v-col>
       </v-row>
-      <v-alert
-        v-if="!hasData"
-        type="warning"
-        class="mx-2 mt-4"
-      >
-        Contact Wasp#1975 on discord to get your city info. For live example, check <strong><a class="text" href="https://earth2biomes.com/cities/b97d56b3-ff4d-4fab-83eb-a0f614fa9bf6">Sea Lions Colony</a></strong>
-      </v-alert>
       <v-row>
         <v-col cols="12" md="12">
-          <v-card>
-            <v-card-title>Properties for sale</v-card-title>
+          <v-card class="mt-4">
+            <v-card-title class="pb-0">
+              Properties for sale
+            </v-card-title>
+            <v-card-text class="subtitle-2 text--secondary py-0 text-wrap">
+              Updated almost everyday
+            </v-card-text>
             <v-data-table
               :headers="propertiesForSaleHeaders"
               :items="propertiesForSale"

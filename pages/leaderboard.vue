@@ -2,19 +2,6 @@
   <v-container>
     <h1 class="text-h6 text-sm-h5 text-md-h4 text-lg-h3 text-center">
       Best City projects
-      <v-tooltip right>
-        <template v-slot:activator="{ on, attrs }">
-          <v-icon
-            v-bind="attrs"
-            v-on="on"
-          >
-            mdi-information-outline
-          </v-icon>
-        </template>
-        <div style="width: 150px">
-          Featured cities have their properties for sale listed
-        </div>
-      </v-tooltip>
     </h1>
     <v-row class="ma-4">
       <v-col
@@ -70,6 +57,15 @@
         </v-card>
       </v-col>
     </v-row>
+    <v-alert
+      type="info"
+      class="mx-6"
+    >
+      <p>
+        The algorithm calculate the size starting from the center tile of the city until the number of tiles sold reach a threshold.
+        That's why close cities can 'merge' and have a combined number of tiles with other cities. Tile plot far from the city may be ignored.
+      </p>
+    </v-alert>
     <h1 class="text-h6 text-sm-h5 text-md-h4 text-lg-h3 text-center">
       Cities leaderboard
     </h1>
@@ -175,12 +171,6 @@
         </v-card>
       </v-col>
     </v-row>
-    <p>
-      Tile number are calculated from the center tile of the city until the tiles sold are too low.
-    </p>
-    <p>
-      Also, close cities can merge and have a huge number of tiles. Tile plot far from the city may be ignored.
-    </p>
     <v-overlay
       :value="overlay"
       :opacity="0.7"

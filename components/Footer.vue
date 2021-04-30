@@ -18,7 +18,7 @@
         To submit an idea/bug, you can
         <a href="https://discord.gg/ZvU5Qvqrz6" target="_blank" rel="noopener noreferrer" @click="trackFooterClick('discord')">
           join us on discord
-        </a>
+        </a> / Wasp#1975
       </v-col>
     </v-row>
   </v-footer>
