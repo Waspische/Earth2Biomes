@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="43" height="46" viewBox="0 0 43 46">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        fill: #d8d072;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: #9f9738;
+      }
+
+      .cls-4 {
+        fill: #efebbc;
+      }
+
+      .cls-5 {
+        fill: #fffac1;
+      }
+
+      .cls-6 {
+        fill-opacity: 0.15;
+      }
+
+      .cls-7, .cls-8 {
+        fill: #fff;
+      }
+
+      .cls-7 {
+        opacity: 0.4;
+      }
+
+      .cls-8 {
+        opacity: 0.3;
+      }
+
+      .cls-9 {
+        opacity: 0.08;
+      }
+    </style>
+    <filter id="filter" filterUnits="userSpaceOnUse">
+      <feGaussianBlur result="blur" stdDeviation="3.333" in="SourceAlpha"/>
+      <feComposite result="composite"/>
+      <feComposite result="composite-2"/>
+      <feComposite result="composite-3"/>
+      <feFlood result="flood" flood-color="#fff" flood-opacity="0.5"/>
+      <feComposite result="composite-4" operator="in" in2="composite-3"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+      <feBlend result="blend-2" in="SourceGraphic"/>
+      <feGaussianBlur result="blur-2" stdDeviation="1.667" in="SourceAlpha"/>
+      <feFlood result="flood-2" flood-color="#fff" flood-opacity="0.29"/>
+      <feComposite result="composite-6" operator="out" in2="blur-2"/>
+      <feComposite result="composite-5" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend-3" in2="blend-2"/>
+      <feGaussianBlur result="blur-3" stdDeviation="2.449" in="SourceAlpha"/>
+      <feFlood result="flood-3" flood-color="#ffcd6b" flood-opacity="0.56"/>
+      <feComposite result="composite-7" operator="out" in2="blur-3"/>
+      <feOffset result="offset" dx="-5.657" dy="-5.657"/>
+      <feComposite result="composite-8" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend-4" in2="blend-3"/>
+    </filter>
+  </defs>
+  <g id="small-sandy-crystal" class="cls-1">
+    <g id="colour">
+      <path id="base_colour" data-name="base colour" class="cls-2" d="M18.522,8L9.013,24.3l9.415,7.313L20.7,33.378l5.942,4.616,8.349-20.585Z"/>
+      <path id="darker" class="cls-3" d="M9.013,24.3l17.631,13.7,8.349-20.585Z"/>
+      <path id="lighter" class="cls-4" d="M18.522,8L9.013,24.3l17.631,13.7L22.235,21.71Z"/>
+      <path id="lightest" class="cls-5" d="M18.522,8L9.013,24.3,22,20.853Z"/>
+    </g>
+    <g id="shine">
+      <path id="dark_gleam" data-name="dark gleam" class="cls-6" d="M22,21H33l-3,9Z"/>
+      <path id="top_shine" data-name="top shine" class="cls-7" d="M17,10s-6.533,12.579,0,11c4.365-1.055,3-8,3-8s1.588,5.949,3,6c1.168,0.042,5,0,5,0s-4.43,1.106-5,2,1,5,1,5-1.5-4.471-5-4S9,24,9,24Z"/>
+      <path id="smaller_top_glean" data-name="smaller top glean" class="cls-8" d="M23,11s1.486,2.48,1,4-1,4-1,4a5.185,5.185,0,0,1,4-3,9.2,9.2,0,0,1,5,0Z"/>
+      <path id="bottom_left_swirl_gleam" data-name="bottom left swirl gleam" class="cls-9" d="M10,25a16.525,16.525,0,0,1,8,0c4.881,1.039,5,7,5,7s-2.716-6.084-5-4,4,6,4,6Z"/>
+    </g>
+  </g>
+</svg>
