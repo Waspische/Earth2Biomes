@@ -336,16 +336,7 @@ export default {
         { text: '', value: 'detail', sortable: false }
       ],
       cities: [],
-      citiesDialog: false,
-      groups: [],
       search: '',
-      editedCity: {
-        cityName: '',
-        url: '',
-        discord: '',
-        website: '',
-        description: ''
-      },
       accessToken: 'pk.eyJ1Ijoid2FzcGlzY2hlIiwiYSI6ImNrazBidGRsNzBmdmIyeHJyYThjZG0wYzYifQ.qZQp-6ddFiyakTvvyCv8Gw', // your access token. Needed if you using Mapbox maps
       mapStyle: 'mapbox://styles/mapbox/dark-v10',
       dialog: false,

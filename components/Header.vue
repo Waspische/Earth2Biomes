@@ -15,15 +15,15 @@
 
           <v-list-item-title>Home</v-list-item-title>
         </v-list-item>
-        <v-list-item
-          to="/jewels"
-        >
-          <v-list-item-icon>
-            <v-icon>mdi-home</v-icon>
-          </v-list-item-icon>
+        <!--        <v-list-item-->
+        <!--          to="/holobuildings"-->
+        <!--        >-->
+        <!--          <v-list-item-icon>-->
+        <!--            <v-icon>mdi-hospital-building</v-icon>-->
+        <!--          </v-list-item-icon>-->
 
-          <v-list-item-title>Jewels</v-list-item-title>
-        </v-list-item>
+        <!--          <v-list-item-title>HoloBuildings</v-list-item-title>-->
+        <!--        </v-list-item>-->
         <v-list-group
           v-for="item in menuItems"
           :key="item.title"
@@ -68,15 +68,15 @@
           </v-icon>
           Home
         </v-btn>
-        <v-btn
-          text
-          to="/jewels"
-        >
-          <v-icon left dark>
-            mdi-diamond-stone
-          </v-icon>
-          Jewels
-        </v-btn>
+        <!--        <v-btn-->
+        <!--          text-->
+        <!--          to="/holobuildings"-->
+        <!--        >-->
+        <!--          <v-icon left dark>-->
+        <!--            mdi-hospital-building-->
+        <!--          </v-icon>-->
+        <!--          HoloBuildings-->
+        <!--        </v-btn>-->
         <v-menu
           v-for="item in menuItems"
           :key="item.title"

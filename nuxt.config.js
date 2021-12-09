@@ -20,7 +20,8 @@ export default {
   publicRuntimeConfig: {
     baseUrl: process.env.NODE_ENV === 'prod' ? 'https://earth2biomes.com' : 'http://localhost:3000',
     axios: {
-      baseURL: process.env.NODE_ENV === 'prod' ? 'https://earth-2-biomes.herokuapp.com/api/public' : 'http://localhost:8080/api/public'
+      // baseURL: process.env.NODE_ENV === 'prod' ? 'https://earth-2-biomes.herokuapp.com/api/public' : 'http://localhost:8080/api/public'
+      baseURL: process.env.NODE_ENV === 'prod' ? 'https://earth-2-biomes.herokuapp.com/api/public' : 'https://earth-2-biomes.herokuapp.com/api/public'
     }
   },
 
@@ -77,8 +78,11 @@ export default {
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
     '@nuxtjs/moment'
-
   ],
+
+  eslint: {
+    fix: true
+  },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
