@@ -33,160 +33,162 @@
           id="cities-dialog-btn"
           color="primary darken-1"
           v-bind="attrs"
-          v-on="on"
           class="ml-4 mt-4 v-btn--example"
           elevation="2"
           large
           rounded
           absolute
           bottom
+          v-on="on"
         >
           Check analysis results
         </v-btn>
-<!--        <v-btn-->
-<!--          id="cities-dialog-btn"-->
-<!--          color="primary darken-1"-->
-<!--          v-bind="attrs"-->
-<!--          v-on="on"-->
-<!--          class="ml-4 mt-4 v-btn&#45;&#45;example"-->
-<!--          elevation="2"-->
-<!--          large-->
-<!--          rounded-->
-<!--          absolute-->
-<!--          bottom-->
-<!--        >-->
-<!--          Share your jewels location-->
-<!--        </v-btn>-->
+        <!--        <v-btn-->
+        <!--          id="cities-dialog-btn"-->
+        <!--          color="primary darken-1"-->
+        <!--          v-bind="attrs"-->
+        <!--          v-on="on"-->
+        <!--          class="ml-4 mt-4 v-btn&#45;&#45;example"-->
+        <!--          elevation="2"-->
+        <!--          large-->
+        <!--          rounded-->
+        <!--          absolute-->
+        <!--          bottom-->
+        <!--        >-->
+        <!--          Share your jewels location-->
+        <!--        </v-btn>-->
       </template>
-        <v-card>
-          <v-card-title>
-            <span class="headline">Check analysis results</span>
-<!--            <span class="headline">Share your jewels location</span>-->
-          </v-card-title>
+      <v-card>
+        <v-card-title>
+          <span class="headline">Check analysis results</span>
+          <!--            <span class="headline">Share your jewels location</span>-->
+        </v-card-title>
 
-          <v-card-text>
-            <v-row dense>
-              <v-col
-                cols="12"
-                sm="12"
-                md="12"
-              >
-                The goal is to discover if there are some factors in the location of jewels spawn. Thanks for participating to the experience.
-              </v-col>
-<!--              <v-col-->
-<!--                cols="12"-->
-<!--                sm="12"-->
-<!--                md="12"-->
-<!--              >-->
-<!--                Click-->
-<!--                <a-->
-<!--                  target="_blank"-->
-<!--                  rel="noopener noreferrer"-->
-<!--                  href="https://app.earth2.io/api/v2/my/jewels/?color=&expires__isnull=true&limit=100&offset=0">-->
-<!--                this link-->
-<!--              </a> and copy paste the result in discord to Wasp#1975. Their is no personal data here, just jewels locations.<b>It might be a too long message on mobile</b>-->
-<!--              </v-col>-->
-              <v-col
-                cols="12"
-                sm="12"
-                md="12"
-              >
-                Results are available
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://docs.google.com/spreadsheets/d/1_6E-gurgFdfW-Cd7sJ6F6AdYqis2LNyFe2xVK8rMNhY/edit#gid=43920489">
-                   here
-                </a>
-              </v-col>
-              <v-col
-                cols="12"
-                sm="12"
-                md="12"
-              >
-                <p>Thanks to :</p>
-                <span
-                  v-for="name in names"
-                  :key="name">
-                      {{name}},
-                </span>
-              </v-col>
-<!--                  <v-col-->
-<!--                    cols="12"-->
-<!--                    sm="12"-->
-<!--                    md="12"-->
-<!--                  >-->
-<!--                    <v-text-field-->
-<!--                      v-model="editedJewelLocation.profileId"-->
-<!--                      label="Profile Id"-->
-<!--                    />-->
-<!--                  </v-col>-->
-<!--                  <v-col-->
-<!--                    cols="12"-->
-<!--                    sm="12"-->
-<!--                    md="12"-->
-<!--                  >-->
-<!--                    <v-textarea-->
-<!--                      v-model="editedJewelLocation.jewels"-->
-<!--                      label="Description"-->
-<!--                    />-->
-<!--                  </v-col>-->
-            </v-row>
-          </v-card-text>
-
-          <v-card-actions>
-            <v-spacer />
-            <v-btn
-              color="blue darken-1"
-              text
-              @click="close"
+        <v-card-text>
+          <v-row dense>
+            <v-col
+              cols="12"
+              sm="12"
+              md="12"
             >
-              Close
-            </v-btn>
-<!--                <v-btn-->
-<!--                  color="primary"-->
-<!--                  text-->
-<!--                  @click="save"-->
-<!--                >-->
-<!--                  Save-->
-<!--                </v-btn>-->
-          </v-card-actions>
-        </v-card>
+              The goal is to discover if there are some factors in the location of jewels spawn. Thanks for participating to the experience.
+            </v-col>
+            <!--              <v-col-->
+            <!--                cols="12"-->
+            <!--                sm="12"-->
+            <!--                md="12"-->
+            <!--              >-->
+            <!--                Click-->
+            <!--                <a-->
+            <!--                  target="_blank"-->
+            <!--                  rel="noopener noreferrer"-->
+            <!--                  href="https://app.earth2.io/api/v2/my/jewels/?color=&expires__isnull=true&limit=100&offset=0">-->
+            <!--                this link-->
+            <!--              </a> and copy paste the result in discord to Wasp#1975. Their is no personal data here, just jewels locations.<b>It might be a too long message on mobile</b>-->
+            <!--              </v-col>-->
+            <v-col
+              cols="12"
+              sm="12"
+              md="12"
+            >
+              Results are available
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://docs.google.com/spreadsheets/d/1_6E-gurgFdfW-Cd7sJ6F6AdYqis2LNyFe2xVK8rMNhY/edit#gid=43920489"
+              >
+                here
+              </a>
+            </v-col>
+            <v-col
+              cols="12"
+              sm="12"
+              md="12"
+            >
+              <p>Thanks to :</p>
+              <span
+                v-for="name in names"
+                :key="name"
+              >
+                {{ name }},
+              </span>
+            </v-col>
+            <!--                  <v-col-->
+            <!--                    cols="12"-->
+            <!--                    sm="12"-->
+            <!--                    md="12"-->
+            <!--                  >-->
+            <!--                    <v-text-field-->
+            <!--                      v-model="editedJewelLocation.profileId"-->
+            <!--                      label="Profile Id"-->
+            <!--                    />-->
+            <!--                  </v-col>-->
+            <!--                  <v-col-->
+            <!--                    cols="12"-->
+            <!--                    sm="12"-->
+            <!--                    md="12"-->
+            <!--                  >-->
+            <!--                    <v-textarea-->
+            <!--                      v-model="editedJewelLocation.jewels"-->
+            <!--                      label="Description"-->
+            <!--                    />-->
+            <!--                  </v-col>-->
+          </v-row>
+        </v-card-text>
+
+        <v-card-actions>
+          <v-spacer />
+          <v-btn
+            color="blue darken-1"
+            text
+            @click="close"
+          >
+            Close
+          </v-btn>
+          <!--                <v-btn-->
+          <!--                  color="primary"-->
+          <!--                  text-->
+          <!--                  @click="save"-->
+          <!--                >-->
+          <!--                  Save-->
+          <!--                </v-btn>-->
+        </v-card-actions>
+      </v-card>
     </v-dialog>
-<!--    <v-navigation-drawer-->
-<!--      id="features"-->
-<!--      v-model="drawer"-->
-<!--      :mini-variant.sync="mini"-->
-<!--      permanent-->
-<!--      width="400"-->
-<!--      class="rounded ml-4 mt-4"-->
-<!--    >-->
-<!--      <v-list-item class="px-2">-->
-<!--        <v-list-item-avatar>-->
-<!--          <v-btn-->
-<!--            icon-->
-<!--            @click.stop="mini = !mini"-->
-<!--          >-->
-<!--            <v-icon>mdi-menu</v-icon>-->
-<!--          </v-btn>-->
-<!--        </v-list-item-avatar>-->
-<!--        <v-list-item-title>Mines</v-list-item-title>-->
-<!--        <v-btn-->
-<!--          icon-->
-<!--          @click.stop="mini = !mini"-->
-<!--        >-->
-<!--          <v-icon>mdi-chevron-left</v-icon>-->
-<!--        </v-btn>-->
-<!--      </v-list-item>-->
-<!--      <v-divider />-->
-<!--      <v-list dense>-->
-<!--        <v-list-item-->
-<!--          v-for="name in names"-->
-<!--          :key="name">-->
-<!--          {{name}}-->
-<!--        </v-list-item>-->
-<!--      </v-list>-->
-<!--    </v-navigation-drawer>-->
+    <!--    <v-navigation-drawer-->
+    <!--      id="features"-->
+    <!--      v-model="drawer"-->
+    <!--      :mini-variant.sync="mini"-->
+    <!--      permanent-->
+    <!--      width="400"-->
+    <!--      class="rounded ml-4 mt-4"-->
+    <!--    >-->
+    <!--      <v-list-item class="px-2">-->
+    <!--        <v-list-item-avatar>-->
+    <!--          <v-btn-->
+    <!--            icon-->
+    <!--            @click.stop="mini = !mini"-->
+    <!--          >-->
+    <!--            <v-icon>mdi-menu</v-icon>-->
+    <!--          </v-btn>-->
+    <!--        </v-list-item-avatar>-->
+    <!--        <v-list-item-title>Mines</v-list-item-title>-->
+    <!--        <v-btn-->
+    <!--          icon-->
+    <!--          @click.stop="mini = !mini"-->
+    <!--        >-->
+    <!--          <v-icon>mdi-chevron-left</v-icon>-->
+    <!--        </v-btn>-->
+    <!--      </v-list-item>-->
+    <!--      <v-divider />-->
+    <!--      <v-list dense>-->
+    <!--        <v-list-item-->
+    <!--          v-for="name in names"-->
+    <!--          :key="name">-->
+    <!--          {{name}}-->
+    <!--        </v-list-item>-->
+    <!--      </v-list>-->
+    <!--    </v-navigation-drawer>-->
     <v-row
       id="map-wrapper"
       fluid
@@ -219,7 +221,7 @@ export default {
       timeout: 5000,
       editedJewelLocation: {
         profileId: '',
-        jewels: '',
+        jewels: ''
       },
       jewels: [],
       names: [],
@@ -303,44 +305,43 @@ export default {
     const data = await fetch(
       './data/jewels.json'
     ).then(res => res.json())
-    this.names = data.results.filter(jewel => {
+    this.names = data.results.filter((jewel) => {
       return !!jewel.name
     }).map(jewel => jewel.name)
   },
   methods: {
-    loadImages (){
+    loadImages () {
       const vm = this
 
-      return this.jewelsTypes.map( icon => {
+      return this.jewelsTypes.map((icon) => {
       // return a promise per icon
-      return new Promise(function(resolve,reject){
+        return new Promise(function (resolve, reject) {
         // load the image
-        vm.map.loadImage(require('../../assets/' + icon.file), function(error,data){
+          vm.map.loadImage(require('../../assets/' + icon.file), function (error, data) {
           // if error reject the promise
-          if (error){
-            console.log(`Error with ${icon.name}`);
-            console.error(error);
-            reject(error);
-          } else {
+            if (error) {
+              console.log(`Error with ${icon.name}`)
+              console.error(error)
+              reject(error)
+            } else {
             // return the data in the icon
-            resolve([icon, data]);
-          }
-        });
-      });
-    });
-
+              resolve([icon, data])
+            }
+          })
+        })
+      })
     },
     onMapLoad (event) {
       const vm = this
 
       Promise
         .all(this.loadImages())
-        .then(icons => {
+        .then((icons) => {
           // Add the icons to the map
-          icons.forEach( icon_data => {
-            var icon = icon_data[0];
-            var data = icon_data[1];
-            vm.map.addImage(icon.name, data);
+          icons.forEach((iconData) => {
+            const icon = iconData[0]
+            const data = iconData[1]
+            vm.map.addImage(icon.name, data)
           })
           // Check if images are ready
           console.log(icons.map(icon => vm.map.hasImage(icon[0].name)))
@@ -360,8 +361,7 @@ export default {
 
           // initialize data
           vm.jewels = vm.getJewels()
-        });
-
+        })
     },
     async getJewels () {
       // const data = await this.$axios.$get('/cities?size=1000') // todo update back

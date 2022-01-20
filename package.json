@@ -21,6 +21,7 @@
     "apexcharts": "^3.25.0",
     "core-js": "^3.6.5",
     "diff-match-patch": "^1.0.5",
+    "fibers": "^5.0.0",
     "highlight.js": "^10.6.0",
     "mapbox-gl": "^2.0.1",
     "nuxt": "^2.14.6",
@@ -39,7 +40,9 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^7.10.0",
     "eslint-plugin-nuxt": "^1.0.0",
+    "node-sass": "^7.0.1",
     "postcss": "^7",
+    "sass-loader": "^8.0.2",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }
 }
