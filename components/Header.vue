@@ -29,7 +29,7 @@
           :key="item.title"
           :prepend-icon="item.icon"
         >
-          <template v-slot:activator>
+          <template #activator>
             <v-list-item-title>{{ item.title }}</v-list-item-title>
           </template>
           <v-list-item
@@ -53,7 +53,7 @@
         <router-link to="/" tag="span" style="cursor: pointer">
           Earth2 Biomes
           <div class="text-caption">
-            Referral code <strong>HABN6K6K3X</strong> / Wasp#1975
+            Referral code <strong>wasp</strong> / Wasp#1975
           </div>
         </router-link>
       </v-toolbar-title>
@@ -82,7 +82,7 @@
           :key="item.title"
           offset-y
         >
-          <template v-slot:activator="{ on, attrs }">
+          <template #activator="{ on, attrs }">
             <v-btn
               text
               v-bind="attrs"

@@ -1,13 +1,11 @@
+import colors from 'vuetify/es5/util/colors'
+
 export default {
-  // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
+  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
-  // Target (https://go.nuxtjs.dev/config-target)
+  // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-
-  // server: {
-  //   port: 8000 // default: 3000
-  // },
 
   generate: {
     fallback: true
@@ -25,7 +23,7 @@ export default {
     }
   },
 
-  // Global page headers (https://go.nuxtjs.dev/config-head)
+  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s - Earth2Biomes',
     script: [
@@ -58,20 +56,20 @@ export default {
     ]
   },
 
-  // Global CSS (https://go.nuxtjs.dev/config-css)
+  // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
 
-  // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
+  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~plugins/vue2clipboard.js',
     '@/plugins/GoogleAnalytics'
   ],
 
-  // Auto import components (https://go.nuxtjs.dev/config-components)
+  // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
-  // Modules for dev and dist (recommended) (https://go.nuxtjs.dev/config-modules)
+  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
@@ -84,7 +82,7 @@ export default {
     fix: true
   },
 
-  // Modules (https://go.nuxtjs.dev/config-modules)
+  // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
@@ -96,10 +94,10 @@ export default {
     duration: 3000
   },
 
-  // Axios module configuration (https://go.nuxtjs.dev/config-axios)
+
+  // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    // baseURL: process.env.publicApiUrl
-    // fallback if no runtime config
+    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: 'http://localhost:8080/api/public'
   },
 
@@ -107,9 +105,8 @@ export default {
     jit: true
   },
 
-  // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
+  // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
-    customVariables: ['~/assets/variables.scss'],
     treeShake: true,
     theme: {
       options: {
@@ -128,5 +125,9 @@ export default {
         }
       }
     }
+  },
+
+  // Build Configuration: https://go.nuxtjs.dev/config-build
+  build: {
   }
 }

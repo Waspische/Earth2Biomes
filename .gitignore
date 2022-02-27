@@ -62,16 +62,16 @@ typings/
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 
-# next.js dist output
+# next.js build output
 .next
 
-# nuxt.js dist output
+# nuxt.js build output
 .nuxt
 
 # Nuxt generate
-dist/
+dist
 
-# vuepress dist output
+# vuepress build output
 .vuepress/dist
 
 # Serverless directories

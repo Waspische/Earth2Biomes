@@ -261,6 +261,17 @@
           </v-col>
         </v-row>
       </v-sheet>
+      <v-row class="my-4">
+        <v-col cols="8" class="mx-auto">
+          <div class="text-h5">
+            Do you appreciate the content here ?
+          </div>
+          <div class="text-subtitle-1">
+            Support me using the code <span class="primary--text font-weight-bold"> wasp</span> when buying tiles and get a 7,5% discount in game
+          </div>
+        </v-col>
+      </v-row>
+      <v-divider class="ma-10" />
       <v-row class="my-4" justify="space-around">
         <v-col cols="12" md="5" xs="12">
           <div>
@@ -307,18 +318,6 @@
             <div class="body-1 text-justify">
               Megacities are where communities bought their tiles together to construct a common project. They often have a long term vision of the game and therefore are good places to invest as their value should keep increasing over and over. It's also a good way to meet and join new people and construct your Earth2 network.
             </div>
-          </div>
-        </v-col>
-      </v-row>
-
-      <v-divider class="ma-10" />
-      <v-row class="my-4">
-        <v-col cols="8" class="mx-auto">
-          <div class="text-h5">
-            Do you appreciate the content here ?
-          </div>
-          <div class="text-subtitle-1">
-            Support me using the code <span class="primary--text font-weight-bold"> HABN6K6K3X</span> when buying tiles and get a 5% discount in game
           </div>
         </v-col>
       </v-row>
