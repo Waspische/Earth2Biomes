@@ -46,7 +46,7 @@
           no-action
           class="mt-0"
         >
-          <template v-slot:activator>
+          <template #activator>
             <v-list-item-content>
               <v-list-item-title>{{ category.name }}</v-list-item-title>
             </v-list-item-content>
@@ -395,6 +395,7 @@ export default {
         ]
       },
       depositsTypes: [],
+      // accessToken: 'pk.eyJ1IjoiZXYyIiwiYSI6ImNreWswbDhzeDJybXoydnA4d2FkOWxmZHUifQ.pqDhpAd5BoDq0fAcWEYPDg', // your access token. Needed if you using Mapbox maps
       accessToken: 'pk.eyJ1Ijoid2FzcGlzY2hlIiwiYSI6ImNrazBidGRsNzBmdmIyeHJyYThjZG0wYzYifQ.qZQp-6ddFiyakTvvyCv8Gw', // your access token. Needed if you using Mapbox maps
       mapStyle: 'mapbox://styles/mapbox/light-v10',
       landuseLocation: {
@@ -408,6 +409,11 @@ export default {
           'circle-opacity': 0.6
         }
       }
+    }
+  },
+  head () {
+    return {
+      title: 'Resources'
     }
   },
   computed: {
@@ -434,6 +440,8 @@ export default {
     this.depositsTypes = await fetch(
       './data/mines/' + this.selectedSource + '_depositsTypes.json'
     ).then(res => res.json())
+
+    window.map = this.map
   },
   methods: {
     onMapLoad (event) {
@@ -542,11 +550,6 @@ export default {
         event_category: 'biome',
         event_label: landuse.key
       })
-    }
-  },
-  head () {
-    return {
-      title: 'Resources'
     }
   }
 

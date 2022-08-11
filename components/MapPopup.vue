@@ -30,7 +30,7 @@
         v-if="type === 'urban'"
         class="pb-1 text-center"
       >
-        Click for details
+        {{ $t('cities.mapDetails') }}
       </v-card-text>
       <v-card-actions
         v-if="type === 'quarry' || type === 'well'"

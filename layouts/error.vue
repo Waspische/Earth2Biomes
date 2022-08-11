@@ -27,6 +27,13 @@ export default {
       otherError: 'Please do not try anything suspicious'
     }
   },
+  head () {
+    const title =
+      this.error.statusCode === 404 ? this.pageNotFound : this.otherError
+    return {
+      title
+    }
+  },
   mounted () {
     const pathSegmentsToKeep = 0
 
@@ -38,13 +45,6 @@ export default {
       (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
       l.hash
     )
-  },
-  head () {
-    const title =
-      this.error.statusCode === 404 ? this.pageNotFound : this.otherError
-    return {
-      title
-    }
   }
 }
 </script>

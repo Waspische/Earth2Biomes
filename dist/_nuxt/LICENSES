@@ -1,23 +1,4 @@
 /*!
-  * vue-router v3.5.3
-  * (c) 2021 Evan You
-  * @license MIT
-  */
-
-/*!
- * Vue.js v2.6.14
- * (c) 2014-2021 Evan You
- * Released under the MIT License.
- */
-
-/*!
- * vuex v3.6.2
- * (c) 2021 Evan You
- * @license MIT
- */
-
-
-/*!
  * clipboard.js v2.0.10
  * https://clipboardjs.com/
  *
@@ -40,7 +21,7 @@
 
 
 /*!
- * ApexCharts v3.33.1
+ * ApexCharts v3.33.2
  * (c) 2018-2022 ApexCharts
  * Released under the MIT License.
  */
@@ -52,3 +33,22 @@
 /*! svg.filter.js - v2.0.2 - 2016-02-24
   * https://github.com/wout/svg.filter.js
   * Copyright (c) 2016 Wout Fierens; Licensed MIT */
+
+
+/*!
+  * vue-router v3.5.3
+  * (c) 2021 Evan You
+  * @license MIT
+  */
+
+/*!
+ * Vue.js v2.6.14
+ * (c) 2014-2021 Evan You
+ * Released under the MIT License.
+ */
+
+/*!
+ * vuex v3.6.2
+ * (c) 2021 Evan You
+ * @license MIT
+ */

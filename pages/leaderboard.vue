@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <h1 class="text-h6 text-sm-h5 text-md-h4 text-lg-h3 text-center">
-      Best City projects
+      {{ $t('leaderboard.title') }}
     </h1>
     <v-row class="ma-4">
       <v-col
@@ -16,11 +16,11 @@
         >
           <v-card-title>
             <div class="single-line">
-              Your city here
+              {{ $t('leaderboard.yourCity') }}
             </div>
           </v-card-title>
           <v-card-text class="triple-line pb-0">
-            <b>Contact me on discord to promote your city! Wasp#1975</b>
+            <b>{{ $t('leaderboard.contactMessage') }}</b>
           </v-card-text>
         </v-card>
       </v-col>
@@ -35,7 +35,7 @@
           class="pb-3"
           height="100%"
           color="grey darken-3"
-          :to="{ name: 'cities-id', params: { id: featuredCity.id} }"
+          :to="localePath({ name: 'cities-id', params: { id: featuredCity.id} })"
         >
           <v-card-title>
             <div class="single-line">
@@ -49,9 +49,9 @@
             <v-btn
               color="primary darken-1"
               text
-              :to="{ name: 'cities-id', params: { id: featuredCity.id} }"
+              :to="localePath({ name: 'cities-id', params: { id: featuredCity.id} })"
             >
-              Discover
+              {{ $t('leaderboard.discoverButton') }}
             </v-btn>
           </v-card-actions>
         </v-card>
@@ -62,19 +62,18 @@
       class="mx-6"
     >
       <p>
-        The algorithm calculate the size starting from the center tile of the city until the number of tiles sold reach a threshold.
-        That's why close cities can 'merge' and have a combined number of tiles with other cities. Tile plot far from the city may be ignored.
+        {{ $t('leaderboard.algorithmMessage') }}
       </p>
     </v-alert>
     <h1 class="text-h6 text-sm-h5 text-md-h4 text-lg-h3 text-center">
-      Cities leaderboard
+      {{ $t('leaderboard.leaderboardTitle') }}
     </h1>
     <v-row justify="center" class="ma-4">
       <v-col cols="12" md="3" sm="4" order-sm="2">
         <v-card
           class="gold"
           height="100%"
-          :to="{ name: 'cities-id', params: { id: first.cityId} }"
+          :to="localePath({ name: 'cities-id', params: { id: first.cityId} })"
         >
           <v-card-title class="justify-center">
             <v-avatar
@@ -90,7 +89,7 @@
               {{ first.cityName }}
             </p>
             <p class="text-body-1 font-weight-medium">
-              {{ first.tileNumberSold | formatNumber }} tiles
+              {{ first.tileNumberSold | formatNumber }} {{ $t('leaderboard.tiles') }}
             </p>
           </v-card-text>
         </v-card>
@@ -99,7 +98,7 @@
         <v-card
           class="silver"
           height="100%"
-          :to="{ name: 'cities-id', params: { id: second.cityId} }"
+          :to="localePath({ name: 'cities-id', params: { id: second.cityId} })"
         >
           <v-card-title class="justify-center">
             <v-avatar
@@ -115,7 +114,7 @@
               {{ second.cityName }}
             </p>
             <p class="text-body-1 font-weight-medium">
-              {{ second.tileNumberSold | formatNumber }} tiles
+              {{ second.tileNumberSold | formatNumber }}  {{ $t('leaderboard.tiles') }}
             </p>
           </v-card-text>
         </v-card>
@@ -124,7 +123,7 @@
         <v-card
           class="bronze"
           height="100%"
-          :to="{ name: 'cities-id', params: { id: third.cityId} }"
+          :to="localePath({ name: 'cities-id', params: { id: third.cityId} })"
         >
           <v-card-title class="justify-center">
             <v-avatar
@@ -140,7 +139,7 @@
               {{ third.cityName }}
             </p>
             <p class="text-body-1 font-weight-medium">
-              {{ third.tileNumberSold | formatNumber }} tiles
+              {{ third.tileNumberSold | formatNumber }}  {{ $t('leaderboard.tiles') }}
             </p>
           </v-card-text>
         </v-card>
@@ -153,7 +152,7 @@
             <v-list-item
               v-for="(city, index) in cities"
               :key="city.cityId"
-              :to="{ name: 'cities-id', params: { id: city.cityId} }"
+              :to="localePath({ name: 'cities-id', params: { id: city.cityId} })"
             >
               <v-list-item-avatar class="top-leaders">
                 {{ index + 4 }}
@@ -164,7 +163,7 @@
               />
 
               <v-list-item-subtitle class="text-right">
-                {{ city.tileNumberSold | formatNumber }} tiles
+                {{ city.tileNumberSold | formatNumber }}  {{ $t('leaderboard.tiles') }}
               </v-list-item-subtitle>
             </v-list-item>
           </v-list>
@@ -212,6 +211,11 @@ export default {
       tileNumberSold: 0
     }
   }),
+  head () {
+    return {
+      title: 'Leaderboard'
+    }
+  },
   async created () {
     this.overlay = true
     await this.getCities()
@@ -238,11 +242,6 @@ export default {
       } catch (e) {
         console.log(e)
       }
-    }
-  },
-  head () {
-    return {
-      title: 'Leaderboard'
     }
   }
 }

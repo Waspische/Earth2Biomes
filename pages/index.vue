@@ -15,7 +15,7 @@
           <h2
             class="text-h6 text-sm-h5 mt-4"
           >
-            Aiming to provide the biggest open source of information that are NOT available in Earth2.
+            {{ $t('index.subtitle') }}
           </h2>
         </v-col>
       </v-row>
@@ -29,50 +29,50 @@
         <v-row>
           <v-col cols="12" md="12">
             <div class="text-center text-h6 text-sm-h5 text-md-h4 text-lg-h3">
-              Main Features
+              {{ $t('index.mainFeatures.title') }}
             </div>
           </v-col>
           <v-col cols="12" md="4" xs="12">
             <div class="text-center">
               <div class="text-h5">
-                Leaderboard
+                {{ $t('index.mainFeatures.leaderboard') }}
               </div>
               <div class="body-1 ma-4">
-                Ever wonder what was the biggest cities around Earth2? Find the answer now!
+                {{ $t('index.mainFeatures.leaderboardDescription') }}
               </div>
               <v-btn
                 class="mt-4"
                 elevation="2"
                 color="primary darken-1"
                 large
-                to="/leaderboard"
+                :to="localePath('/leaderboard')"
               >
                 <v-icon left dark>
                   mdi-city
                 </v-icon>
-                Leaderboard
+                {{ $t('index.mainFeatures.leaderboardButton') }}
               </v-btn>
             </div>
           </v-col>
           <v-col cols="12" md="4" xs="12">
             <div class="text-center">
               <div class="text-h5">
-                Statistics
+                {{ $t('index.mainFeatures.statistics') }}
               </div>
               <div class="body-1 ma-4">
-                As a city owner, you may be interested in knowing if your city keep growing. You will find the size of the city, number of players and your best players.
+                {{ $t('index.mainFeatures.statisticsDescription') }}
               </div>
               <v-btn
                 class="mt-4"
                 elevation="2"
                 color="primary darken-1"
                 large
-                to="/cities"
+                :to="localePath('/cities')"
               >
                 <v-icon left dark>
                   mdi-city
                 </v-icon>
-                City Map
+                {{ $t('index.mainFeatures.statisticsButton') }}
               </v-btn>
             </div>
           </v-col>
@@ -80,22 +80,22 @@
           <v-col cols="12" md="4" xs="12">
             <div class="text-center">
               <div class="text-h5">
-                Properties for sale
+                {{ $t('index.mainFeatures.propertiesForSale') }}
               </div>
               <div class="body-1 ma-4">
-                As a player, you can check the offers on the marketplace located in the city you want.
+                {{ $t('index.mainFeatures.propertiesForSaleDescription') }}
               </div>
               <v-btn
                 class="mt-4"
                 elevation="2"
                 color="primary darken-1"
                 large
-                to="/cities"
+                :to="localePath('/cities')"
               >
                 <v-icon left dark>
                   mdi-city
                 </v-icon>
-                Properties for sale
+                {{ $t('index.mainFeatures.propertiesButton') }}
               </v-btn>
             </div>
           </v-col>
@@ -104,7 +104,7 @@
       <v-row justify="space-around" class="py-6 px-md-12 px-4">
         <v-col cols="12" md="12">
           <div class="text-center text-h6 text-sm-h5 text-md-h4 text-lg-h3">
-            Some stats
+            {{ $t('index.someStats.title') }}
           </div>
         </v-col>
         <v-col cols="12" md="4" xs="12">
@@ -113,7 +113,7 @@
               129
             </div>
             <div class="body-1 ma-4">
-              MegaCities available with their links to Earth2 location, website and Discord server
+              {{ $t('index.someStats.megacitiesDescription') }}
             </div>
 
             <v-btn
@@ -121,12 +121,12 @@
               elevation="2"
               color="primary darken-1"
               large
-              to="/cities"
+              :to="localePath('/cities')"
             >
               <v-icon left dark>
                 mdi-city
               </v-icon>
-              City map
+              {{ $t('index.someStats.megacitiesButton') }}
             </v-btn>
           </div>
         </v-col>
@@ -137,7 +137,7 @@
               > 10.000
             </div>
             <div class="body-1 ma-4">
-              Blue dots ! They appeared during less than 1 hour on earth2.io all over the map, representing data from the US Mineral Resource Data System
+              {{ $t('index.someStats.blueDotsDescription') }}
             </div>
 
             <v-btn
@@ -145,12 +145,12 @@
               elevation="2"
               color="primary darken-1"
               large
-              to="/blue-dots"
+              :to="localePath('/blue_dots')"
             >
               <v-icon left dark>
                 mdi-dots-horizontal-circle
               </v-icon>
-              Blue dots
+              {{ $t('index.someStats.blueDotsButton') }}
             </v-btn>
           </div>
         </v-col>
@@ -161,19 +161,19 @@
               25
             </div>
             <div class="body-1 ma-4">
-              Resource types from different sources including the most mined minerals from Earth 1
+              {{ $t('index.someStats.resourcesDescription') }}
             </div>
             <v-btn
               class="mt-4"
               elevation="2"
               color="primary darken-1"
               large
-              to="/resources"
+              :to="localePath('/resources')"
             >
               <v-icon left dark>
                 mdi-dots-horizontal-circle
               </v-icon>
-              Resources map
+              {{ $t('index.someStats.resourcesButton') }}
             </v-btn>
           </div>
         </v-col>
@@ -182,7 +182,7 @@
         <v-row>
           <v-col cols="12" md="12">
             <div class="text-center text-h6 text-sm-h5 text-md-h4 text-lg-h3">
-              Our Partners
+              {{ $t('index.ourPartners.title') }}
             </div>
           </v-col>
           <v-col cols="12" md="6" xs="12">
@@ -199,7 +199,7 @@
               <v-col cols="12" md="8" xs="10" class="my-4 mx-0 pa-0">
                 <div class="text-center">
                   <div class="body-1">
-                    Alchera Global Venture is an earth2.io community with high ambitions. And a ❤ for sea lions.
+                    {{ $t('index.ourPartners.agvDescription') }}
                   </div>
                 </div>
               </v-col>
@@ -216,7 +216,7 @@
                     <v-icon left dark>
                       mdi-discord
                     </v-icon>
-                    Join AGV
+                    {{ $t('index.ourPartners.agvButton') }}
                   </v-btn>
                 </div>
               </v-col>
@@ -236,7 +236,7 @@
               <v-col cols="12" md="8" xs="10" class="my-4 mx-0 pa-0">
                 <div class="text-center">
                   <div class="body-1">
-                    Resources District is the Earth2 largest mining network and the place to trade resources.
+                    {{ $t('index.ourPartners.RDDescription') }}
                   </div>
                 </div>
               </v-col>
@@ -253,7 +253,7 @@
                     <v-icon left dark>
                       mdi-discord
                     </v-icon>
-                    Join Resources District
+                    {{ $t('index.ourPartners.RDButton') }}
                   </v-btn>
                 </div>
               </v-col>
@@ -264,11 +264,9 @@
       <v-row class="my-4">
         <v-col cols="8" class="mx-auto">
           <div class="text-h5">
-            Do you appreciate the content here ?
+            {{ $t('index.referalCode.question') }}
           </div>
-          <div class="text-subtitle-1">
-            Support me using the code <span class="primary--text font-weight-bold"> wasp</span> when buying tiles and get a 7,5% discount in game
-          </div>
+          <div class="text-subtitle-1" v-html="$t('index.referalCode.message')" />
         </v-col>
       </v-row>
       <v-divider class="ma-10" />

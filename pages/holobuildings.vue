@@ -38,7 +38,7 @@
         loading-text="Loading... Please wait"
         @click:row="flyToCity"
       >
-        <template v-slot:top>
+        <template #top>
           <v-toolbar
             flat
           >
@@ -82,6 +82,11 @@ export default {
           text: 'Name',
           align: 'start',
           value: 'name' // TODO
+        },
+        {
+          text: 'Vertex',
+          align: 'start',
+          value: 'total_vertex_count' // TODO
         }
       ],
       holobuildings: [], // TODO
@@ -114,6 +119,11 @@ export default {
 
         }
       }
+    }
+  },
+  head () {
+    return {
+      title: 'HoloBuildings'
     }
   },
   computed: {
@@ -179,7 +189,7 @@ export default {
     },
     async getHolobuildings () { // TODO
       const data = await fetch(
-        './data/holobuildings.json'
+        './data/holobuildings-details-v1.json'
       ).then(res => res.json())
 
       let places = []
@@ -240,11 +250,6 @@ export default {
       const popUps = document.getElementsByClassName('mapboxgl-popup')
       /** Check if there is already a popup on the map and if so, remove it */
       if (popUps[0]) { popUps[0].remove() };
-    }
-  },
-  head () {
-    return {
-      title: 'HoloBuildings'
     }
   }
 }

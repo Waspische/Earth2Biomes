@@ -27,7 +27,7 @@ export default {
   head: {
     titleTemplate: '%s - Earth2Biomes',
     script: [
-      { src: '/redirect.js' }
+      // { src: '/redirect.js' }
     ],
     meta: [
       { charset: 'utf-8' },
@@ -86,7 +86,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    '@nuxtjs/toast'
+    '@nuxtjs/toast',
+    '@nuxtjs/i18n'
   ],
 
   toast: {
@@ -94,6 +95,29 @@ export default {
     duration: 3000
   },
 
+  i18n: {
+    /* module options */
+    locales: [
+      {
+        code: 'en',
+        name: 'English',
+        flagSrc: 'https://cdn.vuetifyjs.com/images/flags/us.png',
+        file: 'en.js'
+      },
+      {
+        code: 'ko',
+        name: '한국어',
+        flagSrc: 'https://cdn.vuetifyjs.com/images/flags/kr.png',
+        file: 'ko.js'
+      }
+    ],
+    lazy: true,
+    langDir: 'lang/',
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'en'
+    }
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {

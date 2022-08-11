@@ -10,13 +10,15 @@
       no-gutters
     >
       <v-col
-        class="primary darken-1 py-4 text-center white--text"
+        class="primary darken-1 pt-4 text-center white--text"
         cols="12"
-      >
-        If you like this project, support me using the code <strong>wasp</strong> to get 7.5% discount or <a target="_blank" rel="noopener noreferrer" href="https://ko-fi.com/earth2biomes" @click="trackFooterClick('kofi')">buy me a coffee ☕️</a>
-        <br>
-        To submit an idea/bug, you can contact me on Discord ->  Wasp#1975
-      </v-col>
+        v-html="$t('footer.supportMessage')"
+      />
+      <v-col
+        class="primary darken-1 pb-4 text-center white--text"
+        cols="12"
+        v-html="$t('footer.contactMessage')"
+      />
     </v-row>
   </v-footer>
 </template>

@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/v-slot-style -->
 <template>
   <v-container class="mt-2">
     <div v-if="loading" class="text-center">
@@ -13,10 +14,10 @@
         rounded
       >
         <v-card-title class="title pa-0 text-wrap">
-          <span>{{ city.cityName }} <span v-if="city.group"> - This city is part of {{ city.group.groupName }}</span></span>
+          <span>{{ city.cityName }} <span v-if="city.group"> {{ $t('city.cityGroup') }} {{ city.group.groupName }}</span></span>
         </v-card-title>
         <v-card-text class="subtitle-2 text--secondary pa-0 text-wrap">
-          Last updated on {{ $moment(city.lastUpdated).local().format("ddd, MMMM Do YYYY, hh:mm") }}
+          {{ $t('city.lastUpdated') }} {{ $moment(city.lastUpdated).local().format("ddd, MMMM Do YYYY, hh:mm") }}
         </v-card-text>
       </v-card>
       <v-row>
@@ -51,7 +52,7 @@
 
                     <v-list-item-content>
                       <v-list-item-title>{{ city.location.coordinates }}</v-list-item-title>
-                      <v-list-item-subtitle>Location</v-list-item-subtitle>
+                      <v-list-item-subtitle>{{ $t('city.location') }}</v-list-item-subtitle>
                     </v-list-item-content>
                   </v-list-item>
 
@@ -70,7 +71,7 @@
                       <v-list-item-title>
                         {{ city.url }}
                       </v-list-item-title>
-                      <v-list-item-subtitle>Earth2 link</v-list-item-subtitle>
+                      <v-list-item-subtitle>{{ $t('city.e2Location') }}</v-list-item-subtitle>
                     </v-list-item-content>
                   </v-list-item>
                   <v-list-item
@@ -89,7 +90,7 @@
                       <v-list-item-title>
                         {{ city.website }}
                       </v-list-item-title>
-                      <v-list-item-subtitle>Website</v-list-item-subtitle>
+                      <v-list-item-subtitle>{{ $t('cities.newCityModal.website') }}</v-list-item-subtitle>
                     </v-list-item-content>
                   </v-list-item>
                   <v-list-item
@@ -111,7 +112,7 @@
                       <v-list-item-title v-else>
                         No discord
                       </v-list-item-title>
-                      <v-list-item-subtitle>Discord server</v-list-item-subtitle>
+                      <v-list-item-subtitle>{{ $t('cities.newCityModal.discordServer') }}</v-list-item-subtitle>
                     </v-list-item-content>
                   </v-list-item>
                 </v-list>
@@ -120,13 +121,13 @@
               <v-list class="pa-4">
                 <v-list-item-content>
                   <v-list-item-title class="font-weight-medium">
-                    Description
+                    {{ $t('cities.newCityModal.description') }}
                   </v-list-item-title>
                   <v-list-item-content v-if="city.description" class="text-justify">
                     {{ city.description }}
                   </v-list-item-content>
                   <v-list-item-content v-else class="text-justify">
-                    No description available.
+                    {{ $t('city.noDescription') }}
                   </v-list-item-content>
                 </v-list-item-content>
               </v-list>
@@ -138,10 +139,10 @@
         <v-col cols="12" md="12">
           <v-card class="mt-4">
             <v-card-title class="pb-0">
-              Properties for sale
+              {{ $t('city.propertiesForSale') }}
             </v-card-title>
             <v-card-text class="subtitle-2 text--secondary py-0 text-wrap">
-              Updated almost everyday
+              {{ $t('city.updateMessage') }}
             </v-card-text>
             <v-data-table
               :headers="propertiesForSaleHeaders"
@@ -160,7 +161,7 @@
                   rel="noopener noreferrer"
                   :href="item.propertyUrl"
                 >
-                  Buy
+                  {{ $t('city.buyButton') }}
                 </v-btn>
               </template>
             </v-data-table>
@@ -174,7 +175,7 @@
           style="flex-direction:column"
         >
           <v-card class="mb-2">
-            <v-card-title>Number of tiles owned</v-card-title>
+            <v-card-title>{{ $t('city.numberOfTiles') }}</v-card-title>
             <template v-if="hasData">
               <v-card-text
                 class="text-center text-h4 text--primary pb-0"
@@ -187,13 +188,13 @@
               <v-card-text
                 class="text-center text--primary pb-2"
               >
-                No data yet ...
+                {{ $t('city.noDataYet') }}
               </v-card-text>
             </template>
           </v-card>
 
           <v-card class="mt-2">
-            <v-card-title>Number of players</v-card-title>
+            <v-card-title>{{ $t('city.numberOfPlayers') }}</v-card-title>
             <template v-if="hasData">
               <v-card-text class="text-center text-h4 text--primary pb-0">
                 {{ playersLastNumber | formatNumber }}
@@ -204,13 +205,13 @@
               <v-card-text
                 class="text-center text--primary pb-2"
               >
-                No data yet ...
+                {{ $t('city.noDatayet') }}
               </v-card-text>
             </template>
           </v-card>
 
           <v-card class="mt-4 d-flex flex-grow-1" style="flex-direction: column">
-            <v-card-title>Class distribution</v-card-title>
+            <v-card-title>{{ $t('city.classDistribution') }}</v-card-title>
             <template v-if="hasData">
               <div class="" style="align-self: center;">
                 <apexchart type="pie" width="100%" :options="classDistributionChartOptions" :series="classSeries" />
@@ -220,7 +221,7 @@
               <v-card-text
                 class="text-center text--primary pb-2"
               >
-                No data yet ...
+                {{ $t('city.noDataYet') }}
               </v-card-text>
             </template>
           </v-card>
@@ -232,7 +233,7 @@
           class="d-flex"
         >
           <v-card class="flex-grow-1">
-            <v-card-title>Top 10 players</v-card-title>
+            <v-card-title>{{ $t('city.top10Players') }}</v-card-title>
             <template v-if="hasData">
               <v-list
                 v-for="(player, index) in top10Players"
@@ -257,7 +258,7 @@
               <v-card-text
                 class="text-center text--primary pb-2"
               >
-                No player info yet
+                {{ $t('city.noPlayerInfo') }}
               </v-card-text>
             </template>
           </v-card>
@@ -425,19 +426,17 @@ export default {
       ]
     }
   },
+  head () {
+    return {
+      title: this.city ? this.city.cityName : ''
+    }
+  },
   computed: {
     hasData () {
       return this.tilesSoldLastNumber !== ''
-    },
-    hasPropertiesForSale () {
-      return this.propertiesForSale && this.propertiesForSale.length === 0
     }
   },
-  created () {
-    console.log('created')
-  },
   async mounted () {
-    console.log('mounted')
     await this.getCities()
     mapboxgl.accessToken = this.accessToken
 
@@ -497,15 +496,16 @@ export default {
         this.classSeries = response.classDistributionFrom1to5
         this.top10Players = response.top10Players
         this.propertiesForSale = (response.propertiesForSale ? response.propertiesForSale : [])
-          .map((prop) => {
-            return {
-              ...prop,
-              discount: this.getDiscount(prop),
-              newLandPrice: this.getNewLandPrice(prop),
-              propertyUrl: 'https://app.earth2.io/#thegrid/' + prop.propertyId
-            }
-          })
+        this.propertiesForSale = this.propertiesForSale.map((prop) => {
+          return {
+            ...prop,
+            discount: this.getDiscount(prop),
+            newLandPrice: this.getNewLandPrice(prop),
+            propertyUrl: 'https://app.earth2.io/#thegrid/' + prop.propertyId
+          }
+        })
       } catch (error) {
+        console.log(error)
         this.error = true
       }
     },
@@ -525,7 +525,7 @@ export default {
     },
     getDiscount (property) {
       const discount = (((property.tradingValue * property.tileCount) - property.price) / (property.tradingValue * property.tileCount)) * 100 * -1
-      return this.toFixed(discount, 2)
+      return discount === Infinity ? 10000 : this.toFixed(discount, 2)
     },
     getNewLandPrice (property) {
       return this.toFixed(property.tradingValue * property.tileCount, 2)
@@ -540,11 +540,11 @@ export default {
     toFixed (num, fixed) {
       const re = new RegExp('^-?\\d+(?:.\\d{0,' + (fixed || -1) + '})?')
       return num.toString().match(re)[0]
-    }
-  },
-  head () {
-    return {
-      title: this.city ? this.city.cityName : ''
+    },
+    head () {
+      return {
+        title: this.city ? this.city.cityName : ''
+      }
     }
   }
 }

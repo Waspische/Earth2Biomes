@@ -7,7 +7,7 @@
     >
       <v-row>
         <v-col cols="12" sm="10">
-          {{ message }}
+          {{ $t(message) }}
         </v-col>
         <v-col cols="12" sm="2">
           <v-btn
@@ -30,31 +30,26 @@
       :fullscreen="$vuetify.breakpoint.xsOnly"
       transition="scroll-y-transition"
     >
-      <template v-slot:activator="{ on: citiesDialogBtn, attrs }">
-        <v-tooltip right>
-          <template v-slot:activator="{ on: tooltip }">
-            <v-btn
-              id="cities-dialog-btn"
-              color="primary darken-1"
-              v-bind="attrs"
-              class="ml-4 mt-4"
-              elevation="2"
-              fab
-              large
-              v-on="{ ...tooltip, ...citiesDialogBtn }"
-            >
-              <v-icon dark>
-                mdi-city
-              </v-icon>
-            </v-btn>
-          </template>
-          <span>Show city list</span>
-        </v-tooltip>
+      <template #activator="{ on: citiesDialogBtn, attrs }">
+        <v-btn
+          id="cities-dialog-btn"
+          color="primary darken-1"
+          v-bind="attrs"
+          class="ml-4 mt-4"
+          elevation="2"
+          large
+          v-on="{...citiesDialogBtn }"
+        >
+          <v-icon dark>
+            mdi-city
+          </v-icon>
+          <span>{{ $t('cities.showButton') }}</span>
+        </v-btn>
       </template>
 
       <v-card>
         <v-card-title class="headline">
-          Earth2 cities
+          {{ $t('cities.modalTitle') }}
         </v-card-title>
 
         <v-card-text>
@@ -62,7 +57,7 @@
             type="info"
             class="ml-2 mr-2"
           >
-            You can submit your own city here to contribute to the Cities Database. Every contribution will be reviewed.
+            {{ $t('cities.modalInfo') }}
           </v-alert>
           <v-data-table
             :headers="headers"
@@ -71,22 +66,22 @@
             :search="onSearch"
             class="elevation-1"
             :loading="loadingData"
-            loading-text="Loading... Please wait"
+            :loading-text="$t('cities.modalLoading')"
           >
-            <template v-slot:top>
+            <template #top>
               <v-toolbar
                 flat
               >
                 <v-text-field
                   v-model="search"
-                  label="Search city name or group"
+                  :label="$t('cities.modalSearch')"
                 />
                 <v-spacer />
                 <v-dialog
                   v-model="dialog"
                   max-width="500px"
                 >
-                  <template v-slot:activator="{ on, attrs }">
+                  <template #activator="{ on, attrs }">
                     <v-btn
                       color="primary"
                       dark
@@ -94,12 +89,12 @@
                       v-bind="attrs"
                       v-on="on"
                     >
-                      New City
+                      {{ $t('cities.newCityButton') }}
                     </v-btn>
                   </template>
                   <v-card>
                     <v-card-title>
-                      <span class="headline">{{ formTitle }}</span>
+                      <span class="headline">{{ $t(formTitle) }}</span>
                     </v-card-title>
 
                     <v-card-text>
@@ -111,7 +106,7 @@
                         >
                           <v-text-field
                             v-model="editedCity.cityName"
-                            label="Name"
+                            :label="$t('cities.newCityModal.name')"
                           />
                         </v-col>
                         <v-col
@@ -125,7 +120,7 @@
                             item-text="groupName"
                             item-value="id"
                             return-object
-                            label="Group"
+                            :label="$t('cities.newCityModal.group')"
                           />
                         </v-col>
                         <v-col
@@ -135,7 +130,7 @@
                         >
                           <v-text-field
                             v-model="editedCity.url"
-                            label="Property url"
+                            :label="$t('cities.newCityModal.propertyUrl')"
                             hint="https://app.earth2.io/#propertyInfo/YOUR_ID"
                           />
                         </v-col>
@@ -146,7 +141,7 @@
                         >
                           <v-text-field
                             v-model="editedCity.discord"
-                            label="Discord server"
+                            :label="$t('cities.newCityModal.discordServer')"
                           />
                         </v-col>
                         <v-col
@@ -156,7 +151,7 @@
                         >
                           <v-text-field
                             v-model="editedCity.website"
-                            label="Website"
+                            :label="$t('cities.newCityModal.website')"
                           />
                         </v-col>
                         <v-col
@@ -166,7 +161,7 @@
                         >
                           <v-textarea
                             v-model="editedCity.description"
-                            label="Description"
+                            :label="$t('cities.newCityModal.description')"
                           />
                         </v-col>
                       </v-row>
@@ -179,14 +174,14 @@
                         text
                         @click="close"
                       >
-                        Cancel
+                        {{ $t('cities.newCityModal.cancelButton') }}
                       </v-btn>
                       <v-btn
                         color="primary"
                         text
                         @click="save"
                       >
-                        Save
+                        {{ $t('cities.newCityModal.saveButton') }}
                       </v-btn>
                     </v-card-actions>
                   </v-card>
@@ -194,7 +189,7 @@
               </v-toolbar>
             </template>
 
-            <template v-slot:item.actions="{ item }">
+            <template #[`item.actions`]="{ item }">
               <v-btn
                 plain
                 class="pa-0 mr-1"
@@ -270,15 +265,15 @@
               </v-btn>
             </template>
 
-            <template v-slot:item.detail="{ item }">
+            <template #[`item.detail`]="{ item }">
               <v-btn
                 plain
                 text
                 class="pa-0 mr-1"
                 min-width="0"
-                :to="{ name: 'cities-id', params: { id: item.properties.id} }"
+                :to="localePath({ name: 'cities-id', params: { id: item.properties.id} })"
               >
-                More info
+                {{ $t('cities.moreInfoButton') }}
               </v-btn>
             </template>
           </v-data-table>
@@ -293,7 +288,7 @@
             text
             @click="citiesDialog = false"
           >
-            Close
+            {{ $t('cities.closeButton') }}
           </v-btn>
         </v-card-actions>
       </v-card>
@@ -377,9 +372,14 @@ export default {
       }
     }
   },
+  head () {
+    return {
+      title: 'Cities'
+    }
+  },
   computed: {
     formTitle () {
-      return this.editedIndex === -1 ? 'New City' : 'Edit City'
+      return this.editedIndex === -1 ? 'cities.newCityModal.createTitle' : 'cities.newCityModal.editTitle'
     },
     onSearch () {
       const value = this.search.trim().toLowerCase()
@@ -501,7 +501,7 @@ export default {
         const data = res.data
         console.log(data)
         this.show = true
-        this.message = 'Thank you for your contribution ! I\'ll review it as soon as possible. You can follow confirmed cities on Discord.'
+        this.message = 'cities.saveMessage'
         this.close()
       } catch (error) {
         // Error 😨
@@ -531,7 +531,7 @@ export default {
       const currentFeature = e.features[0]
       const cityId = currentFeature.properties.id
       console.log(currentFeature)
-      this.$router.push('/cities/' + cityId)
+      this.$router.push(this.localePath({ name: 'cities-id', params: { id: cityId } }))
     },
     onMouseEnterCity (e) {
       this.map.getCanvas().style.cursor = 'pointer'
@@ -562,11 +562,6 @@ export default {
       const popUps = document.getElementsByClassName('mapboxgl-popup')
       /** Check if there is already a popup on the map and if so, remove it */
       if (popUps[0]) { popUps[0].remove() };
-    }
-  },
-  head () {
-    return {
-      title: 'Cities'
     }
   }
 }
