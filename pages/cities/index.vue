@@ -24,43 +24,49 @@
         </v-col>
       </v-row>
     </v-snackbar>
-    <v-dialog
-      v-model="citiesDialog"
-      width="auto "
-      :fullscreen="$vuetify.breakpoint.xsOnly"
-      transition="scroll-y-transition"
+    <v-navigation-drawer
+      id="features"
+      v-model="drawer"
+      :mini-variant.sync="mini"
+      permanent
+      width="500"
+      class="rounded ml-4 mt-4"
     >
-      <template #activator="{ on: citiesDialogBtn, attrs }">
+      <v-list-item class="px-2">
+        <v-list-item-avatar>
+          <v-btn
+            icon
+            @click.stop="mini = !mini"
+          >
+            <v-icon>mdi-menu</v-icon>
+          </v-btn>
+        </v-list-item-avatar>
+        <v-list-item-title>{{ $t('cities.modalTitle') }}</v-list-item-title>
         <v-btn
-          id="cities-dialog-btn"
-          color="primary darken-1"
-          v-bind="attrs"
-          class="ml-4 mt-4"
-          elevation="2"
-          large
-          v-on="{...citiesDialogBtn }"
+          icon
+          @click.stop="mini = !mini"
         >
-          <v-icon dark>
-            mdi-city
-          </v-icon>
-          <span>{{ $t('cities.showButton') }}</span>
+          <v-icon>mdi-chevron-left</v-icon>
         </v-btn>
-      </template>
-
-      <v-card>
-        <v-card-title class="headline">
-          {{ $t('cities.modalTitle') }}
-        </v-card-title>
-
+      </v-list-item>
+      <v-divider />
+      <v-card
+        v-show="!mini"
+      >
         <v-card-text>
           <v-alert
+            dense
             type="info"
             class="ml-2 mr-2"
           >
             {{ $t('cities.modalInfo') }}
           </v-alert>
           <v-data-table
+            dense
             :headers="headers"
+            :footer-props="{
+              itemsPerPageOptions: [5]
+            }"
             :items="cities"
             :items-per-page="5"
             :search="onSearch"
@@ -189,6 +195,12 @@
               </v-toolbar>
             </template>
 
+            <template #[`item.name`]="{ item }">
+              <router-link :to="localePath({ name: 'cities-id', params: { id: item.properties.id }})" style="cursor: pointer; text-decoration: none; color: #FFF;">
+                {{ item.properties.cityName }}
+              </router-link>
+            </template>
+
             <template #[`item.actions`]="{ item }">
               <v-btn
                 plain
@@ -241,11 +253,7 @@
                 icon
                 :href="item.properties.discord"
               >
-                <v-icon
-                  dense
-                >
-                  mdi-discord
-                </v-icon>
+                <discord-icon size="1.5x" fill="#f9f9f9" class="v-icon notranslate v-icon--dense mdi mdi-web theme--dark" />
               </v-btn>
               <v-btn
                 v-if="item.properties.website"
@@ -264,35 +272,10 @@
                 </v-icon>
               </v-btn>
             </template>
-
-            <template #[`item.detail`]="{ item }">
-              <v-btn
-                plain
-                text
-                class="pa-0 mr-1"
-                min-width="0"
-                :to="localePath({ name: 'cities-id', params: { id: item.properties.id} })"
-              >
-                {{ $t('cities.moreInfoButton') }}
-              </v-btn>
-            </template>
           </v-data-table>
         </v-card-text>
-
-        <v-divider />
-
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            text
-            @click="citiesDialog = false"
-          >
-            {{ $t('cities.closeButton') }}
-          </v-btn>
-        </v-card-actions>
       </v-card>
-    </v-dialog>
+    </v-navigation-drawer>
     <v-row
       id="map-wrapper"
       fluid
@@ -310,25 +293,33 @@
 
 import mapboxgl from 'mapbox-gl'
 import Vue from 'vue'
+import { DiscordIcon } from 'vue-simple-icons'
 import MapPopup from '~/components/MapPopup'
 
 export default {
   name: 'MapboxMap',
   components: {
+    DiscordIcon
   },
   data () {
     return {
       show: false,
+      drawer: true,
+      mini: false,
       message: '',
       timeout: 5000,
       headers: [
         {
           text: 'Name',
           align: 'start',
-          value: 'properties.cityName'
+          value: 'name'
         },
-        { text: 'Actions', value: 'actions', sortable: false },
-        { text: '', value: 'detail', sortable: false }
+        {
+          text: 'Actions',
+          value: 'actions',
+          sortable: false,
+          width: '47%'
+        }
       ],
       cities: [],
       citiesDialog: false,
@@ -464,6 +455,7 @@ export default {
         type: 'FeatureCollection',
         features: places
       })
+      console.log(places)
       return places
     },
     flyToCity (currentFeature) {
@@ -527,7 +519,11 @@ export default {
         console.log(error)
       }
     },
-    onCityClick (e) {
+    onCityClick (city) {
+      console.log(city)
+      this.$router.push(this.localePath({ name: 'cities-id', params: { id: city.properties.id } }))
+    },
+    onCityRowClick (e) {
       const currentFeature = e.features[0]
       const cityId = currentFeature.properties.id
       console.log(currentFeature)
@@ -568,9 +564,12 @@ export default {
 </script>
 
 <style scoped>
-#cities-dialog-btn {
+
+#features {
   position: relative;
   z-index: 3;
+  max-height: 650px;
+  overflow-y: auto;
 }
 
 #map-wrapper{

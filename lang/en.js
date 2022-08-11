@@ -47,12 +47,11 @@ export default {
   cities: {
     showButton: 'Show city list',
     modalTitle: 'Earth2 Cities',
-    modalInfo: 'You can submit your own city here to contribute to the Cities Database. Every contribution will be reviewed.',
+    modalInfo: 'You can add your city here. Every contribution is reviewed.',
     modalLoading: 'Loading... Please wait',
     modalSearch: 'Search city name or group',
-    newCityButton: 'New city',
+    newCityButton: 'Add city',
     moreInfoButton: 'More info',
-    closeButton: 'Close',
     saveMessage: 'Thank you for your contribution ! I\'ll review it as soon as possible.',
     mapDetails: 'Click for details',
     newCityModal: {

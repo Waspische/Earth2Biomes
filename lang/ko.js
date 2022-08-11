@@ -50,9 +50,8 @@ export default {
     modalInfo: '도시 데이터베이스에 기여하기 위해 여기에 자신의 도시를 제출할 수 있습니다. 모든 기여가 검토될 것입니다.',
     modalLoading: '로드 중... 잠시만 기다려 주십시오',
     modalSearch: '도시 이름 또는 그룹 검색',
-    newCityButton: '신도시',
+    newCityButton: '도시를 추가하십시오',
     moreInfoButton: '추가 정보',
-    closeButton: '닫기',
     saveMessage: '기부해주셔서 감사합니다! 최대한 빨리 검토하겠습니다.',
     mapDetails: '자세한 내용은 클릭하십시오',
     newCityModal: {
