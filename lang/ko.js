@@ -85,7 +85,8 @@ export default {
     noDataYet: '아직 데이터가 없습니다...',
     noPlayerInfo: '아직 플레이어 정보가 없습니다',
     showCityMapButton: '도시지도를 보여줍니다',
-    refreshPropertiesButton: '도시지도를 새로 고치십시오'
+    refreshPropertiesButton: '도시지도를 새로 고치십시오',
+    noProperty: '죄송합니다. 아직 재산이 없습니다'
   },
   leaderboard: {
     title: '최고의 도시 프로젝트',

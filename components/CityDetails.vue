@@ -98,6 +98,13 @@
               >
                 {{ $t(showPropertiesButton) }}
               </v-btn>
+              <v-alert
+                v-if="propertyLoaded && cityProperties.length === 0"
+                dense
+                type="warning"
+              >
+                {{ $t('city.noProperty') }}
+              </v-alert>
             </v-list-item-content>
           </v-list-item>
         </v-list>
@@ -141,8 +148,8 @@ export default {
       accessToken: 'pk.eyJ1Ijoid2FzcGlzY2hlIiwiYSI6ImNrazBidGRsNzBmdmIyeHJyYThjZG0wYzYifQ.qZQp-6ddFiyakTvvyCv8Gw', // your access token. Needed if you using Mapbox maps
       mapStyle: 'mapbox://styles/mapbox/light-v10',
       loadTiles: false,
-      cityProperties: null,
-      propertyCached: false,
+      cityProperties: [],
+      propertyLoaded: false,
       map: null,
       propertyLayer: {
         id: 'property-layer',
@@ -190,7 +197,7 @@ export default {
   },
   computed: {
     showPropertiesButton () {
-      return this.propertyCached ? 'city.refreshPropertiesButton' : 'city.showPropertiesButton'
+      return this.propertyLoaded ? 'city.refreshPropertiesButton' : 'city.showPropertiesButton'
     }
   },
   mounted () {
@@ -228,17 +235,19 @@ export default {
       if (this.cityProperties.length > 0) {
         console.log('Add cached properties to map')
         this.addPropertiesToMap(this.cityProperties)
-        this.propertyCached = true
+        this.propertyLoaded = true
       }
     },
     async showProperties () {
-      console.log('showCityMap')
+      console.log('showProperties')
       this.loadTiles = true
 
       this.cityProperties = await this.getCityProperties()
-
-      this.addPropertiesToMap(this.cityProperties)
-      this.setCachedProperties(this.cityProperties)
+      this.propertyLoaded = true
+      if (this.cityProperties.length > 0) {
+        this.addPropertiesToMap(this.cityProperties)
+        this.setCachedProperties(this.cityProperties)
+      }
     },
     async getCityProperties () {
       console.log('getCityProperties')

@@ -85,7 +85,8 @@ export default {
     noDataYet: 'No data yet...',
     noPlayerInfo: 'No player info yet',
     showPropertiesButton: 'Show city map',
-    refreshPropertiesButton: 'Refresh city map'
+    refreshPropertiesButton: 'Refresh city map',
+    noProperty: 'Sorry, there is no property yet'
   },
   leaderboard: {
     title: 'Best City projects',
