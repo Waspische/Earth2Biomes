@@ -74,6 +74,8 @@ export default {
     e2Location: 'Earth2 Location',
     noDescription: 'No description available.',
     propertiesForSale: 'Properties for sale',
+    details: 'Details',
+    stats: 'Stats',
     updateMessage: 'Updated almost every week',
     buyButton: 'Buy',
     numberOfTiles: 'Number of tiles owned',

@@ -74,6 +74,8 @@ export default {
     e2Location: 'Earth2 위치',
     noDescription: '가능한 설명이 없습니다.',
     propertiesForSale: '판매용 부동산',
+    details: '세부',
+    stats: '통계',
     updateMessage: '거의 매주 업데이트됨',
     buyButton: '구매',
     numberOfTiles: '소유한 타일 수',

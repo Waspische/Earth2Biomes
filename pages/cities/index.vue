@@ -519,11 +519,7 @@ export default {
         console.log(error)
       }
     },
-    onCityClick (city) {
-      console.log(city)
-      this.$router.push(this.localePath({ name: 'cities-id', params: { id: city.properties.id } }))
-    },
-    onCityRowClick (e) {
+    onCityClick (e) {
       const currentFeature = e.features[0]
       const cityId = currentFeature.properties.id
       console.log(currentFeature)
