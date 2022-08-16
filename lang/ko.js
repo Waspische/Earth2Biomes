@@ -83,7 +83,9 @@ export default {
     classDistribution: '클래스 배포',
     top10Players: '상위 10명의 플레이어',
     noDataYet: '아직 데이터가 없습니다...',
-    noPlayerInfo: '아직 플레이어 정보가 없습니다'
+    noPlayerInfo: '아직 플레이어 정보가 없습니다',
+    showCityMapButton: '도시지도를 보여줍니다',
+    refreshPropertiesButton: '도시지도를 새로 고치십시오'
   },
   leaderboard: {
     title: '최고의 도시 프로젝트',

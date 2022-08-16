@@ -24,6 +24,7 @@
         v-model="tab"
         background-color="primary darken-1"
         fixed-tabs
+        hide-slider
       >
         <v-tab>{{ $t('city.details') }}</v-tab>
         <v-tab>
@@ -52,11 +53,9 @@
 </template>
 
 <script>
-import PropertiesForSale from '../../../components/PropertiesForSale.vue'
 
 export default {
   name: 'Id',
-  components: { PropertiesForSale },
   filters: {
     formatNumber (number) {
       return new Intl.NumberFormat().format(Math.trunc(number))
@@ -114,20 +113,6 @@ export default {
       } catch (error) {
         console.log(error)
         this.error = true
-      }
-    },
-    async getCityProperties () {
-      console.log('getCityProperties')
-
-      const fetchedId = this.$route.params.id
-      try {
-        const response = await this.$axios.$get('/earth-2-properties/city/' + fetchedId)
-        this.cityProperties = response
-      } catch (error) {
-        this.error = true
-        // TODO handle error
-        console.log('error')
-        console.log(error)
       }
     },
     head () {

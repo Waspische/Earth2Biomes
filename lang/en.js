@@ -83,7 +83,9 @@ export default {
     classDistribution: 'Class distribution',
     top10Players: 'Top 10 players',
     noDataYet: 'No data yet...',
-    noPlayerInfo: 'No player info yet'
+    noPlayerInfo: 'No player info yet',
+    showPropertiesButton: 'Show city map',
+    refreshPropertiesButton: 'Refresh city map'
   },
   leaderboard: {
     title: 'Best City projects',
