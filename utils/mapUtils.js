@@ -319,6 +319,16 @@ class MapUtils {
       accordingCoords.slice().sort((a, b) => a[oppositeArrayAccessor] - b[oppositeArrayAccessor])
     )
   }
+
+  getBboxForPolygons (polygons) {
+    const bigPoly = polygonClipping.union(...polygons.map(e => e.geometry.coordinates))
+    return turf.bbox(turf.multiPolygon(bigPoly))
+  }
+
+  getArea (polygons) {
+    const bigPoly = polygonClipping.union(...polygons.map(e => e.geometry.coordinates))
+    return turf.area(turf.multiPolygon(bigPoly))
+  }
 }
 
 const mapUtils = new MapUtils()

@@ -7,13 +7,13 @@
     <v-row>
       <v-col
         cols="12"
-        md="6"
+        md="8"
       >
-        <v-card id="map" style="min-height: 400px; height:100%" />
+        <v-card id="map" style="min-height: 450px; height:100%" />
       </v-col>
       <v-col
         cols="12"
-        md="6"
+        md="4"
         class="text-body-1"
       >
         <v-list>
@@ -105,6 +105,12 @@
               >
                 {{ $t('city.noProperty') }}
               </v-alert>
+              <v-switch
+                v-if="propertyLoaded && cityProperties.length !== 0"
+                v-model="forSaleToggle"
+                label="Highlight properties for sale"
+                @change="togglePropertiesForSale"
+              />
             </v-list-item-content>
           </v-list-item>
         </v-list>
@@ -130,7 +136,9 @@
 <script>
 import mapboxgl from 'mapbox-gl'
 import { DiscordIcon } from 'vue-simple-icons'
+import Vue from 'vue'
 import mapUtils from '@/utils/mapUtils'
+import MapPopup from '~/components/MapPopup'
 
 export default {
   name: 'CityDetails',
@@ -150,7 +158,11 @@ export default {
       loadTiles: false,
       cityProperties: [],
       propertyLoaded: false,
+      forSaleToggle: false,
       map: null,
+      propertyPopup: null,
+      popupContent: null,
+      currentProperty: null,
       propertyLayer: {
         id: 'property-layer',
         source: 'properties',
@@ -180,7 +192,7 @@ export default {
             1,
             0.5
           ],
-          'line-width': 3
+          'line-width': 2
         }
       },
       propertyFillLayer: {
@@ -188,8 +200,57 @@ export default {
         source: 'properties',
         type: 'fill',
         paint: {
-          'fill-color':
-            ['get', 'color'],
+          'fill-color': ['get', 'color'],
+          'fill-opacity': 0.5
+        }
+      },
+      propertyForSaleLayer: {
+        id: 'property-for-sale-layer',
+        source: 'properties',
+        type: 'line',
+        layout: {
+          'line-cap': 'round',
+          'line-join': 'round'
+        },
+        paint: {
+          'line-color': [
+            'case',
+            [
+              'boolean',
+              ['coalesce', ['feature-state', 'forSale'], ['get', 'forSale']],
+              false
+            ],
+            '#ff0000',
+            '#e2e2e2'
+          ],
+          'line-opacity': [
+            'case',
+            [
+              'boolean',
+              ['coalesce', ['feature-state', 'isSelected'], ['get', 'isSelected']],
+              false
+            ],
+            1,
+            0.5
+          ],
+          'line-width': 2
+        }
+      },
+      propertyForSaleFillLayer: {
+        id: 'property-for-sale-fill-layer',
+        source: 'properties',
+        type: 'fill',
+        paint: {
+          'fill-color': [
+            'case',
+            [
+              'boolean',
+              ['coalesce', ['feature-state', 'forSale'], ['get', 'forSale']],
+              false
+            ],
+            '#ff0000',
+            '#e2e2e2'
+          ],
           'fill-opacity': 0.5
         }
       }
@@ -231,6 +292,24 @@ export default {
       })
       this.map.addLayer(this.propertyLayer)
       this.map.addLayer(this.propertyFillLayer)
+      this.map.addLayer(this.propertyForSaleLayer)
+      this.map.addLayer(this.propertyForSaleFillLayer)
+      this.map.setLayoutProperty('property-for-sale-layer', 'visibility', 'none')
+      this.map.setLayoutProperty('property-for-sale-fill-layer', 'visibility', 'none')
+
+      this.map.on('mousemove', 'property-fill-layer', this.onMouseEnterProperty)
+      this.map.on('mouseleave', 'property-fill-layer', this.onMouseLeaveProperty)
+      this.map.on('click', 'property-fill-layer', this.onPropertyClick)
+
+      this.propertyPopup = new mapboxgl.Popup({
+        closeButton: false
+      })
+      this.popupContent = new Vue({
+        ...MapPopup,
+        parent: this,
+        propsData: {
+        }
+      }).$mount()
 
       if (this.cityProperties.length > 0) {
         console.log('Add cached properties to map')
@@ -238,8 +317,35 @@ export default {
         this.propertyLoaded = true
       }
     },
+    onMouseEnterProperty (e) {
+      this.map.getCanvas().style.cursor = 'pointer'
+      const feature = e.features[0]
+      this.currentProperty = feature.properties
+
+      const name = (feature.properties.description === undefined) ? '' : feature.properties.description
+
+      this.popupContent.title = name
+      this.popupContent.popupType = 'property'
+      this.popupContent.popupData = feature.properties
+
+      this.propertyPopup
+        .setLngLat(e.lngLat)
+        .setDOMContent(this.popupContent.$el)
+        .addTo(this.map)
+    },
+    onMouseLeaveProperty () {
+      this.map.getCanvas().style.cursor = ''
+      const popUps = document.getElementsByClassName('mapboxgl-popup')
+      /** Check if there is already a popup on the map and if so, remove it */
+      if (popUps[0]) { popUps[0].remove() };
+    },
+    onPropertyClick (e) {
+      const currentFeature = e.features[0]
+      const propertyId = currentFeature.properties.propertyId
+      console.log(currentFeature)
+      window.open('https://app.earth2.io/#thegrid/' + propertyId)
+    },
     async showProperties () {
-      console.log('showProperties')
       this.loadTiles = true
 
       this.cityProperties = await this.getCityProperties()
@@ -255,6 +361,7 @@ export default {
       const fetchedId = this.$route.params.id
       try {
         const response = await this.$axios.$get('/earth-2-properties/city/' + fetchedId)
+        console.log(response)
 
         this.loadTiles = false
         return response
@@ -278,7 +385,24 @@ export default {
         type: 'FeatureCollection',
         features: polygons
       })
-      this.map.flyTo({ center: this.city.location.coordinates, zoom: 11 })
+
+      console.log(polygons)
+
+      this.map.fitBounds(mapUtils.getBboxForPolygons(polygons))
+      // this.map.flyTo({ center: this.city.location.coordinates, zoom: 11 })
+    },
+    togglePropertiesForSale () {
+      if (this.forSaleToggle) {
+        this.map.setLayoutProperty('property-layer', 'visibility', 'none')
+        this.map.setLayoutProperty('property-layer', 'visibility', 'none')
+        this.map.setLayoutProperty('property-for-sale-layer', 'visibility', 'visible')
+        this.map.setLayoutProperty('property-for-sale-fill-layer', 'visibility', 'visible')
+      } else {
+        this.map.setLayoutProperty('property-layer', 'visibility', 'visible')
+        this.map.setLayoutProperty('property-layer', 'visibility', 'visible')
+        this.map.setLayoutProperty('property-for-sale-layer', 'visibility', 'none')
+        this.map.setLayoutProperty('property-for-sale-fill-layer', 'visibility', 'none')
+      }
     },
     processTiles (property) {
       // process tiles
@@ -288,9 +412,8 @@ export default {
       const polygon = mapUtils.quadkeysToPolygon(property.indices)
 
       polygon.properties = {
-        ...polygon,
+        ...property,
         color: this.stringToColor(property.ownerId),
-        id: property.id,
         type: 'landfield'
       }
 
@@ -332,5 +455,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>

@@ -2,16 +2,16 @@
   <div class="popup-wrapper">
     <v-card
       class="rounded-lg mx-2 transparent-card"
-      max-width="250px"
+      max-width="300px"
       flat
     >
       <v-card-title
-        class="pa-0 text-center"
+        class="pa-0 text-center h6"
       >
-        {{ popupName }}
+        {{ title }}
       </v-card-title>
       <v-card-text
-        v-if="type === 'quarry' || type === 'well'"
+        v-if="popupType === 'quarry' || popupType === 'well'"
         class="pa-0 text-center"
       >
         <v-btn
@@ -27,13 +27,23 @@
         {{ geoposition }}
       </v-card-text>
       <v-card-text
-        v-if="type === 'urban'"
+        v-if="popupType === 'urban'"
         class="pb-1 text-center"
       >
         {{ $t('cities.mapDetails') }}
       </v-card-text>
+      <v-card-text
+        v-if="popupType === 'property'"
+        class="pb-1"
+      >
+        <div>Tiles: {{ popupData.tileCount }}</div>
+        <div>Tier: {{ popupData.landfieldTier }} | Class: {{ popupData.tileClass }}</div>
+        <div class="text-center body-2">
+          {{ $t('cities.openEarth2') }}
+        </div>
+      </v-card-text>
       <v-card-actions
-        v-if="type === 'quarry' || type === 'well'"
+        v-if="popupType === 'quarry' || popupType === 'well'"
         class="justify-center"
       >
         <v-btn
@@ -56,11 +66,14 @@ import { mapMutations } from 'vuex'
 
 export default {
   name: 'MapPopup',
-  props: ['popupName', 'lat', 'lng', 'type'],
+  props: ['popupName', 'lat', 'lng', 'type', 'data'],
   data () {
     return {
       snackbar: false,
-      text: 'Position copied in clipboard. It can be unprecised, so look around ;)'
+      text: 'Position copied in clipboard. It can be unprecised, so look around ;)',
+      popupData: this.data,
+      title: this.popupName,
+      popupType: this.type
     }
   },
   computed: {
@@ -105,7 +118,7 @@ export default {
 
 .mapboxgl-popup-content {
   font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
-  background-color: rgba(117,117,117,0.7);
+  background-color: rgba(117,117,117,0.75);
   padding: 0;
   border-radius: 8px;
 }
@@ -113,28 +126,28 @@ export default {
   border: 15px solid transparent;
 }
 .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
-  border-top-color: rgba(117,117,117,0.7);
+  border-top-color: rgba(117,117,117,0.75);
 }
 .mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
-  border-right-color: rgba(117,117,117,0.7);
+  border-right-color: rgba(117,117,117,0.75);
 }
 .mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
-  border-left-color: rgba(117,117,117,0.7);
+  border-left-color: rgba(117,117,117,0.75);
 }
 .mapboxgl-popup-anchor-top .mapboxgl-popup-tip {
-  border-bottom-color: rgba(117,117,117,0.7);
+  border-bottom-color: rgba(117,117,117,0.75);
 }
 .mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip {
-  border-top-color: rgba(117,117,117,0.7);
+  border-top-color: rgba(117,117,117,0.75);
 }
 .mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip {
-  border-top-color: rgba(117,117,117,0.7);
+  border-top-color: rgba(117,117,117,0.75);
 }
 .mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip {
-  border-bottom-color: rgba(117,117,117,0.7);
+  border-bottom-color: rgba(117,117,117,0.75);
 }
 .mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip {
-  border-bottom-color:rgba(117,117,117,0.7);
+  border-bottom-color:rgba(117,117,117,0.75);
 }
 .transparent-card {
   background-color: rgba(117,117,117,0) !important;

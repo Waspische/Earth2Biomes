@@ -54,6 +54,7 @@ export default {
     moreInfoButton: '추가 정보',
     saveMessage: '기부해주셔서 감사합니다! 최대한 빨리 검토하겠습니다.',
     mapDetails: '자세한 내용은 클릭하십시오',
+    openEarth2: '클릭하려면 클릭하십시오',
     newCityModal: {
       editTitle: '도시 편집',
       createTitle: '새로운 도시',
@@ -86,7 +87,8 @@ export default {
     noPlayerInfo: '아직 플레이어 정보가 없습니다',
     showCityMapButton: '도시지도를 보여줍니다',
     refreshPropertiesButton: '도시지도를 새로 고치십시오',
-    noProperty: '죄송합니다. 아직 재산이 없습니다'
+    noProperty: '죄송합니다. 아직 재산이 없습니다',
+    highlightForSale: '판매용 부동산을 강조 표시합니다'
   },
   leaderboard: {
     title: '최고의 도시 프로젝트',

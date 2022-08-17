@@ -20,34 +20,56 @@
           {{ $t('city.lastUpdated') }} {{ $moment(city.lastUpdated).local().format("ddd, MMMM Do YYYY, hh:mm") }}
         </v-card-text>
       </v-card>
-      <v-tabs
-        v-model="tab"
-        background-color="primary darken-1"
-        fixed-tabs
-        hide-slider
+
+      <v-card
+        elevation="4"
+        class="mb-4"
+        rounded
       >
-        <v-tab>{{ $t('city.details') }}</v-tab>
-        <v-tab>
+        <v-btn
+          color="primary darken-1"
+          text
+          x-large
+          @click="$vuetify.goTo('#city-details')"
+        >
+          {{ $t('city.details') }}
+        </v-btn>
+        <v-btn
+          color="primary darken-1"
+          text
+          x-large
+          @click="$vuetify.goTo('#properties-for-sale')"
+        >
           {{ $t('city.propertiesForSale') }}
-        </v-tab>
-        <v-tab>
+        </v-btn>
+        <v-btn
+          color="primary darken-1"
+          text
+          x-large
+          @click="$vuetify.goTo('#city-stats')"
+        >
           {{ $t('city.stats') }}
-        </v-tab>
-      </v-tabs>
-      <v-tabs-items v-model="tab">
-        <v-tab-item>
-          <CityDetails :city="city" />
-        </v-tab-item>
-        <v-tab-item>
-          <PropertiesForSale :properties-for-sale="propertiesForSale" />
-        </v-tab-item>
-        <v-tab-item>
-          <CityStats
-            :city="city"
-            :city-stats="cityStats"
-          />
-        </v-tab-item>
-      </v-tabs-items>
+        </v-btn>
+      </v-card>
+
+      <CityDetails id="city-details" :city="city" />
+      <div v-if="loadingStats" class="text-center">
+        <v-progress-circular
+          indeterminate
+          color="primary"
+        />
+      </div>
+      <PropertiesForSale
+        v-if="!loadingStats"
+        id="properties-for-sale"
+        :properties-for-sale="propertiesForSale"
+      />
+      <CityStats
+        v-if="!loadingStats"
+        id="city-stats"
+        :city="city"
+        :city-stats="cityStats"
+      />
     </section>
   </v-container>
 </template>
@@ -65,11 +87,11 @@ export default {
     return {
       city: null,
       loading: true,
+      loadingStats: true,
       error: false,
-      tilesSoldLastNumber: '',
       tab: null,
-      propertiesForSale: [],
-      cityStats: null
+      cityStats: null,
+      propertiesForSale: []
     }
   },
   head () {
@@ -79,10 +101,9 @@ export default {
   },
   async mounted () {
     await this.getCity()
+    this.getCityStats()
 
     console.log(this.city)
-
-    this.getCityStats()
   },
   methods: {
     async getCity () {
@@ -107,11 +128,13 @@ export default {
       const fetchedId = this.$route.params.id
       try {
         const response = await this.$axios.$get('/city-stats/' + fetchedId)
+        this.loadingStats = false
         this.cityStats = response
         console.log(response)
         this.propertiesForSale = (response.propertiesForSale ? response.propertiesForSale : [])
       } catch (error) {
         console.log(error)
+        this.loadingStats = false
         this.error = true
       }
     },

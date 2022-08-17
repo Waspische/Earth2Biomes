@@ -112,8 +112,7 @@ export default {
     }
   },
   props: [
-    'city',
-    'cityStats'
+    'city', 'cityStats'
   ],
   data () {
     return {
@@ -206,31 +205,29 @@ export default {
         noData: {
           text: 'Loading...'
         }
-      }
+      },
+      tilesSoldLastNumber: '',
+      tilesSoldSeries: null,
+      playersSeries: null,
+      playersLastNumber: null
     }
   },
   computed: {
     hasData () {
       return this.tilesSoldLastNumber !== ''
-    },
-    tilesSoldSeries () {
-      return [{
-        name: 'Number of tiles',
-        data: this.cityStats.tileNumberSoldData
-      }]
-    },
-    playersSeries () {
-      return [{
-        name: 'Number of players',
-        data: this.cityStats.playerNumberData
-      }]
-    },
-    tilesSoldLastNumber () {
-      return this.cityStats.tileNumberSoldData[this.cityStats.tileNumberSoldData.length - 1].y
-    },
-    playersLastNumber () {
-      return this.cityStats.playerNumberData[this.cityStats.playerNumberData.length - 1].y
     }
+  },
+  mounted () {
+    this.tilesSoldSeries = [{
+      name: 'Number of tiles',
+      data: this.cityStats.tileNumberSoldData
+    }]
+    this.playersSeries = [{
+      name: 'Number of players',
+      data: this.cityStats.playerNumberData
+    }]
+    this.tilesSoldLastNumber = this.cityStats.tileNumberSoldData[this.cityStats.tileNumberSoldData.length - 1].y
+    this.playersLastNumber = this.cityStats.playerNumberData[this.cityStats.playerNumberData.length - 1].y
   },
   methods: {
     playerColor (index) {

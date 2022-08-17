@@ -457,7 +457,7 @@ export default {
       this.map.setLayoutProperty('landuseLocation', 'visibility', 'none')
       this.map.on('click', 'landuseLocation', this.onFeatureClick)
 
-      this.map.on('mouseenter', 'landuseLocation', this.onMouseEnter)
+      this.map.on('mouseover', 'landuseLocation', this.onMouseEnter)
       this.map.on('mouseleave', 'landuseLocation', this.onMouseOut)
     },
     async onDatasourceSelection () {

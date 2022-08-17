@@ -54,6 +54,7 @@ export default {
     moreInfoButton: 'More info',
     saveMessage: 'Thank you for your contribution ! I\'ll review it as soon as possible.',
     mapDetails: 'Click for details',
+    openEarth2: 'Click to open',
     newCityModal: {
       editTitle: 'Edit City',
       createTitle: 'New City',
@@ -86,7 +87,8 @@ export default {
     noPlayerInfo: 'No player info yet',
     showPropertiesButton: 'Show city map',
     refreshPropertiesButton: 'Refresh city map',
-    noProperty: 'Sorry, there is no property yet'
+    noProperty: 'Sorry, there is no property yet',
+    highlightForSale: 'Highlight properties for sale'
   },
   leaderboard: {
     title: 'Best City projects',
