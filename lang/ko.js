@@ -82,6 +82,7 @@ export default {
     numberOfTiles: '소유한 타일 수',
     numberOfPlayers: '플레이어 수',
     classDistribution: '클래스 배포',
+    tierDistribution: '계층 분포',
     top10Players: '상위 10명의 플레이어',
     noDataYet: '아직 데이터가 없습니다...',
     noPlayerInfo: '아직 플레이어 정보가 없습니다',

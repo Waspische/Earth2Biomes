@@ -82,6 +82,7 @@ export default {
     numberOfTiles: 'Number of tiles owned',
     numberOfPlayers: 'Number of players',
     classDistribution: 'Class distribution',
+    tierDistribution: 'Tier distribution',
     top10Players: 'Top 10 players',
     noDataYet: 'No data yet...',
     noPlayerInfo: 'No player info yet',

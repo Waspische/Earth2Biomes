@@ -43,22 +43,52 @@
           </v-card-text>
         </template>
       </v-card>
-
-      <v-card class="mt-4 d-flex flex-grow-1" style="flex-direction: column">
-        <v-card-title>{{ $t('city.classDistribution') }}</v-card-title>
-        <template v-if="hasData">
-          <div class="" style="align-self: center;">
-            <apexchart type="pie" height="300" :options="classDistributionChartOptions" :series="cityStats.classDistributionFrom1to5" />
-          </div>
-        </template>
-        <template v-else>
-          <v-card-text
-            class="text-center text--primary pb-2"
-          >
-            {{ $t('city.noDataYet') }}
-          </v-card-text>
-        </template>
-      </v-card>
+      <v-row class="mt-2">
+        <v-col
+          cols="12"
+          md="6"
+          sm="6"
+          class="d-flex"
+        >
+          <v-card class="flex-grow-1">
+            <v-card-title>{{ $t('city.classDistribution') }}</v-card-title>
+            <template v-if="hasData">
+              <div class="" style="align-self: center;">
+                <apexchart type="pie" height="250" :options="classDistributionChartOptions" :series="cityStats.classDistributionFrom1to5" />
+              </div>
+            </template>
+            <template v-else>
+              <v-card-text
+                class="text-center text--primary pb-2"
+              >
+                {{ $t('city.noDataYet') }}
+              </v-card-text>
+            </template>
+          </v-card>
+        </v-col>
+        <v-col
+          cols="12"
+          md="6"
+          sm="6"
+          class="d-flex"
+        >
+          <v-card class="flex-grow-1">
+            <v-card-title>{{ $t('city.tierDistribution') }}</v-card-title>
+            <template v-if="hasData">
+              <div class="" style="align-self: center;">
+                <apexchart type="pie" height="250" :options="tierDistributionChartOptions" :series="cityStats.tierDistribution" />
+              </div>
+            </template>
+            <template v-else>
+              <v-card-text
+                class="text-center text--primary pb-2"
+              >
+                {{ $t('city.noDataYet') }}
+              </v-card-text>
+            </template>
+          </v-card>
+        </v-col>
+      </v-row>
     </v-col>
     <v-col
       cols="12"
@@ -175,6 +205,44 @@ export default {
           type: 'pie'
         },
         labels: ['Class 1', 'Class 2', 'Class 3', 'Class 4', 'Class 5', 'No class'],
+        dataLabels: {
+          formatter (value, { seriesIndex, dataPointIndex, w }) {
+            return w.config.labels[seriesIndex] + ':  ' + Math.trunc(value) + '%'
+          }
+        },
+        animations: {
+          enabled: true,
+          easing: 'easeinout',
+          speed: 800,
+          animateGradually: {
+            enabled: true,
+            delay: 150
+          },
+          dynamicAnimation: {
+            enabled: true,
+            speed: 350
+          }
+        },
+        legend: {
+          show: false
+        },
+        theme: {
+          palette: 'palette2'
+        },
+        stroke: {
+          colors: ['#1E1E1E']
+        },
+        noData: {
+          text: 'Loading...'
+        }
+      },
+
+      tierDistributionChartOptions: {
+        chart: {
+          height: '100%',
+          type: 'pie'
+        },
+        labels: ['Tier 1', 'Tier 2'],
         dataLabels: {
           formatter (value, { seriesIndex, dataPointIndex, w }) {
             return w.config.labels[seriesIndex] + ':  ' + Math.trunc(value) + '%'
