@@ -336,7 +336,7 @@ export default {
         .addTo(this.map)
     },
     onMouseLeaveProperty () {
-      this.map.getCanvas().style.cursor = 'crosshairs'
+      this.map.getCanvas().style.cursor = 'crosshair'
       const popUps = document.getElementsByClassName('mapboxgl-popup')
       /** Check if there is already a popup on the map and if so, remove it */
       if (popUps[0]) { popUps[0].remove() };
@@ -364,7 +364,7 @@ export default {
         console.log('Map clicked')
         console.log(e.lngLat)
 
-        // window.open('https://app.earth2.io/#thegrid/' + propertyId)
+        window.open(`https://app.earth2.io/?lng=${e.lngLat.lng}&lat=${e.lngLat.lat}`)
       }
     },
     async getCityProperties () {
