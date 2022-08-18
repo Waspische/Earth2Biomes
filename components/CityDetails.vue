@@ -296,10 +296,12 @@ export default {
       this.map.addLayer(this.propertyForSaleFillLayer)
       this.map.setLayoutProperty('property-for-sale-layer', 'visibility', 'none')
       this.map.setLayoutProperty('property-for-sale-fill-layer', 'visibility', 'none')
+      this.map.getCanvas().style.cursor = 'crosshair'
 
       this.map.on('mousemove', 'property-fill-layer', this.onMouseEnterProperty)
       this.map.on('mouseleave', 'property-fill-layer', this.onMouseLeaveProperty)
       this.map.on('click', 'property-fill-layer', this.onPropertyClick)
+        .on('click', this.onMapClick)
 
       this.propertyPopup = new mapboxgl.Popup({
         closeButton: false
@@ -334,12 +336,14 @@ export default {
         .addTo(this.map)
     },
     onMouseLeaveProperty () {
-      this.map.getCanvas().style.cursor = ''
+      this.map.getCanvas().style.cursor = 'crosshairs'
       const popUps = document.getElementsByClassName('mapboxgl-popup')
       /** Check if there is already a popup on the map and if so, remove it */
       if (popUps[0]) { popUps[0].remove() };
     },
     onPropertyClick (e) {
+      e.preventDefault()
+      e.originalEvent.preventDefault()
       const currentFeature = e.features[0]
       const propertyId = currentFeature.properties.propertyId
       console.log(currentFeature)
@@ -353,6 +357,14 @@ export default {
       if (this.cityProperties.length > 0) {
         this.addPropertiesToMap(this.cityProperties)
         this.setCachedProperties(this.cityProperties)
+      }
+    },
+    onMapClick (e) {
+      if (!e.defaultPrevented) {
+        console.log('Map clicked')
+        console.log(e.lngLat)
+
+        // window.open('https://app.earth2.io/#thegrid/' + propertyId)
       }
     },
     async getCityProperties () {

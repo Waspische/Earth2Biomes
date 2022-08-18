@@ -36,7 +36,8 @@
         v-if="popupType === 'property'"
         class="pb-1"
       >
-        <div>Tiles: {{ popupData.tileCount }}</div>
+        <div>Owner: {{ popupData.ownerName }}</div>
+        <div>Price: {{ popupData.price }} E$ | Tiles: {{ popupData.tileCount }}</div>
         <div>Tier: {{ popupData.landfieldTier }} | Class: {{ popupData.tileClass }}</div>
         <div class="text-center body-2">
           {{ $t('cities.openEarth2') }}

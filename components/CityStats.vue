@@ -54,7 +54,7 @@
             <v-card-title>{{ $t('city.classDistribution') }}</v-card-title>
             <template v-if="hasData">
               <div class="" style="align-self: center;">
-                <apexchart type="pie" height="250" :options="classDistributionChartOptions" :series="cityStats.classDistributionFrom1to5" />
+                <apexchart type="pie" height="220" :options="classDistributionChartOptions" :series="cityStats.classDistributionFrom1to5" />
               </div>
             </template>
             <template v-else>
@@ -76,7 +76,7 @@
             <v-card-title>{{ $t('city.tierDistribution') }}</v-card-title>
             <template v-if="hasData">
               <div class="" style="align-self: center;">
-                <apexchart type="pie" height="250" :options="tierDistributionChartOptions" :series="cityStats.tierDistribution" />
+                <apexchart type="pie" height="220" :options="tierDistributionChartOptions" :series="cityStats.tierDistribution" />
               </div>
             </template>
             <template v-else>
