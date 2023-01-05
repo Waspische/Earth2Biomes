@@ -19,7 +19,7 @@ export default {
     baseUrl: process.env.NODE_ENV === 'prod' ? 'https://earth2biomes.com' : 'http://localhost:3000',
     axios: {
       // baseURL: process.env.NODE_ENV === 'prod' ? 'https://earth-2-biomes.herokuapp.com/api/public' : 'http://localhost:8080/api/public'
-      baseURL: process.env.NODE_ENV === 'prod' ? 'https://earth-2-biomes.herokuapp.com/api/public' : 'https://earth-2-biomes.herokuapp.com/api/public'
+      baseURL: process.env.NODE_ENV === 'prod' ? 'https://api.earth2biomes.com/api/public' : 'https://api.earth2biomes.com/api/public'
     }
   },
 
